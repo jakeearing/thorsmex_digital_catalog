@@ -1,0 +1,153 @@
+body {
+  background: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  background-image: url("./images/charlotte.png");
+  background-position-y: 0px;
+  background-size: cover;
+  opacity: 0.7; /* Set the opacity of the pseudo-element to 0.7 for 70% opacity */
+}
+
+.title h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.title h2, .title p {
+  z-index: 1;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories h3 {
+  margin: 0px 10px 5px;
+}
+
+.categories h3:hover {
+  cursor: pointer;
+}
+
+.catalog-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.product-grid-item {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 0 calc(33.33% - 20px);
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.product-grid-item a {
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.product-grid-item:hover img {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.product-grid-item:hover:before, .product-grid-item:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: white;
+  max-width: 60vw;
+  margin: 0px auto 25px;
+  border: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.product-page img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.product-page h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto auto auto 10;
+}
+
+.product-page p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-square {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-square img {
+  max-width: 100%;
+  max-height: 410px;
+  object-fit: contain;
+}
+
+.product-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-contact a{
+  text-decoration: none;
+}
