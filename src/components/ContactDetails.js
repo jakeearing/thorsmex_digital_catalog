@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/contactdetails.css';
 
-function ContactDetails() {
+export default function ContactDetails() {
   return (
     <div className="product-contact">
       <h2>Contact to Purchase:</h2>
@@ -10,5 +10,3 @@ function ContactDetails() {
     </div>
   );
 }
-
-export default ContactDetails;

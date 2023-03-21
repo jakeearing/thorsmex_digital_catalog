@@ -14,7 +14,7 @@ function importAll(r) {
 
 const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
-function ProductPage() {
+export default function ProductPage() {
   const { modelnumber } = useParams();
   const product = products.find(p => p.modelnumber == modelnumber);
 
@@ -108,4 +108,3 @@ function ProductPage() {
   );
 }
 
-export default ProductPage;
