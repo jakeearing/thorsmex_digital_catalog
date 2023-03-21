@@ -38,7 +38,7 @@ function ProductPage() {
     setActiveTab(null);
   };
 
-  const { name, price, gtin, category, sub, description } = product;
+  const { name, price, gtin, category, sub, description, details, specifications } = product;
   const productImage = images[`${modelnumber}.jpg`];
 
   return (
@@ -69,20 +69,31 @@ function ProductPage() {
         <button className={activeTab === 'item-specifications' ? 'active' : ''} onClick={() => handleTabClick('item-specifications')}>Item Specifications</button>
         <button className={activeTab === 'more-information' ? 'active' : ''} onClick={() => handleTabClick('more-information')}>More Information</button>
       </div>
+
       {activeTab === 'details' && (
         <div>
           <div className="tab-content">
-            <p>{description}</p>
+            <ul>
+              {details.split('\n').map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
+
       {activeTab === 'item-specifications' && (
         <div>
           <div className="tab-content">
-            <p>Item specifications go here.</p>
+            <ul>
+              {specifications.split('\n').map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
+
       {activeTab === 'more-information' && (
         <div>
           <div className="tab-content">
@@ -90,6 +101,7 @@ function ProductPage() {
           </div>
         </div>
       )}
+
       <Contact />
       <Catalog />
     </div>
