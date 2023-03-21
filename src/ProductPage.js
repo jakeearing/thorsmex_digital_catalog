@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from './components/nav/header';
 import products from './products';
@@ -24,16 +24,30 @@ function ProductPage() {
     return <div>Product not found.</div>;
   }
 
+  const [activeTab, setActiveTab] = useState(null);
+
+  const handleTabClick = (tabName) => {
+    if (activeTab === tabName) {
+      setActiveTab(null);
+    } else {
+      setActiveTab(tabName);
+    }
+  };
+
+  const handleCloseTab = () => {
+    setActiveTab(null);
+  };
+
   const { name, price, gtin, category, sub, description } = product;
   const productImage = images[`${modelnumber}.jpg`];
 
   return (
     <div>
       <Header />
-      <div className="product-page">
-      <div className="product-image">
-            <img src={productImage} alt={name} />
-          </div>
+      <div className="product">
+        <div className="product-image">
+          <img src={productImage} alt={name} />
+        </div>
         <div className="product-details-container">
           <div className="product-name">
             <p>{name}</p>
@@ -50,6 +64,32 @@ function ProductPage() {
           </div>
         </div>
       </div>
+      <div className="item-specs">
+        <button className={activeTab === 'details' ? 'active' : ''} onClick={() => handleTabClick('details')}>Details</button>
+        <button className={activeTab === 'item-specifications' ? 'active' : ''} onClick={() => handleTabClick('item-specifications')}>Item Specifications</button>
+        <button className={activeTab === 'more-information' ? 'active' : ''} onClick={() => handleTabClick('more-information')}>More Information</button>
+      </div>
+      {activeTab === 'details' && (
+        <div>
+          <div className="tab-content">
+            <p>{description}</p>
+          </div>
+        </div>
+      )}
+      {activeTab === 'item-specifications' && (
+        <div>
+          <div className="tab-content">
+            <p>Item specifications go here.</p>
+          </div>
+        </div>
+      )}
+      {activeTab === 'more-information' && (
+        <div>
+          <div className="tab-content">
+            <p>More information goes here.</p>
+          </div>
+        </div>
+      )}
       <Contact />
       <Catalog />
     </div>
