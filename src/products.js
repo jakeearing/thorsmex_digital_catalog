@@ -1,15 +1,24 @@
 import { v4 as uuidv4 } from 'uuid';
 
 const products = [
-  { id: uuidv4(), name: '100 Count Concrete Anchor 1/4" Red', price: 2.99, gtin: 3926909999, modelnumber: 110303100, category: "Hardware", sub: "Anchors"},
-  { id: uuidv4(), name: '100 Count Concrete Anchor 1/4" Brown', price: 2.99, gtin: 3926909999, modelnumber: 110404100, category: "Hardware", sub: "Anchors"},
-  { id: uuidv4(), name: '100 Count Concrete Anchor 3/8" Blue', price: 2.99, gtin: 3926909999, modelnumber: 110505100, category: "Hardware", sub: "Anchors"},
-  { id: uuidv4(), name: '100 Count Drywall Anchor White', price: 2.99, gtin: 3926909999, modelnumber: 130101100, category: "Hardware", sub: "Anchors"},
-  { id: uuidv4(), name: '100 Count Concrete Anchor 7/32" White', price: 2.99, gtin: 3926909999, modelnumber: 110101100, category: "Electrical", sub: "Raceway"},  
-  { id: uuidv4(), name: '1020 Cable Raceway 2 of 43.3in L', price: 19.99, gtin: 3925909900, modelnumber: 510101262, category: "Electrical", sub: "Raceway"},
-  { id: uuidv4(), name: 'Cable Raceway End Cap', price: 9.99, gtin: 3925909900, modelnumber: 519002001, category: "Electrical", sub: "Raceway"},
-  { id: uuidv4(), name: 'Cable Raceway Inside Elbow', price: 9.99, gtin: 3925909900, modelnumber: 512002001, category: "Electrical", sub: "Raceway"},
-  { id: uuidv4(), name: 'Cable Raceway Outside Elbow', price: 9.99, gtin: 3925909900, modelnumber: 521002001, category: "Electrical", sub: "Raceway"},
+  { name: 'THORQUETE Concrete Anchor 1/4" Red TP2X - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 110303100, category: "Hardware", sub: "Anchors"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'THORQUETE Concrete Anchor 5/16" Brown TP2B - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 110404100, category: "Hardware", sub: "Anchors"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'THORQUETE Concrete Anchor 3/8" Blue TP3 - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 110505100, category: "Hardware", sub: "Anchors"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'PERFORATHOR Drywall Anchor White TPD - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 130101100, category: "Hardware", sub: "Anchors"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'THORQUETE Concrete Anchor 7/32" White TP0 - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 110101100, category: "Electrical", sub: "Anchors"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},  
+  { name: 'Cable Clip Nail-in  3/4" - 100 CT', price: 8.99, gtin: 3926909999, modelnumber: 310100100, category: "Electrical", sub: "Cable Clips"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'Cable Clip Nail-in 5/64" - 100 CT', price: 9.99, gtin: 3926909999, modelnumber: 310400100, category: "Electrical", sub: "Cable Clips"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'Cable Clip with Nail Clear 1 3/16" - 100 CT', price: 9.99, gtin: 3926909999, modelnumber: 321004000, category: "Electrical", sub: "Cable Clips"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+  { name: 'Cable Clip Nail-in 3/64" - 100 CT', price: 9.99, gtin: 3926909999, modelnumber: 310200100, category: "Electrical", sub: "Cable Clips"
+  , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
 ];
 
 export default products;

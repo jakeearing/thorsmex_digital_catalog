@@ -1,0 +1,33 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    color: white;
+    height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.40)
+    ), url("./charlotte.jpg");
+    background-position-y: -300px;
+    background-size: cover;
+  }
+  
+  .title h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .title h2, .title p {
+    z-index: 1;
+  }
+
+  .title img {
+    width: 400px;
+    margin: 0 auto;
+  }
