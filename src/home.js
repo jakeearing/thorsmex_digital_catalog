@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import Catalog from './catalog';
-import Header from './components/nav/header';
-import './catalog.css';
+import React from 'react';
+import Catalog from './components/Catalog';
+import Header from './components/nav/Header';
 
 export default function home() {
   return (

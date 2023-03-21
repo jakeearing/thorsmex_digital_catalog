@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from './components/nav/header';
-import products from './products';
-import Catalog from './catalog';
-import Contact from './contactdetails';
-import './productpage.css';
+import Header from './nav/Header';
+import products from './Products';
+import Catalog from './Catalog';
+import Contact from './ContactDetails';
+import '../style/productpage.css';
 
 function importAll(r) {
   let images = {};
@@ -12,7 +12,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/product-images', false, /\.(png|jpe?g|svg)$/));
 
 function ProductPage() {
   const { modelnumber } = useParams();

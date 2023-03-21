@@ -9,25 +9,26 @@
     height: 20vh;
     width: 100%;
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.40),
-      rgba(0, 0, 0, 0.40)
-    ), url("./charlotte.jpg");
+        rgba(0, 0, 0, 0.40),
+        rgba(0, 0, 0, 0.40)), 
+        url("../../public/charlotte.jpg");
     background-position-y: -250px;
     background-size: cover;
-  }
-  
-  .title h1 {
+}
+
+.title h1 {
     font-size: 4rem;
     margin-bottom: 0;
     z-index: 1;
     text-align: center;
-  }
-  
-  .title h2, .title p {
-    z-index: 1;
-  }
+}
 
-  .title img {
+.title h2,
+.title p {
+    z-index: 1;
+}
+
+.title img {
     width: 400px;
     margin: 0 auto;
-  }
+}

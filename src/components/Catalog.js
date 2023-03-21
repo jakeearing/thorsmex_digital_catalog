@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Product from './Product';
-import products from './products';
-import './catalog.css';
+import products from './Products';
+import '../style/catalog.css';
 
 export default function Catalog() {
   const [category, setCategory] = useState('all');

@@ -7,7 +7,7 @@ function importAll(r) {
     return images;
   }
   
-const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/product-images', false, /\.(png|jpe?g|svg)$/));
 
 
 function Product(props) {
