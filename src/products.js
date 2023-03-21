@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 const products = [
   { name: 'THORQUETE Concrete Anchor 1/4" Red TP2X - 100 CT', price: 2.99, gtin: 3926909999, modelnumber: 110303100, category: "Hardware", sub: "Anchors"
   , description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
