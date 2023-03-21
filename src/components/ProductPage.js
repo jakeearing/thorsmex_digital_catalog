@@ -12,7 +12,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../public/product-images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
 function ProductPage() {
   const { modelnumber } = useParams();
