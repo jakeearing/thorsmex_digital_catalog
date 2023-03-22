@@ -27,19 +27,26 @@
   font-weight: bold;
   margin-bottom: 10px;
   }
+
+  .details-contact {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
   
   .product-details {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
   margin: 10px 0;
+  float: left;
   }
   
   .product-details p {
   font-size: 16px;
   margin: 5px 0;
   }
-  
+
   .product-description {
   margin-top: 20px;
   }
@@ -48,6 +55,10 @@
   font-size: 18px;
   line-height: 1.5;
   margin: 10px 0;
+  }
+
+  .contact-details {
+    float: right;
   }
 
   .item-specs {
@@ -83,6 +94,14 @@
     max-width: 700px;
     margin: 10px 0;
   }
+
+  a {
+  color: black;
+}
+
+.catalog-margin {
+  margin-top: 80px;
+}
   
 
   

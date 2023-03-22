@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from './nav/Header';
 import products from './ProductModel';
 import Catalog from './Catalog';
 import Contact from './ContactDetails';
+import Footer from './nav/Footer';
 import '../style/product.css';
 
 function importAll(r) {
@@ -15,6 +16,14 @@ function importAll(r) {
 const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
 export default function ProductPage() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   const { modelnumber } = useParams();
   const product = products.find(p => p.modelnumber == modelnumber);
 
@@ -52,12 +61,17 @@ export default function ProductPage() {
           <div className="product-name">
             <p>{name}</p>
           </div>
+          <div className="details-contact"> 
           <div className="product-details">
             <p>Price: ${price}</p>
             <p>GTIN: {gtin}</p>
             <p>Model Number: {format_model}</p>
             <p>Category: {category}</p>
             <p>Subcategory: {sub}</p>
+          </div>
+          <div className="contact-details">
+          <Contact />
+          </div>
           </div>
           <div className="product-description">
             <p>{description}</p>
@@ -101,9 +115,10 @@ export default function ProductPage() {
           </div>
         </div>
       )}
-
-      <Contact />
+      <div className="catalog-margin">
       <Catalog />
+      </div>
+      <Footer />
     </div>
   );
 }

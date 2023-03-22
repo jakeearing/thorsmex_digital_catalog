@@ -8,15 +8,19 @@
     color: white;
     height: 20vh;
     width: 100%;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.40),
-        rgba(0, 0, 0, 0.40)), 
-        url("../../public/images/header.jpg");
-    background-position-y: -250px;
-    background-size: cover;
+    background-image: url("../../public/images/header.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -145px;
+}
+
+.cimpo-photo {
+    height: 100px;
 }
 
 .title img {
     width: 400px;
     margin: 0 auto;
+
 }
