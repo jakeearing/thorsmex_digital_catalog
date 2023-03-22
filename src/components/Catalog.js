@@ -15,9 +15,9 @@ export default function Catalog() {
   return (
     <div>
       <div className="categories">
-        <h3 onClick={() => filterProducts('all')}>All</h3>
         <h3 onClick={() => filterProducts('Electrical')}>Electrical</h3>
         <h3 onClick={() => filterProducts('Hardware')}>Hardware</h3>
+        <h3 onClick={() => filterProducts('all')}>All</h3>
       </div>
       <div className="product-grid">
         {filteredProducts.map(product => (
