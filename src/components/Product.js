@@ -63,11 +63,11 @@ export default function ProductPage() {
           </div>
           <div className="details-contact"> 
           <div className="product-details">
-            <p>Price: ${price}</p>
-            <p>GTIN: {gtin}</p>
-            <p>Model Number: {format_model}</p>
-            <p>Category: {category}</p>
-            <p>Subcategory: {sub}</p>
+            <p><b>Price:</b> ${price}</p>
+            <p><b>GTIN:</b> {gtin}</p>
+            <p><b>Model Number:</b> {format_model}</p>
+            <p><b>Category:</b> {category}</p>
+            <p><b>Subcategory:</b> {sub}</p>
           </div>
           <div className="contact-details">
           <Contact />

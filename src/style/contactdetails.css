@@ -3,11 +3,6 @@
   display: inline-block;
 }
 
-.product-contact p {
-  font-size: 20px;
-  margin: 5px;
-}
-
 .product-contact a {
   display: block;
   font-size: 16px;
@@ -15,6 +10,7 @@
   color: #333;
   text-decoration: none;
   transition: color 0.2s;
+  font-weight: bold;
 }
 
 .product-contact a:hover {

@@ -6,102 +6,98 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 30px;
-  }
-  
-  .product-image {
-  flex-basis: 40%;
-  }
-  
-  .product-image img {
+  border: 1px solid #ccc
+}
+
+.product-image img {
   width: 100%;
   height: auto;
   max-width: 400px;
-  }
-  
-  .product-details-container {
-  flex-basis: 55%;
-  }
-  
-  .product-name {
+  margin-right: 0px;
+}
+
+.product-details-container {
+  flex-basis: 60%;
+  margin-right: 10px;
+}
+
+.product-name {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  }
+}
 
-  .details-contact {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-  
-  .product-details {
+.details-contact {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-details {
   margin: 10px 0;
   float: left;
-  }
-  
-  .product-details p {
+}
+
+.product-details p {
   font-size: 16px;
   margin: 5px 0;
-  }
+}
 
-  .product-description {
+.product-description {
   margin-top: 20px;
-  }
-  
-  .product-description p {
+}
+
+.product-description p {
   font-size: 18px;
   line-height: 1.5;
   margin: 10px 0;
-  }
+}
 
-  .contact-details {
-    float: right;
-  }
+.contact-details {
+  float: right;
+}
 
-  .item-specs {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .item-specs button {
-    font-size: 16px;
-    padding: 12px 20px;
-    margin: 0 10px;
-    border: none;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-    border-bottom: 3px solid transparent;
-  }
-  
-  .item-specs button.active {
-    border-bottom: 3px solid #333;
-  }
+.item-specs {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 
-  .tab-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    margin-top: 20px;
-  }
-  
-  .tab-content p {
-    max-width: 700px;
-    margin: 10px 0;
-  }
+.item-specs button {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
 
-  a {
+.item-specs button.active {
+  border-bottom: 3px solid #333;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.tab-content p {
+  max-width: 700px;
+  margin: 10px 0;
+}
+
+a {
   color: black;
 }
 
 .catalog-margin {
   margin-top: 80px;
 }
-  
-
-  
