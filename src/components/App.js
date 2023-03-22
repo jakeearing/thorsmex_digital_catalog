@@ -1,7 +1,6 @@
-import './style/app.css';
 import React from 'react';
 import Home from './Home';
-import ProductPage from './components/ProductPage';
+import Product from './Product';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Home/> }/>
-          <Route path="/ProductPage/:modelnumber" element={<ProductPage />} />
+          <Route path="/products/:modelnumber" element={<Product />} />
       </Routes>
     </BrowserRouter>
   )

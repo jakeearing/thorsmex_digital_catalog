@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Product from './Product';
-import products from './Products';
+import Products from './Products';
+import ProductModel from './ProductModel';
 import '../style/catalog.css';
 
 export default function Catalog() {
@@ -10,7 +10,7 @@ export default function Catalog() {
     setCategory(category);
   }
 
-  const filteredProducts = category === 'all' ? products : products.filter(product => product.category === category);
+  const filteredProducts = category === 'all' ? ProductModel : ProductModel.filter(product => product.category === category);
 
   return (
     <div>
@@ -22,7 +22,7 @@ export default function Catalog() {
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-grid-item">
-            <Product product={product} />
+            <Products product={product} />
           </div>
         ))}
       </div>

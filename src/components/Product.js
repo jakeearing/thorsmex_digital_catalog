@@ -1,5 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Header from './nav/Header';
+import products from './ProductModel';
+import Catalog from './Catalog';
+import Contact from './ContactDetails';
+import '../style/product.css';
 
 function importAll(r) {
   let images = {};
@@ -9,16 +14,97 @@ function importAll(r) {
 
 const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
-export default function Product(props) {
-  const { name, price, modelnumber, category, sub } = props.product;
+export default function ProductPage() {
+  const { modelnumber } = useParams();
+  const product = products.find(p => p.modelnumber == modelnumber);
+
+  const format_model = modelnumber.slice(0, 4) + '-' + modelnumber.slice(4);
+
+  if (!product) {
+    return <div>Product not found.</div>;
+  }
+
+  const [activeTab, setActiveTab] = useState(null);
+
+  const handleTabClick = (tabName) => {
+    if (activeTab === tabName) {
+      setActiveTab(null);
+    } else {
+      setActiveTab(tabName);
+    }
+  };
+
+  const handleCloseTab = () => {
+    setActiveTab(null);
+  };
+
+  const { name, price, gtin, category, sub, description, details, specifications } = product;
   const productImage = images[`${modelnumber}.jpg`];
+
   return (
-    <Link to={{ pathname: `/ProductPage/${modelnumber}`, state: { modelnumber } }}>
-      <div className="product-square">
-        <img src={productImage} alt={name} />
-        <h2>{name}</h2>
-        <p>Price: ${price}</p>
+    <div>
+      <Header />
+      <div className="product">
+        <div className="product-image">
+          <img src={productImage} alt={name} />
+        </div>
+        <div className="product-details-container">
+          <div className="product-name">
+            <p>{name}</p>
+          </div>
+          <div className="product-details">
+            <p>Price: ${price}</p>
+            <p>GTIN: {gtin}</p>
+            <p>Model Number: {format_model}</p>
+            <p>Category: {category}</p>
+            <p>Subcategory: {sub}</p>
+          </div>
+          <div className="product-description">
+            <p>{description}</p>
+          </div>
+        </div>
       </div>
-    </Link>
+      <div className="item-specs">
+        <button className={activeTab === 'details' ? 'active' : ''} onClick={() => handleTabClick('details')}>Details</button>
+        <button className={activeTab === 'item-specifications' ? 'active' : ''} onClick={() => handleTabClick('item-specifications')}>Item Specifications</button>
+        <button className={activeTab === 'more-information' ? 'active' : ''} onClick={() => handleTabClick('more-information')}>More Information</button>
+      </div>
+
+      {activeTab === 'details' && (
+        <div>
+          <div className="tab-content">
+            <ul>
+              {details.split('\n').map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'item-specifications' && (
+        <div>
+          <div className="tab-content">
+            <ul>
+              {specifications.split('\n').map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'more-information' && (
+        <div>
+          <div className="tab-content">
+            <p>More information goes here.</p>
+          </div>
+        </div>
+      )}
+
+      <Contact />
+      <Catalog />
+    </div>
   );
 }
+
