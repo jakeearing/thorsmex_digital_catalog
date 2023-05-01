@@ -39,7 +39,7 @@ def import_data():
     Products.objects().delete()
 
     # Insert data into MongoDB
-    for index, row in df.iterrows():
+    for row in df.iterrows():
         product = Products(
             name=row['name'],
             price=row['price'],
@@ -68,6 +68,12 @@ def import_data():
         product.save()
 
     return 'Data imported successfully'
+
+# This route will convert the database to JSON, to be accessed by React.
+@app.route('/api/products')
+def get_products():
+    products = Products.objects().to_json()
+    return jsonify(products)
 
 if __name__ == '__main__':
     app.run()
