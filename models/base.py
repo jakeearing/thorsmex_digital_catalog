@@ -6,10 +6,9 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 
-# Connect to MongoDB database
 connect('thorsmex_catalog', host='mongodb://localhost:27017/')
 
-# Product model created
+# MongoDB products model created
 class Products(Document):
     name = StringField(required=True)
     price = IntField(required=True)
@@ -31,15 +30,12 @@ class Products(Document):
     stock_TX = IntField()
     stock_MX = IntField()
 
-# Import data from CSV file
 @app.route('/import')
 def import_data():
-    # CSV file path
+    # Set CSV file path and read csv file
     csv_file_path = 'products.csv'
-
-    # Read CSV file using pandas
     df = pd.read_csv(csv_file_path)
-    
+    # Current products will be deleted
     Products.objects().delete()
 
     # Insert data into MongoDB
