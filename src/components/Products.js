@@ -7,7 +7,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/images/product-images-demo', false, /\.(png|jpe?g|svg)$/));
 
 export default function Products(props) {
   const { name, price, modelnumber, category, sub } = props.product;

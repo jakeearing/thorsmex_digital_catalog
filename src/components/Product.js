@@ -13,7 +13,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/images/product-images-demo', false, /\.(png|jpe?g|svg)$/));
 
 export default function ProductPage() {
   const scrollToTop = () => {
