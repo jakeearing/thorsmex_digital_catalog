@@ -39,6 +39,8 @@ def import_data():
 
     # Read CSV file using pandas
     df = pd.read_csv(csv_file_path)
+    
+    Products.objects().delete()
 
     # Insert data into MongoDB
     for index, row in df.iterrows():
