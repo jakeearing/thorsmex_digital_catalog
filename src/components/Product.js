@@ -41,7 +41,11 @@ export default function ProductPage() {
 
 
   if (!product) {
-    return <div>Product not found.</div>;
+    let timeoutId = setTimeout(() => {
+      return <div>Product not found.</div>;
+    }, 1000);
+  
+    return () => clearTimeout(timeoutId);
   }
 
   const handleTabClick = (tabName) => {
