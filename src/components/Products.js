@@ -11,7 +11,9 @@ const images = importAll(require.context('../../public/images/product-images', f
 
 export default function Products(props) {
   const { name, price, modelNumber, category, subCategory } = props.product;
-  const productImage = images[`${modelNumber}.jpg`] || images['notfound.jpg'];
+
+  const productImage = images[Object.keys(images).find(key => key.startsWith(modelNumber))] || images['notfound.jpg'];
+
   return (
     <Link to={{ pathname: `/products/${modelNumber}`, state: { modelNumber } }}>
       <div className="product-square">

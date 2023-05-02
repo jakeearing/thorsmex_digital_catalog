@@ -2,19 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Products from './Products';
 import '../style/catalog.css';
 
-function Catalog() {
+function Catalog({ products }) {
   const [category, setCategory] = useState('all');
-  const [products, setProducts] = useState([]);
-
-  async function fetchProducts() {
-    const response = await fetch("http://localhost:5000/api/products");
-    const data = await response.json();
-    setProducts(data);
-  }
-  
-  useEffect(() => {
-    fetchProducts();
-  }, []);
 
   const filterProducts = (category) => {
     setCategory(category);

@@ -15,7 +15,7 @@ function importAll(r) {
 
 const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
-export default function ProductPage() {
+export default function Product({ products }) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -61,7 +61,7 @@ export default function ProductPage() {
   };
 
   const { name, price, gtin, pieces, category, sub_category, description, details, specs, height, width, weight, stock } = product;
-  const productImage = images[`${modelnumber}.jpg`] || images['notfound.jpg'];
+  const productImage = images[Object.keys(images).find(key => key.startsWith(modelnumber))] || images['notfound.jpg'];
 
   return (
     <div>
@@ -134,7 +134,7 @@ export default function ProductPage() {
         </div>
       )}
       <div className="catalog-margin">
-        <Catalog />
+        <Catalog products={products} />
       </div>
       <Footer />
     </div>
