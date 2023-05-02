@@ -4,18 +4,11 @@ import axios from 'axios';
 import Header from './nav/Header';
 import Catalog from './Catalog';
 import Contact from './ContactDetails';
+import Error from './Error';
 import Footer from './nav/Footer';
-import '../style/product.css';
+import '../assets/styles/product.css';
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
-
-export default function Product({ products }) {
+export default function Product({ products, images }) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -39,15 +32,6 @@ export default function Product({ products }) {
       });
   }, [modelnumber]);
 
-
-  if (!product) {
-    let timeoutId = setTimeout(() => {
-      return <div>Product not found.</div>;
-    }, 1000);
-  
-    return () => clearTimeout(timeoutId);
-  }
-
   const handleTabClick = (tabName) => {
     if (activeTab === tabName) {
       setActiveTab(null);
@@ -60,7 +44,8 @@ export default function Product({ products }) {
     setActiveTab(null);
   };
 
-  const { name, price, gtin, pieces, category, sub_category, description, details, specs, height, width, weight, stock } = product;
+  const { name, price, gtin, pieces, category, sub_category, description, details, specs, height, width, weight, stock } = product || {};
+  
   const productImage = images[Object.keys(images).find(key => key.startsWith(modelnumber))] || images['notfound.jpg'];
 
   return (
@@ -134,7 +119,7 @@ export default function Product({ products }) {
         </div>
       )}
       <div className="catalog-margin">
-        <Catalog products={products} />
+      <Catalog products={products} images={images} />
       </div>
       <Footer />
     </div>

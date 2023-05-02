@@ -1,11 +1,12 @@
-import '../../style/footer.css';
+import '../../assets/styles/footer.css';
 import { Link } from 'react-router-dom';
+import cimpoLogo from '../../assets/images/logos/cimpo-logo.jpg';
 
 export default function Footer() {
     return (
         <div className="footer-container">
             <Link to="/">
-                <img className="footer-photo" src={process.env.PUBLIC_URL + '/images/logos/cimpo-logo.jpg'} alt="Charlotte Imports logo" />
+                <img className="footer-photo" src={cimpoLogo} alt="Charlotte Imports logo" />
             </Link>
             <div className="footer-nav">
                 <nav>

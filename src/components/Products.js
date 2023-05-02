@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
-
-export default function Products(props) {
-  const { name, price, modelNumber, category, subCategory } = props.product;
+export default function Products({ product, images }) {
+  const { name, price, modelNumber, category, subCategory } = product;
 
   const productImage = images[Object.keys(images).find(key => key.startsWith(modelNumber))] || images['notfound.jpg'];
 

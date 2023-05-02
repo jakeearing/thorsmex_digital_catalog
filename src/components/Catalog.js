@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Products from './Products';
-import '../style/catalog.css';
+import '../assets/styles/catalog.css';
 
-function Catalog({ products }) {
+function Catalog({ products, images }) {
   const [category, setCategory] = useState('all');
 
   const filterProducts = (category) => {
@@ -21,7 +21,7 @@ function Catalog({ products }) {
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-grid-item">
-            <Products product={product} />
+            <Products product={product} images={images} />
           </div>
         ))}
       </div>

@@ -3,6 +3,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Product from './Product';
 
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../assets/images/product-images', false, /\.(png|jpe?g|svg)$/));
+
 function App() {
   const [products, setProducts] = useState([]);
 
@@ -18,8 +26,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home products={products} />} />
-        <Route path="/products/:modelnumber" element={<Product products={products} />} />
+        <Route path="/" element={<Home products={products} images={images} />} />
+        <Route path="/products/:modelnumber" element={<Product products={products} images={images} />} />
       </Routes>
     </BrowserRouter>
   );
