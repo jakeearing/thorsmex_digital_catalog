@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Products from './Products';
-import ProductModel from './ProductModel';
 import '../style/catalog.css';
 
-export default function Catalog() {
+function Catalog() {
   const [category, setCategory] = useState('all');
+  const [products, setProducts] = useState([]);
+
+  async function fetchProducts() {
+    const response = await fetch("http://localhost:5000/api/products");
+    const data = await response.json();
+    setProducts(data);
+  }
+  
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   const filterProducts = (category) => {
     setCategory(category);
   }
 
-  const filteredProducts = category === 'all' ? ProductModel : ProductModel.filter(product => product.category === category);
+  const filteredProducts = category === 'all' ? products : products.filter(product => product.category === category);
 
   return (
     <div>
@@ -29,3 +39,5 @@ export default function Catalog() {
     </div>
   );
 }
+
+export default Catalog;

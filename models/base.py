@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
 from mongoengine import Document, StringField, IntField, ListField, DecimalField, connect
 import pandas as pd
@@ -11,7 +11,7 @@ connect('thorsmex_catalog', host='mongodb://localhost:27017/')
 # MongoDB products model created
 class Products(Document):
     name = StringField(required=True)
-    price = IntField(required=True)
+    price = DecimalField(precision=2,required=True)
     volumeDiscount = DecimalField(precision=2)
     stock = ListField(IntField())
     pieces = IntField()
@@ -39,7 +39,7 @@ def import_data():
     Products.objects().delete()
 
     # Insert data into MongoDB
-    for row in df.iterrows():
+    for index, row in df.iterrows():
         product = Products(
             name=row['name'],
             price=row['price'],
@@ -62,10 +62,6 @@ def import_data():
             stock_MX=row['stock_MX']
         )
         product.save()
-        
-        product = Products.objects().with_id(product.id)
-        product.id = None
-        product.save()
 
     return 'Data imported successfully'
 
@@ -73,7 +69,14 @@ def import_data():
 @app.route('/api/products')
 def get_products():
     products = Products.objects().to_json()
-    return jsonify(products)
+    return products
+
+@app.route('/api/products/<model_number>')
+def get_product(model_number):
+    product = Products.objects(modelNumber=model_number).first()
+    if not product:
+        return {'error': 'Product not found'}
+    return product.to_json()
 
 if __name__ == '__main__':
     app.run()

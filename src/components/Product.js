@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import Header from './nav/Header';
-import products from './ProductModel';
 import Catalog from './Catalog';
 import Contact from './ContactDetails';
 import Footer from './nav/Footer';
@@ -13,7 +13,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../public/images/product-images-demo', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
 export default function ProductPage() {
   const scrollToTop = () => {
@@ -25,15 +25,24 @@ export default function ProductPage() {
   }, []);
 
   const { modelnumber } = useParams();
-  const product = products.find(p => p.modelnumber == modelnumber);
+  const [product, setProduct] = useState(null);
+  const [activeTab, setActiveTab] = useState(null);
 
-  const format_model = modelnumber.slice(0, 4) + '-' + modelnumber.slice(4);
+  useEffect(() => {
+    scrollToTop();
+    axios.get(`http://localhost:5000/api/products/${modelnumber}`)
+      .then(res => {
+        setProduct(res.data);
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }, [modelnumber]);
+
 
   if (!product) {
     return <div>Product not found.</div>;
   }
-
-  const [activeTab, setActiveTab] = useState(null);
 
   const handleTabClick = (tabName) => {
     if (activeTab === tabName) {
@@ -47,8 +56,8 @@ export default function ProductPage() {
     setActiveTab(null);
   };
 
-  const { name, price, gtin, category, sub, description, details, specifications } = product;
-  const productImage = images[`${modelnumber}.jpg`];
+  const { name, price, gtin, pieces, category, sub_category, description, details, specs, height, width, weight, stock } = product;
+  const productImage = images[`${modelnumber}.jpg`] || images['notfound.jpg'];
 
   return (
     <div>
@@ -61,17 +70,17 @@ export default function ProductPage() {
           <div className="product-name">
             <p>{name}</p>
           </div>
-          <div className="details-contact"> 
-          <div className="product-details">
-            <p><b>Price:</b> ${price}</p>
-            <p><b>GTIN:</b> {gtin}</p>
-            <p><b>Model Number:</b> {format_model}</p>
-            <p><b>Category:</b> {category}</p>
-            <p><b>Subcategory:</b> {sub}</p>
-          </div>
-          <div className="contact-details">
-          <Contact />
-          </div>
+          <div className="details-contact">
+            <div className="product-details">
+              <p><b>Price:</b> ${price}</p>
+              <p><b>Pieces:</b> {pieces}</p>
+              <p><b>Model Number:</b> {modelnumber}</p>
+              <p><b>Category:</b> {category}</p>
+              <p><b>Subcategory:</b> {sub_category}</p>
+            </div>
+            <div className="contact-details">
+              <Contact />
+            </div>
           </div>
           <div className="product-description">
             <p>{description}</p>
@@ -88,7 +97,7 @@ export default function ProductPage() {
         <div>
           <div className="tab-content">
             <ul>
-              {details.split('\n').map((item, index) => (
+              {details.split(';').map((item, index) => (
                 <li key={index}>{item.trim()}</li>
               ))}
             </ul>
@@ -100,7 +109,7 @@ export default function ProductPage() {
         <div>
           <div className="tab-content">
             <ul>
-              {specifications.split('\n').map((item, index) => (
+              {specs.split(';').map((item, index) => (
                 <li key={index}>{item.trim()}</li>
               ))}
             </ul>
@@ -111,12 +120,17 @@ export default function ProductPage() {
       {activeTab === 'more-information' && (
         <div>
           <div className="tab-content">
-            <p>More information goes here.</p>
+            <ul>
+              <li>Height: {height} inches</li>
+              <li>Width: {width} inches</li>
+              <li>Weight: {weight} pounds</li>
+              <li>Barcode Number: {gtin}</li>
+            </ul>
           </div>
         </div>
       )}
       <div className="catalog-margin">
-      <Catalog />
+        <Catalog />
       </div>
       <Footer />
     </div>

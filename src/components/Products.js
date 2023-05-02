@@ -7,13 +7,13 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../../public/images/product-images-demo', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/images/product-images', false, /\.(png|jpe?g|svg)$/));
 
 export default function Products(props) {
-  const { name, price, modelnumber, category, sub } = props.product;
-  const productImage = images[`${modelnumber}.jpg`];
+  const { name, price, modelNumber, category, subCategory } = props.product;
+  const productImage = images[`${modelNumber}.jpg`] || images['notfound.jpg'];
   return (
-    <Link to={{ pathname: `/products/${modelnumber}`, state: { modelnumber } }}>
+    <Link to={{ pathname: `/products/${modelNumber}`, state: { modelNumber } }}>
       <div className="product-square">
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
