@@ -12,6 +12,13 @@
   cursor: pointer;
 }
 
+.sort-options {
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .catalog-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -23,7 +30,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -67,6 +74,11 @@
   padding: 10px;
   text-align: center;
   height: 450px;
+}
+
+.product-square h2{
+  height: 60px;
+  overflow: hidden;
 }
 
 .product-square img {

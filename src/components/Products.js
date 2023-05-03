@@ -11,7 +11,9 @@ export default function Products({ product, images }) {
       <div className="product-square">
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
+        <h5>{modelNumber}</h5>
         <p>Price: ${price}</p>
+
       </div>
     </Link>
   );
