@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Header from './nav/Header';
-import Catalog from './Catalog';
+import SimilarProducts from './SimilarProducts';
 import Contact from './ContactDetails';
 import Error from './Error';
 import Footer from './nav/Footer';
@@ -119,7 +119,8 @@ export default function Product({ products, images }) {
         </div>
       )}
       <div className="catalog-margin">
-      <Catalog products={products} images={images} />
+      {product && <SimilarProducts products={products} images={images} currentProduct={product} />}
+
       </div>
       <Footer />
     </div>
