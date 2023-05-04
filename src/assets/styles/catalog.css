@@ -1,7 +1,7 @@
 .categories {
   position: absolute;
-  top: 270px;
-  left: 50px;
+  top: 330px;
+  left: 100px;
   height: 360;
   width: 150px;
   background-color: #f1f1f1;
@@ -23,7 +23,7 @@
   font-size: 12px;
 }
 
-.categories h3:hover, p:hover {
+.categories h3:hover, .categories p:hover {
   cursor: pointer;
   color: #007bff;
 }
@@ -118,5 +118,11 @@
 .similar {
   display: flex;
   justify-content: center;
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
