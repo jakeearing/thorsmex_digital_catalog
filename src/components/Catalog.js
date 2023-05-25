@@ -7,7 +7,6 @@ function Catalog({ products, images }) {
   const [subCategory, setSubCategory] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOption, setSortOption] = useState('modelNumber');
-  const [showButton, setShowButton] = useState(false);
   const sortOptions = [
     { value: 'name', label: 'Name' },
     { value: 'modelNumber', label: 'Model Number' },

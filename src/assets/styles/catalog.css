@@ -47,7 +47,7 @@
 }
 
 .catalog-container {
-  margin-left: 170px; /* adjust this value as needed */
+  margin-left: 170px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 20px;

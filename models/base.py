@@ -30,7 +30,7 @@ class Products(Document):
     stock_TX = IntField()
     stock_MX = IntField()
 
-@app.route('/import')
+@app.route('/api/import')
 def import_data():
     # Set CSV file path and read csv file
     csv_file_path = 'products.csv'
