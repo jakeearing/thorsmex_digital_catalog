@@ -68,6 +68,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home products={products} images={images} />} />
           <Route path="/products/:modelnumber" element={<Product products={products} images={images} />} />
+          <Route path="/about-us" element={<Home products={products} images={images} />} />
+          <Route path="/contact-us" element={<Home products={products} images={images} />} />
+          <Route path="/terms-of-use" element={<Home products={products} images={images} />} />
+          <Route path="/privacy-policy" element={<Home products={products} images={images} />} />
         </Routes>
         <ScrollToTopButton />
       </ScrollToTop>
