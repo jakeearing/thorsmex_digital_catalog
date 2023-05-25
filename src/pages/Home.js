@@ -4,14 +4,6 @@ import Header from '../components/nav/Header';
 import Footer from '../components/nav/Footer';
 
 export default function Home({ products, images }) {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
-
   return (
     <div>
       <Header />

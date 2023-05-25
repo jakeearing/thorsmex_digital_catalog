@@ -9,20 +9,11 @@ import Footer from '../components/nav/Footer';
 import '../assets/styles/product.css';
 
 export default function Product({ products, images }) {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
-
   const { modelnumber } = useParams();
   const [product, setProduct] = useState(null);
   const [activeTab, setActiveTab] = useState(null);
 
   useEffect(() => {
-    scrollToTop();
     axios.get(`http://localhost:5000/api/products/${modelnumber}`)
       .then(res => {
         setProduct(res.data);
