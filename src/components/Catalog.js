@@ -12,6 +12,15 @@ function Catalog({ products, images }) {
     { value: 'modelNumber', label: 'Model Number' },
     { value: 'price', label: 'Price' },
   ];
+  const[itemsPerPage, setItemsPerPage] = useState(() => {
+    const savedItemsPerPage = localStorage.getItem('itemsPerPage');
+    return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
+  });
+  const itemsPerPageOptions = [10, 25, 50, 100, "All"];
+
+  useEffect(() => {
+    localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
+  }, [itemsPerPage]);
 
   const filterProducts = (category, subCategory) => {
     setCategory(category);
@@ -68,6 +77,13 @@ function Catalog({ products, images }) {
     }
   });
 
+  const handleChangeItemsPerPage = (event) => {
+    setItemsPerPage(event.target.value);
+  };
+
+  const startIndex = 0;
+  const endIndex = itemsPerPage === "All" ? sortedProducts.length : startIndex + itemsPerPage;
+
   return (
     <div>
       <div className="categories">
@@ -88,6 +104,18 @@ function Catalog({ products, images }) {
         )}
       </div>
       <div className="sort-options">
+        <div className="items-per-page">
+          <label htmlFor="items-per-page-select">Items per Page:</label>
+          <select
+            id="items-per-page-select"
+            value={itemsPerPage}
+            onChange={handleChangeItemsPerPage}
+          >
+            {itemsPerPageOptions.map(option => (
+              <option key={option} value={option}>{option}</option>
+            ))}
+          </select>
+        </div>
         <label htmlFor="sort-select">Sort by:</label>
         <select id="sort-select" value={sortOption} onChange={handleSortChange}>
           {sortOptions.map(option => (
@@ -100,7 +128,7 @@ function Catalog({ products, images }) {
         </form>
       </div>
       <div className="product-grid">
-        {sortedProducts.map(product => (
+        {sortedProducts.slice(startIndex, endIndex).map(product => (
           <div key={product.modelNumber} className="product-grid-item">
             <Products product={product} images={images} />
           </div>
