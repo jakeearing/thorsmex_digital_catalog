@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
+import TermsOfUse from '../pages/TermsOfUse';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
 import Product from '../pages/ProductPage';
 import ScrollToTop from '../components/ScrollToTop';
 
@@ -68,10 +72,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home products={products} images={images} />} />
           <Route path="/products/:modelnumber" element={<Product products={products} images={images} />} />
-          <Route path="/about-us" element={<Home products={products} images={images} />} />
-          <Route path="/contact-us" element={<Home products={products} images={images} />} />
-          <Route path="/terms-of-use" element={<Home products={products} images={images} />} />
-          <Route path="/privacy-policy" element={<Home products={products} images={images} />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <ScrollToTopButton />
       </ScrollToTop>
