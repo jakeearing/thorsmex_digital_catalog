@@ -16,7 +16,7 @@ function SimilarProducts({ products, images, currentProduct }) {
       <h2 className="similar">Similar Products</h2>
       <div className="product-grid">
         {filteredProducts.map(product => (
-          <div key={product.id} className="product-grid-item">
+          <div key={product.modelNumber} className="product-grid-item">
             <Products product={product} images={images} />
           </div>
         ))}
@@ -24,6 +24,5 @@ function SimilarProducts({ products, images, currentProduct }) {
     </div>
   );
 }
-
 
 export default SimilarProducts;

@@ -101,7 +101,7 @@ function Catalog({ products, images }) {
       </div>
       <div className="product-grid">
         {sortedProducts.map(product => (
-          <div key={product.id} className="product-grid-item">
+          <div key={product.modelNumber} className="product-grid-item">
             <Products product={product} images={images} />
           </div>
         ))}
