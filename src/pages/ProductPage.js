@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Header from './nav/Header';
-import SimilarProducts from './SimilarProducts';
-import Contact from './ContactDetails';
-import Error from './Error';
-import Footer from './nav/Footer';
+import Header from '../components/nav/Header';
+import SimilarProducts from '../components/SimilarProducts';
+import Contact from '../components/ContactDetails';
+import Error from '../components/Error';
+import Footer from '../components/nav/Footer';
 import '../assets/styles/product.css';
 
 export default function Product({ products, images }) {

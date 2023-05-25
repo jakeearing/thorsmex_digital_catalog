@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top-button.show {
+  visibility: visible;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}

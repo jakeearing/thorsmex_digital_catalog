@@ -1,6 +1,6 @@
 {
-  "name": "thorsmex-cimpo-digital-catalog",
-  "version": "0.2.0",
+  "name": "thorsmex_cimpo_digital_catalog",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

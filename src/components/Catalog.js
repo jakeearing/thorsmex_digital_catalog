@@ -69,30 +69,6 @@ function Catalog({ products, images }) {
     }
   });
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > 0) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <div>
       <div className="categories">
@@ -131,13 +107,6 @@ function Catalog({ products, images }) {
           </div>
         ))}
       </div>
-      <button
-        className="scroll-to-top-button"
-        onClick={handleScrollToTop}
-        style={{ display: showButton ? 'block' : 'none' }}
-      >
-        Scroll to top
-      </button>
     </div>
   );
 }
