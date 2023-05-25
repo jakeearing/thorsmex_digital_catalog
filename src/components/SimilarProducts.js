@@ -1,5 +1,5 @@
 import React from 'react';
-import Products from './Products';
+import Products from './ProductSquare';
 import '../assets/styles/catalog.css';
 
 function SimilarProducts({ products, images, currentProduct }) {

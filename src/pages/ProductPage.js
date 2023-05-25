@@ -41,7 +41,6 @@ export default function Product({ products, images }) {
 
   return (
     <div>
-      <Header />
       <div className="product">
         <div className="product-image">
           <img src={productImage} alt={name} />
@@ -113,7 +112,6 @@ export default function Product({ products, images }) {
       {product && <SimilarProducts products={products} images={images} currentProduct={product} />}
 
       </div>
-      <Footer />
     </div>
   );
 }
