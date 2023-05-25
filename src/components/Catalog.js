@@ -105,7 +105,7 @@ function Catalog({ products, images }) {
       </div>
       <div className="sort-options">
         <div className="items-per-page">
-          <label htmlFor="items-per-page-select">Items per Page:</label>
+          <label htmlFor="items-per-page-select">Items per Page: </label>
           <select
             id="items-per-page-select"
             value={itemsPerPage}

@@ -27,6 +27,11 @@ code {
   visibility: visible;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .thin {
   font-weight: lighter;
 }
