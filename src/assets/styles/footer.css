@@ -1,47 +1,112 @@
-.footer-container{
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  justify-content: center;
-  }
+.footer-container {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
 
-  .footer-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  font-size: 2.5vw;
+  font-weight: thin;
+  color: white;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.left-nav li {
+  flex-basis: 33.33%;
+  margin-bottom: 5px;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+
+.left-nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-right: -5px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav p {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.right-nav .social-media {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.right-nav .social-media img {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  height: 20px;
+}
+
+.right-nav .terms a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    display: none;
   }
-  
-  .footer-photo {
-    height: 100px;
-    margin-right: 20px;
-  }
-  
-  nav {
-    padding-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    position: relative;
-    font-size: 20px;
-  }
-  
-  nav li:last-child {
-    margin-right: 0;
-  }
-  
-  nav a {
-    padding: 10px;
-  }
-  
+}
