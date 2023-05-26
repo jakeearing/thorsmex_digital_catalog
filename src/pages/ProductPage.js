@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Header from '../components/nav/Header';
 import SimilarProducts from '../components/SimilarProducts';
 import Contact from '../components/ContactDetails';
 import Error from '../components/Error';
-import Footer from '../components/nav/Footer';
 import '../assets/styles/product.css';
 
 export default function Product({ products, images }) {
-  const { modelnumber } = useParams();
+  const { category, subCategory, modelnumber } = useParams();
   const [product, setProduct] = useState(null);
   const [activeTab, setActiveTab] = useState(null);
 
@@ -35,12 +33,12 @@ export default function Product({ products, images }) {
     setActiveTab(null);
   };
 
-  const { name, price, gtin, pieces, category, sub_category, description, details, specs, height, width, weight, stock } = product || {};
+  const { name, price, gtin, pieces, description, details, specs, height, width, weight, stock } = product || {};
   
   const productImage = images[Object.keys(images).find(key => key.startsWith(modelnumber))] || images['notfound.jpg'];
 
   return (
-    <div>
+    <div className="product-page-container">
       <div className="product">
         <div className="product-image">
           <img src={productImage} alt={name} />
@@ -55,7 +53,7 @@ export default function Product({ products, images }) {
               <p><b>Pieces:</b> {pieces}</p>
               <p><b>Model Number:</b> {modelnumber}</p>
               <p><b>Category:</b> {category}</p>
-              <p><b>Subcategory:</b> {sub_category}</p>
+              <p><b>Subcategory:</b> {subCategory}</p>
             </div>
             <div className="contact-details">
               <Contact />

@@ -1,3 +1,7 @@
+.product-page-container {
+  margin-top: 55px;
+}
+
 .product {
   display: flex;
   justify-content: space-between;

@@ -85,33 +85,33 @@ function Catalog({ products, images }) {
   const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + itemsPerPage;
 
   return (
-    <div>
+    <div className="catalog-container">
       <div className="categories">
-        <Link to="/category/all">All Products</Link>
-        <Link to="/category/electrical">Electrical</Link>
+        <Link to="/all">All Products</Link>
+        <Link to="/electrical">Electrical</Link>
         <p>
-          <Link to="/category/electrical/wiring">Wiring & Wiring accessories</Link>
+          <Link to="/electrical/wiring">Wiring & Wiring accessories</Link>
         </p>
         <p>
-          <Link to="/category/electrical/cable-clips">Cable Clips & Staples</Link>
+          <Link to="/electrical/cable-clips">Cable Clips & Staples</Link>
         </p>
         <p>
-          <Link to="/category/electrical/raceway">Raceway & Raceway Accessories</Link>
+          <Link to="/electrical/raceway">Raceway & Raceway Accessories</Link>
         </p>
-        <Link to="/category/hardware">Hardware</Link>
+        <Link to="/hardware">Hardware</Link>
         <p>
-          <Link to="/category/hardware/anchors">Anchors Screws & Kits</Link>
+          <Link to="/hardware/anchors">Anchors Screws & Kits</Link>
         </p>
       </div>
       <div className="currentCategory">
         {subcategory && (
           <h3>
-            <Link to={`/category/${category}/${subcategory}`}>{category}</Link> - {subcategory}
+            <Link to={`/${category}/${subcategory}`}>{category}</Link> - {subcategory}
           </h3>
         )}
         {!subcategory && (
           <h3>
-            <Link to={`/category/${category}`}>{category}</Link>
+            <Link to={`/${category}`}>{category}</Link>
           </h3>
         )}
       </div>

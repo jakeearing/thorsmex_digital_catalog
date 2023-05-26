@@ -1,3 +1,7 @@
+.catalog-container {
+  margin-top: 55px;
+}
+
 .categories {
   position: absolute;
   top: 330px;
@@ -44,13 +48,6 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-}
-
-.catalog-container {
-  margin-left: 170px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 20px;
 }
 
 .product-grid {

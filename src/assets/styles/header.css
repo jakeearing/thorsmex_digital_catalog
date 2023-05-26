@@ -1,25 +1,143 @@
-.title {
+.header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-bottom: 22px;
-    color: white;
-    height: 20vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-image: url("../images/header.jpg");
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: -145px;
-}
-
-.cimpo-photo {
-    height: 100px;
-}
-
-.title img {
-    width: 400px;
-    margin: 0 auto;
-}
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    height: 55px;
+    list-style: none;
+  }
+  
+  nav {
+    padding-top: 0px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 12px;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 10px;
+    position: relative;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .logo img {
+    padding-top: 8px;
+    padding-bottom: 7px;
+    height: 45px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    nav.open {
+      display: block;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-bottom: 10px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 101;
+      position: absolute;
+      right: 25px;
+      top: 15px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .menu-toggle span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      position: relative;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .menu-toggle:hover {
+      background-color: transparent;
+    }
+  
+    .menu-toggle.open span:before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    .menu-toggle.open span:after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+  
+    nav.open a {
+      color: black;
+    }
+  }
+  

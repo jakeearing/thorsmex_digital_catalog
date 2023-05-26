@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Catalog from '../pages/Catalog';
-import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import TermsOfUse from '../pages/TermsOfUse';
@@ -76,11 +75,11 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to="/category/all" replace />}
+            element={<Navigate to="/all" replace />}
           />
-          <Route path="/category/:category" element={<Catalog products={products} images={images} />} />
-          <Route path="/category/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/product/:modelnumber" element={<Product products={products} images={images} />} />
+          <Route path="/:category" element={<Catalog products={products} images={images} />} />
+          <Route path="/:category/:subcategory" element={<Catalog products={products} images={images} />} />
+          <Route path="/:category/:subcategory/product/:modelnumber" element={<Product products={products} images={images} />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
