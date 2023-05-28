@@ -26,6 +26,10 @@ function Catalog({ products, images }) {
     localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
   }, [itemsPerPage]);
 
+  // Get all unique categories and subcategories from products
+  const allCategories = [...new Set(products.map((product) => product.category))];
+  const allSubcategories = [...new Set(products.map((product) => product.subCategory))];
+
   // Filter products based on category and search term
   const filteredProducts = products.filter((product) => {
     const nameMatch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -81,27 +85,38 @@ function Catalog({ products, images }) {
     setItemsPerPage(event.target.value);
   };
 
+  // Find all category and subcategories from the item list
+  const categoryLinks = allCategories.map((category) => {
+    const subcategories = allSubcategories
+      .filter((subCategory) => products.some((product) => product.subCategory === subCategory && product.category === category))
+      .map((subCategory) => ({ name: subCategory, link: `/${category}/${subCategory}` }));
+
+    return {
+      name: category,
+      link: `/${category}`,
+      subcategories: subcategories.length > 0 ? subcategories : undefined
+    };
+  });
+
+  // Create links for all categories/subcategories 
+  const generateCategoryLinks = (categories) => {
+    return categories.map((category) => (
+      <React.Fragment key={category.link}>
+        <Link to={category.link}>{category.name}</Link>
+        {category.subcategories && generateCategoryLinks(category.subcategories)}
+      </React.Fragment>
+    ));
+  };
+
+  const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
+
   const startIndex = 0;
   const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + itemsPerPage;
 
   return (
     <div className="catalog-container">
       <div className="categories">
-        <Link to="/all">All Products</Link>
-        <Link to="/electrical">Electrical</Link>
-        <p>
-          <Link to="/electrical/wiring">Wiring & Wiring accessories</Link>
-        </p>
-        <p>
-          <Link to="/electrical/cable-clips">Cable Clips & Staples</Link>
-        </p>
-        <p>
-          <Link to="/electrical/raceway">Raceway & Raceway Accessories</Link>
-        </p>
-        <Link to="/hardware">Hardware</Link>
-        <p>
-          <Link to="/hardware/anchors">Anchors Screws & Kits</Link>
-        </p>
+        {renderedCategoryLinks}
       </div>
       <div className="currentCategory">
         {subcategory && (
