@@ -103,7 +103,7 @@ function Catalog({ products, images }) {
     };
   });
 
-  // Create links for all categories/subcategories 
+  // Create links for all categories/subcategories
   const generateCategoryLinks = (categories) => {
     return categories.map((category) => (
       <React.Fragment key={category.link}>
@@ -113,7 +113,9 @@ function Catalog({ products, images }) {
             <button
               className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
               onClick={() => toggleSubcategories(category.name)}
-            />
+            >
+              &#x25BC;
+            </button>
           )}
           {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories)}
         </div>
@@ -131,6 +133,9 @@ function Catalog({ products, images }) {
       <div className="catalog-categories">
         <div className="categories-wrapper">
           <div className="categories">
+            <div className="categories-heading">
+              <h3>Product Categories</h3>
+            </div>
             {renderedCategoryLinks}
           </div>
         </div>
@@ -197,7 +202,7 @@ function Catalog({ products, images }) {
             ))}
           </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

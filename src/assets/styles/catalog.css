@@ -15,7 +15,7 @@
 
 .categories {
   margin-top: 75px;
-  height: 200px;
+  max-height: fit-content;
   width: 150px;
   background-color: #f1f1f1;
   display: flex;
@@ -23,17 +23,11 @@
   align-items: left;
   padding: 10px;
   z-index: 1;
+  position: relative;
 }
 
-.products-wrapper {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  margin-right: 150px;
-  margin-bottom: 50px;
-  width: 80%;
+.categories-heading {
+  margin-bottom: 10px;
 }
 
 .categories h3 {
@@ -49,11 +43,31 @@
 
 .categories .category {
   margin-bottom: 10px;
+  color: darkgrey;
 }
 
-.categories h3:hover, .categories p:hover {
+.categories p:hover {
   cursor: pointer;
   color: #007bff;
+}
+
+.categories .subcategories-toggle-button {
+  position: absolute;
+  right: 0;
+}
+
+.subcategories-toggle-button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+}
+
+.subcategories-toggle-button.open {
+  transform: rotate(180deg);
 }
 
 .currentCategory {
@@ -68,6 +82,17 @@
 .currentCategory a:hover {
   cursor: pointer;
   color: #007bff;
+}
+
+.products-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 150px;
+  margin-bottom: 50px;
+  width: 80%;
 }
 
 .sort-options {
