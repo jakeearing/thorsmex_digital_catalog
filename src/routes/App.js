@@ -79,7 +79,7 @@ const App = () => {
           />
           <Route path="/:category" element={<Catalog products={products} images={images} />} />
           <Route path="/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/:category/:subcategory/product/:modelnumber" element={<Product products={products} images={images} />} />
+          <Route path="/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />

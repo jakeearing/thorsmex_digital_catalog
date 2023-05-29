@@ -52,7 +52,7 @@ export default function Header() {
             <nav className={isMenuOpen ? 'open' : ''}>
               <ul>
                 <li>
-                  <Link to="/all" className={isSplashPage ? 'active' : ''}>
+                  <Link to="/" className={isSplashPage ? 'active' : ''}>
                     Catalog
                   </Link>
                 </li>

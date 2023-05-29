@@ -12,6 +12,20 @@ function Catalog({ products, images }) {
     const savedItemsPerPage = localStorage.getItem('itemsPerPage');
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
+  const [categoryState, setCategoryState] = useState({});
+
+  // Function to toggle subcategories
+  const toggleSubcategories = (categoryName) => {
+    setCategoryState((prevState) => ({
+      ...prevState,
+      [categoryName]: !prevState[categoryName]
+    }));
+  };
+
+  // Update local storage when itemsPerPage changes
+  useEffect(() => {
+    localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
+  }, [itemsPerPage]);
 
   // Constants
   const sortOptions = [
@@ -20,11 +34,6 @@ function Catalog({ products, images }) {
     { value: 'price', label: 'Price' },
   ];
   const itemsPerPageOptions = [10, 25, 50, 100, 'All'];
-
-  // Update local storage when itemsPerPage changes
-  useEffect(() => {
-    localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
-  }, [itemsPerPage]);
 
   // Get all unique categories and subcategories from products
   const allCategories = [...new Set(products.map((product) => product.category))];
@@ -37,18 +46,13 @@ function Catalog({ products, images }) {
 
     if (category === 'all') {
       return nameMatch || modelMatch;
-    } else if (category === 'electrical') {
+    } else if (subcategory) {
       return (
-        product.category.toLowerCase() === 'electrical' &&
-        (subcategory === undefined || product.subCategory.toLowerCase() === subcategory)
-      );
-    } else if (category === 'hardware') {
-      return (
-        product.category.toLowerCase() === 'hardware' &&
-        (subcategory === undefined || product.subCategory.toLowerCase() === subcategory)
+        product.category.toLowerCase() === category.toLowerCase() &&
+        product.subCategory.toLowerCase() === subcategory.toLowerCase()
       );
     } else {
-      return product.category.toLowerCase() === category;
+      return product.category.toLowerCase() === category.toLowerCase();
     }
   });
 
@@ -67,6 +71,11 @@ function Catalog({ products, images }) {
     setSearchTerm(event.target.value);
   };
 
+  // Handle items per page change
+  const handleChangeItemsPerPage = (event) => {
+    setItemsPerPage(event.target.value);
+  };
+
   // Sort products based on sort option
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     if (sortOption === 'name') {
@@ -80,11 +89,6 @@ function Catalog({ products, images }) {
     }
   });
 
-  // Handle items per page change
-  const handleChangeItemsPerPage = (event) => {
-    setItemsPerPage(event.target.value);
-  };
-
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
     const subcategories = allSubcategories
@@ -94,7 +98,8 @@ function Catalog({ products, images }) {
     return {
       name: category,
       link: `/${category}`,
-      subcategories: subcategories.length > 0 ? subcategories : undefined
+      subcategories: subcategories.length > 0 ? subcategories : undefined,
+      showSubcategories: categoryState[category] || false
     };
   });
 
@@ -102,8 +107,16 @@ function Catalog({ products, images }) {
   const generateCategoryLinks = (categories) => {
     return categories.map((category) => (
       <React.Fragment key={category.link}>
-        <Link to={category.link}>{category.name}</Link>
-        {category.subcategories && generateCategoryLinks(category.subcategories)}
+        <div className="category">
+          <Link to={category.link}>{category.name}</Link>
+          {category.subcategories && (
+            <button
+              className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
+              onClick={() => toggleSubcategories(category.name)}
+            />
+          )}
+          {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories)}
+        </div>
       </React.Fragment>
     ));
   };
@@ -115,62 +128,76 @@ function Catalog({ products, images }) {
 
   return (
     <div className="catalog-container">
-      <div className="categories">
-        {renderedCategoryLinks}
-      </div>
-      <div className="currentCategory">
-        {subcategory && (
-          <h3>
-            <Link to={`/${category}/${subcategory}`}>{category}</Link> - {subcategory}
-          </h3>
-        )}
-        {!subcategory && (
-          <h3>
-            <Link to={`/${category}`}>{category}</Link>
-          </h3>
-        )}
-      </div>
-      <div className="sort-options">
-        <div className="items-per-page">
-          <label htmlFor="items-per-page-select">Items per Page: </label>
-          <select
-            id="items-per-page-select"
-            value={itemsPerPage}
-            onChange={handleChangeItemsPerPage}
-          >
-            {itemsPerPageOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </div>
-        <label htmlFor="sort-select">Sort by:</label>
-        <select id="sort-select" value={sortOption} onChange={handleSortChange}>
-          {sortOptions.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-        <form onSubmit={handleSearch}>
-          <label htmlFor="search">Search: </label>
-          <input
-            type="text"
-            id="search"
-            name="search"
-            value={searchTerm}
-            onChange={handleSearchChange}
-          />
-        </form>
-      </div>
-      <div className="product-grid">
-        {sortedProducts.slice(startIndex, endIndex).map((product) => (
-          <div key={product.modelNumber} className="product-grid-item">
-            <Products product={product} images={images} />
+      <div className="catalog-categories">
+        <div className="categories-wrapper">
+          <div className="categories">
+            {renderedCategoryLinks}
           </div>
-        ))}
-      </div>
+        </div>
+        <div className="products-wrapper">
+          <div className="currentCategory">
+            <h3>
+              <Link to="/">Products</Link>
+              {category && <span> / </span>}
+              {category && subcategory && (
+                <span>
+                  <Link to={`/${category}`}>{category}</Link> / {subcategory}
+                </span>
+              )}
+              {category && !subcategory && (
+                <span>
+                  <Link to={`/${category}`}>{category}</Link>
+                </span>
+              )}
+            </h3>
+          </div>
+          <div className="sort-options">
+            <div className="items-per-page">
+              <label htmlFor="items-per-page-select">Items per Page: </label>
+              <select
+                id="items-per-page-select"
+                value={itemsPerPage}
+                onChange={handleChangeItemsPerPage}
+              >
+                {itemsPerPageOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="search-bar">
+              <form onSubmit={handleSearch}>
+                <label htmlFor="search"></label>
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+              </form>
+            </div>
+            <div className="sort-catalog">
+              <label htmlFor="sort-select">Sort: </label>
+              <select id="sort-select" value={sortOption} onChange={handleSortChange}>
+                {sortOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div className="product-grid">
+            {sortedProducts.slice(startIndex, endIndex).map((product) => (
+              <div key={product.modelNumber} className="product-grid-item">
+                <Products product={product} images={images} />
+              </div>
+            ))}
+          </div>
+        </div>
+        </div>
     </div>
   );
 }
