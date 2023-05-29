@@ -1,29 +1,28 @@
 .catalog-categories {
-  margin-top: 150px;
   display: flex;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .categories-wrapper {
-  width: 20%;
-  height: 100vh;
-  background-color: white;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  width: 20%;
+  height: 100vh;
+  background-color: white;
 }
 
 .categories {
-  margin-top: 75px;
-  max-height: fit-content;
-  width: 150px;
-  background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: left;
+  width: 150px;
+  margin-top: 75px;
   padding: 10px;
-  z-index: 1;
+  background-color: #f1f1f1;
   position: relative;
+  z-index: 1;
 }
 
 .categories-heading {
@@ -76,7 +75,7 @@
 }
 
 .currentCategory h3 {
-  margin: 0px;
+  margin: 0;
 }
 
 .currentCategory a:hover {
@@ -86,20 +85,19 @@
 
 .products-wrapper {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  width: 80%;
   margin-right: 150px;
   margin-bottom: 50px;
-  width: 80%;
 }
 
 .sort-options {
-  padding: 10px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0 0 0;
   gap: 5px;
 }
 
@@ -114,14 +112,14 @@
 }
 
 .product-grid-item {
-  padding: 10px;
-  margin: 10px;
-  flex: 1 0 calc(33.33% - 20px);
-  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 10px;
+  margin: 10px;
+  flex: 1 0 calc(33.33% - 20px);
+  max-width: 300px;
   background-color: white;
 }
 
@@ -155,7 +153,7 @@
   height: 450px;
 }
 
-.product-square h2{
+.product-square h2 {
   height: 60px;
   overflow: hidden;
 }
