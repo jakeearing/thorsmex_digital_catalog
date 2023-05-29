@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Products from '../components/ProductSquare';
+import { saveAs } from 'file-saver';
 import '../assets/styles/catalog.css';
 
 function Catalog({ products, images }) {
@@ -128,6 +129,15 @@ function Catalog({ products, images }) {
   const startIndex = 0;
   const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + itemsPerPage;
 
+  // Function to export filtered products as CSV
+  const exportAsCSV = () => {
+    const filteredData = sortedProducts.slice(startIndex, endIndex);
+    const csvData = filteredData.map((product) => `${product.name},${product.modelNumber},${product.price}`);
+    const csvString = 'Name,Model Number,Price\n' + csvData.join('\n');
+    const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8' });
+    saveAs(blob, 'filtered_products.csv');
+  };
+
   return (
     <div className="catalog-container">
       <div className="sidebar-wrapper">
@@ -174,6 +184,9 @@ function Catalog({ products, images }) {
             <h3>Product Categories</h3>
           </div>
           {renderedCategoryLinks}
+          <div className="export-csv">
+            <button onClick={exportAsCSV}>Export as CSV</button>
+          </div>
         </div>
       </div>
       <div className="products-wrapper">
