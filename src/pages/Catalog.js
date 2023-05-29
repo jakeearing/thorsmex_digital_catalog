@@ -184,6 +184,9 @@ function Catalog({ products, images }) {
             <h3>Product Categories</h3>
           </div>
           {renderedCategoryLinks}
+          <div className="category">
+            <Link to="/">All Products</Link>
+          </div>
           <div className="export-csv">
             <button onClick={exportAsCSV}>Export as CSV</button>
           </div>
