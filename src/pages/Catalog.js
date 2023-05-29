@@ -156,7 +156,7 @@ function Catalog({ products, images }) {
               </select>
             </div>
             <div className="items-per-page">
-              <label htmlFor="items-per-page-select">Items per Page: </label>
+              <label htmlFor="items-per-page-select">Items Shown: </label>
               <select
                 id="items-per-page-select"
                 value={itemsPerPage}
@@ -177,7 +177,7 @@ function Catalog({ products, images }) {
         </div>
       </div>
       <div className="products-wrapper">
-        <div className="currentCategory">
+        <div className="current-category">
           <h3>
             <Link to="/">Products</Link>
             {category && <span> / </span>}
