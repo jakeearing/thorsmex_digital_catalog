@@ -130,50 +130,12 @@ function Catalog({ products, images }) {
 
   return (
     <div className="catalog-container">
-      <div className="catalog-categories">
-        <div className="categories-wrapper">
-          <div className="categories">
-            <div className="categories-heading">
-              <h3>Product Categories</h3>
-            </div>
-            {renderedCategoryLinks}
-          </div>
-        </div>
-        <div className="products-wrapper">
-          <div className="currentCategory">
-            <h3>
-              <Link to="/">Products</Link>
-              {category && <span> / </span>}
-              {category && subcategory && (
-                <span>
-                  <Link to={`/${category}`}>{category}</Link> / {subcategory}
-                </span>
-              )}
-              {category && !subcategory && (
-                <span>
-                  <Link to={`/${category}`}>{category}</Link>
-                </span>
-              )}
-            </h3>
-          </div>
+      <div className="sidebar-wrapper">
+        <div className="sidebar">
           <div className="sort-options">
-            <div className="items-per-page">
-              <label htmlFor="items-per-page-select">Items per Page: </label>
-              <select
-                id="items-per-page-select"
-                value={itemsPerPage}
-                onChange={handleChangeItemsPerPage}
-              >
-                {itemsPerPageOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </div>
             <div className="search-bar">
               <form onSubmit={handleSearch}>
-                <label htmlFor="search"></label>
+                <label htmlFor="search">Search: </label>
                 <input
                   type="text"
                   id="search"
@@ -193,14 +155,50 @@ function Catalog({ products, images }) {
                 ))}
               </select>
             </div>
+            <div className="items-per-page">
+              <label htmlFor="items-per-page-select">Items per Page: </label>
+              <select
+                id="items-per-page-select"
+                value={itemsPerPage}
+                onChange={handleChangeItemsPerPage}
+              >
+                {itemsPerPageOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
-          <div className="product-grid">
-            {sortedProducts.slice(startIndex, endIndex).map((product) => (
-              <div key={product.modelNumber} className="product-grid-item">
-                <Products product={product} images={images} />
-              </div>
-            ))}
+          <div className="categories-heading">
+            <h3>Product Categories</h3>
           </div>
+          {renderedCategoryLinks}
+        </div>
+      </div>
+      <div className="products-wrapper">
+        <div className="currentCategory">
+          <h3>
+            <Link to="/">Products</Link>
+            {category && <span> / </span>}
+            {category && subcategory && (
+              <span>
+                <Link to={`/${category}`}>{category}</Link> / {subcategory}
+              </span>
+            )}
+            {category && !subcategory && (
+              <span>
+                <Link to={`/${category}`}>{category}</Link>
+              </span>
+            )}
+          </h3>
+        </div>
+        <div className="product-grid">
+          {sortedProducts.slice(startIndex, endIndex).map((product) => (
+            <div key={product.modelNumber} className="product-grid-item">
+              <Products product={product} images={images} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
