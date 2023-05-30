@@ -22,6 +22,7 @@ class Products(Document):
     description = StringField()
     details = StringField()
     specs = StringField()
+    product_sheet = StringField()
     height = DecimalField(precision=2)
     width = DecimalField(precision=2)
     weight = DecimalField(precision=2)
@@ -53,6 +54,7 @@ def import_data():
             description=row['description'],
             details=row['details'],
             specs=row['specs'],
+            product_sheet=row['product_sheet'],
             height=row['height'],
             width=row['width'],
             weight=row['weight'],

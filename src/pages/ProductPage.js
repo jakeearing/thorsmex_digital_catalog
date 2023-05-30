@@ -29,11 +29,7 @@ export default function Product({ products, images }) {
     }
   };
 
-  const handleCloseTab = () => {
-    setActiveTab(null);
-  };
-
-  const { name, price, gtin, pieces, description, details, specs, height, width, weight, stock } = product || {};
+  const { name, price, gtin, pieces, description, details, specs, product_sheet, height, width, weight, stock } = product || {};
   
   const productImage = images[Object.keys(images).find(key => key.startsWith(modelnumber))] || images['notfound.jpg'];
 
@@ -52,8 +48,8 @@ export default function Product({ products, images }) {
               <p><b>Price:</b> ${price}</p>
               <p><b>Pieces:</b> {pieces}</p>
               <p><b>Model Number:</b> {modelnumber}</p>
-              <p><b>Category:</b> {category}</p>
-              <p><b>Subcategory:</b> {subCategory}</p>
+              <p><b>Stock:</b> 97</p>
+              <p><b>Information:</b> {product_sheet}</p>
             </div>
             <div className="contact-details">
               <Contact />
