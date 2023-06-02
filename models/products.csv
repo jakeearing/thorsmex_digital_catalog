@@ -1,5 +1,5 @@
-﻿model_number,gtin,name,category,sub_category,price,pieces,volume_discount,description,details,specs,product_sheet,height,width,weight,english,stock_NC,stock_TX,stock_MX
-1101-01100,7501510000000,"100 Count Concrete Anchor 7/32"" White - TP0",Hardware,"Anchors, Screws & Kits",13.06,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+﻿model_number,gtin,name,category,sub_category,price,price_box,price_pallet,pieces,volume_discount,description,details,specs,product_sheet,height,width,weight,english,stock_NC,stock_TX,stock_MX
+1101-01100,7501509901865,Concrete Anchor White (100 Pack) high density polyethylene 7/32In TP0,Hardware,"Anchors, Screws & Kits",13.06,13.06,13.06,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -11,7 +11,7 @@ White color;
 Made with high density polyethylene;
 Flexible;
 Resistant to impact and extraction",Clavithor_EN.pdf,0.91,6.97,0.09,TRUE,100,100,100
-1101-04000,7501510000000,"Blister White Anchor TPO 7/32"" W/20 Pieces.",Hardware,"Anchors, Screws & Kits",5.05,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1101-04000,7501509900226,Brick Anchor White (20 Pack) high density polyethylene TPO 7/32In,Hardware,"Anchors, Screws & Kits",5.05,5.05,5.05,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -23,7 +23,7 @@ White color;
 Made with high density polyethylene;
 Flexible;
 Resistant to impact and extraction",Clavithor_EN.pdf,4.37,1.81,0.03,TRUE,100,100,100
-1101-05002,7501510000000,20 Pack White Concrete Anchors W/Screws.,Hardware,"Anchors, Screws & Kits",5.47,6,0.05,Anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1101-05002,7501509906228,Concrete Anchors White (20 Pack) high density polyethylene with Screws included.,Hardware,"Anchors, Screws & Kits",5.47,5.47,5.47,6,0.05,Anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -36,7 +36,7 @@ Flexible;
 Galvanized steel screw;
 Resistant to impact and extraction;
 Blister with (40 pieces) Set of 20 White TP0 plugs and 20 screws No. 8 x 3/4” (19.1 mm)",Clavithor_EN.pdf,1.18,7.32,0.11,TRUE,100,100,100
-1102-02100,7501510000000,100 Pieces TP1X Yellow 7/32 6x25.,Hardware,"Anchors, Screws & Kits",5.7,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1102-02100,7501509901872,"Concrete Anchor Yellow (100 Pack) Brick, Concrete, Solid Block Anchor TP1X ",Hardware,"Anchors, Screws & Kits",5.7,5.7,5.7,100,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -49,7 +49,7 @@ Made with high density polyethylene;
 Flexible;
 Resistant to impact and extraction;
 10 pieces in Box with 100 pieces and blister with 20 pieces",Clavithor_EN.pdf,1.06,7.28,0.16,TRUE,100,100,100
-1102-04000,7501510000000,Blister Yellow Anchor TP1X 7/32 W/20 Pieces.,Hardware,"Anchors, Screws & Kits",4.98,1,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1102-04000,7501509900318,Concrete Anchor Yellow (20 Pack)high density polyethylene TP1X 7/32In,Hardware,"Anchors, Screws & Kits",4.98,4.98,4.98,1,0.05,Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -62,7 +62,7 @@ Made with high density polyethylene;
 Flexible;
 Resistant to impact and extraction;
 10 pieces in Box with 100 pieces and blister with 20 pieces",Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-1102-05002,7501510000000,20 Pack Yellow Concrete Anchors W/Screws.,Hardware,"Anchors, Screws & Kits",4.69,100,0.05,Anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1102-05002,7501509906235,Concrete Anchors Yellow (20 Pack) high density polyethylene with Screws included.,Hardware,"Anchors, Screws & Kits",4.69,4.69,4.69,100,0.05,Anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -75,7 +75,8 @@ Flexible;
 Galvanized steel screw;
 Resistant to impact and extraction;
 Blister with (40 pieces) Set of 20 yellow TP1X plugs and 20 screws No. 8 x 1” (25.4mm)",Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
-1103-03100,7501510000000,"100 Count Concrete Anchor 1/4"" Red - TP2X",Hardware,"Anchors, Screws & Kits",13.06,100,0.05,Taquetes de plástico Thorsmex para fijar objetos con tornillo en muros y techos de concreto o superficies sólidas.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+1103-03100,7501509901889, Concrete Anchor Red (100 Pack) high density polyethylene 1/4In - TP2X,Hardware,"Anchors, Screws & Kits",13.06,13.06,13.06,100,0.05,"
+Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.","It performs a double expansion, that is, it opens towards the four cardinal points;
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
 It has a neck that prevents the plug from sinking, even when the perforation is deeper;
 Has a guide that allows the screw to be inserted correctly;
@@ -88,161 +89,919 @@ Flexible;
 Resistant to impact and extraction;
 Thorquetero of 10 pieces in
 Box with 100 pieces, blister with 20 pieces, bag with 1000 pieces",Clavithor_EN.pdf,1.99,7.11,0.19,TRUE,100,100,100
-1103-04000,7501510000000,"Blister Red Anchor TP2X 1/4"" W/20 Pieces.",Hardware,"Anchors, Screws & Kits",5.29,100,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.06,TRUE,100,100,100
-1103-05002,7501510000000,"Kit of 10 Concrete Anchors 1/4"" with 10 Philips Head Screws (screw length 1/2"") Red - TP2X",Hardware,"Anchors, Screws & Kits",2.53,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
-1104-03000,7501510000000,"Blister Brown Concrete Anchor TP2B 5/16"" W/20 Pieces.",Hardware,"Anchors, Screws & Kits",5.41,1,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
-1104-04100,7501510000000,"100 Count Concrete Anchor 5/16"" Brown - TP2B",Hardware,"Anchors, Screws & Kits",13.06,20,0.05,temp,temp,temp,Clavithor_EN.pdf,1.57,8.78,0.33,TRUE,100,100,100
-1104-05002,7501510000000,10 Pack Brown Concrete Anchors 5/16 in W/Screws.,Hardware,"Anchors, Screws & Kits",7.32,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,7.32,0.15,TRUE,100,100,100
-1105-03000,7501510000000,"Blister Blue Anchor TP3 3/8"" W/20 Pieces.",Hardware,"Anchors, Screws & Kits",5.51,1,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.14,TRUE,100,100,100
-1105-05002,7501510000000,6 Pack Blue Concrete Anchors 3/8 in W/Screws.,Hardware,"Anchors, Screws & Kits",4.56,10,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
-1105-05100,7501510000000,"100 Count Concrete Anchor 3/8"" Blue - TP3",Hardware,"Anchors, Screws & Kits",13.06,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,10.43,0.61,TRUE,100,100,100
-1206-01100,7501510000000,Dry Wall Anchor Nail TCPO White 10x20,Hardware,"Anchors, Screws & Kits",13.96,20,0.05,temp,temp,temp,Clavithor_EN.pdf,0.91,6.89,0.12,TRUE,100,100,100
-1206-01230,7501510000000,Fixing Kit TCPO White W/40 Pieces.,Hardware,"Anchors, Screws & Kits",15.39,20,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.25,0.05,FALSE,100,100,100
-1206-04000,7501510000000,Blsiter TCPO W/20 Pieces.,Hardware,"Anchors, Screws & Kits",12.96,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.03,TRUE,100,100,100
-1207-02100,7501510000000,"Dry Wall Anchor TCP1 Yellow 5,5x25.",Hardware,"Anchors, Screws & Kits",13.05,100,0.05,temp,temp,temp,Clavithor_EN.pdf,0.98,6.89,0.16,TRUE,100,100,100
-1207-03230,7501510000000,Fixing Kit TCP1 Yellow W/40 Pieces.,Hardware,"Anchors, Screws & Kits",5.86,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.25,0.05,FALSE,100,100,100
-1207-04000,7501510000000,Blister TCP1 W/20 Pieces.,Hardware,"Anchors, Screws & Kits",12.96,1,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-1301-01100,7501510000000,"100 Count Drywall Self Drilling Premium Anchor White 1.5""",Hardware,"Anchors, Screws & Kits",10.62,20,0.05,temp,temp,temp,Clavithor_EN.pdf,3.15,4.72,0.33,TRUE,100,100,100
-1301-04000,7501510000000,Blister White TPD 20 Pieces.,Hardware,"Anchors, Screws & Kits",7.08,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
-1301-05002,7501510000000,10 Pack Dry Wall Anchors W/Screws.,Hardware,"Anchors, Screws & Kits",10,10,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
-14000-00001,7506220000000,Flex Strain Relief w7100 Pieces.,Electrical,Wiring & Wiring Accessories,100,100,0.05,temp,temp,temp,Clavithor_EN.pdf,2.36,6.69,1.15,FALSE,100,100,100
-14000-00002,7506220000000,Rigid Strain Relief W/100 Pieces-,Electrical,Wiring & Wiring Accessories,100,100,0.05,temp,temp,temp,Clavithor_EN.pdf,11.02,7.87,0.94,FALSE,100,100,100
-14000-04001,7506220000000,Blister Flex Strain Relief W/6 Pieces.,Electrical,Wiring & Wiring Accessories,6.89,6,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.1,TRUE,100,100,100
-14000-04002,7506220000000,Rigid Strain Relief W/6 Pieces-,Electrical,Wiring & Wiring Accessories,6.89,6,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
-1401-10100,7501510000000,Dry wall Black Anchor Box W/100 Pieces.,Hardware,"Anchors, Screws & Kits",100,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.31,3.15,0.5,TRUE,100,100,100
-1401-21101,7501510000000,Blister Dry Wall Anchor TFT 6 Pieces.,Hardware,"Anchors, Screws & Kits",3.99,6,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,FALSE,100,100,100
-2101-04000,7501510000000,Blsiter TK 5-7 W/20 Pieces.,Hardware,"Anchors, Screws & Kits",20,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.03,FALSE,100,100,100
-2101-04100,7501510000000,Cable Clip W/Nail TK 5-7 W/100 Pieces.,Electrical,Cable Clips & Staples,100,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.03,2.01,0.07,TRUE,100,100,100
-2101-07240,7501510000000,Fixing Kit TK 5-7,Hardware,"Anchors, Screws & Kits",60,60,0.05,temp,temp,temp,Clavithor_EN.pdf,4.13,5.71,0.12,FALSE,100,100,100
-2102-04000,7501510000000,Blsiter TK 7-10 W/20 Pieces.,Hardware,"Anchors, Screws & Kits",5.33,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.03,FALSE,100,100,100
-2102-04100,7501510000000,Cable Clip W/Nail TK 7-10 W/100 Pieces.,Electrical,Cable Clips & Staples,7.72,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.64,0.11,TRUE,100,100,100
-2102-07240,7501510000000,Fixing Kit TK 7-10,Hardware,"Anchors, Screws & Kits",6.17,60,0.05,temp,temp,temp,Clavithor_EN.pdf,4.13,5.71,0.16,FALSE,100,100,100
-2103-04100,7501510000000,Cable Clip W/Nail TK 10-40 W/100 Pieces.,Electrical,Cable Clips & Staples,7.77,100,0.05,temp,temp,temp,Clavithor_EN.pdf,4.33,2.76,0.22,TRUE,100,100,100
-2103-07240,7501510000000,Fixing Kit TK 10-14,Hardware,"Anchors, Screws & Kits",14.4,36,0.05,temp,temp,temp,Clavithor_EN.pdf,4.13,5.71,0.12,FALSE,100,100,100
-2104-02000,7501510000000,Blsiter TK 14-20 W/20 Pieces.,Hardware,"Anchors, Screws & Kits",4.87,8,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,FALSE,100,100,100
-2104-04100,7501510000000,Cable Clip W/Nail TK 14-20 W/100 Pieces.,Electrical,Cable Clips & Staples,7.83,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.12,3.54,0.36,TRUE,100,100,100
-2104-07240,7501510000000,Fixing Kit TK 14-20,Hardware,"Anchors, Screws & Kits",6.29,24,0.05,temp,temp,temp,Clavithor_EN.pdf,4.13,5.71,0.15,FALSE,100,100,100
-2105-04100,7501510000000,Cable Clip W/Nail TK 20-26 W/50 Pieces.,Electrical,Cable Clips & Staples,5.66,50,0.05,temp,temp,temp,Clavithor_EN.pdf,5.12,3.54,0.37,TRUE,100,100,100
-2105-07240,7501510000000,Fixin Kit TK 20-26,Hardware,"Anchors, Screws & Kits",5.53,9,0.05,temp,temp,temp,Clavithor_EN.pdf,4.13,5.71,0.07,FALSE,100,100,100
-2208-06025,7501510000000,"Dry Wall Anchor TSP 10/75 3"" W/25 Pieces.",Hardware,"Anchors, Screws & Kits",15.5,25,0.05,temp,temp,temp,Clavithor_EN.pdf,7.28,1.97,0.66,TRUE,100,100,100
-2209-02000,7501510000000,Blister Dry Wall Anchor TMM 4 Pieces.,Hardware,"Anchors, Screws & Kits",2.99,4,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.06,TRUE,100,100,100
-2209-06025,7501510000000,Dry Wall Anchor TMM W/25 Pieces.,Hardware,"Anchors, Screws & Kits",12.56,25,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.56,0.27,"""""",100,100,100
-3101-00100,7501510000000,"100 Pieces Cable Clip Staple Nail-in  3/4""",Electrical,Cable Clips & Staples,10.23,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.11,1.97,0.08,TRUE,100,100,100
-3101-00400,7506220000000,"100 Piece Clip Staple 3-5RC Nail-in 3/4""",Electrical,Cable Clips & Staples,6.79,100,0.05,temp,temp,temp,Clavithor_EN.pdf,2.95,1.89,0.17,TRUE,100,100,100
-3101-04000,7501510000000,Blister TC 35 20 Pieces.,Electrical,Cable Clips & Staples,4.02,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.03,TRUE,100,100,100
-3101-04300,7506220000000,Blister TC 3-5RC Black W/20 Pieces.,Electrical,Cable Clips & Staples,4.2,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.05,TRUE,100,100,100
-3102-00100,7501510000000,100 Pieces Cable Clip Staple Nail in Clear 1.2 mm (3/64”) x 20 mm (3/4”),Electrical,Cable Clips & Staples,7.13,100,0.05,temp,temp,temp,Clavithor_EN.pdf,2.99,2.17,0.13,TRUE,100,100,100
-3102-04000,7501510000000,20 Pieces Blister TC 5-7.,Electrical,Cable Clips & Staples,4.34,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-3103-00100,7501510000000,100 Pieces Cable Clip Staple Nail-in Clear 1.5 mm (1/16”) x 25.4 mm (1”),Electrical,Cable Clips & Staples,10.23,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.56,0.37,TRUE,100,100,100
-3103-00300,7501510000000,100 Pieces Cable Clip Staple Nail-in Black   (3/4”) 19.1 mm x 2.5 mm,Electrical,Cable Clips & Staples,4.97,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.56,0.33,TRUE,100,100,100
-3103-00301,7501510000000,100 Pieces Cable Clip Staple Nail-in Black  (1”) 25.4 mm x 2.5 mm,Electrical,Cable Clips & Staples,5.77,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.56,0.36,TRUE,100,100,100
-3103-04000,7501510000000,20 Pieces Cable Clip Staple Nail-in Clear 1.5 mm (1/16”) x 25.4 mm (1”),Electrical,Cable Clips & Staples,6.48,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
-3103-04300,7501510000000,20 Pieces Cable Clip Staple Nail-in Black  (1”) 25.4 mm x 2.5 mm,Electrical,Cable Clips & Staples,5.15,1,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
-3104-00100,7501510000000,"100 Pieces Cable Clip Staple Nail-in 5/64""",Electrical,Cable Clips & Staples,8.01,100,0.05,temp,temp,temp,Clavithor_EN.pdf,4.33,0.79,0.34,TRUE,100,100,100
-3104-04000,7501510000000,20 Pieces Cable Clip Staple Nail-in Gray  2.0 mm (5/64”) x 30 mm (1 3/16”),Electrical,Cable Clips & Staples,5.41,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.11,TRUE,100,100,100
-3105-00100,7501510000000,"100 Pieces Cable Clip Staple Nail-in 5/64""",Electrical,Cable Clips & Staples,8.65,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.04,3.23,0.57,TRUE,100,100,100
-3105-03000,7501510000000,20 Pieces Cable Clip Staple Nail-in Gray 2 mm (5/64”) x 38 mm (1 1/2”),Electrical,Cable Clips & Staples,5.53,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.69,2.91,0.14,TRUE,100,100,100
-3207-00100,7501510000000,"100 Pieces Cable Clip Staple Nail-in 3/4""",Electrical,Cable Clips & Staples,10.23,100,0.05,temp,temp,temp,Clavithor_EN.pdf,2.91,1.85,0.09,TRUE,100,100,100
-3207-04000,7501510000000,Blister TC 3x5 20 W/pieces,Electrical,Cable Clips & Staples,5.1,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-3208-00100,7501510000000,100 Pieces Cable Clip Nail In Clear 4x6.,Electrical,Cable Clips & Staples,5.02,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.11,2.13,0.09,TRUE,100,100,100
-3208-00300,7501510000000,"100 Pieces Cable Clip Staple Nail-in Black - Flat for Outside 3/4""",Electrical,Cable Clips & Staples,8.37,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.2,4.02,0.13,TRUE,100,100,100
-3208-04000,7501510000000,Blister TC 4x6 W/Pieces.,Electrical,Cable Clips & Staples,5.1,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-3209-00100,7501510000000,"100 Pieces Cable Clip Staple Nail-in Clear 1""",Electrical,Cable Clips & Staples,11.52,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.9,2.6,0.25,TRUE,100,100,100
-3209-00300,7501510000000,Cable Clip P W/Nail TC 5x8 R Black W/100 Pieces.,Electrical,Cable Clips & Staples,5.44,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.54,0.12,TRUE,100,100,100
-3209-04000,7501510000000,Blister TC 5x8 20 Pieces,Electrical,Cable Clips & Staples,3.22,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.07,TRUE,100,100,100
-3210-00100,7501510000000,"100 Pieces Cable Staple Clip with Nail Clear 1 3/16""",Electrical,Cable Clips & Staples,11.52,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,2.56,0.29,TRUE,100,100,100
-3210-04000,7501510000000,"20 Pieces Cable Clip Staple Nail-in Clear 1 3/16""",Electrical,Cable Clips & Staples,6.78,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
-3401-00020,7501510000000,TDC 4-6 w/20 Pieces.,Electrical,Cable Clips & Staples,3.1,20,0.05,temp,temp,temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
-3401-00100,7501510000000,Cable Clip TDC 4-6 NAT Box W/100 Pieces.,Electrical,Cable Clips & Staples,15.86,100,0.05,temp,temp,temp,Clavithor_EN.pdf,3.03,2.09,0.12,TRUE,100,100,100
-3501-01000,7501510000000,Organizer Clip,Electrical,Cable Clips & Staples,3.08,1,0.05,temp,temp,temp,Clavithor_EN.pdf,5.91,4.33,0.02,FALSE,100,100,100
-3701-01000,7506220000000,Fixing System for Dry Wall.,Hardware,"Anchors, Screws & Kits",9.96,91,0.05,temp,temp,temp,Clavithor_EN.pdf,7.17,5.43,0.84,TRUE,100,100,100
-3701-02000,7506220000000,Fixinng System for Concrete.,Hardware,"Anchors, Screws & Kits",9.96,104,0.05,temp,temp,temp,Clavithor_EN.pdf,7.17,5.43,1.04,TRUE,100,100,100
-4700-01280,7501510000000,Spiral Wrap Natural 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.77,9.25,0.19,TRUE,100,100,100
-4700-01281,7501510000000,Spiral Wrap Natural 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,8.66,0.18,TRUE,100,100,100
-4700-01282,7501510000000,"Spiral Wrap Natural 24MM of 6,5ft.",Electrical,Wiring & Wiring Accessories,23.71,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,11.81,0.27,TRUE,100,100,100
-4700-01283,7501510000000,Spiral Wrap Natural 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,124.67,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,18.11,0.82,TRUE,100,100,100
-4700-01285,7506220000000,"Spiral Wrap Natural 6MM of 6,5ft.",Electrical,Wiring & Wiring Accessories,3.37,1,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,6.69,0.07,TRUE,100,100,100
-4700-05281,7501510000000,Spiral Wrap Blue 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.77,9.25,0.17,TRUE,100,100,100
-4700-05282,7501510000000,Spiral Wrap Blue 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,8.66,0.34,TRUE,100,100,100
-4700-05283,7501510000000,Spiral Wrap Blue 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,11.81,0.58,TRUE,100,100,100
-4700-05284,7501510000000,Spiral Wrap Blue 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,18.11,0.69,TRUE,100,100,100
-4700-06280,7501510000000,Black Spiral Wrap 6.56ft x 0.59,Electrical,Wiring & Wiring Accessories,36.81,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.77,9.25,0.19,TRUE,100,100,100
-4700-06281,7501510000000,Black Spiral Wrap 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,8.66,0.3,TRUE,100,100,100
-4700-06282,7501510000000,Spiral Wrap Black 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,11.81,0.49,TRUE,100,100,100
-4700-06283,7501510000000,Black Spiral Wrap 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,18.11,0.64,TRUE,100,100,100
-4700-06285,7506220000000,Spiral Wrap Black 6MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.06,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.77,9.06,0.08,TRUE,100,100,100
-4700-08281,7501510000000,Spiral Wrap White 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,9.84,0.17,TRUE,100,100,100
-4700-08282,7501510000000,Spiral Wrap White 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,8.66,0.35,TRUE,100,100,100
-4700-08283,7501510000000,Spiral Wrap White 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,2.36,13.58,0.39,TRUE,100,100,100
-4700-08284,7501510000000,Spiral Wrap White 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,12.6,0.74,TRUE,100,100,100
-4700-09281,7501510000000,Spiral Wrap Grey 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.77,9.25,0.18,TRUE,100,100,100
-4700-09282,7501510000000,Spiral Wrap Grey 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,8.66,0.34,TRUE,100,100,100
-4700-09283,7501510000000,Spiral Wrap Grey 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,11.81,0.39,TRUE,100,100,100
-4700-09284,7501510000000,Spiral Wrap Grey 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,1,0.05,temp,temp,temp,Clavithor_EN.pdf,1.97,18.11,0.74,TRUE,100,100,100
-5000-21252,7501510000000,TMK Raceway 0812 6ft W/ Tape,Electrical,Raceway & Raceway Accessories,5.23,50,0.05,temp,temp,temp,Clavithor_EN.pdf,0.39,0.47,0.19,"""""",100,100,100
-5001-01250,7501510000000,Raceway TMK 0812 BCO 3.6ft.,Electrical,Raceway & Raceway Accessories,3.87,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.31,0.47,0.13,"""""",100,100,100
-5001-01252,7501510000000,Raceway 0812 4 Sections W/Self-adhesive Tape.,Electrical,Raceway & Raceway Accessories,10.76,4,0.05,temp,temp,temp,Clavithor_EN.pdf,0.59,3.94,0.62,TRUE,100,100,100
-5001-01253,7501510000000,"50 Pieces Box Raceway TMK 0812 BCO 6,5 ft.",Electrical,Raceway & Raceway Accessories,7.08,50,0.05,temp,temp,temp,Clavithor_EN.pdf,0.31,0.47,0.23,"""""",100,100,100
-5001-01258,7506220000000,Raceway TMK 0812 BCO 3ft W/Tape.,Electrical,Raceway & Raceway Accessories,6.82,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.39,0.47,0.26,TRUE,100,100,100
-5010-02001,7506220000000,0812 BCO Outside Elbows In a Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.77,3,0.05,temp,temp,temp,Clavithor_EN.pdf,5.71,4.13,0.03,FALSE,100,100,100
-5020-02001,7506220000000,0812 BCO Inside Elbows In a Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.77,30,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.13,0.03,FALSE,100,100,100
-5030-02001,7506220000000,Section L 0812 BCO in a Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.77,3,0.05,temp,temp,temp,Clavithor_EN.pdf,5.31,4.13,0.02,FALSE,100,100,100
-5040-02001,7506220000000,Section T 0812 BCO In a Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.77,3,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.13,0.03,FALSE,100,100,100
-5080-02001,7506220000000,Union Piece 0812 BCO In A Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.81,3,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.13,0.02,FALSE,100,100,100
-5090-02001,7506220000000,Final Lid 0812 BCO In a Bag W/3 Pieces.,Electrical,Raceway & Raceway Accessories,0.81,3,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,4.13,0.02,FALSE,100,100,100
-5091-00001,7506220000000,Accessory Set TMK 0812,Electrical,Raceway & Raceway Accessories,2.92,13,0.05,temp,temp,temp,Clavithor_EN.pdf,5.04,4.13,0.04,FALSE,100,100,100
-5101-01250,7501510000000,"Raceway White, Two Channel Cable Management 8ft - 10x20mm",Electrical,Raceway & Raceway Accessories,9.71,20,0.05,temp,temp,temp,Clavithor_EN.pdf,3.94,7.87,0.49,"""""",100,100,100
-5101-01251,7501510000000,TMK 1020 System BCO 2 of 3.6 ft W/Anchor.,Electrical,Raceway & Raceway Accessories,11.83,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.59,4.33,0.52,TRUE,100,100,100
-5101-01252,7501510000000,System TMK 1020 BCO 2 of 3.6 ft W/Tape.,Electrical,Raceway & Raceway Accessories,11.93,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.94,0.49,TRUE,100,100,100
-5101-01260,7501510000000,Raceway White Non Metalic Cable Hiding 8ft -20x10mm,Electrical,Raceway & Raceway Accessories,11.88,1,0.05,temp,temp,temp,Clavithor_EN.pdf,0.39,0.79,0.46,"""""",100,100,100
-5101-01262,7501510000000,1020 Cable Raceway 2 of 43.3in L,Electrical,Raceway & Raceway Accessories,17.75,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.59,3.94,0.51,TRUE,100,100,100
-5101-11260,7506220000000,"Raceway TMK 1020 WO/DIV Transp Lid 3,28 ft.",Electrical,Raceway & Raceway Accessories,12.68,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.39,0.79,0.52,"""""",100,100,100
-5101-21252,7501510000000,Raceway 1020 W/Div 6 ft W/Tape.,Electrical,Raceway & Raceway Accessories,12.52,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.47,0.79,0.4,"""""",100,100,100
-5101-21262,7501510000000,"Raceway White, Cable Management 8ft - 10x20mm",Electrical,Raceway & Raceway Accessories,12.34,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.47,0.79,0.37,"""""",100,100,100
-5110-02001,7501510000000,Cable Raceway Outside Elbow,Electrical,Raceway & Raceway Accessories,7.8,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5120-02001,7501510000000,10 Pieces Cable Raceway Inside Elbow.,Electrical,Raceway & Raceway Accessories,8.83,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5130-02001,7501510000000,Cable Raceway L Fitting,Electrical,Raceway & Raceway Accessories,13.99,1,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
-5140-02001,7501510000000,Cable Raceway T Fitting,Electrical,Raceway & Raceway Accessories,12.28,1,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5180-02001,7501510000000,Cable Raceway Union Piece,Electrical,Raceway & Raceway Accessories,9.54,1,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.01,FALSE,100,100,100
-5190-02001,7501510000000,Cable Raceway End Cap,Electrical,Raceway & Raceway Accessories,8.08,1,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
-5201-01250,7501510000000,Raceway White Non Metalic Cable Hiding 8ft -20x17mm,Electrical,Raceway & Raceway Accessories,14.4,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.67,0.79,0.66,"""""",100,100,100
-5201-01251,7501510000000,TMK 1720 BCO System 2 of 3.5ft W/Anchor.,Electrical,Raceway & Raceway Accessories,14.4,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.94,0.65,TRUE,100,100,100
-5201-01252,7501510000000,1720 Cable Raceway 2 of 43.3in L,Electrical,Raceway & Raceway Accessories,17.75,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.74,0.71,TRUE,100,100,100
-5201-21252,7501510000000,Raceway TMK 1720 6ft W/Tape.,Electrical,Raceway & Raceway Accessories,15.68,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.75,0.79,0.51,"""""",100,100,100
-5210-02001,7501510000000,Cable Raceway Outside Elbow,Electrical,Raceway & Raceway Accessories,9.34,100,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5220-02001,7501510000000,Cable Raceway Inside Elbow,Electrical,Raceway & Raceway Accessories,8.83,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5230-02001,7501510000000,Cable Raceway L Fitting,Electrical,Raceway & Raceway Accessories,13.99,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5240-02001,7501510000000,Section T TMK 1720 BCO in A Bag.,Electrical,Raceway & Raceway Accessories,1.51,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.04,FALSE,100,100,100
-5280-02001,7501510000000,TMK 1720 Union Piece in a Bag.,Electrical,Raceway & Raceway Accessories,1.7,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-5290-02001,7501510000000,TMK 1720 Final Lid BCO In a Bag.,Electrical,Raceway & Raceway Accessories,1.69,10,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
-5301-01250,7501510000000,"Raceway White, Two Channel Cable Management 8ft - 17x35mm",Electrical,Raceway & Raceway Accessories,22.87,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.67,1.38,1.22,"""""",100,100,100
-5301-01251,7501510000000,TMK 1735 BCO System 2 of 3.5ft W/Anchor.,Electrical,Raceway & Raceway Accessories,22.87,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,4.33,1.3,TRUE,100,100,100
-5301-01252,7501510000000,TMK 1735 System 2 of 3.6 ft W/Tape.,Electrical,Raceway & Raceway Accessories,22.87,10,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.94,1.25,TRUE,100,100,100
-5301-01260,7506220000000,"Raceway White, Cable Management 8ft - 17x35mm",Electrical,Raceway & Raceway Accessories,22.87,100,0.05,temp,temp,temp,Clavithor_EN.pdf,0.67,1.38,1.1,"""""",100,100,100
-5301-21252,7501510000000,Raceway TMK 1735 W/Div 6 ft W/Tape.,Electrical,Raceway & Raceway Accessories,26.9,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.75,1.38,0.82,"""""",100,100,100
-5301-21262,7501510000000,Raceway 1735 WO/Div 6ft W/Tape.,Electrical,Raceway & Raceway Accessories,26.9,25,0.05,temp,temp,temp,Clavithor_EN.pdf,0.75,1.38,0.83,"""""",100,100,100
-5310-02001,7501510000000,TMK 1735 Outside Elbows BCO Bag.,Electrical,Raceway & Raceway Accessories,1.76,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
-5320-02001,7501510000000,Inside Elbow TMK 1735 BCO Bag.,Electrical,Raceway & Raceway Accessories,1.72,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
-5330-02001,7501510000000,Section LTMK 1735 BCO Bag.,Electrical,Raceway & Raceway Accessories,1.72,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
-5340-02001,7501510000000,Section T TMK 1735 BCO in a Bag.,Electrical,Raceway & Raceway Accessories,1.72,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
-5380-02001,7501510000000,TMK 1735 6 Union Piece ,Electrical,Raceway & Raceway Accessories,1.73,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.04,FALSE,100,100,100
-5390-02001,7501510000000,Final Lid TMK 1735 BCO In a Bag.,Electrical,Raceway & Raceway Accessories,2.38,6,0.05,temp,temp,temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
-7200-02001,7506220000000,Blind Lid For TMK/S1 White Box,Electrical,Raceway & Raceway Accessories,2.96,1,0.05,temp,temp,temp,Clavithor_EN.pdf,9.25,4.45,0.06,FALSE,100,100,100
-7902-02001,7506220000000,"6 Count Mounting Box single gang plastic white, anchors, screws and pads included.",Electrical,Raceway & Raceway Accessories,9.54,6,0.05,temp,temp,temp,Clavithor_EN.pdf,2.05,8.66,0.24,FALSE,100,100,100
-8802-80300,7506220000000,Half Cane Duct or Pipeline Aluminium/PVC 8.2 ft.,Electrical,Raceway & Raceway Accessories,84.73,2,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.58,4.31,"""""",100,100,100
-9001-01250,7501510000000,"Raceway TRL 50 BCO of 8,2ft W/2 Platf and 4 Straps.",Electrical,Raceway & Raceway Accessories,48.32,12,0.05,temp,temp,temp,Clavithor_EN.pdf,1.57,1.97,1.54,"""""",100,100,100
-9101-01250,7501510000000,Raceway TRL 56 BCO W/2 Platf and 4 Straps.,Electrical,Raceway & Raceway Accessories,33.04,12,0.05,temp,temp,temp,Clavithor_EN.pdf,1.26,2.2,1.73,"""""",100,100,100
-9150-01001,7506220000000,Union Piece TRL 56 White.,Electrical,Raceway & Raceway Accessories,4.24,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,2.36,0.01,FALSE,100,100,100
-9190-01001,7506220000000,Final Lid TRL 56 White.,Electrical,Raceway & Raceway Accessories,5.68,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,2.36,0.02,FALSE,100,100,100
-9201-01250,7501510000000,Raceway TRL 76 BCO W/2 Platf and 4 Straps.,Electrical,Raceway & Raceway Accessories,58.07,12,0.05,temp,temp,temp,Clavithor_EN.pdf,1.65,2.99,2.08,"""""",100,100,100
-9250-01001,7506220000000,Union Piece TRL 76 White,Electrical,Raceway & Raceway Accessories,5.99,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.38,3.15,0.03,FALSE,100,100,100
-9290-01001,7506220000000,Final Lid TRL76 White.,Electrical,Raceway & Raceway Accessories,5.99,100,0.05,temp,temp,temp,Clavithor_EN.pdf,1.18,3.15,0.05,FALSE,100,100,100
-9300-01252,7501510000000," Brown Flex Duct or Flex Pipeline 8,2ft In a Bag",Electrical,Raceway & Raceway Accessories,26.43,1,0.05,temp,temp,temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
-9300-01253,7501510000000,Flex Duct or Flex Pipeline Grey 8.2ft In a Bag W/Tape.,Electrical,Raceway & Raceway Accessories,26.43,1,0.05,temp,temp,temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
-9300-01254,7501510000000,Flex Duct or Flex Pipeline Black 8.2ft In a Bag W/Tape.,Electrical,Raceway & Raceway Accessories,26.43,1,0.05,temp,temp,temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
-9400-01250,7506220000000,Half Cane Duct or Pipeline White 4ft.,Electrical,Raceway & Raceway Accessories,16.09,4,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.58,1.34,"""""",100,100,100
-9400-02250,7506220000000,2 Pieces Half Cane Duct or Half Pipeline 3ft BCO,Electrical,Raceway & Raceway Accessories,31.45,2,0.05,temp,temp,temp,Clavithor_EN.pdf,0.79,3.58,1.21,TRUE,100,100,100
-9430-02001,7506220000000,Section L In a Bag Half Cane Duct or Half Cane Pipeline,Electrical,Raceway & Raceway Accessories,5.99,15,0.05,temp,temp,temp,Clavithor_EN.pdf,9.84,6.1,0.24,TRUE,100,100,100
-9440-02001,7506220000000,Section T BCO Half Cane Duct or Half Cane Pipeline.,Electrical,Raceway & Raceway Accessories,6.99,15,0.05,temp,temp,temp,Clavithor_EN.pdf,9.65,5.51,0.06,TRUE,100,100,100
-9480-02001,7506220000000,Union Piece Half Cane Duct or Half Cane Pipeline In A Bag.,Electrical,Raceway & Raceway Accessories,2.08,15,0.05,temp,temp,temp,Clavithor_EN.pdf,9.84,5.91,0.06,TRUE,100,100,100
-9490-02001,7506220000000,Final Lid BCO in a Bag Half Cane Duct or Half Cane Pipeline.,Electrical,Raceway & Raceway Accessories,2.13,15,0.05,temp,temp,temp,Clavithor_EN.pdf,6.89,4.72,0.06,TRUE,100,100,100
+1103-04000,7501509900363,Concrete Anchor Red (20 Pack)high density polyethylene TP2X 1/4In.,Hardware,"Anchors, Screws & Kits",5.29,5.29,5.29,100,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 10 x 1 1/2” (38mm) screw;
+Operating temperatures -50ºC to +80°C;
+Recommended load: 60 kg in concrete 50 kg in partition;
+Resistance to extraction: 40 Kg in concrete 40 Kg in partition",temp,Clavithor_EN.pdf,4.69,2.91,0.06,TRUE,100,100,100
+1103-05002,7501509906242,Concrete Anchor Kit Red (10 Pack) 1/4In with 10 Philips Head Screws (screw length 1/2In)- TP2X,Hardware,"Anchors, Screws & Kits",2.53,2.53,2.53,100,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 10 x 1 1/2” (38mm) screw;
+Operating temperatures -50ºC to +80°C;
+Recommended load: 60 kg in concrete 50 kg in partition;
+Resistance to extraction: 40 Kg in concrete 40 Kg in partition",temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
+1104-03000,7501509900288, Concrete Anchor Brown (20 Pack) high density polyethylene TP2B 5/16In.,Hardware,"Anchors, Screws & Kits",5.41,5.41,5.41,1,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+ It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+ It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 10 x 1 3/4” (44.5 mm) screw;
+Operating temperatures -50ºC to +80ºC;
+Recommended load: 176.24 kg in concrete 80 kg in partition;
+Resistance to extraction: 80 Kg in concrete 40 Kg in partition",temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
+1104-04100,7501509901896,"Concret Anchor (100 Pack) high density polyethylene anchors 5/16"" Brown - TP2B",Hardware,"Anchors, Screws & Kits",13.06,13.06,13.06,20,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+ It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+ It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 10 x 1 3/4” (44.5 mm) screw;
+Operating temperatures -50ºC to +80ºC;
+Recommended load: 176.24 kg in concrete 80 kg in partition;
+Resistance to extraction: 80 Kg in concrete 40 Kg in partition",temp,Clavithor_EN.pdf,1.57,8.78,0.33,TRUE,100,100,100
+1104-05002,7501509906259,Concrete Anchors (10 Pack) Brown high density polyethylene anchors  5/16In with Screws.,Hardware,"Anchors, Screws & Kits",7.32,7.32,7.32,100,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+ It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+ It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 10 x 1 3/4” (44.5 mm) screw;
+Operating temperatures -50ºC to +80ºC;
+Recommended load: 176.24 kg in concrete 80 kg in partition;
+Resistance to extraction: 80 Kg in concrete 40 Kg in partition",temp,Clavithor_EN.pdf,1.18,7.32,0.15,TRUE,100,100,100
+1105-03000,7501509900295, Concrete Anchor Blue (20 Pack) high density polyethylene 3/8In - TP3,Hardware,"Anchors, Screws & Kits",5.51,5.51,5.51,1,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"• It performs a double expansion, that is, it opens towards the four cardinal points.
+• It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted.
+• It has a neck that prevents the plug from sinking, even when the perforation is deeper.
+• Has a guide that allows the screw to be inserted correctly
+• Free of burrs that prevent double expansion, test with a 12 x 2” (50.8mm) screw.
+• Operating temperatures -50ºC to +80º C
+• Recommended load: 140 Kg on concrete
+• Resistance to extraction: 100 Kg in concrete",temp,Clavithor_EN.pdf,4.69,2.91,0.14,TRUE,100,100,100
+1105-05002,7501509906266,Concrete Anchors Blue (6 Pack) high density polyethylene  3/8In with Screws included.,Hardware,"Anchors, Screws & Kits",4.56,4.56,4.56,10,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"• It performs a double expansion, that is, it opens towards the four cardinal points.
+• It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted.
+• It has a neck that prevents the plug from sinking, even when the perforation is deeper.
+• Has a guide that allows the screw to be inserted correctly
+• Free of burrs that prevent double expansion, test with a 12 x 2” (50.8mm) screw.
+• Operating temperatures -50ºC to +80º C
+• Recommended load: 140 Kg on concrete
+• Resistance to extraction: 100 Kg in concrete",temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
+1105-05100,7501509901902,Concrete Anchor Blue (100 Pack) high density polyethylene 3/8In- TP3,Hardware,"Anchors, Screws & Kits",13.06,13.06,13.06,100,0.05,Thorsmex plastic anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points;
+It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted;
+It has a neck that prevents the plug from sinking, even when the perforation is deeper;
+Has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion, test with a 12 x 2” (50.8mm) screw;
+Operating temperatures -50ºC to +80º C;
+Recommended load: 140 Kg on concrete;
+Resistance to extraction: 100 Kg in concrete",temp,Clavithor_EN.pdf,1.97,10.43,0.61,TRUE,100,100,100
+1206-01100,7501509901919,Dry Wall Anchor Nail White (100 Pack) high density polyethylene TCPO - 10x20,Hardware,"Anchors, Screws & Kits",13.96,13.96,13.96,20,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 20 mm (3/4”);
+Recommended nail: (1.9 x 19.1 mm ); Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,0.91,6.89,0.12,TRUE,100,100,100
+1206-01230,7501509907744,Dry Wall Fixing Kit White (40 Pack Kit) TCPO ,Hardware,"Anchors, Screws & Kits",15.39,15.39,15.39,20,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 20 mm (3/4”);
+Recommended nail: (1.9 x 19.1 mm ); Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,5.51,4.25,0.05,FALSE,100,100,100
+1206-04000,7501509900370,Drwy Wall Anchor White (20 Pack) TCPO,Hardware,"Anchors, Screws & Kits",12.96,12.96,12.96,20,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 20 mm (3/4”);
+Recommended nail: (1.9 x 19.1 mm ); Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,4.37,1.81,0.03,TRUE,100,100,100
+1207-02100,7501509901926,"Dry Wall Anchor Yellow (100 Pack) high density polyethylene TCP1 - 5,5x25.",Hardware,"Anchors, Screws & Kits",13.05,13.05,13.05,100,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 25 mm (1”);
+Recommended nail: 3/32” x 1” (2.38 x 25.4mm);
+For indoor use;
+Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,0.98,6.89,0.16,TRUE,100,100,100
+1207-03230,7501509907737,Dry Wall Fixing Kit Yellow (40 Pack Kit) TCP1,Hardware,"Anchors, Screws & Kits",5.86,5.86,5.86,100,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 25 mm (1”);
+Recommended nail: 3/32” x 1” (2.38 x 25.4mm);
+For indoor use;
+Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,5.51,4.25,0.05,FALSE,100,100,100
+1207-04000,7501509900387,Brick Anchor Yellow (20 Pack) TCP1.,Hardware,"Anchors, Screws & Kits",12.96,12.96,12.96,1,0.05,"Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 25 mm (1”);
+Recommended nail: 3/32” x 1” (2.38 x 25.4mm);
+For indoor use;
+Operating temperatures -10ºC to +70ºC",temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
+1301-01100,7501509905726,Premium Self Drill Dry Wall Anchor White (100 Pack) high density polyethylene 1.5In,Hardware,"Anchors, Screws & Kits",10.62,10.62,10.62,20,0.05,"Thorsmex self-drilling anchor to hold and fix objects in false walls, false ceiling or masonry.","No wall drilling required;
+Load capacity: 5 Kg;
+Pullout resistance: 5 Kg;
+Operating temperature -40ºC to + 80ºC:
+Recommended Thorsman screw #10 x 1 ½” (38mm)",temp,Clavithor_EN.pdf,3.15,4.72,0.33,TRUE,100,100,100
+1301-04000,7501509905733,Premium Self Drill Dry Wall Anchor White (20 Pack) TPD,Hardware,"Anchors, Screws & Kits",7.08,7.08,7.08,20,0.05,"Thorsmex self-drilling anchor to hold and fix objects in false walls, false ceiling or masonry.","No wall drilling required;
+Load capacity: 5 Kg;
+Pullout resistance: 5 Kg;
+Operating temperature -40ºC to + 80ºC:
+Recommended Thorsman screw #10 x 1 ½” (38mm)",temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
+1301-05002,7501509906556,Premium Seld Drill Dry Wall Anchor White (10pack) high density polyethylene Anchors with screws.,Hardware,"Anchors, Screws & Kits",10,10,10,10,0.05,"Thorsmex self-drilling anchor to hold and fix objects in false walls, false ceiling or masonry.","No wall drilling required;
+Load capacity: 5 Kg;
+Pullout resistance: 5 Kg;
+Operating temperature -40ºC to + 80ºC:
+Recommended Thorsman screw #10 x 1 ½” (38mm)",temp,Clavithor_EN.pdf,1.18,7.32,0.14,TRUE,100,100,100
+14000-00001,7506218111895,Soft Grommet (100 Pack),Electrical,Wiring & Wiring Accessories,100,100,100,100,0.05,"For use in pass-through installations
+of a wall","For use in pass-through installations
+of a wall;
+Indoor and outdoor use;
+Color UV Black;
+Hardness 80 Shore A (Flexible);
+Hardness 40 Shore D (Rigid);
+Impact resistant;
+For cable up to:
+Flexible 5.5mm/diameter; Rigid 9.0 mm diameter",temp,Clavithor_EN.pdf,2.36,6.69,1.15,FALSE,100,100,100
+14000-00002,7506218111987,Rigid Grommet (100 Pack),Electrical,Wiring & Wiring Accessories,100,100,100,100,0.05,"For use in pass-through installations
+of a wall","For use in pass-through installations
+of a wall;
+Indoor and outdoor use;
+Color UV Black;
+Hardness 80 Shore A (Flexible);
+Hardness 40 Shore D (Rigid);
+Impact resistant;
+For cable up to:
+Flexible 5.5mm/diameter; Rigid 9.0 mm diameter",temp,Clavithor_EN.pdf,11.02,7.87,0.94,FALSE,100,100,100
+14000-04001,7506218112182,Soft Grommet (6 Pack),Electrical,Wiring & Wiring Accessories,6.89,6.89,6.89,6,0.05,"For use in pass-through installations
+of a wall","For use in pass-through installations
+of a wall;
+Indoor and outdoor use;
+Color UV Black;
+Hardness 80 Shore A (Flexible);
+Hardness 40 Shore D (Rigid);
+Impact resistant;
+For cable up to:
+Flexible 5.5mm/diameter; Rigid 9.0 mm diameter",temp,Clavithor_EN.pdf,4.69,2.91,0.1,TRUE,100,100,100
+14000-04002,7506218112199,Rigid Grommet (6 Pack),Electrical,Wiring & Wiring Accessories,6.89,6.89,6.89,6,0.05,"For use in pass-through installations
+of a wall","For use in pass-through installations
+of a wall;
+Indoor and outdoor use;
+Color UV Black;
+Hardness 80 Shore A (Flexible);
+Hardness 40 Shore D (Rigid);
+Impact resistant;
+For cable up to:
+Flexible 5.5mm/diameter; Rigid 9.0 mm diameter",temp,Clavithor_EN.pdf,4.69,2.91,0.09,TRUE,100,100,100
+1401-10100,7501509905955,Premium Dry wall Anchor Black (100 Pack) high density polyethylene TFT,Hardware,"Anchors, Screws & Kits",100,100,100,100,0.05,"
+Anchor to hold and fix objects one or several nylon straps on concrete or solid surfaces. Load capacity: 7 kg. Made with nylon, black color, high impact resistance","Holds one or more Thorsman nylon belts;
+For indoor and outdoor use;
+Load capacity: 7kg;
+Pullout resistance: 10 kg;
+Operating temperature -40ºC to +80ºC",temp,Clavithor_EN.pdf,5.31,3.15,0.5,TRUE,100,100,100
+1401-21101,7501509906013,Dry Wall Anchor Black (6 Pack) high density polyethylene TFT ,Hardware,"Anchors, Screws & Kits",3.99,3.99,3.99,6,0.05,"
+Anchor to hold and fix objects one or several nylon straps on concrete or solid surfaces. Load capacity: 7 kg. Made with nylon, black color, high impact resistance","Holds one or more Thorsman nylon belts;
+For indoor and outdoor use;
+Load capacity: 7kg;
+Pullout resistance: 10 kg;
+Operating temperature -40ºC to +80ºC",temp,Clavithor_EN.pdf,4.37,1.81,0.04,FALSE,100,100,100
+2101-04000,7501509900899,Cable Clip TK 5-7 ( 20 Pack) Impact Resistant Polypropylene Cable Staple with Nail Included 9mm,Hardware,"Anchors, Screws & Kits",20,20,20,20,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP0 plug and No. 8 x 3/4” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Make fixing with TP0 plug, screw No. 8 x 3/4”;
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.37,1.81,0.03,FALSE,100,100,100
+2101-04100,7501509902060,Cable Clip TK 5-7 (100 Pack) Impact Resistant Polypropylene Cable Staple with Nail Included 9mm,Electrical,Cable Clips & Staples,100,100,100,100,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP0 plug and No. 8 x 3/4” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Make fixing with TP0 plug, screw No. 8 x 3/4”;
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,3.03,2.01,0.07,TRUE,100,100,100
+2101-07240,7501509907751,Kit Cable Clip TK5-7 White (60 Pack) Impact Resistant Polypropylene Cable Staple Nail & Anchor Included Fixing Kit 9mm,Hardware,"Anchors, Screws & Kits",60,60,60,60,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP0 plug and No. 8 x 3/4” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Make fixing with TP0 plug, screw No. 8 x 3/4”;
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.13,5.71,0.12,FALSE,100,100,100
+2102-04000,7501509900905,Cable Clip TK 7-10 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 9mm,Hardware,"Anchors, Screws & Kits",5.33,5.33,5.33,20,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and #8 x 1” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP1X plug, screw No. 8 x 1”;
+Operating temperatures: -10ºC to +120°C",temp,Clavithor_EN.pdf,4.37,1.81,0.03,FALSE,100,100,100
+2102-04100,7501509902077,Cable Clip TK 7-10 (100 Pack)Impact resistant polypropylene Cable Staple with Nail Included 9mm,Electrical,Cable Clips & Staples,7.72,7.72,7.72,100,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and #8 x 1” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP1X plug, screw No. 8 x 1”;
+Operating temperatures: -10ºC to +120°C",temp,Clavithor_EN.pdf,3.94,2.64,0.11,TRUE,100,100,100
+2102-07240,7501509907768,Kit Cable Clip TK7-10 Yellow (60 Pack) Impact Resistant Polypropylene Cable Staple Nail & Anchor Included Fixing Kit 9mm,Hardware,"Anchors, Screws & Kits",6.17,6.17,6.17,60,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and #8 x 1” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP1X plug, screw No. 8 x 1”;
+Operating temperatures: -10ºC to +120°C",temp,Clavithor_EN.pdf,4.13,5.71,0.16,FALSE,100,100,100
+2103-04100,7501509902084,Cable Clip TK 10-14 (100 Pack) Impact resistant polypropylene Cable Staple with Nail Included 12.8mm,Electrical,Cable Clips & Staples,7.77,7.77,7.77,100,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and #8 x 1” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with plug TP1X, screw No. 8×1” (25.4mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.33,2.76,0.22,TRUE,100,100,100
+2103-07240,7501509907775,Kit Cable Clip TK10-14 Yellow (36 Pack) Impact Resistant Polypropylene Cable Staple Nail 6 Anchor Included Fixing Kit 12.8mm,Hardware,"Anchors, Screws & Kits",14.4,14.4,14.4,36,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and #8 x 1” screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with plug TP1X, screw No. 8×1” (25.4mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.13,5.71,0.12,FALSE,100,100,100
+2104-02000,7501509903999,Cable Clip TK 14-20 (8 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 13.3mm,Hardware,"Anchors, Screws & Kits",4.87,4.87,4.87,8,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X plug and #10×1 1/2” (38mm) screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with plug TP1X, screw No. 8×1” (25.4mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.37,1.81,0.04,FALSE,100,100,100
+2104-04100,7501509902091,Cable Clip TK 14-20 (100 Pack) Impact resistant polypropylene Cable Staple with Nail Included 13.3mm,Electrical,Cable Clips & Staples,7.83,7.83,7.83,100,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X plug and #10×1 1/2” (38mm) screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with plug TP1X, screw No. 8×1” (25.4mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,5.12,3.54,0.36,TRUE,100,100,100
+2104-07240,7501509907782,Kit Cable Clip TK14-20 (24 Pack) Impact Resistant Polypropylene Cable Staple Nail & Anchor Included Fixing Kit 13.3mm,Hardware,"Anchors, Screws & Kits",6.29,6.29,6.29,24,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X plug and #10×1 1/2” (38mm) screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP2X plug, screw No. 10×1 1/2” (38mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.13,5.71,0.15,FALSE,100,100,100
+2105-04100,7501509902107,Cable Clip TK 20-26 (50 Pack) Impact resistant polypropylene Cable Staple with Nail Included 15.2mm,Electrical,Cable Clips & Staples,5.66,5.66,5.66,50,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and #10 x 1 1/2” (38mm) screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP2X plug, screw No. 10 x 1 1/2” (38mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,5.12,3.54,0.37,TRUE,100,100,100
+2105-07240,7501509907799,Kit Cable Clip TK20-26 (9 Pack) Impact Resistant Polypropylene Cable Staple Nail & Anchor Included Fixing Kit 15.2mm,Hardware,"Anchors, Screws & Kits",5.53,5.53,5.53,9,0.05,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and #10 x 1 1/2” (38mm) screw","For proper fixation, use a Thorsmex screw and bolt;
+Resistance to corrosion, humidity and extreme climates;
+Carry out fixing with TP2X plug, screw No. 10 x 1 1/2” (38mm);
+Operating temperatures: -10ºC to +120ºC",temp,Clavithor_EN.pdf,4.13,5.71,0.07,FALSE,100,100,100
+2208-06025,7501509901957,Premiuim Dry Wall Anchor (25 Pack) high density polyethylene TSP 10/75 3In,Hardware,"Anchors, Screws & Kits",15.5,15.5,15.5,25,0.05,"Set of Thorsman brand butterfly anchors with integrated screw to fix and fasten objects in false walls of plaster, masonry and hollow walls. Load capacity 20 Kg. Made with high-density polyethylene, presentation in white and blue. Galvanized steel bolt and nut.","For indoor use;
+load capacity 20 kg;
+Pullout resistance: 7 Kg;
+Operating temperature -50ºC to + 80ºC;
+Commercial presentation: box with 25 pieces",temp,Clavithor_EN.pdf,7.28,1.97,0.66,TRUE,100,100,100
+2209-02000,7501509908987,Dry Wall Anchor (4 Pack) high density polyethylene TMM ,Hardware,"Anchors, Screws & Kits",2.99,2.99,2.99,4,0.05,"Thorsman brand butterfly anchors to fix and hold objects in false drywall, masonry and hollow partition walls. Load capacity 20 Kg. It remains fixed even without a screw.","Easy to install, no tools required, useful for indoor use; Presentation with screw;
+It only requires a 15 mm deep hole in the wall to be installed;
+Requires an 8mm diameter hole;
+It remains fixed even without a screw;
+Load capacity: 20 Kg;
+Pullout resistance: 6 Kg;
+Weight per piece 4.0 g;
+Operating temperature: -40ºc to +80ºc",temp,Clavithor_EN.pdf,4.37,1.81,0.06,TRUE,100,100,100
+2209-06025,7501509908970,Dry Wall Anchor (25 Pack) high density polyethylene TMM,Hardware,"Anchors, Screws & Kits",12.56,12.56,12.56,25,0.05,"Thorsman brand butterfly anchors to fix and hold objects in false drywall, masonry and hollow partition walls. Load capacity 20 Kg. It remains fixed even without a screw.","Easy to install, no tools required, useful for indoor use; Presentation with screw;
+It only requires a 15 mm deep hole in the wall to be installed;
+Requires an 8mm diameter hole;
+It remains fixed even without a screw;
+Load capacity: 20 Kg;
+Pullout resistance: 6 Kg;
+Weight per piece 4.0 g;
+Operating temperature: -40ºc to +80ºc",temp,Clavithor_EN.pdf,3.94,2.56,0.27,"""""",100,100,100
+3101-00100,7501509901964,Cable Clip TC3-5 (100 Pack) Impact resistant polypropylene Cable Staple Nail included 8mm,Electrical,Cable Clips & Staples,10.23,10.23,10.23,100,0.05,"Thorsmex brand staple with integrated nail to fasten round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of a 15 mm x 1.2 mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+Installs directly to the wall by means of a 15 mm (19/32”) x 1.2 mm nail",temp,Clavithor_EN.pdf,3.11,1.97,0.08,TRUE,100,100,100
+3101-00400,7506218110751,Cable Clip TC 3-5Rc Black (100 Pack) Cable Staple Nail included 8.4mm,Electrical,Cable Clips & Staples,6.79,6.79,6.79,100,0.05,"Thorsmex brand staple with integrated nail to fasten round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of a 19.1mm x 2.0mm galvanized steel nail. Black staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 19.1mm x 2.0mm nail.",temp,Clavithor_EN.pdf,2.95,1.89,0.17,TRUE,100,100,100
+3101-04000,7501509900394,Cable Clip TC 3-5 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 8mm,Electrical,Cable Clips & Staples,4.02,4.02,4.02,20,0.05,"Thorsmex brand staple with integrated nail to fasten round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of a 15 mm x 1.2 mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+Installs directly to the wall by means of a 15 mm (19/32”) x 1.2 mm nail",temp,Clavithor_EN.pdf,4.37,1.81,0.03,TRUE,100,100,100
+3101-04300,7506218110805,Cable Clip TC 3-5RC Black (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 8.4mm,Electrical,Cable Clips & Staples,4.2,4.2,4.2,20,0.05,"Thorsmex brand staple with integrated nail to fasten round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of a 19.1mm x 2.0mm galvanized steel nail. Black staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 19.1mm x 2.0mm nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.05,TRUE,100,100,100
+3102-00100,7501509901971,Cable Clip TC 5-7 (100 Pack) Cable Staple Nail Included 20mm,Electrical,Cable Clips & Staples,7.13,7.13,7.13,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors and prevent them from coming loose. It is installed to the wall by means of a 1.2 mm x 20 mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.2 mm (3/64”) x 20 mm (3/4”) nail.",temp,Clavithor_EN.pdf,2.99,2.17,0.13,TRUE,100,100,100
+3102-04000,7501509900400,Cable Clip TC 5-7 (20 Pack) Impact Resistant Polypropylene Cable Staple 10mm,Electrical,Cable Clips & Staples,4.34,4.34,4.34,20,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors and prevent them from coming loose. It is installed to the wall by means of a 1.2 mm x 20 mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.2 mm (3/64”) x 20 mm (3/4”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
+3103-00100,7501509901988,Cable Clip TC 7-10 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 25.4mm,Electrical,Cable Clips & Staples,10.23,10.23,10.23,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. Installs to wall using 1/16"" (1.5mm) x 1"" (25.4mm) galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.5 mm (1/16”) x 25.4 mm (1”) nail.",temp,Clavithor_EN.pdf,3.94,2.56,0.37,TRUE,100,100,100
+3103-00300,7501509905313,Cable Clip TC 7-10Rc Black (100 Pack) Impact Resistant Polypropylene Cable Staple Nail included 19.1mm,Electrical,Cable Clips & Staples,4.97,4.97,4.97,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. Installs to wall using 1/16"" (1.5mm) x 1"" (25.4mm) galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.5 mm (1/16”) x 19 mm (1”) nail.",temp,Clavithor_EN.pdf,3.94,2.56,0.33,TRUE,100,100,100
+3103-00301,7501509905771,Cable Clip TC 7-10Rc Black (100 Pack) Impact Resistant Polypropylene Cable Staple Nail included 25.4mm,Electrical,Cable Clips & Staples,5.77,5.77,5.77,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. Installs to wall using 1/16"" (1.5mm) x 1"" (25.4mm) galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.5 mm (1/16”) x 25.4mm (1”) nail.",temp,Clavithor_EN.pdf,3.94,2.56,0.36,TRUE,100,100,100
+3103-04000,7501509900417,Cable Clip TC 7-10 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 25.4 mm ,Electrical,Cable Clips & Staples,6.48,6.48,6.48,20,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. Installs to wall using 1/16"" (1.5mm) x 1"" (25.4mm) galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 1.5 mm (1/16”) x 25.4 mm (1”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
+3103-04300,7501509905641,Cable Clip TCRc 7-10 Black (20 Pack) Impact Resistant Polypropylene Cable Staple Nail included 25.4 mm ,Electrical,Cable Clips & Staples,5.15,5.15,5.15,1,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. Installs to wall using 1/16"" (1.5mm) x 1"" (25.4mm) galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Transparent color;
+Made with Polypropylene;
+flexible;
+The nail is made of galvanized steel, resistant to oxidation;
+Nail hardness 48 HRc Tol. -1 HRc;
+Box with 100 pieces;
+Blister with 20 pieces",temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
+3104-00100,7501509901995,Cable Clip TC 10-14 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 15mm,Electrical,Cable Clips & Staples,8.01,8.01,8.01,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of the 2.0 mm (5/64”) x 30 mm (1 3/16”) galvanized steel nail. Gray staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 2.0 mm (5/64”) x 30 mm (1 3/16”) nail.",temp,Clavithor_EN.pdf,4.33,0.79,0.34,TRUE,100,100,100
+3104-04000,7501509900844,Cable Clip TC 10-14 Gray (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 15mm,Electrical,Cable Clips & Staples,5.41,5.41,5.41,20,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors. It is installed to the wall by means of the 2.0 mm (5/64”) x 30 mm (1 3/16”) galvanized steel nail. Gray staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 2.0 mm (5/64”) x 30 mm (1 3/16”) nail.",temp,Clavithor_EN.pdf,4.69,2.91,0.11,TRUE,100,100,100
+3105-00100,7501509902008,Cable Clip TC 14-20 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 19mm,Electrical,Cable Clips & Staples,8.65,8.65,8.65,100,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors to prevent them from loosening. It is installed to the wall by means of the 2 mm (5/64”) x 38 mm (1 1/2”) galvanized steel nail. Gray staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120°C;
+It is installed directly to the wall by means of a 2 mm (5/64”) x 38 mm (1 1/2”) nail.",temp,Clavithor_EN.pdf,5.04,3.23,0.57,TRUE,100,100,100
+3105-03000,7501509900127,Cable Clip TC14-20 Gray (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 19mm,Electrical,Cable Clips & Staples,5.53,5.53,5.53,20,0.05,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors to prevent them from loosening. It is installed to the wall by means of the 2 mm (5/64”) x 38 mm (1 1/2”) galvanized steel nail. Gray staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120°C;
+It is installed directly to the wall by means of a 2 mm (5/64”) x 38 mm (1 1/2”) nail.",temp,Clavithor_EN.pdf,4.69,2.91,0.14,TRUE,100,100,100
+3207-00100,7501509902022,Cable Clip TC 3X5 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 15mm,Electrical,Cable Clips & Staples,10.23,10.23,10.23,100,0.05,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. 20.0mm (3/4”) x 1.2mm (3/64”) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 20.0 mm (3/4”) x 1.2 mm (3/64”) nail.",temp,Clavithor_EN.pdf,2.91,1.85,0.09,TRUE,100,100,100
+3207-04000,7501509900851,Cable Clip TC 3x5 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 15mm,Electrical,Cable Clips & Staples,5.1,5.1,5.1,20,0.05,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. 20.0mm (3/4”) x 1.2mm (3/64”) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 20.0 mm (3/4”) x 1.2 mm (3/64”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
+3208-00100,7501509902039,Cable Clip TC 4X6 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 20mm,Electrical,Cable Clips & Staples,5.02,5.02,5.02,100,0.05,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+to walls or ceilings;
+It is installed directly to the wall by means of a nail:
+– Sujethor TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”);
+Flexible;
+Color Transparent;
+electrolytic galvanized",temp,Clavithor_EN.pdf,3.11,2.13,0.09,TRUE,100,100,100
+3208-00300,7501509900301,Cable Clip TC 4X6Rc Black (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 19mm,Electrical,Cable Clips & Staples,8.37,8.37,8.37,100,0.05,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+to walls or ceilings;
+It is installed directly to the wall by means of a nail:
+– Sujethor TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”);
+Flexible;
+Color Black;
+electrolytic galvanized",temp,Clavithor_EN.pdf,5.2,4.02,0.13,TRUE,100,100,100
+3208-04000,7501509900868, Cable Clip TC 4x6 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 20mm,Electrical,Cable Clips & Staples,5.1,5.1,5.1,20,0.05,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+to walls or ceilings;
+It is installed directly to the wall by means of a nail:
+– Sujethor TC 4×6 Rc: 19 mm (3/4”) x 2 mm (5/64”);
+Flexible;
+Color Transparent;
+electrolytic galvanized",temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
+3209-00100,7501509902046,Cable Clip TC 5X8 (100 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 25.4mm.,Electrical,Cable Clips & Staples,11.52,11.52,11.52,100,0.05,Thorsmex brand staples with integrated nail to fasten flat conductors to walls or ceilings indoors and outdoors. It is installed in the wall by means of the 25.4 mm (1”) x 2.0 mm (5/64”) nail.,"
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 25.4 mm (1”) x 2.0 mm (5/64”) nail.",temp,Clavithor_EN.pdf,3.9,2.6,0.25,TRUE,100,100,100
+3209-00300,7501509900356,Cable Clip TC 5X8R Black (100 Pack) Impact Resistant Polypropylene with Nail Included 19mm.,Electrical,Cable Clips & Staples,5.44,5.44,5.44,100,0.05,Thorsmex brand staples with integrated nail to fasten flat conductors to walls or ceilings indoors and outdoors. It is installed in the wall by means of the 25.4 mm (1”) x 2.0 mm (5/64”) nail.,"
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 25.4 mm (1”) x 2.0 mm (5/64”) nail.",temp,Clavithor_EN.pdf,5.51,3.54,0.12,TRUE,100,100,100
+3209-04000,7501509900875,Cable Clip TC 5X8 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 25.4mm,Electrical,Cable Clips & Staples,3.22,3.22,3.22,20,0.05,Thorsmex brand staples with integrated nail to fasten flat conductors to walls or ceilings indoors and outdoors. It is installed in the wall by means of the 25.4 mm (1”) x 2.0 mm (5/64”) nail.,"
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 25.4 mm (1”) x 2.0 mm (5/64”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.07,TRUE,100,100,100
+3210-00100,7501509902053,Cable Clip TC 6X10 (100 Pack) Impact Resistant Polypropylene Cable Staple Clip with Nail Included 7.8mm,Electrical,Cable Clips & Staples,11.52,11.52,11.52,100,0.05,"Thorsmex brand staples with integrated nail to fasten cables to walls or ceilings indoors and outdoors. Ideal for RG-6, RG-59, flat and telephone cables. It has internal nails to hold the cable without deforming it. Resistance to corrosion, humidity and temperatures from -10°C to 120°C. It is installed to the wall by means of the 30.0 mm (1 3/16”) x 2.0 mm (5/64”) nail.","
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 30.0 mm (1 3/16”) x 2.0 mm (5/64”) nail.",temp,Clavithor_EN.pdf,3.94,2.56,0.29,TRUE,100,100,100
+3210-04000,7501509900882,Cable Clip TC 6X10 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 25.4mm,Electrical,Cable Clips & Staples,6.78,6.78,6.78,20,0.05,"Thorsmex brand staples with integrated nail to fasten cables to walls or ceilings indoors and outdoors. Ideal for RG-6, RG-59, flat and telephone cables. It has internal nails to hold the cable without deforming it. Resistance to corrosion, humidity and temperatures from -10°C to 120°C. It is installed to the wall by means of the 30.0 mm (1 3/16”) x 2.0 mm (5/64”) nail.","
+Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 30.0 mm (1 3/16”) x 2.0 mm (5/64”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.08,TRUE,100,100,100
+3401-00020,7501509905795,Cable Clip TDC 4-6 (20 Pack) Impact Resistant Polypropylene Cable Staple Nail Included 12mm,Electrical,Cable Clips & Staples,3.1,3.1,3.1,20,0.05,"Thorsmex brand staples with integrated nail to fix round conductors to walls or ceilings indoors and outdoors to prevent them from loosening. It is installed to the wall by means of a 22 mm x 1.5 mm steel nail. Transparent staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 22 mm (7/8”) x 1.5 mm (5/64”) nail.",temp,Clavithor_EN.pdf,4.37,1.81,0.04,TRUE,100,100,100
+3401-00100,7501509905788,Cable Clip TDC 4-6 Double (100 Pack) Impact Resistant Polypropylene Cable Staple with Nail Included 12mm ,Electrical,Cable Clips & Staples,15.86,15.86,15.86,100,0.05,"Thorsmex brand staples with integrated nail to fix round conductors to walls or ceilings indoors and outdoors to prevent them from loosening. It is installed to the wall by means of a 22 mm x 1.5 mm steel nail. Transparent staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates;
+Operating temperatures: -10ºC to +120ºC;
+It is installed directly to the wall by means of a 22 mm (7/8”) x 1.5 mm (5/64”) nail.",temp,Clavithor_EN.pdf,3.03,2.09,0.12,TRUE,100,100,100
+3501-01000,7501509907058,Cord Management Wire Mold White Organizer Clip,Electrical,Cable Clips & Staples,3.08,3.08,3.08,1,0.05,"Thorsmex self-adhesive clip, organizes and holds cables without drilling holes in walls. Description • Resistance to humidity • High dielectric strength • Adheres firmly to smooth surfaces • For indoor use • Load capacity 250 g. • Operating temperatures: -20ºC to +80ºC Code 3501-01000 Measurements Materials • White color","Moisture resistance;
+High dielectric strength;
+Firmly adheres to smooth surfaces;
+For indoor use;
+load capacity 250g;
+Operating temperatures: -20ºC to +80ºC",temp,Clavithor_EN.pdf,5.91,4.33,0.02,FALSE,100,100,100
+3701-01000,7506218113011,"Fixing Kit Dry Wall Anchor (91 Pack) high density polyethylene Premium Self Drill, Metalic, TSP, TMM, TCP1, TCP0 Anchors",Hardware,"Anchors, Screws & Kits",9.96,9.96,9.96,91,0.05,"Plugs for fixing and fastening objects in false walls such as
+ gypsum board, masonry and hollow partition wall;
+Indoor use;
+Impact resistant;
+Easy to install","Plugs for fixing and fastening objects in false walls such as
+ gypsum board, masonry and hollow partition wall;
+Indoor use;
+Impact resistant;
+Easy to install",temp,Clavithor_EN.pdf,7.17,5.43,0.84,TRUE,100,100,100
+3701-02000,7506218113035,"Fixing Kit Concrete Anchor with Drill Bit (104 Pack) High Density Polyethylene Brick, Solid Block, Concrete Anchor, Drill Bit Included.",Hardware,"Anchors, Screws & Kits",9.96,9.96,9.96,104,0.05,"Plugs to fix objects with screws in walls and ceilings of
+concrete or solid surfaces;
+Performes a double expansion, it opens towards the four
+cardinal four cardinal points;
+It consists of 2 flaps that do not allow the socket to rotate
+inside the hole when the screw is inserted in;
+t has a collar that prevents the socket from sinking, even when
+the borehole is deeper;
+It has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion;
+Flexible;","Plugs to fix objects with screws in walls and ceilings of
+concrete or solid surfaces;
+Performes a double expansion, it opens towards the four
+cardinal four cardinal points;
+It consists of 2 flaps that do not allow the socket to rotate
+inside the hole when the screw is inserted in;
+t has a collar that prevents the socket from sinking, even when
+the borehole is deeper;
+It has a guide that allows the screw to be inserted correctly;
+Free of burrs that prevent double expansion;
+Flexible;",temp,Clavithor_EN.pdf,7.17,5.43,1.04,TRUE,100,100,100
+4700-01280,7501509907720,Wire Management Spiral Cable Wrap Natural Low Density Polyethylene 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,4.12,4.12,1,0.05,"With the Thorsmex 15mm Cable Helix you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose cables that can cause accidents.","Color: Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.411 Kg, / 50 m = 1.650 Kg;
+Operating temperature: -50ºC to +75°C;
+Great versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.77,9.25,0.19,TRUE,100,100,100
+4700-01281,7501509908550,Wire Management Spiral Cable Wrap White Low Density Polyethylene 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 19mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.750 Kg / 50 m = 2.860 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,8.66,0.18,TRUE,100,100,100
+4700-01282,7501509908574,"Wire Management Spiral Cable Wrap Natural Low Density Polyethylene 24MM of 6,5ft.",Electrical,Wiring & Wiring Accessories,23.71,23.71,23.71,1,0.05,"With the Thorsmex 24mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.248 Kg / 10 m = 1,240 Kg / 50 m = 3,300 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,11.81,0.27,TRUE,100,100,100
+4700-01283,7501509908598,Wire Management Spiral Cable Wrap Natural Low Density Polyethylene 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,124.67,124.67,124.67,1,0.05,"With the Thorsmex 30mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","
+Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.298 kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,18.11,0.82,TRUE,100,100,100
+4700-01285,7506218111604,"Wire Management Spiral Cable Wrap Natural Low Density Polyethylene 6MM of 6,5ft.",Electrical,Wiring & Wiring Accessories,3.37,3.37,3.37,1,0.05,"With the Thorsmex 6 mm Agrupathor, you obtain great advantages in flexibility, handling, functionality, it is very useful when protecting the headphone cable and cell phone charger, among many other uses.","Color: Natural and Black, availability of colors under minimum batch;
+Weight per presentation: 2 m = 0.0281 Kg / 10 m = 0.1278 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,0.79,6.69,0.07,TRUE,100,100,100
+4700-05281,7501509909083,Wire Management Spiral Cable Wrap Blue Low Density Polyethylene 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,3.37,3.37,1,0.05,"With the Thorsmex 15mm Cable Helix you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose cables that can cause accidents.","Color: Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.411 Kg, / 50 m = 1.650 Kg;
+Operating temperature: -50ºC to +75°C;
+Great versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.77,9.25,0.17,TRUE,100,100,100
+4700-05282,7501509909120,Wire Management Spiral Cable Wrap Blue Low Density Polyethylene 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 19mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.750 Kg / 50 m = 2.860 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,8.66,0.34,TRUE,100,100,100
+4700-05283,7501509909168,Wire Management Spiral Cable Wrap Blue Low Density Polyethylene 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 24mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.248 Kg / 10 m = 1,240 Kg / 50 m = 3,300 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,11.81,0.58,TRUE,100,100,100
+4700-05284,7501509909205,Wire Management Spiral Cable Wrap Blue Low Density Polyethylene 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,23.71,23.71,1,0.05,"With the Thorsmex 30mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","
+Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.298 kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,18.11,0.69,TRUE,100,100,100
+4700-06280,7501509907966,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 15MM of 6.5ft,Electrical,Wiring & Wiring Accessories,36.81,36.81,36.81,1,0.05,"With the Thorsmex 15mm Cable Helix you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose cables that can cause accidents.","Color: Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.411 Kg, / 50 m = 1.650 Kg;
+Operating temperature: -50ºC to +75°C;
+Great versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.77,9.25,0.19,TRUE,100,100,100
+4700-06281,7501509908567,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,4.12,4.12,1,0.05,"With the Thorsmex 19mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.750 Kg / 50 m = 2.860 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,8.66,0.3,TRUE,100,100,100
+4700-06282,7501509908581,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 24mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.248 Kg / 10 m = 1,240 Kg / 50 m = 3,300 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,11.81,0.49,TRUE,100,100,100
+4700-06283,7501509908604,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,23.71,23.71,1,0.05,"With the Thorsmex 30mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","
+Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.298 kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,18.11,0.64,TRUE,100,100,100
+4700-06285,7506218111611,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 6MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.06,3.06,3.06,1,0.05,"With the Thorsmex 6 mm Agrupathor, you obtain great advantages in flexibility, handling, functionality, it is very useful when protecting the headphone cable and cell phone charger, among many other uses.","Color: Natural and Black, availability of colors under minimum batch;
+Weight per presentation: 2 m = 0.0281 Kg / 10 m = 0.1278 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.77,9.06,0.08,TRUE,100,100,100
+4700-08281,7501509909809,Wire Management Spiral Cable Wrap White Low Density Polyethylene 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,3.37,3.37,1,0.05,"With the Thorsmex 15mm Cable Helix you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose cables that can cause accidents.","Color: Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.411 Kg, / 50 m = 1.650 Kg;
+Operating temperature: -50ºC to +75°C;
+Great versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.18,9.84,0.17,TRUE,100,100,100
+4700-08282,7501509909816,Wire Management Spiral Cable Wrap White Low Density Polyethylene 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,4.12,4.12,1,0.05,"With the Thorsmex 19mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.750 Kg / 50 m = 2.860 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,8.66,0.35,TRUE,100,100,100
+4700-08283,7501509909823,Wire Management Spiral Cable Wrap White Low Density Polyethylene 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 24mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.248 Kg / 10 m = 1,240 Kg / 50 m = 3,300 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,2.36,13.58,0.39,TRUE,100,100,100
+4700-08284,7501509908246,Wire Management Spiral Cable Wrap White Low Density Polyethylene 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,23.71,23.71,1,0.05,"With the Thorsmex 30mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","
+Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.298 kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,12.6,0.74,TRUE,100,100,100
+4700-09281,7501509909267,Wire Management Spiral Cable Wrap Grey Low Density Polyethylene 15MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,3.37,3.37,3.37,1,0.05,"With the Thorsmex 15mm Cable Helix you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose cables that can cause accidents.","Color: Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.411 Kg, / 50 m = 1.650 Kg;
+Operating temperature: -50ºC to +75°C;
+Great versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.77,9.25,0.18,TRUE,100,100,100
+4700-09282,7501509909274,Wire Mnagement Spiral Cable Wrap Grey Low Density Polyethylene 19MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.12,4.12,4.12,1,0.05,"With the Thorsmex 19mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.1500 Kg / 10 m = 0.750 Kg / 50 m = 2.860 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,8.66,0.34,TRUE,100,100,100
+4700-09283,7501509909281,Wire Management Spiral Cable Wrap Grey Low Density Polyethylene 24MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,4.13,4.13,4.13,1,0.05,"With the Thorsmex 24mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.248 Kg / 10 m = 1,240 Kg / 50 m = 3,300 Kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,11.81,0.39,TRUE,100,100,100
+4700-09284,7501509909786,Wire Management Spiral Cable Wrap Grey Low Density Polyethylene 30MM of 6.5ft.,Electrical,Wiring & Wiring Accessories,23.71,23.71,23.71,1,0.05,"With the Thorsmex 30mm Agrupathor, you get great advantages in flexibility, handling, functionality, it is decorative by eliminating loose wires that can cause accidents.","
+Color : Natural, Black, Blue, White and Grey;
+Weight per presentation: 2 m = 0.298 kg;
+Operating temperature: -50ºC to +75ºC;
+Great flexibility and versatility;
+For indoor use",temp,Clavithor_EN.pdf,1.97,18.11,0.74,TRUE,100,100,100
+5000-21252,7501509900134,"Cord Management Cable Raceway 0812, White (50 Pack) of 6ft W/ Tape (300ft)",Electrical,Raceway & Raceway Accessories,5.23,5.23,5.23,50,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: TMK 0812 glue system: 0.381 kg; TMK 0812 tape system: 0.416 kg;
+It has an internal area of ​​53 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.39,0.47,0.19,"""""",100,100,100
+5001-01250,7501509906174,Cord Management Cable Raceway 0812 White (25 Pack) of 3.6ft. (90ft),Electrical,Raceway & Raceway Accessories,3.87,3.87,3.87,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: TMK 0812 glue system: 0.381 kg; TMK 0812 tape system: 0.416 kg;
+It has an internal area of ​​53 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.31,0.47,0.13,"""""",100,100,100
+5001-01252,7501509906150,Cord Management Cablw Raceway 0812 (4 Pack) of 3.6ft  W/Self-adhesive Tape (14.4ft),Electrical,Raceway & Raceway Accessories,10.76,10.76,10.76,4,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: TMK 0812 glue system: 0.381 kg; TMK 0812 tape system: 0.416 kg;
+It has an internal area of ​​53 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.59,3.94,0.62,TRUE,100,100,100
+5001-01253,7501509907140,"Cord Management Cable Raceway 0812 White (50 Pack) 6,5 ft. (325ft)",Electrical,Raceway & Raceway Accessories,7.08,7.08,7.08,50,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: TMK 0812 glue system: 0.381 kg; TMK 0812 tape system: 0.416 kg;
+It has an internal area of ​​53 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.31,0.47,0.23,"""""",100,100,100
+5001-01258,7506218110485,Cord Management Cable Raceway 0812 White (10 Pack) of 3ft W/Tape. (30ft),Electrical,Raceway & Raceway Accessories,6.82,6.82,6.82,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: TMK 0812 glue system: 0.381 kg; TMK 0812 tape system: 0.416 kg;
+It has an internal area of ​​53 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.39,0.47,0.26,TRUE,100,100,100
+5010-02001,7506218110706,Cord Management Accesory Cable Raceway 0812 (3 Pack) White Outside Elbow,Electrical,Raceway & Raceway Accessories,0.77,0.77,0.77,3,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0.00104 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.71,4.13,0.03,FALSE,100,100,100
+5020-02001,7506218110683,Cord Management Accesory Cable Raceway 0812 (3 Pack) White Inside Elbow,Electrical,Raceway & Raceway Accessories,0.77,0.77,0.77,30,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0.00117 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,4.13,0.03,FALSE,100,100,100
+5030-02001,7506218110416,Cord Management Accessory Cable Raceway 0812 (3 Pack) White Section L ,Electrical,Raceway & Raceway Accessories,0.77,0.77,0.77,3,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0.00088 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.31,4.13,0.02,FALSE,100,100,100
+5040-02001,7506218110409,Cord Management Accessory Cable Raceway 0812 (3 Pack) White Section T ,Electrical,Raceway & Raceway Accessories,0.77,0.77,0.77,3,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0.00114 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,4.13,0.03,FALSE,100,100,100
+5080-02001,7506218110430,Cord Management Accessory Cable Raceway 0812 (3 Pack) White Union Piece ,Electrical,Raceway & Raceway Accessories,0.81,0.81,0.81,3,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0.00041 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,4.13,0.02,FALSE,100,100,100
+5090-02001,7506218110423,Cord Management Accessory Cable Raceway 0812 (3 Pack) White Final Lid ,Electrical,Raceway & Raceway Accessories,0.81,0.81,0.81,3,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0 00044 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,4.13,0.02,FALSE,100,100,100
+5091-00001,7506218111512,Cord Management Accessory Cable Raceway 0812 (13 Pack) White Set ,Electrical,Raceway & Raceway Accessories,2.92,2.92,2.92,13,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Accessory weight: 0 00044 kg;
+Working temperature -40ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.04,4.13,0.04,FALSE,100,100,100
+5101-01250,7501509900950,Cord Management Cable Raceway 1020 (20 Pack) White w/2 Division Rails 8ft (160ft),Electrical,Raceway & Raceway Accessories,9.71,9.71,9.71,20,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,3.94,7.87,0.49,"""""",100,100,100
+5101-01251,7501509900158,Cord Management Cable Raceway 1020 (10 Pack) White  2 of 3.6 ft w/Anchor. (36ft),Electrical,Raceway & Raceway Accessories,11.83,11.83,11.83,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.59,4.33,0.52,TRUE,100,100,100
+5101-01252,7501509900196,Cord Management Cable Raceway 1020 (10 Pack) White 2 of 3.6 ft w/Tape. (36ft),Electrical,Raceway & Raceway Accessories,11.93,11.93,11.93,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.79,3.94,0.49,TRUE,100,100,100
+5101-01260,7501509904606,Cord Management Cable Raceway 1020 White 8ft -20x10mm,Electrical,Raceway & Raceway Accessories,11.88,11.88,11.88,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.39,0.79,0.46,"""""",100,100,100
+5101-01262,7501509905740,Cord Management Cable Raceway 1020 (10 Pack) White 2 of 3.6ft (36ft),Electrical,Raceway & Raceway Accessories,17.75,17.75,17.75,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.59,3.94,0.51,TRUE,100,100,100
+5101-11260,7506218111673,Cord Management Cable Raceway 1020 (25 Pack) White wo/Div Transparent Lid 8.2ft (205ft),Electrical,Raceway & Raceway Accessories,12.68,12.68,12.68,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.39,0.79,0.52,"""""",100,100,100
+5101-21252,7501509900141,Cord Management Cable Raceway 1020 (25 Pack) White w/Div 6 ft w/Tape. (150ft),Electrical,Raceway & Raceway Accessories,12.52,12.52,12.52,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.47,0.79,0.4,"""""",100,100,100
+5101-21262,7501509900165,Cord Management Cable Raceway 1020 (25 Pack) White wo/Div 6ft w/Tape (150ft),Electrical,Raceway & Raceway Accessories,12.34,12.34,12.34,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel, base and lid weight: 0.206 kg;
+It has an internal area of ​​62 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.47,0.79,0.37,"""""",100,100,100
+5110-02001,7501509900974,Cord Management Accessory Cable Raceway 1020 (10 Pack) White Outside Elbow,Electrical,Raceway & Raceway Accessories,7.8,7.8,7.8,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.0105 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5120-02001,7501509900967,Cord Management Accessory Cable Raceway 1020 (10 Pack) White Inside Elbow.,Electrical,Raceway & Raceway Accessories,8.83,8.83,8.83,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.010 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5130-02001,7501509900981,Cord Management Cable Raceway 1020 White L Fitting,Electrical,Raceway & Raceway Accessories,13.99,13.99,13.99,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.010 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
+5140-02001,7501509905245,Cord ManagEment Cable Raceway 1020 White T Fitting,Electrical,Raceway & Raceway Accessories,12.28,12.28,12.28,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.010 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5180-02001,7501509905221,Cord Management Cable Raceway 1020 White Union Piece,Electrical,Raceway & Raceway Accessories,9.54,9.54,9.54,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.010 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.01,FALSE,100,100,100
+5190-02001,7501509900998,Cord Management Cable Raceway 1020 White End Cap,Electrical,Raceway & Raceway Accessories,8.08,8.08,8.08,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.010 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
+5201-01250,7501509901001,PVC Cord Management Cable Raceway 1720 (25 Pack) White of 8.2ft (205ft),Electrical,Raceway & Raceway Accessories,14.4,14.4,14.4,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Weight of the channel, base and cover: TMK 1720 1.10 channel with screw: 0.282 kg. TMK 1.10 channel with tape: 0.280 kg;
+It has an internal area of ​​253 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.67,0.79,0.66,"""""",100,100,100
+5201-01251,7501509900172,PVC Cord Management Cable Raceway 1720 (10 Pack) White 2 of 3.6ft W/Anchor. (36ft),Electrical,Raceway & Raceway Accessories,14.4,14.4,14.4,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Weight of the channel, base and cover: TMK 1720 1.10 channel with screw: 0.282 kg. TMK 1.10 channel with tape: 0.280 kg;
+It has an internal area of ​​253 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.79,3.94,0.65,TRUE,100,100,100
+5201-01252,7501509900202,PVC Cord Management Cable Raceway 1720 (10 Pack) 2 of 3.6ft.  (36ft),Electrical,Raceway & Raceway Accessories,17.75,17.75,17.75,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Weight of the channel, base and cover: TMK 1720 1.10 channel with screw: 0.282 kg. TMK 1.10 channel with tape: 0.280 kg;
+It has an internal area of ​​253 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.79,3.74,0.71,TRUE,100,100,100
+5201-21252,7501509900189,PVC Cord Management Cable Raceway 1720 (25 Pack) 6ft w/Tape. (150ft),Electrical,Raceway & Raceway Accessories,15.68,15.68,15.68,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Weight of the channel, base and cover: TMK 1720 1.10 channel with screw: 0.282 kg. TMK 1.10 channel with tape: 0.280 kg;
+It has an internal area of ​​253 mm2;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.75,0.79,0.51,"""""",100,100,100
+5210-02001,7501509901025,Cord Management Accessory Cable Raceway 1720 (10 Pack) Outside Elbow,Electrical,Raceway & Raceway Accessories,9.34,9.34,9.34,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5220-02001,7501509901018,Cord Management Accessory Cable Raceway 1720 (10 Pack) Inside Elbow,Electrical,Raceway & Raceway Accessories,8.83,8.83,8.83,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5230-02001,7501509901032,Cord Management Accessory Cable Raceway1720 (10 Pack) White L Fitting,Electrical,Raceway & Raceway Accessories,13.99,13.99,13.99,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5240-02001,7501509907362,Cord Management Accessory Cable Raceway 1720 (10 Pack) White Section T ,Electrical,Raceway & Raceway Accessories,1.51,1.51,1.51,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.04,FALSE,100,100,100
+5280-02001,7501509907379,Cord Management Accessory Cable Raceway 1720 (10 Pack) White Union Piece,Electrical,Raceway & Raceway Accessories,1.7,1.7,1.7,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+5290-02001,7501509901049,Cord Management Accessory Cable Raceway 1720 (10 Pack) White Final Lid,Electrical,Raceway & Raceway Accessories,1.69,1.69,1.69,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Accessory weight: 0.014 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.02,FALSE,100,100,100
+5301-01250,7501509901056,PVC Cord Management Cable Raceway 1735 (10 Pack) White of 2 Rails 8ft,Electrical,Raceway & Raceway Accessories,22.87,22.87,22.87,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.67,1.38,1.22,"""""",100,100,100
+5301-01251,7501509900110,PVC Cord Management Cable Raceway 1735 (10 Pack) White 2 of 3.6ft w/Anchor (36ft),Electrical,Raceway & Raceway Accessories,22.87,22.87,22.87,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.79,4.33,1.3,TRUE,100,100,100
+5301-01252,7501509900219,PVC Cord Management Cable Raceway 1735 (10 Pack) White 2 of 3.6ft w/Tape (36ft),Electrical,Raceway & Raceway Accessories,22.87,22.87,22.87,10,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.79,3.94,1.25,TRUE,100,100,100
+5301-01260,7506218111666,PVC Cord Management Cable Raceway 1735 (100 Pack) White wo/Div 8ft (800ft),Electrical,Raceway & Raceway Accessories,22.87,22.87,22.87,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.67,1.38,1.1,"""""",100,100,100
+5301-21252,7501509900233,PVC Cord Management Cable Raceway 1735 (25 Pack) White w/Div 6 ft w/Tape. (150ft),Electrical,Raceway & Raceway Accessories,26.9,26.9,26.9,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.75,1.38,0.82,"""""",100,100,100
+5301-21262,7501509900240,PVC Cord Management Cable Raceway 1735 (25 Pack) White wo/Div 6ft w/Tape. (150ft),Electrical,Raceway & Raceway Accessories,26.9,26.9,26.9,25,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Channel, base and lid weight: 0.610 kg;
+It has an internal area of ​​202 mm2 per duct;
+CSA Certified;
+Working temperature -20ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,0.75,1.38,0.83,"""""",100,100,100
+5310-02001,7501509901070,Cord Management Accessory Cable Raceway 1735 (6 Pack) White Outside Elbow  ,Electrical,Raceway & Raceway Accessories,1.76,1.76,1.76,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
+5320-02001,7501509901063,Cord Management Accessory Cable Raceway 1736 (6 Pack) White Inside Elbow ,Electrical,Raceway & Raceway Accessories,1.72,1.72,1.72,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
+5330-02001,7501509901087,Cord Management Accessory Cable Raceway 1737 (6 Pack) White Section L,Electrical,Raceway & Raceway Accessories,1.72,1.72,1.72,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
+5340-02001,7501509907386,Cord Management Accessory Cable Raceway 1735 (6 Pack) White Section T ,Electrical,Raceway & Raceway Accessories,1.72,1.72,1.72,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.05,FALSE,100,100,100
+5380-02001,7501509907393,Cord Management Accessory Cable Raceway 1735 (6 Pack) White Union Piece ,Electrical,Raceway & Raceway Accessories,1.73,1.73,1.73,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.04,FALSE,100,100,100
+5390-02001,7501509901094,Cord Management Accessory Cable Raceway 1735 (6 Pack) White Final Lid,Electrical,Raceway & Raceway Accessories,2.38,2.38,2.38,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.018 kg;
+CSA Certified;
+Working temperature -40ºc to +85ºc;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,5.51,3.94,0.03,FALSE,100,100,100
+7200-02001,7506218112458,Wire Hiding Blind Lid For TMK/S1 White Box,Electrical,Raceway & Raceway Accessories,2.96,2.96,2.96,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color (available in aluminum color under minimum purchase lot);
+Accessory weight: 0.0947 kg;
+CSA Certified;
+Working temperature -40oC to +85oC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the UL 94 V0 and NOM-001-SEDE-2005 standard;
+Cutting areas for installation with gutter",temp,Clavithor_EN.pdf,9.25,4.45,0.06,FALSE,100,100,100
+7902-02001,7506218112229,"Mounting Box single gang plastic white (6 Pack) anchors, screws and pads included. ",Electrical,Raceway & Raceway Accessories,9.54,9.54,9.54,6,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Standard waterproof type box for electrical connections,
+They are also ideal for CCTV installation by covering
+connectors or Balun making them fit perfectly
+protected;
+Register Box and Cover with 1/4"" Set Screws
+lap",temp,Clavithor_EN.pdf,2.05,8.66,0.24,FALSE,100,100,100
+8802-80300,7506218112250,Overfloor Cord Protector Aluminium/PVC 8.2 ft.,Electrical,Raceway & Raceway Accessories,84.73,84.73,84.73,2,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Maximum working temperature: 85ºC;
+Gray",temp,Clavithor_EN.pdf,0.79,3.58,4.31,"""""",100,100,100
+9001-01250,7501509906693,"PVC Cord Management Cable Raceway TRL 50 (12 Pack) White of 8,2ft w/2 Platf and 4 Straps",Electrical,Raceway & Raceway Accessories,48.32,48.32,48.32,12,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Channel weight: 0,700 kg;
+Capacity: 1 tube from 1/2” (12.7 mm) to 1” (25.4 mm);
+CSA Certified;
+Working temperature -20ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,1.57,1.97,1.54,"""""",100,100,100
+9101-01250,7501509901780,PVC Cord Management Cable Raceway TRL 56 (12 Pack) White w/2 Platf and 4 Straps,Electrical,Raceway & Raceway Accessories,33.04,33.04,33.04,12,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Channel weight: 0.820 kg;
+Capacity: 2 tubes of 1/2” (12.7 mm);
+CSA Certified;
+Working temperature -20ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,1.26,2.2,1.73,"""""",100,100,100
+9150-01001,7506218110096,Cord Management Accessory Cable Raceway TRL 56 (100 Pack) White Union Piece,Electrical,Raceway & Raceway Accessories,4.24,4.24,4.24,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Designed to protect copper or PVC pipes, in plumbing, refrigeration, heating installations; Reduces installation and maintenance costs;
+High dielectric strength;
+It has Accessories;
+That reduce installation time by avoiding special cuts",temp,Clavithor_EN.pdf,1.18,2.36,0.01,FALSE,100,100,100
+9190-01001,7506218110072,Cord Management Cable Raceway TRL 56 (100 Pack) White Final Lid,Electrical,Raceway & Raceway Accessories,5.68,5.68,5.68,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Designed to protect copper or PVC pipes, in plumbing, refrigeration, heating installations; Reduces installation and maintenance costs;
+High dielectric strength;
+It has Accessories;
+That reduce installation time by avoiding special cuts",temp,Clavithor_EN.pdf,1.18,2.36,0.02,FALSE,100,100,100
+9201-01250,7501509901834,PVC Cord Management Cable Raceway TRL 76 (12 Pack) White w/2 Platf and 4 Straps ,Electrical,Raceway & Raceway Accessories,58.07,58.07,58.07,12,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","White color;
+Channel weight: 0.820 kg;
+Capacity: 2 tubes of 3/4” (19.1 mm);
+CSA Certified;
+Working temperature -20ºC to +85ºC;
+Resistance to moisture and corrosive atmosphere;
+High dielectric strength;
+Complies with the requirements of the NOM-001-SEDE-2005 standard",temp,Clavithor_EN.pdf,1.65,2.99,2.08,"""""",100,100,100
+9250-01001,7506218110102,PVC Cord Management Cable Raceway TRL76 (100 Pack) White Union Piece ,Electrical,Raceway & Raceway Accessories,5.99,5.99,5.99,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Designed to protect copper or PVC pipes, in plumbing, refrigeration, heating installations; Reduces installation and maintenance costs;
+High dielectric strength;
+It has Accessories;
+That reduce installation time by avoiding special cuts",temp,Clavithor_EN.pdf,1.38,3.15,0.03,FALSE,100,100,100
+9290-01001,7506218110089,PVC Cord Management Cable Raceway TRL76 (100 Pack) Final Lid ,Electrical,Raceway & Raceway Accessories,5.99,5.99,5.99,100,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Designed to protect copper or PVC pipes, in plumbing, refrigeration, heating installations; Reduces installation and maintenance costs;
+High dielectric strength;
+It has Accessories;
+That reduce installation time by avoiding special cuts",temp,Clavithor_EN.pdf,1.18,3.15,0.05,FALSE,100,100,100
+9300-01252,7501509903234,"Wiremold Soft Floor Cord Cover Cable Brown 8,2ft ",Electrical,Raceway & Raceway Accessories,26.43,26.43,26.43,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Brown, gray and black;
+Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg;
+It has a total internal area of ​​305 mm²;
+Working temperature -20ºC to +80°C;
+Resistance to moisture and corrosive atmosphere;
+Resistance up to 100 kg of continuous passage;
+High dielectric strength",temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
+9300-01253,7501509903258,Wiremold Soft Floor Cord Cover Cable 8.2ft w/Tape.,Electrical,Raceway & Raceway Accessories,26.43,26.43,26.43,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Brown, gray and black;
+Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg;
+It has a total internal area of ​​305 mm²;
+Working temperature -20ºC to +80°C;
+Resistance to moisture and corrosive atmosphere;
+Resistance up to 100 kg of continuous passage;
+High dielectric strength",temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
+9300-01254,7501509903241,Wiremold Soft Floor Cord Cover Cable Black 8.2ft w/Tape.,Electrical,Raceway & Raceway Accessories,26.43,26.43,26.43,1,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Brown, gray and black;
+Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg;
+It has a total internal area of ​​305 mm²;
+Working temperature -20ºC to +80°C;
+Resistance to moisture and corrosive atmosphere;
+Resistance up to 100 kg of continuous passage;
+High dielectric strength",temp,Clavithor_EN.pdf,3.15,10.63,2.38,FALSE,100,100,100
+9400-01250,7506218110201,Wiremold Overfloor Cord Protector (4 Pack) White 4ft. (16ft),Electrical,Raceway & Raceway Accessories,16.09,16.09,16.09,4,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Brown, gray and black;
+Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg;
+It has a total internal area of ​​305 mm²;
+Working temperature -20ºC to +80°C;
+Resistance to moisture and corrosive atmosphere;
+Resistance up to 100 kg of continuous passage;
+High dielectric strength",temp,Clavithor_EN.pdf,0.79,3.58,1.34,"""""",100,100,100
+9400-02250,7506218110256,Wiremold Overfloor Cord Protector (2 Pack) White 3ft (6ft),Electrical,Raceway & Raceway Accessories,31.45,31.45,31.45,2,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Brown, gray and black;
+Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg;
+It has a total internal area of ​​305 mm²;
+Working temperature -20ºC to +80°C;
+Resistance to moisture and corrosive atmosphere;
+Resistance up to 100 kg of continuous passage;
+High dielectric strength",temp,Clavithor_EN.pdf,0.79,3.58,1.21,TRUE,100,100,100
+9430-02001,7506218110126,Wiremold Overfloor Cord Protector (15 Pack) White Section L,Electrical,Raceway & Raceway Accessories,5.99,5.99,5.99,15,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Conduit for electrical installations on the floor or plinth, its
+Half-round design provides security, resistance and
+comfort;
+High dielectric strength",temp,Clavithor_EN.pdf,9.84,6.1,0.24,TRUE,100,100,100
+9440-02001,7506218110119,Wiremold Overfloor Cord Protector (15 Pack) White Section T ,Electrical,Raceway & Raceway Accessories,6.99,6.99,6.99,15,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Conduit for electrical installations on the floor or plinth, its
+Half-round design provides security, resistance and
+comfort;
+High dielectric strength",temp,Clavithor_EN.pdf,9.65,5.51,0.06,TRUE,100,100,100
+9480-02001,7506218110133,Wiremold Overfloor Cord Protector (15 Pack) White Union Piece,Electrical,Raceway & Raceway Accessories,2.08,2.08,2.08,15,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Conduit for electrical installations on the floor or plinth, its
+Half-round design provides security, resistance and
+comfort;
+High dielectric strength",temp,Clavithor_EN.pdf,9.84,5.91,0.06,TRUE,100,100,100
+9490-02001,7506218110140,Wiremold Overfloor Cord Protector (15 Pack) White Final Lid ,Electrical,Raceway & Raceway Accessories,2.13,2.13,2.13,15,0.05,"Perfect solution to electrical installations and structured cabling, easy and simple placement that has high dielectric strength for interiors","Conduit for electrical installations on the floor or plinth, its
+Half-round design provides security, resistance and
+comfort;
+High dielectric strength",temp,Clavithor_EN.pdf,6.89,4.72,0.06,TRUE,100,100,100
