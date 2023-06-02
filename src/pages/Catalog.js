@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Products from '../components/ProductSquare';
 import { saveAs } from 'file-saver';
+import html2pdf from 'html2pdf.js';
 import '../assets/styles/catalog.css';
 
 function Catalog({ products, images }) {
@@ -135,7 +136,42 @@ function Catalog({ products, images }) {
     const csvData = filteredData.map((product) => `${product.name},${product.modelNumber},${product.price}`);
     const csvString = 'Name,Model Number,Price\n' + csvData.join('\n');
     const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8' });
-    saveAs(blob, 'filtered_products.csv');
+    saveAs(blob, 'Catalog - Charlotte Imports.csv');
+  };
+
+  // Function to export filtered products as PDF
+  const createAndDownloadPDF = () => {
+    const grid = document.querySelector('.product-grid');
+  
+    html2pdf()
+      .set({
+        margin: [10, 10, 10, 10],
+        filename: 'Catalog - Charlotte Imports.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+        page: {
+          before: () => {
+            // Increase the height of the page before rendering
+            return new Promise((resolve) => {
+              setTimeout(() => {
+                resolve();
+              }, 100);
+            });
+          },
+          after: () => {
+            // Wait for the page to render completely before moving to the next page
+            return new Promise((resolve) => {
+              setTimeout(() => {
+                resolve();
+              }, 200);
+            });
+          }
+        }
+      })
+      .from(grid)
+      .save();
   };
 
   return (
@@ -189,6 +225,9 @@ function Catalog({ products, images }) {
           </div>
           <div className="export-csv">
             <button onClick={exportAsCSV}>Export as CSV</button>
+          </div>
+          <div className="export-pdf">
+            <button onClick={createAndDownloadPDF}>Export  as PDF</button>
           </div>
         </div>
       </div>
