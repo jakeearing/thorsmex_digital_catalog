@@ -143,7 +143,6 @@ function Catalog({ products, images }) {
   // Function to export filtered products as PDF
   const createAndDownloadPDF = () => {
     const grid = document.querySelector('.product-grid');
-
     html2pdf()
       .set({
         margin: [10, 10, 10, 10],
@@ -219,7 +218,6 @@ function Catalog({ products, images }) {
       .from(grid)
       .save();
   };
-
 
   return (
     <div className="catalog-container">
