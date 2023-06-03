@@ -11,10 +11,13 @@ connect('thorsmex_catalog', host='mongodb://localhost:27017/')
 # MongoDB products model created
 class Products(Document):
     name = StringField(required=True)
-    price = DecimalField(precision=2,required=True)
-    volumeDiscount = DecimalField(precision=2)
+    price_indv = DecimalField(precision=2,required=True)
+    price_box = DecimalField(precision=2,required=True)
+    price_pallet = DecimalField(precision=2,required=True)
     stock = ListField(IntField())
-    pieces = IntField()
+    count_indv = IntField()
+    count_box = IntField()
+    count_pallet = IntField()
     gtin = IntField(required=True)
     modelNumber = StringField(required=True)
     category = StringField(required=True)
@@ -23,9 +26,15 @@ class Products(Document):
     details = StringField()
     specs = StringField()
     product_sheet = StringField()
-    height = DecimalField(precision=2)
-    width = DecimalField(precision=2)
-    weight = DecimalField(precision=2)
+    height_indv = DecimalField(precision=2)
+    width_indv = DecimalField(precision=2)
+    weight_indv = DecimalField(precision=2)
+    height_box = DecimalField(precision=2)
+    width_box = DecimalField(precision=2)
+    weight_box = DecimalField(precision=2) 
+    height_pallet = DecimalField(precision=2)
+    width_pallet = DecimalField(precision=2)
+    weight_pallet = DecimalField(precision=2)
     english = StringField(null=True)
     stock_NC = IntField()
     stock_TX = IntField()
@@ -43,10 +52,13 @@ def import_data():
     for index, row in df.iterrows():
         product = Products(
             name=row['name'],
-            price=row['price'],
-            volumeDiscount=row['volume_discount'],
+            price_indv=row['price_indv'],
+            price_box=row['price_box'],
+            price_pallet=row['price_pallet'],
             stock=[row['stock_NC'], row['stock_TX'], row['stock_MX']],
-            pieces=row['pieces'],
+            count_indv=row['count_indv'],
+            count_box=row['count_box'],
+            count_pallet=row['count_pallet'],
             gtin=row['gtin'],
             modelNumber=row['model_number'],
             category=row['category'],
@@ -55,9 +67,15 @@ def import_data():
             details=row['details'],
             specs=row['specs'],
             product_sheet=row['product_sheet'],
-            height=row['height'],
-            width=row['width'],
-            weight=row['weight'],
+            height_indv=row['height_indv'],
+            width_indv=row['width_indv'],
+            weight_indv=row['weight_indv'],
+            height_box=row['height_box'],
+            width_box=row['width_box'],
+            weight_box=row['weight_box'],
+            height_pallet=row['height_pallet'],
+            width_pallet=row['width_pallet'],
+            weight_pallet=row['weight_pallet'],
             english=row['english'],
             stock_NC=row['stock_NC'],
             stock_TX=row['stock_TX'],
