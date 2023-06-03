@@ -15,7 +15,6 @@ function Catalog({ products, images }) {
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
   const [categoryState, setCategoryState] = useState({});
-  const [selectedItems, setSelectedItems] = useState([]);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -143,6 +142,7 @@ function Catalog({ products, images }) {
   // Function to export filtered products as PDF
   const createAndDownloadPDF = () => {
     const grid = document.querySelector('.product-grid');
+
     html2pdf()
       .set({
         margin: [10, 10, 10, 10],
@@ -261,18 +261,21 @@ function Catalog({ products, images }) {
               </select>
             </div>
           </div>
-          <div className="categories-heading">
+          <div className="sidebar-heading">
             <h3>Product Categories</h3>
           </div>
           {renderedCategoryLinks}
           <div className="category">
             <Link to="/">All Products</Link>
           </div>
+          <div className="sidebar-heading">
+            <h3>Export Catalog</h3>
+          </div>
           <div className="export-csv">
             <button onClick={exportAsCSV}>Export as CSV</button>
           </div>
           <div className="export-pdf">
-            <button onClick={createAndDownloadPDF}>Export  as PDF</button>
+            <button onClick={createAndDownloadPDF}>Export as PDF</button>
           </div>
           <div className="export-selected-pdf">
             <button onClick={createAndDownloadSelectedPDF}>Export Selected as PDF</button>
