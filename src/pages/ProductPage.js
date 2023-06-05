@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import SimilarProducts from '../components/SimilarProducts';
+import ProductOptions from '../components/ProductOptions';
 import Contact from '../components/ContactDetails';
 import Error from '../components/Error';
 import '../assets/styles/product.css';
@@ -29,7 +30,7 @@ export default function Product({ products, images }) {
     }
   };
 
-  const { name, price, gtin, pieces, description, details, specs, product_sheet, height, width, weight, stock } = product || {};
+  const { name, price_indv, gtin, count_indv, description, details, specs, product_sheet, height, width, weight, stock } = product || {};
   
   const productImage = images[Object.keys(images).find(key => key.startsWith(modelnumber))] || images['notfound.jpg'];
 
@@ -45,8 +46,8 @@ export default function Product({ products, images }) {
           </div>
           <div className="details-contact">
             <div className="product-details">
-              <p><b>Price:</b> ${price}</p>
-              <p><b>Pieces:</b> {pieces}</p>
+              <p><b>Price:</b> ${price_indv}</p>
+              <p><b>Pieces:</b> {count_indv}</p>
               <p><b>Model Number:</b> {modelnumber}</p>
               <p><b>Stock:</b> 97</p>
               <p><b>Information:</b> {product_sheet}</p>
@@ -103,8 +104,7 @@ export default function Product({ products, images }) {
         </div>
       )}
       <div className="catalog-margin">
-      {product && <SimilarProducts products={products} images={images} currentProduct={product} />}
-
+      {product && <ProductOptions products={products} images={images} currentModelNumber={modelnumber} />}
       </div>
     </div>
   );

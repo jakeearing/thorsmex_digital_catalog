@@ -9,9 +9,6 @@ export default function Products({ product, images }) {
     <Link to={{ pathname: `/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
       <div className="product-square">
         <img src={productImage} alt={name} />
-        <h2>{name}</h2>
-        <h5>{modelNumber}</h5>
-        <p>Price: ${price_indv}</p>
       </div>
     </Link>
   );
