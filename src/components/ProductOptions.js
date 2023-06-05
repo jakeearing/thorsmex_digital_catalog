@@ -10,6 +10,7 @@ function ProductOptions({ products, images, currentModelNumber }) {
 
   return (
     <div>
+        <h3>More Options</h3>
       <div className="product-grid-small">
         {filteredProducts.map(product => (
           <div key={product.modelNumber} className={`product-grid-small-item ${product.modelNumber === currentModelNumber ? 'highlighted' : ''}`}>
