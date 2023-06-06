@@ -73,7 +73,6 @@
 
 .products-wrapper {
   max-width: 51%;
-  margin-bottom: 50px;
 }
 
 .product-grid {
@@ -121,7 +120,8 @@
 }
 
 .product-square h2 {
-  height: 60px;
+  height: 78px;
+  font-size: 19px;
   overflow: hidden;
 }
 
@@ -129,9 +129,4 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-.similar {
-  display: flex;
-  justify-content: center;
 }
