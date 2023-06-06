@@ -25,8 +25,10 @@ export default function Product({ products, images }) {
     setActiveTab(tabName);
   };
 
-  const { name, price_indv, gtin, count_indv, description, details, specs, 
-    product_sheet, height_indv, width_indv, weight_indv, height_box, width_box, weight_box, height_pallet, width_pallet, weight_pallet, stock } =
+  const { name, gtin, description, details, specs, product_sheet, price_indv, 
+    price_box, price_pallet, count_indv, count_box, count_pallet, height_indv, 
+    width_indv, length_indv, weight_indv, height_box, width_box, length_box, 
+    weight_box, height_pallet, width_pallet, length_pallet, weight_pallet, stock } =
     product || {};
 
   const productImage =
@@ -41,20 +43,21 @@ export default function Product({ products, images }) {
         <div className="product-details-container">
           <div className="product-name">
             <p>{name}</p>
+            <p>Model Number: {modelnumber}</p>
           </div>
           <div className="details-contact">
             <div className="product-details">
               <p>
-                <b>Price:</b> ${price_indv}
+                <b>Individual Price ({count_indv} count):</b> ${price_indv}
               </p>
               <p>
-                <b>Pieces:</b> {count_indv}
+                <b>Box Price ({count_box} pieces):</b> ${price_box}
               </p>
               <p>
-                <b>Model Number:</b> {modelnumber}
+                <b>Pallet Price ({count_pallet} boxes):</b> ${price_pallet}
               </p>
               <p>
-                <b>Stock:</b> 97
+                <b>Stock (Charlotte):</b> 97
               </p>
               <p>
                 <b>Information:</b> {product_sheet}
@@ -69,64 +72,62 @@ export default function Product({ products, images }) {
           </div>
         </div>
       </div>
-      <div className="item-specs">
-        <button
-          className={activeTab === 'details' ? 'active' : ''}
-          onClick={() => handleTabClick('details')}
-        >
-          Details
-        </button>
-        <button
-          className={activeTab === 'item-specifications' ? 'active' : ''}
-          onClick={() => handleTabClick('item-specifications')}
-        >
-          Item Specifications
-        </button>
-        <button
-          className={activeTab === 'more-information' ? 'active' : ''}
-          onClick={() => handleTabClick('more-information')}
-        >
-          More Information
-        </button>
-      </div>
+      <div className="product-secondary-container">
+        <div className="item-specs">
+          <button
+            className={activeTab === 'details' ? 'active' : ''}
+            onClick={() => handleTabClick('details')}
+          >
+            Details
+          </button>
+          <button
+            className={activeTab === 'item-specifications' ? 'active' : ''}
+            onClick={() => handleTabClick('item-specifications')}
+          >
+            Item Specifications
+          </button>
+          <button
+            className={activeTab === 'more-information' ? 'active' : ''}
+            onClick={() => handleTabClick('more-information')}
+          >
+            More Information
+          </button>
+        </div>
 
-      <div className="tab-content">
-        {activeTab === 'details' && (
-          <ul>
-            {details &&
-              details.split(';').map((item, index) => (
-                <li key={index}>{item.trim()}</li>
-              ))}
-          </ul>
-        )}
+        <div className="tab-content">
+          {activeTab === 'details' && (
+            <ul>
+              {details &&
+                details.split(';').map((item, index) => (
+                  <li key={index}>{item.trim()}</li>
+                ))}
+            </ul>
+          )}
 
-        {activeTab === 'item-specifications' && (
-          <ul>
-            {specs &&
-              specs.split(';').map((item, index) => (
-                <li key={index}>{item.trim()}</li>
-              ))}
-          </ul>
-        )}
+          {activeTab === 'item-specifications' && (
+            <ul>
+              {specs &&
+                specs.split(';').map((item, index) => (
+                  <li key={index}>{item.trim()}</li>
+                ))}
+            </ul>
+          )}
 
-        {activeTab === 'more-information' && (
-          <ul>
-            <li>Individual Height: {height_indv} inches</li>
-            <li>Individual Width: {width_indv} inches</li>
-            <li>Individual Weight: {weight_indv} pounds</li>
-            <li>Box Height: {height_box} inches</li>
-            <li>Box Width: {width_box} inches</li>
-            <li>Box Weight: {weight_box} pounds</li>
-            <li>Pallet Height: {height_pallet} inches</li>
-            <li>Pallet Width: {width_pallet} inches</li>
-            <li>Pallet Weight: {weight_pallet} pounds</li>
-            <li>Barcode Number: {gtin}</li>
-          </ul>
-        )}
-      </div>
-
-      <div className="product-options">
-        {product && <ProductOptions products={products} images={images} currentModelNumber={modelnumber} />}
+          {activeTab === 'more-information' && (
+            <ul>
+              <li>Individual Dimensions: {height_indv} x {width_indv} x {length_indv} inches</li>
+              <li>Individual Weight: {weight_indv} pounds</li>
+              <li>Box Dimensions: {height_box} x {width_box} x {length_box} inches</li>
+              <li>Box Weight: {weight_box} pounds</li>
+              <li>Pallet Dimensions: {height_pallet} x {width_pallet} x {length_pallet} inches</li>
+              <li>Pallet Weight: {weight_pallet} pounds</li>
+              <li>Barcode Number: {gtin}</li>
+            </ul>
+          )}
+        </div>
+        <div className="product-options">
+          {product && <ProductOptions products={products} images={images} currentModelNumber={modelnumber} />}
+        </div>
       </div>
     </div>
   );

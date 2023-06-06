@@ -20,12 +20,15 @@ class Products(Document):
     count_pallet = IntField()
     height_indv = DecimalField(precision=2)
     width_indv = DecimalField(precision=2)
+    length_indv = DecimalField(precision=2)
     weight_indv = DecimalField(precision=2)
     height_box = DecimalField(precision=2)
     width_box = DecimalField(precision=2)
+    length_box = DecimalField(precision=2)
     weight_box = DecimalField(precision=2) 
     height_pallet = DecimalField(precision=2)
     width_pallet = DecimalField(precision=2)
+    length_pallet = DecimalField(precision=2)
     weight_pallet = DecimalField(precision=2)
     stock = ListField(IntField())
     gtin = IntField(required=True)
@@ -61,12 +64,15 @@ def import_data():
             count_pallet=row['count_pallet'],
             height_indv=row['height_indv'],
             width_indv=row['width_indv'],
+            length_indv=row['length_indv'],
             weight_indv=row['weight_indv'],
             height_box=row['height_box'],
             width_box=row['width_box'],
+            length_box=row['length_box'],
             weight_box=row['weight_box'],
             height_pallet=row['height_pallet'],
             width_pallet=row['width_pallet'],
+            length_pallet=row['width_pallet'],
             weight_pallet=row['weight_pallet'],
             stock=[row['stock_NC'], row['stock_TX'], row['stock_MX']],
             gtin=row['gtin'],
