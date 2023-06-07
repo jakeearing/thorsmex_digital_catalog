@@ -28,8 +28,8 @@ export default function Product({ products, images }) {
   const { name, gtin, description, details, specs, product_sheet, price_indv,
     price_box, price_pallet, count_indv, count_box, count_pallet, height_indv,
     width_indv, length_indv, weight_indv, height_box, width_box, length_box,
-    weight_box, height_pallet, width_pallet, length_pallet, weight_pallet, packaging_type, stock } =
-    product || {};
+    weight_box, height_pallet, width_pallet, length_pallet, weight_pallet, 
+    packaging_type, english_packaging, stock } = product || {};
 
   const productImage =
     images[Object.keys(images).find((key) => key.startsWith(modelnumber))] || images['notfound.jpg'];
@@ -126,6 +126,7 @@ export default function Product({ products, images }) {
           {activeTab === 'more-information' && (
             <ul>
               <li>Packaging Type: {packaging_type}</li>
+              <li>English Packaging: {english_packaging}</li>
               <li>Individual Dimensions: {height_indv} x {width_indv} x {length_indv} inches</li>
               <li>Individual Weight: {weight_indv} pounds</li>
               <li>Box Dimensions: {height_box} x {width_box} x {length_box} inches</li>

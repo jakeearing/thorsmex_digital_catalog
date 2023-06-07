@@ -39,7 +39,7 @@ class Products(Document):
     details = StringField()
     specs = StringField()
     product_sheet = StringField()
-    english = StringField(null=True)
+    english_packaging = StringField()
     stock_NC = IntField()
     stock_TX = IntField()
     stock_MX = IntField()
@@ -84,7 +84,7 @@ def import_data():
             details=row['details'],
             specs=row['specs'],
             product_sheet=row['product_sheet'],
-            english=row['english'],
+            english_packaging=row['english_packaging'],
             stock_NC=row['stock_NC'],
             stock_TX=row['stock_TX'],
             stock_MX=row['stock_MX']
