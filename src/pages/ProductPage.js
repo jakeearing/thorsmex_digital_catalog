@@ -59,8 +59,18 @@ export default function Product({ products, images }) {
               <p>
                 <b>Stock (Charlotte):</b> 97
               </p>
-              {product_sheet && (
-                <p><a href={require(`../assets/images/product-info-sheets/${product_sheet}`)} target="_blank" rel="noopener noreferrer">Click here for product sheet</a></p>
+              {product_sheet && product_sheet.endsWith(".pdf") ? (
+                <p>
+                  <a
+                    href={require(`../assets/images/product-info-sheets/${product_sheet}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click here for product sheet
+                  </a>
+                </p>
+              ) : (
+                <p>No Product Sheet Available</p>
               )}
             </div>
             <div className="contact-details">
@@ -115,13 +125,13 @@ export default function Product({ products, images }) {
 
           {activeTab === 'more-information' && (
             <ul>
+              <li>Packaging Type: {packaging_type}</li>
               <li>Individual Dimensions: {height_indv} x {width_indv} x {length_indv} inches</li>
               <li>Individual Weight: {weight_indv} pounds</li>
               <li>Box Dimensions: {height_box} x {width_box} x {length_box} inches</li>
               <li>Box Weight: {weight_box} pounds</li>
               <li>Pallet Dimensions: {height_pallet} x {width_pallet} x {length_pallet} inches</li>
               <li>Pallet Weight: {weight_pallet} pounds</li>
-              <li>Packaging Type: {packaging_type}</li>
               <li>Barcode Number: {gtin}</li>
             </ul>
           )}
