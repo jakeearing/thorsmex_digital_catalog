@@ -15,6 +15,7 @@ class Products(Document):
     price_indv = DecimalField(precision=2,required=True)
     price_box = DecimalField(precision=2,required=True)
     price_pallet = DecimalField(precision=2,required=True) 
+    unit_cost = DecimalField(precision=2)
     count_indv = IntField()
     count_box = IntField()
     count_pallet = IntField()
@@ -60,6 +61,7 @@ def import_data():
             price_indv=row['price_indv'],
             price_box=row['price_box'],
             price_pallet=row['price_pallet'],
+            unit_cost=row['unit_cost'],
             count_indv=row['count_indv'],
             count_box=row['count_box'],
             count_pallet=row['count_pallet'],
