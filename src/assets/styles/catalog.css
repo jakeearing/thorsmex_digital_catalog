@@ -28,8 +28,8 @@
   font-weight: bold;
 }
 
-.sidebar .category {
-  margin-bottom: 10px;
+.sidebar .category:not(:first-child) {
+  margin-top: 10px;
 }
 
 .sidebar .subcategories-toggle-button {
