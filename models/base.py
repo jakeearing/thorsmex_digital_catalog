@@ -30,6 +30,7 @@ class Products(Document):
     width_pallet = DecimalField(precision=2)
     length_pallet = DecimalField(precision=2)
     weight_pallet = DecimalField(precision=2)
+    packaging_type = StringField()
     stock = ListField(IntField())
     gtin = IntField(required=True)
     category = StringField(required=True)
@@ -74,6 +75,7 @@ def import_data():
             width_pallet=row['width_pallet'],
             length_pallet=row['width_pallet'],
             weight_pallet=row['weight_pallet'],
+            packaging_type=row['packaging_type'],
             stock=[row['stock_NC'], row['stock_TX'], row['stock_MX']],
             gtin=row['gtin'],
             category=row['category'],
