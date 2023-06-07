@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
-import Header from '../components/nav/Header';
-import Footer from '../components/nav/Footer';
+import '../assets/styles/contact.css';
 
 export default function Contact() {
   return (
-    <div>
+    <div className="contact-container">
       <div>
       
       </div>
