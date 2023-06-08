@@ -72,6 +72,14 @@
   margin-top: 5px;
 }
 
+.search-bar {
+  margin-bottom: 8px;
+}
+
+.items-per-page {
+  margin-left: 18px;
+}
+
 .products-wrapper {
   max-width: 51%;
 }
