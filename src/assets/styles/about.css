@@ -1,3 +1,76 @@
 .about-container {
-    height: calc(100vh - 98px - 53px);
+    height: fit-content;
+}
+
+.about-content-container {
+    height: 50vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about-content-container> :nth-child(1) {
+    background-color: rgba(211, 211, 211, 0.7);
+}
+
+.left-column-image {
+    flex: 1;
+}
+
+.left-column-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.right-column-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-column-content {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-column-content button,
+.right-column-content button {
+    height: 40px;
+    padding: 5px 15px;
+    font-size: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.left-column-content button:hover,
+.right-column-content button:hover {
+    background-color: #0056b3;
+}
+
+.right-column-image {
+    flex: 1;
+}
+
+.right-column-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.left-column-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-column-content {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
 }
