@@ -5,32 +5,14 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="about-content-container">
-        <div className="left-column-image">
-          <img src={process.env.PUBLIC_URL + `/content-images/plant.jpg`} alt="Plant" />
-        </div>
-        <div className="right-column-text">
-          <div className="right-column-content">
-            <h2>Who We Are</h2>
+        <div className="left-column-text">
+          <div className="left-column-content">
+            <h2>About Us</h2>
             <p>THORSMEX, S.A de C.V. is a Mexican company founded in 1996 which main purpose is to develop, manufacture, represent and commercialize fixing
               systems, raceway systems and Telecom in the American Continent with presence in Guatemala, Colombia,
               Chile, El Salvador, Bolivia, Panama, Nicaragua, Canada, the United States, among others.</p>
             <p>5 basic characteristics of Thorsmex products:
               functionality, aesthetics, safety, durability and quality.</p>
-          </div>
-        </div>
-      </div>
-      <div className="about-content-container">
-        <div className="left-column-text">
-          <div className="left-column-content">
-            <h2>Processes</h2>
-            <p>We have the experience to develop private label
-              Services: extrusion, injection moulding, blow moulding and packaging
-              processes.</p>
-            <p>We are endorsed by national and international organisms,
-              confirming excellence through strict testing implemented
-              to every product, complying with high performance normativity
-              and standards, in order to provide the best solutions in the
-              market.</p>
           </div>
         </div>
         <div className="right-column-image">
@@ -43,7 +25,22 @@ export default function About() {
         </div>
         <div className="right-column-text">
           <div className="right-column-content">
-            <h2>Certifications</h2>
+            <h2>Processes</h2>
+            <p>We have the experience to develop private label
+              Services: extrusion, injection moulding, blow moulding and packaging
+              processes.</p>
+            <p>We are endorsed by national and international organisms,
+              confirming excellence through strict testing implemented
+              to every product, complying with high performance normativity
+              and standards, in order to provide the best solutions in the
+              market.</p>
+          </div>
+        </div>
+      </div>
+      <div className="about-content-container">
+        <div className="left-column-text">
+          <div className="left-column-content">
+          <h2>Certifications</h2>
             <ul>
               <li>THORSMAN, Sweden ISO 9001:2015 No. IQS/1311/2013, accrediting all products design.</li>
               <li>THORSMEX, S.A. DE C.V. ISO 9001:2015</li>
@@ -51,8 +48,10 @@ export default function About() {
               <li>Product certification by the Canadian Standards Association. No 1162395, year 2009</li>
               <li>The conduit systems exceeded the accredited tests with CSA International certification, which regulates products for the Electric Sector and Construction Industry</li>
             </ul>
-
           </div>
+        </div>
+        <div className="right-column-image">
+          <img src={process.env.PUBLIC_URL + `/content-images/plant.jpg`} alt="Plant" />
         </div>
       </div>
     </div>

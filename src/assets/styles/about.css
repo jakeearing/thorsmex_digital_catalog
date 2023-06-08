@@ -1,12 +1,13 @@
 .about-container {
     padding-top: 55px;
     min-height: calc(100vh - 100px - 55px);
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
   }
 
   .about-container h2 {
-    font-weight: 500;
+    color: #0c4d94;
+    font-weight: 700;
   }
   
   .about-content-container {
@@ -15,6 +16,7 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    margin-top: 40px;
   }
   
   .left-column-image,
@@ -34,11 +36,12 @@
   .right-column-text,
   .left-column-text {
     flex: 1;
-    font-size: 1vw;
+    font-size: 0.9vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
   }
   
   .left-column-content,

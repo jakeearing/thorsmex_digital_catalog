@@ -44,10 +44,15 @@
     margin-right: 0;
   }
   
-  nav a {
-    color: black;
+  .header-content nav a {
+    color: #0c4d94;
     text-decoration: none;
     padding: 10px;
+    font-weight: 800;
+  }
+
+  .header-content nav a:hover {
+    color: #ee3643;
   }
   
   .logo img {
