@@ -16,6 +16,10 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    border: 1px solid #ccc;
+  }
+
+  .about-content-container:first-child {
     margin-top: 40px;
   }
 

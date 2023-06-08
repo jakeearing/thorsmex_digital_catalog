@@ -116,7 +116,7 @@ function Catalog({ products, images }) {
               className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
               onClick={() => toggleSubcategories(category.name)}
             >
-              &#x25BC;
+              &#x25BE;
             </button>
           )}
           {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories)}
