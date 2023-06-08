@@ -7,8 +7,10 @@ export default function Contact() {
     <div className="contact-container">
       <div className="contact-content-container">
         <h2>Contact Us</h2>
-        <h3>Questions about our products or anything else? Contact us by Email or
-           Phone to get in touch today!</h3>
+        <div className="contact-text">
+          <h3>Questions about our products or anything else? Contact us by Email or
+            Phone to get in touch today!</h3>
+        </div>
         <ContactDetails />
         <h2>Hours</h2>
         <ul>

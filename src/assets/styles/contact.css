@@ -10,8 +10,9 @@
     font-weight: 400;
   }
   
-  .contact-content-container {
+  .contact-text {
     width: 40%;
+    margin: 0 auto;
   }
 
   .product-contact {
