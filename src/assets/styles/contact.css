@@ -5,18 +5,37 @@
     justify-content: center;
     text-align: center;
   }
+
+  .contact-container h3 {
+    font-weight: 400;
+  }
   
   .contact-content-container {
     width: 40%;
+  }
+
+  .product-contact {
+    margin: 20px;
+  }
+
+  .product-contact a {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: bold;
   }
 
   .contact-content-container ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: fit-content;
-    
+    margin: 0 auto;
+    padding: 0;
   }
   
   .contact-content-container ul li {

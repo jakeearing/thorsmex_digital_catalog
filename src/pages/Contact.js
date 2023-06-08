@@ -6,11 +6,10 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-content-container">
-        <h2>Contact us today!</h2>
+        <h2>Contact Us</h2>
+        <h3>Questions about our products or anything else? Contact us by Email or
+           Phone to get in touch today!</h3>
         <ContactDetails />
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <h2>Hours</h2>
         <ul>
           <li>Monday: 9:00 am - 5:00 pm</li>
