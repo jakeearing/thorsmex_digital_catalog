@@ -1,76 +1,68 @@
 .about-container {
-    height: fit-content;
-}
+    padding-top: 55px;
+    min-height: calc(100vh - 100px - 55px);
+    width: 100%;
+    margin: 0 auto;
+  }
 
-.about-content-container {
-    height: 50vh;
+  .about-container h2 {
+    font-weight: 500;
+  }
+  
+  .about-content-container {
+    max-height: 50vh;
     display: flex;
+    flex-direction: row;
     align-items: stretch;
     justify-content: center;
-}
-
-.about-content-container> :nth-child(1) {
-    background-color: rgba(211, 211, 211, 0.7);
-}
-
-.left-column-image {
+  }
+  
+  .left-column-image,
+  .right-column-image {
     flex: 1;
-}
-
-.left-column-image img {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-column-image img,
+  .right-column-image img {
+    max-height: 100%;
     width: 100%;
-}
-
-.right-column-text {
+  }
+  
+  .right-column-text,
+  .left-column-text {
     flex: 1;
+    font-size: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.right-column-content {
+  }
+  
+  .left-column-content,
+  .right-column-content {
     text-align: left;
     width: 80%;
     margin: 0 auto;
-}
-
-.left-column-content button,
-.right-column-content button {
-    height: 40px;
-    padding: 5px 15px;
-    font-size: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.left-column-content button:hover,
-.right-column-content button:hover {
-    background-color: #0056b3;
-}
-
-.right-column-image {
-    flex: 1;
-}
-
-.right-column-image img {
-    height: 100%;
-    width: 100%;
-}
-
-.left-column-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.left-column-content {
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .about-content-container {
+      flex-direction: column;
+    }
+  
+    .left-column-image,
+    .right-column-image {
+      flex: 1;
+      height: 50%;
+    }
+  
+    .left-column-text,
+    .right-column-text {
+      flex: 1;
+      height: 50%;
+    }
+  }
+  

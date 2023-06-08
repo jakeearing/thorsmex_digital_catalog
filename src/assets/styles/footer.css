@@ -2,6 +2,10 @@
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer {
@@ -23,17 +27,15 @@
 
 .left-nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
 .left-nav li {
-  flex-basis: 33.33%;
   margin-bottom: 5px;
   font-size: 15px;
-  margin-right: 5px;
 }
 
 .left-nav a {
