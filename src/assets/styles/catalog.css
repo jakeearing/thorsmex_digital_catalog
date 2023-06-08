@@ -20,7 +20,7 @@
 }
 
 .sidebar-heading {
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 
 .sidebar h3 {
@@ -29,7 +29,7 @@
   font-weight: bold;
 }
 
-.sidebar .category:not(:first-child) {
+.sidebar .category {
   margin-top: 10px;
 }
 
@@ -78,6 +78,33 @@
 
 .items-per-page {
   margin-left: 18px;
+}
+
+.export-container {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button img {
+  height: 30px;
+  width: auto;
+
+}
+
+.export-selected-pdf {
+  visibility: hidden;
 }
 
 .products-wrapper {

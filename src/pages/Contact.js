@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-content-container">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <div className="contact-text">
           <h3>Questions about our products or anything else? Contact us by Email or
             Phone to get in touch today!</h3>

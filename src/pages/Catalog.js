@@ -271,14 +271,24 @@ function Catalog({ products, images }) {
           <div className="sidebar-heading">
             <h3>Export Catalog</h3>
           </div>
-          <div className="export-csv">
-            <button onClick={exportAsCSV}>Export as CSV</button>
-          </div>
-          <div className="export-pdf">
-            <button onClick={createAndDownloadPDF}>Export as PDF</button>
-          </div>
-          <div className="export-selected-pdf">
-            <button onClick={createAndDownloadSelectedPDF}>Export Selected as PDF</button>
+          <div className="export-container">
+            <div className="export-csv">
+              <button onClick={exportAsCSV} className="icon-button">
+                <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+              </button>
+            </div>
+
+            <div className="export-pdf">
+              <button onClick={createAndDownloadPDF} className="icon-button">
+                <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+              </button>
+            </div>
+
+            <div className="export-selected-pdf">
+              <button onClick={createAndDownloadSelectedPDF} className="icon-button">
+                <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

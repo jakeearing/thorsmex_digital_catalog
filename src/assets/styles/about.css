@@ -18,6 +18,10 @@
     justify-content: center;
     margin-top: 40px;
   }
+
+  .about-content-container:last-child {
+    margin-bottom: 40px;
+  }
   
   .left-column-image,
   .right-column-image {
