@@ -29,8 +29,13 @@ function Catalog({ products, images }) {
     localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
   }, [itemsPerPage]);
 
-
-
+  // Constants
+  const sortOptions = [
+    { value: 'name', label: 'Name' },
+    { value: 'modelNumber', label: 'Model Number' },
+    { value: 'price', label: 'Price' },
+  ];
+  const itemsPerPageOptions = [10, 25, 50, 100, 'All'];
 
   // Get all unique categories and subcategories from products
   const allCategories = [...new Set(products.map((product) => product.category))];
@@ -85,14 +90,6 @@ function Catalog({ products, images }) {
       return 0;
     }
   });
-
-  // Constants
-  const sortOptions = [
-    { value: 'name', label: 'Name' },
-    { value: 'modelNumber', label: 'Model Number' },
-    { value: 'price', label: 'Price' },
-  ];
-  const itemsPerPageOptions = [10, 25, 50, 100, sortedProducts.length];
 
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
