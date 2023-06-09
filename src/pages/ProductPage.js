@@ -71,7 +71,7 @@ export default function Product({ products, images }) {
                   <b>Pallet Price ({count_pallet} boxes):</b> ${price_pallet}
                 </p>
                 <p>
-                  <b>Stock (Charlotte):</b> 97
+                  <b>Unit Cost:</b> ${unit_cost}
                 </p>
                 {product_sheet && product_sheet.endsWith(".pdf") ? (
                   <p>
