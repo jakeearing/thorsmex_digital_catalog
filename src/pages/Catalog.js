@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Products from '../components/ProductSquare';
 import { saveAs } from 'file-saver';
 import html2pdf from 'html2pdf.js';
+import * as XLSX from 'xlsx';
 import '../assets/styles/catalog.css';
 
 function Catalog({ products, images }) {
@@ -130,14 +131,65 @@ function Catalog({ products, images }) {
   const startIndex = 0;
   const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + itemsPerPage;
 
-  // Function to export filtered products as CSV
-  const exportAsCSV = () => {
-    const filteredData = sortedProducts.slice(startIndex, endIndex);
-    const csvData = filteredData.map((product) => `${product.name},${product.modelNumber},${product.price}`);
-    const csvString = 'Name,Model Number,Price\n' + csvData.join('\n');
-    const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8' });
-    saveAs(blob, 'Catalog - Charlotte Imports.csv');
+  // Function to format a number to a specified number of decimal places
+  const formatNumber = (number, decimalPlaces) => {
+    if (decimalPlaces === 0) {
+      return Math.round(number).toFixed(0);
+    }
+    return number.toFixed(decimalPlaces);
   };
+
+  // Function to export filtered products as XLS
+  const exportAsXLS = () => {
+    const filteredData = sortedProducts.slice(startIndex, endIndex);
+
+    // Convert the filteredData into the format required by XLSX library
+    const xlsData = filteredData.map((product) => ({
+      Name: product.name,
+      'Model Number': product.modelNumber,
+      'Unit Cost': product.unit_cost.toFixed(2),
+      'Individual Price': product.price_indv.toFixed(2),
+      'Individual Count': formatNumber(product.count_indv, 0),
+      'Box Price': product.price_box.toFixed(2),
+      'Box Count': formatNumber(product.count_box, 0),
+      'Pallet Price': product.price_pallet.toFixed(2),
+      'Pallet Count': formatNumber(product.count_pallet, 0),
+      'Packaging Type': product.packaging_type,
+      Category: product.category,
+      Subcategory: product.subCategory,
+    }));
+
+    // Create a new workbook and sheet
+    const workbook = XLSX.utils.book_new();
+    const worksheet = XLSX.utils.json_to_sheet(xlsData);
+
+    // Configure cell number format for Unit Cost, Individual Price, Box Price, Pallet Price
+    const cellNumberFormat = { numFmt: '0.00' };
+    const range = XLSX.utils.decode_range(worksheet['!ref']);
+    for (let R = range.s.r; R <= range.e.r; ++R) {
+      for (let C = range.s.c; C <= range.e.c; ++C) {
+        const cellAddress = XLSX.utils.encode_cell({ r: R, c: C });
+        if (worksheet[cellAddress]) {
+          if (C === 2 || C === 4 || C === 6 || C === 8) {
+            worksheet[cellAddress].z = cellNumberFormat.numFmt;
+          }
+        }
+      }
+    }
+
+    // Add the worksheet to the workbook
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Catalog');
+
+    // Generate the XLS file
+    const xlsBuffer = XLSX.write(workbook, { type: 'buffer', bookType: 'xlsx' });
+
+    // Create a Blob from the buffer
+    const blob = new Blob([xlsBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+
+    // Save the Blob as a file
+    saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
+  };
+
 
   // Function to export filtered products as PDF
   const createAndDownloadPDF = () => {
@@ -272,8 +324,8 @@ function Catalog({ products, images }) {
             <h3>Export Catalog</h3>
           </div>
           <div className="export-container">
-            <div className="export-csv">
-              <button onClick={exportAsCSV} className="icon-button">
+            <div className="export-XLS">
+              <button onClick={exportAsXLS} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
