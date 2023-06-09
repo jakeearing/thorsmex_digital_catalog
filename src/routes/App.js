@@ -60,12 +60,19 @@ const App = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      fetch("http://localhost:5000/api/import");
       const response = await fetch("http://localhost:5000/api/products");
       const data = await response.json();
       setProducts(data);
+      localStorage.setItem("products", JSON.stringify(data));
     }
-    fetchProducts();
+
+    const storedProducts = localStorage.getItem("products");
+    if (!storedProducts) {
+      fetchProducts();
+    } else {
+      const parsedProducts = JSON.parse(storedProducts);
+      setProducts(parsedProducts);
+    }
   }, []);
 
   return (
