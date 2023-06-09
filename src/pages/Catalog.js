@@ -33,7 +33,7 @@ function Catalog({ products, images }) {
   const sortOptions = [
     { value: 'name', label: 'Name' },
     { value: 'modelNumber', label: 'Model Number' },
-    { value: 'price', label: 'Price' },
+    { value: 'unit_cost', label: 'Unit Cost' },
   ];
   const itemsPerPageOptions = [10, 25, 50, 100, 'All'];
 
@@ -84,8 +84,8 @@ function Catalog({ products, images }) {
       return a.name.localeCompare(b.name);
     } else if (sortOption === 'modelNumber') {
       return a.modelNumber.localeCompare(b.modelNumber);
-    } else if (sortOption === 'price') {
-      return a.price - b.price;
+    } else if (sortOption === 'unit_cost') {
+      return a.unit_cost - b.unit_cost;
     } else {
       return 0;
     }
