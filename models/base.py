@@ -47,9 +47,9 @@ class Products(Document):
 
 @app.route('/api/import')
 def import_data():
-    # Set CSV file path and read csv file
-    csv_file_path = 'products.csv'
-    df = pd.read_csv(csv_file_path)
+    # Set XLSX file path and read XLSX file
+    xlsx_file_path = 'products.xlsx'
+    df = pd.read_excel(xlsx_file_path)
     # Current products will be deleted
     Products.objects().delete()
 
