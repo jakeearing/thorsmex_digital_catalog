@@ -1,6 +1,6 @@
 .contact-container {
     margin-top: 100px;
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 100px - 55px);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -41,4 +41,11 @@
   
   .contact-content-container ul li {
     margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      margin-top: 55px;
+      margin-bottom: 20px;
+    }
   }

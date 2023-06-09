@@ -109,7 +109,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer-logo {
+  .terms {
+    display: none;
+  }
+
+  .right-nav {
     display: none;
   }
 }

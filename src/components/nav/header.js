@@ -17,8 +17,8 @@ export default function Header() {
     window.addEventListener('resize', handleResize);
 
     return () => {
-        window.removeEventListener('resize', handleResize);
-      };
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -64,6 +64,16 @@ export default function Header() {
                 <li>
                   <Link to="/contact-us" className={!isSplashPage ? 'active' : ''}>
                     Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms-of-use" className={!isSplashPage ? 'active' : ''}>
+                    Terms of Use
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy" className={!isSplashPage ? 'active' : ''}>
+                    Privacy Policy
                   </Link>
                 </li>
               </ul>

@@ -193,7 +193,6 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
-
   // Function to export filtered products as PDF
   const createAndDownloadPDF = () => {
     const grid = document.querySelector('.product-grid');

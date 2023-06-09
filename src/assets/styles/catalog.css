@@ -166,3 +166,31 @@
   max-height: 100%;
   object-fit: contain;
 }
+
+@media screen and (max-width: 768px) {
+  .catalog-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 180px;
+    margin: 0;
+    position: relative;
+  }
+
+  .product-grid-item {
+    flex: 1 0 100%;
+    margin: 10px;
+  }
+}
