@@ -36,7 +36,7 @@ function Catalog({ products, images }) {
     { value: 'modelNumber', label: 'Model Number' },
     { value: 'unit_cost', label: 'Unit Cost' },
   ];
-  const itemsPerPageOptions = [10, 25, 50, 100, 'All'];
+  const itemsPerPageOptions = [10, 25, 50, 100, 200];
 
   // Get all unique categories and subcategories from products
   const allCategories = [...new Set(products.map((product) => product.category))];
@@ -46,9 +46,12 @@ function Catalog({ products, images }) {
   const filteredProducts = products.filter((product) => {
     const nameMatch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const modelMatch = product.modelNumber.toLowerCase().includes(searchTerm.toLowerCase());
-
+  
     if (category === 'all') {
-      return nameMatch || modelMatch;
+      return (
+        (subcategory && product.subCategory.toLowerCase() === subcategory.toLowerCase()) ||
+        (!subcategory && (nameMatch || modelMatch))
+      );
     } else if (subcategory) {
       return (
         product.category.toLowerCase() === category.toLowerCase() &&
@@ -129,7 +132,7 @@ function Catalog({ products, images }) {
   const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
 
   const startIndex = 0;
-  const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + itemsPerPage;
+  const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + parseInt(itemsPerPage, 10);
 
   // Function to format a number to a specified number of decimal places
   const formatNumber = (number, decimalPlaces) => {
