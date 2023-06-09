@@ -11,7 +11,7 @@ export default function Products({ product, images }) {
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
         <h5>{modelNumber}</h5>
-        <p>Price: ${unit_cost}</p>
+        <p>Unit Cost: ${unit_cost}</p>
       </div>
     </Link>
   );

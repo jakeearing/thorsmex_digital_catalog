@@ -6,7 +6,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .footer {
@@ -42,7 +42,6 @@
 
 .left-nav a {
   color: black;
-  
   text-decoration: none;
   padding: 10px;
 }
