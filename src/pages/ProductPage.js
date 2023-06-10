@@ -39,6 +39,10 @@ export default function Product({ products, images }) {
       });
   }, [modelnumber]);
 
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+  };
+
     const { name, gtin, description, details, specs, product_sheet, price_indv,
       price_box, price_pallet, unit_cost, count_indv, count_box, count_pallet, height_indv,
       width_indv, length_indv, weight_indv, height_box, width_box, length_box,
