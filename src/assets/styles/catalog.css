@@ -167,6 +167,20 @@
   object-fit: contain;
 }
 
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 35px;
+  padding: 18px;
+  border-radius: 50px;
+  border: 0px;
+  font-size: 1vw;
+  background-color: #0c4d94;
+  color: white;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .catalog-container {
     flex-direction: column;
