@@ -16,7 +16,6 @@ function Catalog({ products, images }) {
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
   const [categoryState, setCategoryState] = useState({});
-  const [loadMoreCount, setLoadMoreCount] = useState(10);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -85,7 +84,7 @@ function Catalog({ products, images }) {
 
    // Handle load more button click
    const handleLoadMore = () => {
-    setItemsPerPage((prevItemsPerPage) => prevItemsPerPage + loadMoreCount);
+    setItemsPerPage(200);
   };
 
   // Sort products based on sort option
@@ -376,7 +375,7 @@ function Catalog({ products, images }) {
             </div>
           ))}
         </div>
-        {filteredProducts.length > itemsPerPage * loadMoreCount && (
+        {filteredProducts.length > itemsPerPage && (
         <button className="load-more-button" onClick={handleLoadMore}>
           Load More
         </button>
