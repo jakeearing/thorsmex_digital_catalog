@@ -8,20 +8,20 @@ export default function About() {
         <div className="left-column-text">
           <div className="left-column-content">
             <h2>About Us</h2>
-            <p>THORSMEX, S.A de C.V. is a Mexican company founded in 1996 which main purpose is to develop, manufacture, represent and commercialize fixing
+            <p><b>THORSMEX, S.A de C.V.</b> is a Mexican company founded in 1996. At THORSMEX, our main purpose is to develop, manufacture, represent and commercialize fixing
               systems, raceway systems and Telecom in the American Continent with presence in Guatemala, Colombia,
               Chile, El Salvador, Bolivia, Panama, Nicaragua, Canada, the United States, among others.</p>
-            <p>5 basic characteristics of Thorsmex products:
+            <p><b>The 5 basic characteristics of Thorsmex products are: </b>
               functionality, aesthetics, safety, durability and quality.</p>
           </div>
         </div>
         <div className="right-column-image">
-          <img src={process.env.PUBLIC_URL + `/content-images/plant.jpg`} alt="Plant" />
+          <img src={process.env.PUBLIC_URL + `/content-images/plant1.jpg`} alt="Plant" />
         </div>
       </div>
       <div className="about-content-container">
         <div className="left-column-image">
-          <img src={process.env.PUBLIC_URL + `/content-images/plant.jpg`} alt="Plant" />
+          <img src={process.env.PUBLIC_URL + `/content-images/plant2.png`} alt="Plant" />
         </div>
         <div className="right-column-text">
           <div className="right-column-content">
@@ -51,7 +51,7 @@ export default function About() {
           </div>
         </div>
         <div className="right-column-image">
-          <img src={process.env.PUBLIC_URL + `/content-images/plant.jpg`} alt="Plant" />
+          <img src={process.env.PUBLIC_URL + `/content-images/plant3.png`} alt="Plant" />
         </div>
       </div>
     </div>

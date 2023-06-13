@@ -1,5 +1,5 @@
 .contact-container {
-    margin-top: 100px;
+    margin-top: 55px;
     min-height: calc(100vh - 100px - 55px);
     display: flex;
     justify-content: center;
@@ -8,6 +8,10 @@
 
   .contact-container h3 {
     font-weight: 400;
+  }
+
+  .contact-content-container {
+    margin-top: 45px;
   }
   
   .contact-text {
