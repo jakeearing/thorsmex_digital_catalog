@@ -5,7 +5,6 @@ import '../../assets/styles/header.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSplashPage, setIsSplashPage] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const location = useLocation();
 
@@ -20,15 +19,6 @@ export default function Header() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  useEffect(() => {
-    setIsSplashPage(
-      location.pathname === '/' ||
-      location.pathname === '/category/all' ||
-      location.pathname === '/about-us' ||
-      location.pathname === '/contact-us'
-    );
-  }, [location]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -52,27 +42,27 @@ export default function Header() {
             <nav className={isMenuOpen ? 'open' : ''}>
               <ul>
                 <li>
-                  <Link to="/" className={isSplashPage ? 'active' : ''}>
+                  <Link to="/" className='active'>
                     Catalog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about-us" className={!isSplashPage ? 'active' : ''}>
+                  <Link to="/about-us">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact-us" className={!isSplashPage ? 'active' : ''}>
+                  <Link to="/contact-us">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms-of-use" className={!isSplashPage ? 'active' : ''}>
+                  <Link to="/terms-of-use">
                     Terms of Use
                   </Link>
                 </li>
                 <li>
-                  <Link to="/privacy-policy" className={!isSplashPage ? 'active' : ''}>
+                  <Link to="/privacy-policy">
                     Privacy Policy
                   </Link>
                 </li>
@@ -84,17 +74,17 @@ export default function Header() {
           <nav>
             <ul>
               <li>
-                <Link to="/all" className={isSplashPage ? 'active' : ''}>
+                <Link to="/" className='active'>
                   Catalog
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" className={!isSplashPage ? 'active' : ''}>
+                <Link to="/about-us">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className={!isSplashPage ? 'active' : ''}>
+                <Link to="/contact-us">
                   Contact
                 </Link>
               </li>
