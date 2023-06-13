@@ -12,7 +12,7 @@
   }
   
   .about-content-container {
-    max-height: 50vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -67,13 +67,13 @@
     .left-column-image,
     .right-column-image {
       flex: 1;
-      height: auto;
     }
   
     .left-column-text,
     .right-column-text {
       flex: 1;
-      height: 1000px;
+      height: auto;
+      margin-bottom: 40px;
     }
   
     .about-content-container:nth-child(even) .left-column-text,
@@ -88,7 +88,10 @@
   
     .left-column-content,
     .right-column-content {
-      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
     }
-  }
+  }  
   
