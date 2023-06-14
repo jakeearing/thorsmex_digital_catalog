@@ -34,10 +34,8 @@ export default function Header() {
         </div>
         {isMobile && (
           <>
-            <button className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu} title="Toggle Menu">
-              <span></span>
-              <span></span>
-              <span></span>
+            <button className="menu-icon-wrapper" onClick={toggleMenu} title="Toggle Menu">
+              <img src={process.env.PUBLIC_URL + "/svg-icons/menu-icon.svg"} className="menu-icon" alt="Menu Icon" />
             </button>
             <nav className={isMenuOpen ? 'open' : ''}>
               <ul>
