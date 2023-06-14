@@ -10,7 +10,6 @@ export default function Product({ products, images }) {
   const [product, setProduct] = useState(null);
   const [activeTab, setActiveTab] = useState('details');
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const storedProducts = localStorage.getItem('products');
@@ -51,16 +50,12 @@ export default function Product({ products, images }) {
       return prevIndex === 0 ? lastIndex : prevIndex - 1;
     });
   };
-  
+
   const handleNextImage = () => {
     setActiveImageIndex((prevIndex) => {
       const lastIndex = productImages.length - 1;
       return prevIndex === lastIndex ? 0 : prevIndex + 1;
     });
-  };
-  
-  const handleImageClick = () => {
-    setIsModalOpen(true);
   };
 
   const { name, gtin, description, details, specs, product_sheet, price_indv,
@@ -91,26 +86,22 @@ export default function Product({ products, images }) {
   return (
     <div className="product-page-container">
       <div className="product">
-      <div className="product-image">
-  <img
-    src={productImages[activeImageIndex]}
-    alt={name}
-    onClick={handleImageClick}
-    className="clickable"
-  />
-  {showPrevImageArrow && (
-    <button className="overlay-button prev-button" onClick={handlePrevImage}>
-      &#60;
-    </button>
-  )}
-  {showNextImageArrow && (
-    <button className="overlay-button next-button" onClick={handleNextImage}>
-      &#62;
-    </button>
-  )}
-</div>
-
-
+        <div className="product-image">
+          <img
+            src={productImages[activeImageIndex]}
+            alt={name}
+          />
+          {showPrevImageArrow && (
+            <button className="overlay-button prev-button" onClick={handlePrevImage}>
+              &#60;
+            </button>
+          )}
+          {showNextImageArrow && (
+            <button className="overlay-button next-button" onClick={handleNextImage}>
+              &#62;
+            </button>
+          )}
+        </div>
         <div className="product-details-container">
           <div className="product-name">
             <p>{name}</p>
@@ -226,17 +217,6 @@ export default function Product({ products, images }) {
           )}
         </div>
       </div>
-      {isModalOpen && (
-        <div className="image-modal" onClick={() => setIsModalOpen(false)}>
-          <div className="image-modal-content">
-            <img
-              src={images[activeImageIndex]}
-              alt={name}
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
