@@ -91,20 +91,26 @@ export default function Product({ products, images }) {
   return (
     <div className="product-page-container">
       <div className="product">
-        <div className="product-image">
-          <img
-            src={productImages[activeImageIndex]}
-            alt={name}
-            onClick={handleImageClick}
-            className="clickable"
-          />
-          {showPrevImageArrow && (
-            <button onClick={handlePrevImage}>&#60;</button>
-          )}
-          {showNextImageArrow && (
-            <button onClick={handleNextImage}>&#62;</button>
-          )}
-        </div>
+      <div className="product-image">
+  <img
+    src={productImages[activeImageIndex]}
+    alt={name}
+    onClick={handleImageClick}
+    className="clickable"
+  />
+  {showPrevImageArrow && (
+    <button className="overlay-button prev-button" onClick={handlePrevImage}>
+      &#60;
+    </button>
+  )}
+  {showNextImageArrow && (
+    <button className="overlay-button next-button" onClick={handleNextImage}>
+      &#62;
+    </button>
+  )}
+</div>
+
+
         <div className="product-details-container">
           <div className="product-name">
             <p>{name}</p>
