@@ -16,7 +16,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('../assets/images/product-images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../assets/images/product-images', true, /\.(png|jpe?g|svg)$/));
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
