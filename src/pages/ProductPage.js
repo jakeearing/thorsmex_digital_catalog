@@ -9,7 +9,6 @@ export default function Product({ products, images }) {
   const { category, subCategory, modelnumber } = useParams();
   const [product, setProduct] = useState(null);
   const [activeTab, setActiveTab] = useState('details');
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
     const storedProducts = localStorage.getItem('products');
@@ -66,19 +65,37 @@ export default function Product({ products, images }) {
 
   const folderName = modelnumber.toString();
 
-  // Load all the images inside the model number folder
-  const imageContext = require.context(
-    '../assets/images/product-images',
-    true,
-    /\.(png|jpe?g|gif|svg)$/
-  );
-  const imagePaths = imageContext.keys().filter((key) =>
-    key.startsWith(`./${folderName}/`)
-  );
-  const productImages = imagePaths.map((path) => {
-    const image = imageContext(path);
-    return image.default || image;
-  });
+// Load all the images inside the model number folder
+const imageContext = require.context(
+  '../assets/images/product-images',
+  true,
+  /\.(png|jpe?g|gif|svg)$/
+);
+const imagePaths = imageContext.keys().filter((key) =>
+  key.startsWith(`./${folderName}/`)
+);
+const imageNames = imagePaths.map((path) => path.replace(`./${folderName}/`, ''));
+
+// Find the index of the image with "main" in its name
+const mainImageIndex = imageNames.findIndex((name) => name.includes('main'));
+
+// Set the active image index to the main image index if found,
+// otherwise set it to 0 (first image in the list)
+const [activeImageIndex, setActiveImageIndex] = useState(
+  mainImageIndex !== -1 ? mainImageIndex : 0
+);
+
+// Set the product images in the desired order:
+// If main image exists, put it at the beginning of the array
+// followed by the remaining images
+const productImages = [
+  ...(mainImageIndex !== -1
+    ? [imageContext(imagePaths[mainImageIndex]).default || imageContext(imagePaths[mainImageIndex])]
+    : []),
+  ...imagePaths
+    .filter((_, index) => index !== mainImageIndex)
+    .map((path) => imageContext(path).default || imageContext(path))
+];
 
   const showPrevImageArrow = productImages.length > 1;
   const showNextImageArrow = productImages.length > 1;
