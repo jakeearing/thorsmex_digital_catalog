@@ -26,8 +26,8 @@ export default function About() {
         <div className="right-column-text">
           <div className="right-column-content">
             <h2>Processes</h2>
-            <p>We have the experience to develop private label
-              Services: extrusion, injection moulding, blow moulding and packaging
+            <p>We have the experience to develop the following private label
+              services: extrusion, injection moulding, blow moulding and packaging
               processes.</p>
             <p>We are endorsed by national and international organisms,
               confirming excellence through strict testing implemented
