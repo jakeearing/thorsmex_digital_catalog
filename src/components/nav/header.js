@@ -20,12 +20,16 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="header solid">
+    <header className="header">
       <div className="header-content">
         <div className="logo">
           <Link to="/">
@@ -72,7 +76,7 @@ export default function Header() {
           <nav>
             <ul>
               <li>
-                <Link to="/" className='active'>
+                <Link to="/">
                   Catalog
                 </Link>
               </li>
