@@ -16,6 +16,10 @@
 
 .product-image {
   position: relative;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .overlay-button {
@@ -31,23 +35,23 @@
 }
 
 .prev-button {
-  left: 10px;
+  left: 2px;
 }
 
 .next-button {
-  right: 10px;
+  right: 2px;
 }
 
 .product-image img {
   height: 278px;
   width: auto;
   max-width: 400px;
-  margin-right: 0px;
 }
 
 .product-details-container {
-  flex-basis: 65%;
-  margin-right: 10px;
+  margin-right: 15px;
+  flex-basis: 58%;
+  position: relative;
 }
 
 .product-name p:first-child {
