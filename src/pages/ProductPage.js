@@ -50,6 +50,13 @@ export default function Product({ products, images }) {
     setExpandedImageIndex(index);
   };
 
+  const handleClick = (event) => {
+    // Check if the click event originated from within the overlay image
+    if (event.target.classList.contains('overlay')) {
+      setIsExpanded(false);
+    }
+  };
+
   const handlePrevImage = () => {
     if (isExpanded) {
       setExpandedImageIndex((prevIndex) => {
@@ -122,7 +129,7 @@ export default function Product({ products, images }) {
   const showNextImageArrow = productImages.length > 1;
 
   return (
-    <div className="product-page-container">
+    <div className="product-page-container" onClick={handleClick}>
       <div className="product">
       <div className="product-image">
         <img src={productImages[activeImageIndex]} alt={name} onClick={() => handleImageClick(activeImageIndex)} />
@@ -139,7 +146,7 @@ export default function Product({ products, images }) {
       </div>
       {isExpanded && (
   <div className="overlay">
-    <div className="overlay-image-container">
+    <div className="overlay-image-container overlay">
       <img src={productImages[expandedImageIndex]} alt={name} className="overlay-image" />
       <button className="overlay-button close-button" onClick={() => setIsExpanded(false)}>
         &#10006;
