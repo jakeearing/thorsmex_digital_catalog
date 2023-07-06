@@ -60,20 +60,32 @@ const App = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("http://localhost:5000/api/products");
-      const data = await response.json();
-      setProducts(data);
-      localStorage.setItem("products", JSON.stringify(data));
-    }
-
-    const storedProducts = localStorage.getItem("products");
-    if (!storedProducts) {
-      fetchProducts();
-    } else {
-      const parsedProducts = JSON.parse(storedProducts);
-      setProducts(parsedProducts);
-    }
-  }, []);
+      try {
+        const response = await fetch("http://localhost:5000/api/products");
+        const data = await response.json();
+  
+        const storedProducts = localStorage.getItem("products");
+        if (!storedProducts || JSON.stringify(data) !== storedProducts) {
+          setProducts(data);
+          localStorage.setItem("products", JSON.stringify(data));
+        } else {
+          const parsedProducts = JSON.parse(storedProducts);
+          setProducts(parsedProducts);
+        }
+      } catch (error) {
+        // An error occurred while fetching data
+        console.error("Error fetching products:", error);
+  
+        // Fallback to the data stored in local storage
+        const storedProducts = localStorage.getItem("products");
+        if (storedProducts) {
+          const parsedProducts = JSON.parse(storedProducts);
+          setProducts(parsedProducts);
+        }
+      }
+    } 
+    fetchProducts();
+  }, []);  
 
   return (
     <BrowserRouter>

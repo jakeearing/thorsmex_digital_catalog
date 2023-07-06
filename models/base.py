@@ -108,5 +108,8 @@ def get_product(model_number):
         return {'error': 'Product not found'}
     return product.to_json()
 
+# Import data when the server starts
+import_data()
+
 if __name__ == '__main__':
     app.run()
