@@ -8,10 +8,10 @@ export default function Products({ product, images }) {
   // If it is not found, load the first image with the model number that is found
   // If that is not found either, simply load the notfound.jpg
   const productImage =
-  images[
+    images[
     Object.keys(images).find(key => key.includes('main') && key.startsWith(modelNumber)) ||
     Object.keys(images).find(key => key.startsWith(modelNumber))
-  ] || images['notfound.jpg'];
+    ] || images['notfound.jpg'];
 
   return (
     <Link to={{ pathname: `/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
@@ -19,7 +19,9 @@ export default function Products({ product, images }) {
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
         <h5>{modelNumber}</h5>
-        <p>Unit Cost: ${unit_cost}</p>
+        <p>
+          <b>Unit Cost:</b> {unit_cost !== undefined ? `$${unit_cost.toFixed(2)}` : '-'}
+        </p>
       </div>
     </Link>
   );

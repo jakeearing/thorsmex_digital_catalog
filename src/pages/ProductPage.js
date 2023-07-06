@@ -173,16 +173,16 @@ export default function Product({ products, images }) {
           <div className="details-contact">
             <div className="product-details">
               <p>
-                <b>Individual Price ({count_indv} count):</b> ${price_indv.toFixed(2)}
+                <b>Individual Price ({count_indv} count):</b> {price_indv ? `$${price_indv.toFixed(2)}` : '-'}
               </p>
               <p>
-                <b>Box Price ({count_box} pieces):</b> ${price_box.toFixed(2)}
+                <b>Box Price ({count_box} pieces):</b> {price_box ? `$${price_box.toFixed(2)}` : '-'}
               </p>
               <p>
-                <b>Pallet Price ({count_pallet} boxes):</b> ${price_pallet.toFixed(2)}
+                <b>Pallet Price ({count_pallet} boxes):</b> {price_pallet ? `$${price_pallet.toFixed(2)}` : '-'}
               </p>
               <p>
-                <b>Unit Cost:</b> ${unit_cost.toFixed(2)}
+                <b>Unit Cost:</b> {unit_cost ? `$${unit_cost.toFixed(2)}` : '-'}
               </p>
               {product_sheet && product_sheet.endsWith('.pdf') ? (
                 <p>
