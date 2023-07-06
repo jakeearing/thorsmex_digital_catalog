@@ -100,7 +100,6 @@
 .icon-button img {
   height: 30px;
   width: auto;
-
 }
 
 .export-selected-pdf {
@@ -156,7 +155,7 @@
 }
 
 .product-square h2 {
-  height: 78px;
+  height: 55px;
   font-size: 19px;
   overflow: hidden;
 }

@@ -1,6 +1,6 @@
 .product-page-container {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 120px;
+  margin-bottom: 70px;
 }
 
 .product {
@@ -127,8 +127,7 @@
   text-align: left;
   margin: 0 auto;
   padding: 10px;
-  height: 350px;
-  overflow-y: auto;
+  height: fit-content;
   max-width: 600px;
 }
 
