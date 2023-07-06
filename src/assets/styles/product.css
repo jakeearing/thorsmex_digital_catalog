@@ -220,3 +220,20 @@
   cursor: pointer;
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .product-page-container {
+    margin-top: 55px;
+    margin-bottom: 0px;
+  }
+
+  .product {
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .product-secondary-container {
+    border: none;
+    border-top: 1px solid #ccc; 
+  }
+}

@@ -108,6 +108,8 @@
       width: 20px;
       background-color: transparent;
       border: none;
+      top: 18px;
+      right: 25px;
     }
     
     .menu-icon-wrapper .menu-icon {
