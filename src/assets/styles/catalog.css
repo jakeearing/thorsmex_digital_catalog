@@ -75,10 +75,6 @@
   display: block;
 }
 
-.sort-options select {
-  margin-top: 5px;
-}
-
 .search-bar {
   margin-bottom: 8px;
 }
@@ -88,7 +84,7 @@
 }
 
 .export-container {
-  margin: 10px 0;
+  margin-top: 12px;
   display: flex;
   gap: 10px;
 }
