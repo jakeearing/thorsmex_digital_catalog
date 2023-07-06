@@ -26,11 +26,20 @@
 .sidebar h3 {
   margin: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0 5px 0;
+  width: 95%;
 }
 
 .sidebar .category {
   margin-top: 10px;
+}
+
+.sidebar .sub-category {
+  margin-left: 8px;
+  font-weight: 300;
 }
 
 .sidebar .subcategories-toggle-button {
@@ -59,16 +68,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
 }
 
 .sort-options label {
   display: block;
-  width: 100%;
 }
 
 .sort-options select {
-  width: 100%;
   margin-top: 5px;
 }
 

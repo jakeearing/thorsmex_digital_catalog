@@ -46,7 +46,7 @@ function Catalog({ products, images }) {
   const filteredProducts = products.filter((product) => {
     const nameMatch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const modelMatch = product.modelNumber.toLowerCase().includes(searchTerm.toLowerCase());
-  
+
     if (category === 'all') {
       return (
         (subcategory && product.subCategory.toLowerCase() === subcategory.toLowerCase()) ||
@@ -82,8 +82,8 @@ function Catalog({ products, images }) {
     setItemsPerPage(event.target.value);
   };
 
-   // Handle load more button click
-   const handleLoadMore = () => {
+  // Handle load more button click
+  const handleLoadMore = () => {
     setItemsPerPage(200);
   };
 
@@ -115,10 +115,10 @@ function Catalog({ products, images }) {
   });
 
   // Create links for all categories/subcategories
-  const generateCategoryLinks = (categories) => {
+  const generateCategoryLinks = (categories, depth = 0) => {
     return categories.map((category) => (
       <React.Fragment key={category.link}>
-        <div className="category">
+        <div className={`category${depth === 0 ? ' main-category' : ' sub-category'}`}>
           <Link to={category.link}>{category.name}</Link>
           {category.subcategories && (
             <button
@@ -128,7 +128,7 @@ function Catalog({ products, images }) {
               &#x25BE;
             </button>
           )}
-          {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories)}
+          {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories, depth + 1)}
         </div>
       </React.Fragment>
     ));
@@ -198,7 +198,7 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
-  // Function to export filtered products as PDF
+  // (Needs to be re-worked) Function to export filtered products as PDF
   const createAndDownloadPDF = () => {
     const grid = document.querySelector('.product-grid');
 
@@ -233,7 +233,7 @@ function Catalog({ products, images }) {
       .save();
   };
 
-  // Function to export selected products as PDF
+  // (Needs to be re-worked) Function to export selected products as PDF
   const createAndDownloadSelectedPDF = () => {
     const selectedProducts = sortedProducts.filter((product) =>
       selectedItems.includes(product.modelNumber)
@@ -324,7 +324,7 @@ function Catalog({ products, images }) {
             <h3>Product Categories</h3>
           </div>
           {renderedCategoryLinks}
-          <div className="category">
+          <div className="category main-category">
             <Link to="/">All Products</Link>
           </div>
           <div className="sidebar-heading">
@@ -376,10 +376,10 @@ function Catalog({ products, images }) {
           ))}
         </div>
         {filteredProducts.length > itemsPerPage && (
-        <button className="load-more-button" onClick={handleLoadMore}>
-          Load More
-        </button>
-      )}
+          <button className="load-more-button" onClick={handleLoadMore}>
+            Load More
+          </button>
+        )}
       </div>
     </div>
   );
