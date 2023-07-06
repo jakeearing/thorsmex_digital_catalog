@@ -138,25 +138,25 @@ export default function Product({ products, images }) {
         )}
       </div>
       {isExpanded && (
-        <div className="overlay">
-          <div className="overlay-image-container">
-            <img src={productImages[expandedImageIndex]} alt={name} className="overlay-image" />
-            <button className="overlay-button close-button" onClick={() => setIsExpanded(false)}>
-              &#10006;
-            </button>
-            {showPrevImageArrow && (
-              <button className="overlay-button prev-button" onClick={handlePrevImage}>
-                &#60;
-              </button>
-            )}
-            {showNextImageArrow && (
-              <button className="overlay-button next-button" onClick={handleNextImage}>
-                &#62;
-              </button>
-            )}
-          </div>
-        </div>
+  <div className="overlay">
+    <div className="overlay-image-container">
+      <img src={productImages[expandedImageIndex]} alt={name} className="overlay-image" />
+      <button className="overlay-button close-button" onClick={() => setIsExpanded(false)}>
+        &#10006;
+      </button>
+      {showPrevImageArrow && (
+        <button className="overlay-button prev-button" onClick={handlePrevImage}>
+          &#60;
+        </button>
       )}
+      {showNextImageArrow && (
+        <button className="overlay-button next-button" onClick={handleNextImage}>
+          &#62;
+        </button>
+      )}
+    </div>
+  </div>
+)}
 
         <div className="product-details-container">
           <div className="product-name">
