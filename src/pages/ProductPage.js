@@ -131,39 +131,39 @@ export default function Product({ products, images }) {
   return (
     <div className="product-page-container" onClick={handleClick}>
       <div className="product">
-      <div className="product-image">
-        <img src={productImages[activeImageIndex]} alt={name} onClick={() => handleImageClick(activeImageIndex)} />
-        {showPrevImageArrow && !isExpanded && (
-          <button className="overlay-button prev-button" onClick={handlePrevImage}>
-            &#60;
-          </button>
+        <div className="product-image">
+          <img src={productImages[activeImageIndex]} alt={name} onClick={() => handleImageClick(activeImageIndex)} />
+          {showPrevImageArrow && !isExpanded && (
+            <button className="overlay-button prev-button" onClick={handlePrevImage}>
+              &#60;
+            </button>
+          )}
+          {showNextImageArrow && !isExpanded && (
+            <button className="overlay-button next-button" onClick={handleNextImage}>
+              &#62;
+            </button>
+          )}
+        </div>
+        {isExpanded && (
+          <div className="overlay">
+            <div className="overlay-image-container overlay">
+              <img src={productImages[expandedImageIndex]} alt={name} className="overlay-image" />
+              <button className="overlay-button close-button" onClick={() => setIsExpanded(false)}>
+                &#10006;
+              </button>
+              {showPrevImageArrow && (
+                <button className="overlay-button prev-button" onClick={handlePrevImage}>
+                  &#60;
+                </button>
+              )}
+              {showNextImageArrow && (
+                <button className="overlay-button next-button" onClick={handleNextImage}>
+                  &#62;
+                </button>
+              )}
+            </div>
+          </div>
         )}
-        {showNextImageArrow && !isExpanded && (
-          <button className="overlay-button next-button" onClick={handleNextImage}>
-            &#62;
-          </button>
-        )}
-      </div>
-      {isExpanded && (
-  <div className="overlay">
-    <div className="overlay-image-container overlay">
-      <img src={productImages[expandedImageIndex]} alt={name} className="overlay-image" />
-      <button className="overlay-button close-button" onClick={() => setIsExpanded(false)}>
-        &#10006;
-      </button>
-      {showPrevImageArrow && (
-        <button className="overlay-button prev-button" onClick={handlePrevImage}>
-          &#60;
-        </button>
-      )}
-      {showNextImageArrow && (
-        <button className="overlay-button next-button" onClick={handleNextImage}>
-          &#62;
-        </button>
-      )}
-    </div>
-  </div>
-)}
 
         <div className="product-details-container">
           <div className="product-name">
@@ -173,16 +173,16 @@ export default function Product({ products, images }) {
           <div className="details-contact">
             <div className="product-details">
               <p>
-                <b>Individual Price ({count_indv} count):</b> ${price_indv}
+                <b>Individual Price ({count_indv} count):</b> ${price_indv.toFixed(2)}
               </p>
               <p>
-                <b>Box Price ({count_box} pieces):</b> ${price_box}
+                <b>Box Price ({count_box} pieces):</b> ${price_box.toFixed(2)}
               </p>
               <p>
-                <b>Pallet Price ({count_pallet} boxes):</b> ${price_pallet}
+                <b>Pallet Price ({count_pallet} boxes):</b> ${price_pallet.toFixed(2)}
               </p>
               <p>
-                <b>Unit Cost:</b> ${unit_cost}
+                <b>Unit Cost:</b> ${unit_cost.toFixed(2)}
               </p>
               {product_sheet && product_sheet.endsWith('.pdf') ? (
                 <p>
