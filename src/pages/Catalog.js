@@ -224,7 +224,7 @@ function Catalog({ products, images }) {
 
     html2pdf()
       .set({
-        margin: [12, 0, 12, 0],
+        margin: [18, 0, 18, 0],
         filename: 'Catalog - Charlotte Imports.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true },
