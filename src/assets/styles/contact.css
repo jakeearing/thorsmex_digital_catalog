@@ -3,6 +3,7 @@
     min-height: calc(100vh - 100px - 55px);
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -11,7 +12,7 @@
   }
 
   .contact-content-container {
-    margin-top: 45px;
+    height: fit-content;
   }
   
   .contact-text {
