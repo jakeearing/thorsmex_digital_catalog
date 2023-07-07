@@ -45,7 +45,7 @@
 
 .sidebar .subcategories-toggle-button {
   position: absolute;
-  margin-top: 1px;
+  margin-top: 2px;
   right: 7px;
 }
 
@@ -59,6 +59,7 @@
 
 .subcategories-toggle-button.open {
   transform: rotate(180deg);
+  margin-top: -4px;
 }
 
 .current-category {
