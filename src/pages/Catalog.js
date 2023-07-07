@@ -253,51 +253,6 @@ function Catalog({ products, images }) {
       .save();
   };
 
-  // (Needs to be re-worked) Function to export selected products as PDF
-  const createAndDownloadSelectedPDF = () => {
-    const selectedProducts = sortedProducts.filter((product) =>
-      selectedItems.includes(product.modelNumber)
-    );
-    const grid = document.createElement('div');
-    grid.className = 'product-grid';
-    selectedProducts.forEach((product) => {
-      const item = document.createElement('div');
-      item.className = 'product-grid-item';
-      item.innerHTML = `<Products product={product} images={images} />`;
-      grid.appendChild(item);
-    });
-
-    html2pdf()
-      .set({
-        margin: [12, 0, 12, 0],
-        filename: 'SelectedProducts.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-        page: {
-          before: () => {
-            // Increase the height of the page before rendering
-            return new Promise((resolve) => {
-              setTimeout(() => {
-                resolve();
-              }, 100);
-            });
-          },
-          after: () => {
-            // Wait for the page to render completely before moving to the next page
-            return new Promise((resolve) => {
-              setTimeout(() => {
-                resolve();
-              }, 200);
-            });
-          }
-        }
-      })
-      .from(grid)
-      .save();
-  };
-
   return (
     <div className="catalog-container">
       <div className="sidebar-wrapper">
@@ -364,7 +319,7 @@ function Catalog({ products, images }) {
             </div>
 
             <div className="export-selected-pdf">
-              <button onClick={createAndDownloadSelectedPDF} className="icon-button">
+              <button onClick={createAndDownloadPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
