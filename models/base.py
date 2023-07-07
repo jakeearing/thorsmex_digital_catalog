@@ -56,7 +56,7 @@ def import_data():
     # Insert data into MongoDB
     for index, row in df.iterrows():
         product = Products(
-            name=row['name'],
+            name=row['name'].replace("_x000D_", ""),
             modelNumber=row['model_number'],
             price_indv=row['price_indv'],
             price_box=row['price_box'],
@@ -82,7 +82,7 @@ def import_data():
             gtin=row['gtin'],
             category=row['category'],
             subCategory=row['sub_category'],
-            description=row['description'],
+            description=row['description'].replace("_x000D_", ""),
             details=row['details'].replace("_x000D_", ""),
             specs=row['specs'].replace("_x000D_", ""),
             product_sheet=row['product_sheet'],

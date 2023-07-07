@@ -45,6 +45,7 @@
 
 .sidebar .subcategories-toggle-button {
   position: absolute;
+  margin-top: 1px;
   right: 7px;
 }
 
