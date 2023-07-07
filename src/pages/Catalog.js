@@ -36,7 +36,7 @@ function Catalog({ products, images }) {
     { value: 'modelNumber', label: 'Model Number' },
     { value: 'unit_cost', label: 'Unit Cost' },
   ];
-  const itemsPerPageOptions = [10, 25, 50, 100, 200];
+
 
   // Get all unique categories and subcategories from products
   const allCategories = [...new Set(products.map((product) => product.category))];
@@ -62,6 +62,23 @@ function Catalog({ products, images }) {
     }
   });
 
+  // Calculate the highest value for itemsPerPage based on the total number of items
+  const totalItems = filteredProducts.length;
+  const highestValue = Math.ceil(totalItems / 100) * 100;
+
+  // Generate itemsPerPage options
+  const itemsPerPageOptions = [];
+  const baseOptions = [10, 25, 50];
+  const increment = 100;
+
+  // Add base options
+  itemsPerPageOptions.push(...baseOptions);
+
+  // Add options increasing by increment until reaching the highest value
+  for (let i = increment; i <= highestValue; i += increment) {
+    itemsPerPageOptions.push(i);
+  }
+
   // Handle sort option change
   const handleSortChange = (event) => {
     setSortOption(event.target.value);
@@ -84,8 +101,11 @@ function Catalog({ products, images }) {
 
   // Handle load more button click
   const handleLoadMore = () => {
-    setItemsPerPage(200);
+    const totalItems = filteredProducts.length;
+    const highestValue = Math.ceil(totalItems / 100) * 100;
+    setItemsPerPage(highestValue);
   };
+
 
   // Sort products based on sort option
   const sortedProducts = [...filteredProducts].sort((a, b) => {
