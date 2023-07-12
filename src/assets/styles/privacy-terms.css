@@ -1,6 +1,7 @@
 .terms-privacy-container {
-  padding-top: 55px;
-  min-height: calc(100vh - 100px - 55px);
+  position: relative;
+  top: 55px;
+  min-height: calc(100vh - 100px);
   width: 80%;
   margin: 0 auto;
 }
