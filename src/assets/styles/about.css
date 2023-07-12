@@ -67,13 +67,13 @@
     margin-bottom: 40px;
   }
 
-  .about-content-container:nth-child(odd) .left-column-text,
-  .about-content-container:nth-child(odd) .left-column-image {
+  .about-content-container:nth-child(even) .left-column-text,
+  .about-content-container:nth-child(even) .left-column-image {
     order: 2;
   }
 
-  .about-content-container:nth-child(odd) .right-column-text,
-  .about-content-container:nth-child(odd) .right-column-image {
+  .about-content-container:nth-child(even) .right-column-text,
+  .about-content-container:nth-child(even) .right-column-image {
     order: 1;
   }
 
