@@ -112,19 +112,22 @@
   width: auto;
 }
 
-.export-selected-pdf {
-  visibility: hidden;
-}
-
 .products-wrapper {
   max-width: 51%;
 }
 
-.product-grid {
-  display: flex;
+.product-grid, .select-product-grid {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+.product-grid {
+  display: flex;
+}
+
+.selected-product-grid {
+  display: none;
 }
 
 .product-grid-item {

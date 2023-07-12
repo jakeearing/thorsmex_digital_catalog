@@ -120,6 +120,9 @@ function Catalog({ products, images }) {
     }
   });
 
+  // Store products selected by the user (WORK IN PROGRESS)
+  const selectedProducts = [];
+
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
     const subcategories = allSubcategories
@@ -235,6 +238,40 @@ function Catalog({ products, images }) {
       .save();
   };
 
+  // Function to export selected products as PDF
+  const createAndDownloadSelectedItemsPDF = async () => {
+    const grid = document.querySelector('.selected-product-grid');
+
+    // Create a clone of the grid element
+    const clonedGrid = grid.cloneNode(true);
+
+    // Adjust CSS properties of the cloned grid to make it visible
+    clonedGrid.style.display = 'flex';
+
+    // Append the cloned grid to the document body
+    document.body.appendChild(clonedGrid);
+
+    try {
+      await html2pdf()
+        .set({
+          margin: [18, 0, 18, 0],
+          filename: 'Catalog - Charlotte Imports.pdf',
+          image: { type: 'webp', quality: 0.98 },
+          html2canvas: { scale: 1, useCORS: false },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+          pagebreak: { mode: 'avoid-all' },
+        })
+        .from(clonedGrid)
+        .save();
+    } catch (error) {
+      // Handle error
+      console.error('Failed to export PDF:', error);
+    } finally {
+      // Remove the cloned grid from the document
+      document.body.removeChild(clonedGrid);
+    }
+  };
+
   return (
     <div className="catalog-container">
       <div className="sidebar-wrapper">
@@ -299,8 +336,17 @@ function Catalog({ products, images }) {
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
-
-            <div className="export-selected-pdf">
+          </div>
+          <div className="sidebar-heading">
+            <h3>Export Selected</h3>
+          </div>
+          <div className="export-container">
+            <div className="export-XLS">
+              <button onClick={exportAsXLS} className="icon-button">
+                <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+              </button>
+            </div>
+            <div className="export-pdf">
               <button onClick={createAndDownloadPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
@@ -327,6 +373,13 @@ function Catalog({ products, images }) {
         </div>
         <div className="product-grid">
           {sortedProducts.slice(startIndex, endIndex).map((product) => (
+            <div key={product.modelNumber} className="product-grid-item">
+              <Products product={product} images={images} />
+            </div>
+          ))}
+        </div>
+        <div className="selected-product-grid">
+          {selectedProducts.slice(startIndex, endIndex).map((product) => (
             <div key={product.modelNumber} className="product-grid-item">
               <Products product={product} images={images} />
             </div>
