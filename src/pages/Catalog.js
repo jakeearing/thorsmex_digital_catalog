@@ -248,9 +248,6 @@ function Catalog({ products, images }) {
     // Adjust CSS properties of the cloned grid to make it visible
     clonedGrid.style.display = 'flex';
 
-    // Append the cloned grid to the document body
-    document.body.appendChild(clonedGrid);
-
     try {
       await html2pdf()
         .set({
@@ -347,7 +344,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={createAndDownloadPDF} className="icon-button">
+              <button onClick={createAndDownloadSelectedItemsPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
