@@ -141,11 +141,6 @@
   z-index: 2;
 }
 
-.product-grid-item:hover img {
-  opacity: 0.8;
-  transition: opacity 0.2s ease-in-out;
-}
-
 .product-grid-item:hover:before,
 .product-grid-item:hover:after {
   content: "";
@@ -154,8 +149,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  border: solid 1px #0c4d94;
+  z-index: 99;
 }
 
 .product-square {

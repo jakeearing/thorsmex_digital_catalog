@@ -218,7 +218,7 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
-  // (Needs to be re-worked) Function to export filtered products as PDF
+  // Function to export currently shown products as PDF
   const createAndDownloadPDF = () => {
     const grid = document.querySelector('.product-grid');
 
@@ -226,28 +226,10 @@ function Catalog({ products, images }) {
       .set({
         margin: [18, 0, 18, 0],
         filename: 'Catalog - Charlotte Imports.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
+        image: { type: 'webp', quality: 0.98 },
+        html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-        page: {
-          before: () => {
-            // Increase the height of the page before rendering
-            return new Promise((resolve) => {
-              setTimeout(() => {
-                resolve();
-              }, 100);
-            });
-          },
-          after: () => {
-            // Wait for the page to render completely before moving to the next page
-            return new Promise((resolve) => {
-              setTimeout(() => {
-                resolve();
-              }, 200);
-            });
-          }
-        }
+        pagebreak: { mode: 'avoid-all' },
       })
       .from(grid)
       .save();
