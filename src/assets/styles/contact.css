@@ -1,7 +1,7 @@
 .contact-container {
   position: relative;
-  top: 55px;
-  min-height: calc(100vh - 100px);
+  margin-top: 55px;
+  min-height: calc(100vh - 100px - 55px);
   display: flex;
   justify-content: center;
   align-items: center;

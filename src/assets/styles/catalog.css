@@ -1,9 +1,10 @@
 .catalog-container {
   position: relative;
+  margin-top: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  top: 55px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px - 55px);
 }
 
 .sidebar-wrapper {
