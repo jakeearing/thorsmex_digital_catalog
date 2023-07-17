@@ -16,7 +16,6 @@ function Catalog({ products, images }) {
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
   const [categoryState, setCategoryState] = useState({});
-  // Store products selected by the user
   const [selectedProducts, setSelectedProducts] = useState([]);
 
   // Function to toggle subcategories
@@ -26,19 +25,6 @@ function Catalog({ products, images }) {
       [categoryName]: !prevState[categoryName]
     }));
   };
-
-  // Update local storage when itemsPerPage changes
-  useEffect(() => {
-    localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
-  }, [itemsPerPage]);
-
-  // Constants
-  const sortOptions = [
-    { value: 'name', label: 'Name' },
-    { value: 'modelNumber', label: 'Model Number' },
-    { value: 'unit_cost', label: 'Unit Cost' },
-  ];
-
 
   // Get all unique categories and subcategories from products
   const allCategories = [...new Set(products.map((product) => product.category))];
@@ -64,6 +50,13 @@ function Catalog({ products, images }) {
     }
   });
 
+  // Set the options users have to sort the catalog
+  const sortOptions = [
+    { value: 'name', label: 'Name' },
+    { value: 'modelNumber', label: 'Model Number' },
+    { value: 'unit_cost', label: 'Unit Cost' },
+  ];
+
   // Calculate the highest value for itemsPerPage based on the total number of items
   const totalItems = filteredProducts.length;
   const highestValue = Math.ceil(totalItems / 100) * 100;
@@ -80,6 +73,11 @@ function Catalog({ products, images }) {
   for (let i = increment; i <= highestValue; i += increment) {
     itemsPerPageOptions.push(i);
   }
+
+  // Update local storage when itemsPerPage changes
+  useEffect(() => {
+    localStorage.setItem('itemsPerPage', JSON.stringify(itemsPerPage));
+  }, [itemsPerPage]);
 
   // Handle sort option change
   const handleSortChange = (event) => {
@@ -140,45 +138,6 @@ function Catalog({ products, images }) {
       );
     }
   };
-
-  // Find all category and subcategories from the item list
-  const categoryLinks = allCategories.map((category) => {
-    const subcategories = allSubcategories
-      .filter((subCategory) => products.some((product) => product.subCategory === subCategory && product.category === category))
-      .map((subCategory) => ({ name: subCategory, link: `/${category}/${subCategory}` }));
-
-    return {
-      name: category,
-      link: `/${category}`,
-      subcategories: subcategories.length > 0 ? subcategories : undefined,
-      showSubcategories: categoryState[category] || false
-    };
-  });
-
-  // Create links for all categories/subcategories
-  const generateCategoryLinks = (categories, depth = 0) => {
-    return categories.map((category) => (
-      <React.Fragment key={category.link}>
-        <div className={`category${depth === 0 ? ' main-category' : ' sub-category'}`}>
-          <Link to={category.link}>{category.name}</Link>
-          {category.subcategories && (
-            <button
-              className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
-              onClick={() => toggleSubcategories(category.name)}
-            >
-              &#x25BE;
-            </button>
-          )}
-          {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories, depth + 1)}
-        </div>
-      </React.Fragment>
-    ));
-  };
-
-  const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
-
-  const startIndex = 0;
-  const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + parseInt(itemsPerPage, 10);
 
   // Function to format a number to a specified number of decimal places
   const formatNumber = (number, decimalPlaces) => {
@@ -309,6 +268,45 @@ function Catalog({ products, images }) {
     }
   };
 
+  // Find all category and subcategories from the item list
+  const categoryLinks = allCategories.map((category) => {
+    const subcategories = allSubcategories
+      .filter((subCategory) => products.some((product) => product.subCategory === subCategory && product.category === category))
+      .map((subCategory) => ({ name: subCategory, link: `/${category}/${subCategory}` }));
+
+    return {
+      name: category,
+      link: `/${category}`,
+      subcategories: subcategories.length > 0 ? subcategories : undefined,
+      showSubcategories: categoryState[category] || false
+    };
+  });
+
+  // Create links for all categories/subcategories
+  const generateCategoryLinks = (categories, depth = 0) => {
+    return categories.map((category) => (
+      <React.Fragment key={category.link}>
+        <div className={`category${depth === 0 ? ' main-category' : ' sub-category'}`}>
+          <Link to={category.link}>{category.name}</Link>
+          {category.subcategories && (
+            <button
+              className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
+              onClick={() => toggleSubcategories(category.name)}
+            >
+              &#x25BE;
+            </button>
+          )}
+          {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories, depth + 1)}
+        </div>
+      </React.Fragment>
+    ));
+  };
+
+  const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
+
+  const startIndex = 0;
+  const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + parseInt(itemsPerPage, 10);
+
   return (
     <div className="catalog-container">
       <div className="sidebar-wrapper">
@@ -389,23 +387,27 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
-          <div className="sidebar-heading">
-            <h3>Items Selected</h3>
-          </div>
-          <div className="selected-products">
-            {selectedProducts.map((product) => (
-              <div key={product.modelNumber} className="selected-product">
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={true}
-                    onChange={() => handleProductSelect(product)}
-                  />
-                  {product.name}
-                </label>
-              </div>
-            ))}
-          </div>
+          {selectedProducts.length > 0 && (
+            <div className="sidebar-heading">
+              <h3>Items Selected</h3>
+            </div>
+          )}
+          {selectedProducts.length > 0 && (
+            <div className="selected-products">
+              {selectedProducts.map((product) => (
+                <div key={product.modelNumber} className="selected-product">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={true}
+                      onChange={() => handleProductSelect(product)}
+                    />
+                    {product.name}
+                  </label>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <div className="products-wrapper">
