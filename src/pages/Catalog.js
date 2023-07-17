@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Products from '../components/ProductSquare';
+import ProductSquare from '../components/ProductSquare';
 import { saveAs } from 'file-saver';
 import html2pdf from 'html2pdf.js';
 import * as XLSX from 'xlsx';
@@ -389,6 +389,23 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
+          <div className="sidebar-heading">
+            <h3>Items Selected</h3>
+          </div>
+          <div className="selected-products">
+            {selectedProducts.map((product) => (
+              <div key={product.modelNumber} className="selected-product">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={true}
+                    onChange={() => handleProductDeselect(product)}
+                  />
+                  {product.name}
+                </label>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="products-wrapper">
@@ -411,7 +428,12 @@ function Catalog({ products, images }) {
         <div className="product-grid">
           {sortedProducts.slice(startIndex, endIndex).map((product) => (
             <div key={product.modelNumber} className="product-grid-item">
-              <Products product={product} images={images} handleProductSelect={handleProductSelect} selectedProducts={selectedProducts} />
+              <ProductSquare
+                product={product}
+                images={images}
+                handleProductSelect={handleProductSelect}
+                selectedProducts={selectedProducts}
+              />
             </div>
           ))}
         </div>
@@ -423,7 +445,10 @@ function Catalog({ products, images }) {
         <div className="selected-product-grid">
           {selectedProducts.map((product) => (
             <div key={product.modelNumber} className="product-grid-item">
-              <Products product={product} images={images} />
+              <ProductSquare
+                product={product}
+                images={images}
+              />
             </div>
           ))}
         </div>

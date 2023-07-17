@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Products({ product, images, handleProductSelect, selectedProducts = [] }) {
+export default function ProductSquare({ product, images, handleProductSelect, selectedProducts = [] }) {
   const { name, unit_cost, modelNumber, category, subCategory } = product;
   const [isChecked, setIsChecked] = useState(
     selectedProducts.some((selectedProduct) => selectedProduct.modelNumber === modelNumber)
@@ -10,7 +10,7 @@ export default function Products({ product, images, handleProductSelect, selecte
   const handleChange = (event) => {
     const { checked } = event.target;
     setIsChecked(checked);
-    handleProductSelect(product, checked); // Call handleProductSelect with the product and checked state
+    handleProductSelect(product, checked);
   };
 
   // Look for the product image that has "main" in the name and load it as the product's image
