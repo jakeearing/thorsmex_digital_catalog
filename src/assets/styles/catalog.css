@@ -130,6 +130,7 @@
 
 .selected-product-grid {
   display: none;
+  flex-wrap: wrap;
 }
 
 .product-grid-item {
@@ -146,22 +147,23 @@
   z-index: 2;
 }
 
-.product-grid-item:hover:before,
-.product-grid-item:hover:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: solid 1px #0c4d94;
-  z-index: 99;
-}
-
 .product-square {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
+  position: relative;
+}
+
+.selected-product-grid input[type="checkbox"] {
+  display: none;
+}
+
+.product-grid .product-square input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  top: 5px;
+  right: 5px;
+  z-index: 99;
 }
 
 .product-square h2 {

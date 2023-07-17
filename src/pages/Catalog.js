@@ -16,6 +16,8 @@ function Catalog({ products, images }) {
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
   const [categoryState, setCategoryState] = useState({});
+  // Store products selected by the user
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -106,7 +108,6 @@ function Catalog({ products, images }) {
     setItemsPerPage(highestValue);
   };
 
-
   // Sort products based on sort option
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     if (sortOption === 'name') {
@@ -120,8 +121,25 @@ function Catalog({ products, images }) {
     }
   });
 
-  // Store products selected by the user (WORK IN PROGRESS)
-  const selectedProducts = [];
+  // Handle product selection
+  const handleProductSelect = (product, isSelected) => {
+    if (isSelected) {
+      // Check if the product is already selected
+      const isAlreadySelected = selectedProducts.some(
+        (selectedProduct) => selectedProduct.modelNumber === product.modelNumber
+      );
+
+      if (!isAlreadySelected) {
+        // Add the product to selectedProducts
+        setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, product]);
+      }
+    } else {
+      // Remove the product from selectedProducts
+      setSelectedProducts((prevSelectedProducts) =>
+        prevSelectedProducts.filter((selectedProduct) => selectedProduct.modelNumber !== product.modelNumber)
+      );
+    }
+  };
 
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
@@ -221,8 +239,65 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
+  // Function to export filtered products as XLS
+  const exportSelectedAsXLS = () => {
+    const filteredData = selectedProducts.slice(startIndex, endIndex);
+
+    // Convert the filteredData into the format required by XLSX library
+    const xlsData = filteredData.map((product) => ({
+      Name: product.name,
+      'Model Number': product.modelNumber,
+      'Unit Cost': product.unit_cost.toFixed(2),
+      'Individual Price': product.price_indv.toFixed(2),
+      'Individual Count': formatNumber(product.count_indv, 0),
+      'Box Price': product.price_box.toFixed(2),
+      'Box Count': formatNumber(product.count_box, 0),
+      'Pallet Price': product.price_pallet.toFixed(2),
+      'Pallet Count': formatNumber(product.count_pallet, 0),
+      'Packaging Type': product.packaging_type,
+      Category: product.category,
+      Subcategory: product.subCategory,
+    }));
+
+    // Create a new workbook and sheet
+    const workbook = XLSX.utils.book_new();
+    const worksheet = XLSX.utils.json_to_sheet(xlsData);
+
+    // Configure cell number format for Unit Cost, Individual Price, Box Price, Pallet Price
+    const cellNumberFormat = { numFmt: '0.00' };
+    const range = XLSX.utils.decode_range(worksheet['!ref']);
+    for (let R = range.s.r; R <= range.e.r; ++R) {
+      for (let C = range.s.c; C <= range.e.c; ++C) {
+        const cellAddress = XLSX.utils.encode_cell({ r: R, c: C });
+        if (worksheet[cellAddress]) {
+          if (C === 2 || C === 4 || C === 6 || C === 8) {
+            worksheet[cellAddress].z = cellNumberFormat.numFmt;
+          }
+        }
+      }
+    }
+
+    // Add the worksheet to the workbook
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Catalog');
+
+    // Generate the XLS file
+    const xlsBuffer = XLSX.write(workbook, { type: 'buffer', bookType: 'xlsx' });
+
+    // Create a Blob from the buffer
+    const blob = new Blob([xlsBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+
+    // Save the Blob as a file
+    saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
+  };
+
   // Function to export currently shown products as PDF
   const createAndDownloadPDF = () => {
+    // Hide the checkboxes before generating the PDF
+    const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+      checkbox.style.display = 'none';
+    });
+
     const grid = document.querySelector('.product-grid');
 
     html2pdf()
@@ -235,7 +310,20 @@ function Catalog({ products, images }) {
         pagebreak: { mode: 'avoid-all' },
       })
       .from(grid)
-      .save();
+      .save()
+      .then(() => {
+        // After generating the PDF, show the checkboxes again
+        checkboxes.forEach((checkbox) => {
+          checkbox.style.display = 'block'; // Or set to 'inline' if that was its original display value
+        });
+      })
+      .catch((error) => {
+        console.error('Failed to generate PDF:', error);
+        // Ensure checkboxes are visible again in case of an error
+        checkboxes.forEach((checkbox) => {
+          checkbox.style.display = 'block'; // Or set to 'inline' if that was its original display value
+        });
+      });
   };
 
   // Function to export selected products as PDF
@@ -251,7 +339,7 @@ function Catalog({ products, images }) {
     try {
       await html2pdf()
         .set({
-          margin: [18, 0, 18, 0],
+          margin: [18, 20, 18, 0],
           filename: 'Catalog - Charlotte Imports.pdf',
           image: { type: 'webp', quality: 0.98 },
           html2canvas: { scale: 1, useCORS: false },
@@ -339,7 +427,7 @@ function Catalog({ products, images }) {
           </div>
           <div className="export-container">
             <div className="export-XLS">
-              <button onClick={exportAsXLS} className="icon-button">
+              <button onClick={exportSelectedAsXLS} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
@@ -371,14 +459,7 @@ function Catalog({ products, images }) {
         <div className="product-grid">
           {sortedProducts.slice(startIndex, endIndex).map((product) => (
             <div key={product.modelNumber} className="product-grid-item">
-              <Products product={product} images={images} />
-            </div>
-          ))}
-        </div>
-        <div className="selected-product-grid">
-          {selectedProducts.slice(startIndex, endIndex).map((product) => (
-            <div key={product.modelNumber} className="product-grid-item">
-              <Products product={product} images={images} />
+              <Products product={product} images={images} handleProductSelect={handleProductSelect} selectedProducts={selectedProducts} />
             </div>
           ))}
         </div>
@@ -387,6 +468,13 @@ function Catalog({ products, images }) {
             Load More
           </button>
         )}
+        <div className="selected-product-grid">
+          {selectedProducts.map((product) => (
+            <div key={product.modelNumber} className="product-grid-item">
+              <Products product={product} images={images} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
