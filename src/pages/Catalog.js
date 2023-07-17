@@ -399,7 +399,7 @@ function Catalog({ products, images }) {
                   <input
                     type="checkbox"
                     checked={true}
-                    onChange={() => handleProductDeselect(product)}
+                    onChange={() => handleProductSelect(product)}
                   />
                   {product.name}
                 </label>
