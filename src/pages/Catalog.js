@@ -189,59 +189,11 @@ function Catalog({ products, images }) {
   };
 
   // Function to export filtered products as XLS
-  const exportAsXLS = () => {
-    const filteredData = sortedProducts.slice(startIndex, endIndex);
-
-    // Convert the filteredData into the format required by XLSX library
-    const xlsData = filteredData.map((product) => ({
-      Name: product.name,
-      'Model Number': product.modelNumber,
-      'Unit Cost': product.unit_cost.toFixed(2),
-      'Individual Price': product.price_indv.toFixed(2),
-      'Individual Count': formatNumber(product.count_indv, 0),
-      'Box Price': product.price_box.toFixed(2),
-      'Box Count': formatNumber(product.count_box, 0),
-      'Pallet Price': product.price_pallet.toFixed(2),
-      'Pallet Count': formatNumber(product.count_pallet, 0),
-      'Packaging Type': product.packaging_type,
-      Category: product.category,
-      Subcategory: product.subCategory,
-    }));
-
-    // Create a new workbook and sheet
-    const workbook = XLSX.utils.book_new();
-    const worksheet = XLSX.utils.json_to_sheet(xlsData);
-
-    // Configure cell number format for Unit Cost, Individual Price, Box Price, Pallet Price
-    const cellNumberFormat = { numFmt: '0.00' };
-    const range = XLSX.utils.decode_range(worksheet['!ref']);
-    for (let R = range.s.r; R <= range.e.r; ++R) {
-      for (let C = range.s.c; C <= range.e.c; ++C) {
-        const cellAddress = XLSX.utils.encode_cell({ r: R, c: C });
-        if (worksheet[cellAddress]) {
-          if (C === 2 || C === 4 || C === 6 || C === 8) {
-            worksheet[cellAddress].z = cellNumberFormat.numFmt;
-          }
-        }
-      }
-    }
-
-    // Add the worksheet to the workbook
-    XLSX.utils.book_append_sheet(workbook, worksheet, 'Catalog');
-
-    // Generate the XLS file
-    const xlsBuffer = XLSX.write(workbook, { type: 'buffer', bookType: 'xlsx' });
-
-    // Create a Blob from the buffer
-    const blob = new Blob([xlsBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-
-    // Save the Blob as a file
-    saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
-  };
-
-  // Function to export filtered products as XLS
-  const exportSelectedAsXLS = () => {
-    const filteredData = selectedProducts.slice(startIndex, endIndex);
+  const exportAsXLS = (exportAll) => {
+    // Get the data based on the exportAll flag
+    // If this flag is 'true', then all items will be exported,
+    // If 'false', then only the selected items will be exported.
+    const filteredData = exportAll ? sortedProducts.slice(startIndex, endIndex) : selectedProducts.slice(startIndex, endIndex);
 
     // Convert the filteredData into the format required by XLSX library
     const xlsData = filteredData.map((product) => ({
@@ -411,7 +363,7 @@ function Catalog({ products, images }) {
           </div>
           <div className="export-container">
             <div className="export-XLS">
-              <button onClick={exportAsXLS} className="icon-button">
+              <button onClick={() => exportAsXLS(true)} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
@@ -427,7 +379,7 @@ function Catalog({ products, images }) {
           </div>
           <div className="export-container">
             <div className="export-XLS">
-              <button onClick={exportSelectedAsXLS} className="icon-button">
+              <button onClick={() => exportAsXLS(false)} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
