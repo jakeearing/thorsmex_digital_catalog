@@ -15,6 +15,7 @@ function Catalog({ products, images }) {
     const savedItemsPerPage = localStorage.getItem('itemsPerPage');
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
+  const [prevItemsPerPage, setPrevItemsPerPage] = useState(itemsPerPage);
   const [categoryState, setCategoryState] = useState({});
   const [selectedProducts, setSelectedProducts] = useState([]);
 
@@ -207,8 +208,30 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
+  // Function to be called after the export is complete to reset itemsPerPage to its previous value
+  const handleExportComplete = () => {
+    setItemsPerPage(prevItemsPerPage);
+  };
+
+  // Function to export all products as PDF
+  const exportAllAsPDF = () => {
+    // Store the current itemsPerPage value in the prevItemsPerPage state variable
+    setPrevItemsPerPage(itemsPerPage);
+
+    // Set the items shown to 200
+    setItemsPerPage(200);
+  };
+
+  // useEffect hook to trigger the export once the itemsPerPage has been updated
+  useEffect(() => {
+    if (itemsPerPage === 200) {
+      exportAsPDF();
+      handleExportComplete();
+    }
+  }, [itemsPerPage]);
+
   // Function to export currently shown products as PDF
-  const createAndDownloadPDF = () => {
+  const exportAsPDF = () => {
     // Hide the checkboxes before generating the PDF
     const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
@@ -231,20 +254,21 @@ function Catalog({ products, images }) {
       .then(() => {
         // After generating the PDF, show the checkboxes again
         checkboxes.forEach((checkbox) => {
-          checkbox.style.display = 'block'; // Or set to 'inline' if that was its original display value
+          checkbox.style.display = 'block';
         });
       })
       .catch((error) => {
         console.error('Failed to generate PDF:', error);
         // Ensure checkboxes are visible again in case of an error
         checkboxes.forEach((checkbox) => {
-          checkbox.style.display = 'block'; // Or set to 'inline' if that was its original display value
+          checkbox.style.display = 'block';
         });
       });
+    setItemsPerPage(prevItemsPerPage);
   };
 
   // Function to export selected products as PDF
-  const createAndDownloadSelectedItemsPDF = async () => {
+  const exportSelectedAsPDF = async () => {
     const grid = document.querySelector('.selected-product-grid');
 
     // Create a clone of the grid element
@@ -372,7 +396,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={createAndDownloadPDF} className="icon-button">
+              <button onClick={exportAsPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
@@ -387,7 +411,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={createAndDownloadPDF} className="icon-button">
+              <button onClick={exportAllAsPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
@@ -402,7 +426,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={createAndDownloadSelectedItemsPDF} className="icon-button">
+              <button onClick={exportSelectedAsPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
