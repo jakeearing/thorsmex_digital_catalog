@@ -148,11 +148,17 @@ function Catalog({ products, images }) {
   };
 
   // Function to export filtered products as XLS
-  const exportAsXLS = (exportAll) => {
-    // Get the data based on the exportAll flag
-    // If this flag is 'true', then all items will be exported,
-    // If 'false', then only the selected items will be exported.
-    const filteredData = exportAll ? sortedProducts.slice(startIndex, endIndex) : selectedProducts.slice(startIndex, endIndex);
+  const exportAsXLS = (exportOption) => {
+
+    // If this flag is '0', then only the shown items will be exported,
+    // If '1', then All of the items will be exported.
+    // If '2', then the selected items will be exported.
+    let filteredData = sortedProducts.slice(startIndex, endIndex);
+    if (exportOption == 1) {
+      filteredData = sortedProducts.slice(startIndex, filteredProducts.length);
+    } else if (exportOption == 2) {
+      filteredData = selectedProducts.slice(startIndex, endIndex);
+    }
 
     // Convert the filteredData into the format required by XLSX library
     const xlsData = filteredData.map((product) => ({
@@ -357,15 +363,29 @@ function Catalog({ products, images }) {
             <Link to="/">All Products</Link>
           </div>
           <div className="sidebar-heading">
-            <h3>Export Catalog</h3>
+            <h3>Export Shown</h3>
           </div>
           <div className="export-container">
             <div className="export-XLS">
-              <button onClick={() => exportAsXLS(true)} className="icon-button">
+              <button onClick={() => exportAsXLS(0)} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
-
+            <div className="export-pdf">
+              <button onClick={createAndDownloadPDF} className="icon-button">
+                <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+              </button>
+            </div>
+          </div>
+          <div className="sidebar-heading">
+            <h3>Export All</h3>
+          </div>
+          <div className="export-container">
+            <div className="export-XLS">
+              <button onClick={() => exportAsXLS(1)} className="icon-button">
+                <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+              </button>
+            </div>
             <div className="export-pdf">
               <button onClick={createAndDownloadPDF} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
@@ -377,7 +397,7 @@ function Catalog({ products, images }) {
           </div>
           <div className="export-container">
             <div className="export-XLS">
-              <button onClick={() => exportAsXLS(false)} className="icon-button">
+              <button onClick={() => exportAsXLS(2)} className="icon-button">
                 <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
               </button>
             </div>
