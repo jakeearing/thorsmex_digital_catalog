@@ -12,6 +12,7 @@
 }
 
 .about-content-container {
+  margin-top: 55px;
   height: auto;
   display: flex;
   flex-direction: row;
