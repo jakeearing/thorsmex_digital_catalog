@@ -213,6 +213,15 @@ function Catalog({ products, images }) {
     setItemsPerPage(prevItemsPerPage);
   };
 
+  // Common options for generating the PDF
+  const pdfOptions = {
+    filename: 'Catalog - Charlotte Imports.pdf',
+    image: { type: 'webp', quality: 0.98 },
+    html2canvas: { scale: 1, useCORS: false },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: 'avoid-all' },
+  };
+
   // Function to export all products as PDF
   const exportAllAsPDF = () => {
     // Store the current itemsPerPage value in the prevItemsPerPage state variable
@@ -232,6 +241,7 @@ function Catalog({ products, images }) {
 
   // Function to export currently shown products as PDF
   const exportAsPDF = () => {
+
     // Hide the checkboxes before generating the PDF
     const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
@@ -243,11 +253,7 @@ function Catalog({ products, images }) {
     html2pdf()
       .set({
         margin: [18, 0, 18, 0],
-        filename: 'Catalog - Charlotte Imports.pdf',
-        image: { type: 'webp', quality: 0.98 },
-        html2canvas: { scale: 1, useCORS: false },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: 'avoid-all' },
+        ...pdfOptions,
       })
       .from(grid)
       .save()
@@ -264,7 +270,6 @@ function Catalog({ products, images }) {
           checkbox.style.display = 'block';
         });
       });
-    setItemsPerPage(prevItemsPerPage);
   };
 
   // Function to export selected products as PDF
@@ -281,11 +286,7 @@ function Catalog({ products, images }) {
       await html2pdf()
         .set({
           margin: [18, 20, 18, 0],
-          filename: 'Catalog - Charlotte Imports.pdf',
-          image: { type: 'webp', quality: 0.98 },
-          html2canvas: { scale: 1, useCORS: false },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-          pagebreak: { mode: 'avoid-all' },
+          ...pdfOptions,
         })
         .from(clonedGrid)
         .save();
