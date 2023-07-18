@@ -114,6 +114,10 @@
   width: auto;
 }
 
+.sidebar .selected-product {
+  margin-top: 8px;
+}
+
 .products-wrapper {
   max-width: 51%;
 }

@@ -7,7 +7,6 @@ import * as XLSX from 'xlsx';
 import '../assets/styles/catalog.css';
 
 function Catalog({ products, images }) {
-  // State variables
   const { category, subcategory } = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOption, setSortOption] = useState('modelNumber');
@@ -18,6 +17,7 @@ function Catalog({ products, images }) {
   const [prevItemsPerPage, setPrevItemsPerPage] = useState(itemsPerPage);
   const [categoryState, setCategoryState] = useState({});
   const [selectedProducts, setSelectedProducts] = useState([]);
+  const [exportAll, setExportAll] = useState(false);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -226,17 +226,21 @@ function Catalog({ products, images }) {
   const exportAllAsPDF = () => {
     // Store the current itemsPerPage value in the prevItemsPerPage state variable
     setPrevItemsPerPage(itemsPerPage);
+    
+    // Set the items shown to the highest value
+    setItemsPerPage(highestValue);
 
-    // Set the items shown to 200
-    setItemsPerPage(200);
+    // Set exportAll to true
+    setExportAll(true);
   };
 
   // useEffect hook to trigger the export once the itemsPerPage has been updated
   useEffect(() => {
-    if (itemsPerPage === 200) {
+    if (itemsPerPage === highestValue && exportAll) {
       exportAsPDF();
       handleExportComplete();
     }
+    setExportAll(false);
   }, [itemsPerPage]);
 
   // Function to export currently shown products as PDF
