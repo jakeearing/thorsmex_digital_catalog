@@ -445,7 +445,7 @@ function Catalog({ products, images }) {
                     <input
                       type="checkbox"
                       checked={true}
-                      onChange={() => handleProductSelect(product)}
+                      onChange={() => handleProductSelect(product, false)}
                     />
                     {product.name}
                   </label>
@@ -478,8 +478,8 @@ function Catalog({ products, images }) {
               <ProductSquare
                 product={product}
                 images={images}
-                handleProductSelect={handleProductSelect}
-                selectedProducts={selectedProducts}
+                isChecked={selectedProducts.some((p) => p.modelNumber === product.modelNumber)}
+                handleChange={handleProductSelect}
               />
             </div>
           ))}

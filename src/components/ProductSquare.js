@@ -1,25 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function ProductSquare({ product, images, handleProductSelect, selectedProducts = [] }) {
+export default function ProductSquare({ product, images, isChecked, handleChange = [] }) {
   const { name, unit_cost, modelNumber, category, subCategory } = product;
-  const [isChecked, setIsChecked] = useState(
-    selectedProducts.some((selectedProduct) => selectedProduct.modelNumber === modelNumber)
-  );
-
-  const handleChange = (event) => {
-    const { checked } = event.target;
-    setIsChecked(checked);
-    handleProductSelect(product, checked);
-  };
 
   // Look for the product image that has "main" in the name and load it as the product's image
   // If it is not found, load the first image with the model number that is found
   // If that is not found either, simply load the notfound.jpg
   const productImage =
     images[
-      Object.keys(images).find((key) => key.includes('main') && key.startsWith(modelNumber)) ||
-        Object.keys(images).find((key) => key.startsWith(modelNumber))
+    Object.keys(images).find((key) => key.includes('main') && key.startsWith(modelNumber)) ||
+    Object.keys(images).find((key) => key.startsWith(modelNumber))
     ] || images['notfound.jpg'];
 
   return (
@@ -33,10 +24,11 @@ export default function ProductSquare({ product, images, handleProductSelect, se
         </p>
       </Link>
       <input
-          type="checkbox"
-          name="select-item"
-          onChange={handleChange}
-        />
+        type="checkbox"
+        name="select-item"
+        onChange={() => handleChange(product, !isChecked)}
+        checked={isChecked}
+      />
     </div>
   );
 }
