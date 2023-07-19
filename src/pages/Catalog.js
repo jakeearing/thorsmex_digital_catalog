@@ -16,7 +16,10 @@ function Catalog({ products, images }) {
   });
   const [prevItemsPerPage, setPrevItemsPerPage] = useState(itemsPerPage);
   const [categoryState, setCategoryState] = useState({});
-  const [selectedProducts, setSelectedProducts] = useState([]);
+  const [selectedProducts, setSelectedProducts] = useState(() => {
+    const savedSelectedProducts = localStorage.getItem('selectedProducts');
+    return savedSelectedProducts ? JSON.parse(savedSelectedProducts) : [];
+  });
   const [exportAll, setExportAll] = useState(false);
 
   // Function to toggle subcategories
@@ -120,20 +123,21 @@ function Catalog({ products, images }) {
     }
   });
 
-  // Handle product selection
+  useEffect(() => {
+    localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+  }, [selectedProducts]);
+
+  // Handle Product Selection
   const handleProductSelect = (product, isSelected) => {
     if (isSelected) {
-      // Check if the product is already selected
       const isAlreadySelected = selectedProducts.some(
         (selectedProduct) => selectedProduct.modelNumber === product.modelNumber
       );
 
       if (!isAlreadySelected) {
-        // Add the product to selectedProducts
         setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, product]);
       }
     } else {
-      // Remove the product from selectedProducts
       setSelectedProducts((prevSelectedProducts) =>
         prevSelectedProducts.filter((selectedProduct) => selectedProduct.modelNumber !== product.modelNumber)
       );
@@ -146,24 +150,6 @@ function Catalog({ products, images }) {
       return Math.round(number).toFixed(0);
     }
     return number.toFixed(decimalPlaces);
-  };
-
-  // Creates links on the sidebar for selected products
-  const ProductSidebar = ({ products }) => {
-    return (
-      <div>
-        <h2>Product Sidebar</h2>
-        <ul>
-          {products.map((product) => (
-            <li key={product.modelnumber}>
-              <Link to={`/${product.category}/${product.subcategory}/${product.modelnumber}`}>
-                {product.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
   };
 
   // Function to export filtered products as XLS
