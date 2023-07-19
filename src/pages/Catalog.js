@@ -251,7 +251,6 @@ function Catalog({ products, images }) {
   useEffect(() => {
     if (itemsPerPage === highestValue && exportAll) {
       exportAsPDF();
-      handleExportComplete();
     }
     setExportAll(false);
   }, [itemsPerPage]);
@@ -279,6 +278,7 @@ function Catalog({ products, images }) {
         checkboxes.forEach((checkbox) => {
           checkbox.style.display = 'block';
         });
+        handleExportComplete();
       })
       .catch((error) => {
         console.error('Failed to generate PDF:', error);
