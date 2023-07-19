@@ -311,11 +311,11 @@ function Catalog({ products, images }) {
   const categoryLinks = allCategories.map((category) => {
     const subcategories = allSubcategories
       .filter((subCategory) => products.some((product) => product.subCategory === subCategory && product.category === category))
-      .map((subCategory) => ({ name: subCategory, link: `/${category}/${subCategory}` }));
+      .map((subCategory) => ({ name: subCategory, link: `/products/${category}/${subCategory}` }));
 
     return {
       name: category,
-      link: `/${category}`,
+      link: `/products/${category}`,
       subcategories: subcategories.length > 0 ? subcategories : undefined,
       showSubcategories: categoryState[category] || false
     };
@@ -457,7 +457,7 @@ function Catalog({ products, images }) {
                     {product === 'checkbox' ? (
                       product.name
                     ) : (
-                      <Link to={`/${product.category}/${product.subCategory}/${product.modelNumber}`}>
+                      <Link to={`/products/${product.category}/${product.subCategory}/${product.modelNumber}`}>
                         {product.name}
                       </Link>
                     )}
@@ -475,12 +475,12 @@ function Catalog({ products, images }) {
             {category && <span> / </span>}
             {category && subcategory && (
               <span>
-                <Link to={`/${category}`}>{category}</Link> / {subcategory}
+                <Link to={`/products/${category}`}>{category}</Link> / {subcategory}
               </span>
             )}
             {category && !subcategory && (
               <span>
-                <Link to={`/${category}`}>{category}</Link>
+                <Link to={`/products/${category}`}>{category}</Link>
               </span>
             )}
           </h3>
