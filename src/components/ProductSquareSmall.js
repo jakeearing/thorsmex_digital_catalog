@@ -14,7 +14,7 @@ export default function Products({ product, images }) {
     ] || images['notfound.jpg'];
 
   return (
-    <Link to={{ pathname: `/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
+    <Link to={{ pathname: `/products/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
       <div className="product-square">
         <img src={productImage} alt={name} />
       </div>

@@ -15,7 +15,7 @@ export default function ProductSquare({ product, images, isChecked, handleChange
 
   return (
     <div className="product-square">
-      <Link to={{ pathname: `/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
+      <Link to={{ pathname: `/products/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
         <h5>{modelNumber}</h5>

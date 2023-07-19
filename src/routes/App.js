@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Routes, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation, useParams, Navigate } from 'react-router-dom';
 import Catalog from '../pages/Catalog';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
@@ -9,6 +9,7 @@ import Product from '../pages/ProductPage';
 import ScrollToTop from '../components/ScrollToTop';
 import Header from '../components/nav/Header';
 import Footer from '../components/nav/Footer';
+import Error from '../pages/Error';
 
 function importAll(r) {
   let images = {};
@@ -63,7 +64,7 @@ const App = () => {
       try {
         const response = await fetch("http://localhost:5000/api/products");
         const data = await response.json();
-  
+
         const storedProducts = localStorage.getItem("products");
         if (!storedProducts || JSON.stringify(data) !== storedProducts) {
           setProducts(data);
@@ -75,7 +76,7 @@ const App = () => {
       } catch (error) {
         // An error occurred while fetching data
         console.error("Error fetching products:", error);
-  
+
         // Fallback to the data stored in local storage
         const storedProducts = localStorage.getItem("products");
         if (storedProducts) {
@@ -83,9 +84,33 @@ const App = () => {
           setProducts(parsedProducts);
         }
       }
-    } 
+    }
     fetchProducts();
-  }, []);  
+  }, []);
+
+  // Make sure the model number is in the correct format
+  const validateModelNumber = (modelNumber) => {
+    const pattern = /^(\d{4}|\d{5})-\d{5}$/;
+    return pattern.test(modelNumber);
+  };
+
+  const ProductRoute = () => {
+    const { modelnumber } = useParams();
+
+    // Find the product with the matching model number
+    const product = products.find((p) => p.modelNumber === modelnumber);
+
+    // If product is not found, redirect to not found page
+    if (!validateModelNumber(modelnumber) || !product) {
+      return (
+        <Navigate
+          to="/product-not-found"
+        />
+      );
+    }
+
+    return <Product products={products} images={images} />;
+  };
 
   return (
     <BrowserRouter>
@@ -94,15 +119,25 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to="/all" replace />}
+            element={<Navigate to="/products/all" replace />}
           />
-          <Route path="/:category" element={<Catalog products={products} images={images} />} />
-          <Route path="/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} />} />
+          <Route
+            path="/products"
+            element={<Navigate to="/products/all" replace />}
+          />
+          <Route path="/products/:category" element={<Catalog products={products} images={images} />} />
+          <Route path="/products/:category/:subcategory" element={<Catalog products={products} images={images} />} />
+          <Route path="/products/:category/:subcategory/:modelnumber" element={<ProductRoute />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/product-not-found" element={<Error errorMessage={"Product Not Found"} />} />
+          <Route
+            path="*"
+            element={<Navigate to="/page-not-found" replace />}
+          />
+          <Route path="/page-not-found" element={<Error errorMessage="Page Not Found" />} />
         </Routes>
         <ScrollToTopButton />
         <Footer />
