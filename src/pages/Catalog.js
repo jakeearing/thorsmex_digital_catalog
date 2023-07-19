@@ -20,6 +20,7 @@ function Catalog({ products, images }) {
     const savedSelectedProducts = localStorage.getItem('selectedProducts');
     return savedSelectedProducts ? JSON.parse(savedSelectedProducts) : [];
   });
+  const [showSelected, setShowSelected] = useState(false);
   const [exportAll, setExportAll] = useState(false);
 
   // Function to toggle subcategories
@@ -123,8 +124,16 @@ function Catalog({ products, images }) {
     }
   });
 
+  // Save selected products to local storage
   useEffect(() => {
     localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+  }, [selectedProducts]);
+
+  // Reset the showSelected state whenever selectedProducts change
+  useEffect(() => {
+    if (selectedProducts.length === 0) {
+      setShowSelected(false);
+    }
   }, [selectedProducts]);
 
   // Handle Product Selection
@@ -329,7 +338,7 @@ function Catalog({ products, images }) {
           <Link to={category.link}>{category.name}</Link>
           {category.subcategories && (
             <button
-              className={`subcategories-toggle-button ${category.showSubcategories ? 'open' : ''}`}
+              className={`sidebar-toggle-button ${category.showSubcategories ? 'open' : ''}`}
               onClick={() => toggleSubcategories(category.name)}
             >
               &#x25BE;
@@ -442,9 +451,16 @@ function Catalog({ products, images }) {
                   <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
                 </button>
               </div>
+              <button
+                className={`sidebar-toggle-button ${showSelected ? 'open' : ''}`}
+                onClick={() => setShowSelected(!showSelected)}
+              >
+                {showSelected ? '' : ''}
+                &#x25BE;
+              </button>
             </div>
           )}
-          {selectedProducts.length > 0 && (
+          {showSelected && selectedProducts.length > 0 && (
             <div className="selected-products">
               {selectedProducts.map((product) => (
                 <div key={product.modelNumber} className="selected-product">

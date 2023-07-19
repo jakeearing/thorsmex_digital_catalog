@@ -45,13 +45,10 @@
   font-weight: 300;
 }
 
-.sidebar .subcategories-toggle-button {
+.sidebar .sidebar-toggle-button {
   position: absolute;
   margin-top: 2px;
   right: 7px;
-}
-
-.subcategories-toggle-button {
   border: none;
   background-color: transparent;
   font-size: 16px;
@@ -59,9 +56,13 @@
   cursor: pointer;
 }
 
-.subcategories-toggle-button.open {
+.sidebar .sidebar-toggle-button.open {
   transform: rotate(180deg);
   margin-top: -2px;
+}
+
+.sidebar .selected-product {
+  margin-top: 8px;
 }
 
 .current-category {
@@ -112,10 +113,6 @@
 .icon-button img {
   height: 30px;
   width: auto;
-}
-
-.sidebar .selected-product {
-  margin-top: 8px;
 }
 
 .products-wrapper {
