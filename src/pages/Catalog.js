@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ProductSquare from '../components/ProductSquare';
 import { saveAs } from 'file-saver';
@@ -148,6 +148,24 @@ function Catalog({ products, images }) {
     return number.toFixed(decimalPlaces);
   };
 
+  // Creates links on the sidebar for selected products
+  const ProductSidebar = ({ products }) => {
+    return (
+      <div>
+        <h2>Product Sidebar</h2>
+        <ul>
+          {products.map((product) => (
+            <li key={product.modelnumber}>
+              <Link to={`/${product.category}/${product.subcategory}/${product.modelnumber}`}>
+                {product.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
   // Function to export filtered products as XLS
   const exportAsXLS = (exportOption) => {
 
@@ -226,7 +244,7 @@ function Catalog({ products, images }) {
   const exportAllAsPDF = () => {
     // Store the current itemsPerPage value in the prevItemsPerPage state variable
     setPrevItemsPerPage(itemsPerPage);
-    
+
     // Set the items shown to the highest value
     setItemsPerPage(highestValue);
 
@@ -421,24 +439,23 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
-          <div className="sidebar-heading">
-            <h3>Export Selected</h3>
-          </div>
-          <div className="export-container">
-            <div className="export-XLS">
-              <button onClick={() => exportAsXLS(2)} className="icon-button">
-                <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
-              </button>
-            </div>
-            <div className="export-pdf">
-              <button onClick={exportSelectedAsPDF} className="icon-button">
-                <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
-              </button>
-            </div>
-          </div>
           {selectedProducts.length > 0 && (
             <div className="sidebar-heading">
-              <h3>Items Selected</h3>
+              <h3>Export Selected</h3>
+            </div>
+          )}
+          {selectedProducts.length > 0 && (
+            <div className="export-container">
+              <div className="export-XLS">
+                <button onClick={() => exportAsXLS(2)} className="icon-button">
+                  <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+                </button>
+              </div>
+              <div className="export-pdf">
+                <button onClick={exportSelectedAsPDF} className="icon-button">
+                  <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+                </button>
+              </div>
             </div>
           )}
           {selectedProducts.length > 0 && (
@@ -451,7 +468,13 @@ function Catalog({ products, images }) {
                       checked={true}
                       onChange={() => handleProductSelect(product, false)}
                     />
-                    {product.name}
+                    {product === 'checkbox' ? (
+                      product.name
+                    ) : (
+                      <Link to={`/${product.category}/${product.subCategory}/${product.modelNumber}`}>
+                        {product.name}
+                      </Link>
+                    )}
                   </label>
                 </div>
               ))}
