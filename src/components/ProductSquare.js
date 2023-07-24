@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ProductSquare({ product, images, isChecked, handleChange = [] }) {
-  const { name, unit_cost, modelNumber, category, subCategory } = product;
+  const { name, price_indv, msrp, modelNumber, category, subCategory } = product;
 
   // Look for the product image that has "main" in the name and load it as the product's image
   // If it is not found, load the first image with the model number that is found
@@ -20,7 +20,10 @@ export default function ProductSquare({ product, images, isChecked, handleChange
         <h2>{name}</h2>
         <h5>{modelNumber}</h5>
         <p>
-          <b>Unit Cost:</b> {unit_cost !== undefined ? `$${unit_cost.toFixed(2)}` : '-'}
+          <b>List Price:</b> {price_indv !== undefined ? `$${price_indv.toFixed(2)}` : '-'}
+        </p>
+        <p>
+          <b>MSRP:</b> {msrp !== undefined ? `$${msrp.toFixed(2)}` : '-'}
         </p>
       </Link>
       <input
