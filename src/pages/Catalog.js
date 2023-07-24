@@ -153,6 +153,34 @@ function Catalog({ products, images }) {
     }
   };
 
+  // Function to handle "Select All" and "Deselect All" for a category
+  const handleSelectAll = (categoryName) => {
+    const productsInCategory = filteredProducts.filter(
+      (product) => product.category.toLowerCase() === categoryName.toLowerCase()
+    );
+
+    if (areAllProductsSelected(categoryName)) {
+      setSelectedProducts((prevSelectedProducts) =>
+        prevSelectedProducts.filter(
+          (selectedProduct) => !productsInCategory.some((product) => product.modelNumber === selectedProduct.modelNumber)
+        )
+      );
+    } else {
+      setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, ...productsInCategory]);
+    }
+  };
+
+  // Function to check if all products in a category are selected
+  const areAllProductsSelected = (categoryName) => {
+    const productsToCheck = filteredProducts.filter(
+      (product) => product.category.toLowerCase() === categoryName.toLowerCase()
+    );
+
+    return productsToCheck.every((product) =>
+      selectedProducts.some((selectedProduct) => selectedProduct.modelNumber === product.modelNumber)
+    );
+  };
+
   // Function to format a number to a specified number of decimal places
   const formatNumber = (number, decimalPlaces) => {
     if (decimalPlaces === 0) {
@@ -278,7 +306,6 @@ function Catalog({ products, images }) {
         checkboxes.forEach((checkbox) => {
           checkbox.style.display = 'block';
         });
-        handleExportComplete();
       })
       .catch((error) => {
         console.error('Failed to generate PDF:', error);
@@ -287,6 +314,7 @@ function Catalog({ products, images }) {
           checkbox.style.display = 'block';
         });
       });
+    handleExportComplete();
   };
 
   // Function to export selected products as PDF
@@ -330,25 +358,35 @@ function Catalog({ products, images }) {
     };
   });
 
-  // Create links for all categories/subcategories
+  // Create links for all categories/subcategories and dynamically add "Select All" buttons
   const generateCategoryLinks = (categories, depth = 0) => {
     return categories.map((category) => (
       <React.Fragment key={category.link}>
         <div className={`category${depth === 0 ? ' main-category' : ' sub-category'}`}>
           <Link to={category.link}>{category.name}</Link>
-          {category.subcategories && (
-            <button
-              className={`sidebar-toggle-button ${category.showSubcategories ? 'open' : ''}`}
-              onClick={() => toggleSubcategories(category.name)}
-            >
-              &#x25BE;
-            </button>
+          {depth === 0 && ( // Only show the "Select All" button for main categories (depth === 0)
+            <>
+              {category.subcategories && (
+                <button
+                  className={`sidebar-toggle-button ${category.showSubcategories ? 'open' : ''}`}
+                  onClick={() => toggleSubcategories(category.name)}
+                >
+                  &#x25BE;
+                </button>
+              )}
+              <button onClick={() => handleSelectAll(category.name)}>
+                {areAllProductsSelected(category.name)
+                  ? `Deselect All`
+                  : `Select All`}
+              </button>
+            </>
           )}
           {category.showSubcategories && category.subcategories && generateCategoryLinks(category.subcategories, depth + 1)}
         </div>
       </React.Fragment>
     ));
   };
+
 
   const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
 
