@@ -14,14 +14,13 @@ function Catalog({ products, images }) {
     const savedItemsPerPage = localStorage.getItem('itemsPerPage');
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
-  const [prevItemsPerPage, setPrevItemsPerPage] = useState(itemsPerPage);
   const [categoryState, setCategoryState] = useState({});
   const [selectedProducts, setSelectedProducts] = useState(() => {
     const savedSelectedProducts = localStorage.getItem('selectedProducts');
     return savedSelectedProducts ? JSON.parse(savedSelectedProducts) : [];
   });
   const [showSelected, setShowSelected] = useState(false);
-  const [exportAll, setExportAll] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -249,101 +248,76 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
-  // Function to be called after the export is complete to reset itemsPerPage to its previous value
-  // Currently not implemented in the exportAllAsPDF function due to a bug where the margins in
-  // the exported PDF were off
-  const handleExportComplete = () => {
-    setItemsPerPage(prevItemsPerPage);
-  };
+// Function to export currently shown products as PDF
+const exportAsPDF = async (exportOption) => {
+  setIsLoading(true);
 
-  // Common options for generating the PDF
-  const pdfOptions = {
-    filename: 'Catalog - Charlotte Imports.pdf',
-    image: { type: 'webp', quality: 0.98 },
-    html2canvas: { scale: 1, useCORS: false },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: 'avoid-all' },
-  };
-
-  // Function to export all products as PDF
-  const exportAllAsPDF = () => {
-    // Store the current itemsPerPage value in the prevItemsPerPage state variable
-    setPrevItemsPerPage(itemsPerPage);
-
-    // Set the items shown to the highest value
+  if (exportOption === 1) {
     setItemsPerPage(highestValue);
+  }
 
-    // Set exportAll to true
-    setExportAll(true);
-  };
-
-  // useEffect hook to trigger the export once the itemsPerPage has been updated
-  useEffect(() => {
-    if (itemsPerPage === highestValue && exportAll) {
-      exportAsPDF();
-    }
-    setExportAll(false);
-  }, [itemsPerPage]);
-
-  // Function to export currently shown products as PDF
-  const exportAsPDF = () => {
-
+  if (exportOption !== 2) {
     // Hide the checkboxes before generating the PDF
     const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
       checkbox.style.display = 'none';
     });
+  }
 
-    const grid = document.querySelector('.product-grid');
+  // Get the appropriate grid element based on the exportOption
+  const grid = exportOption === 2 ? document.querySelector('.selected-product-grid') : document.querySelector('.product-grid');
 
-    html2pdf()
-      .set({
-        margin: [18, 0, 18, 0],
-        ...pdfOptions,
-      })
-      .from(grid)
-      .save()
-      .then(() => {
-        // After generating the PDF, show the checkboxes again
-        checkboxes.forEach((checkbox) => {
-          checkbox.style.display = 'block';
-        });
-      })
-      .catch((error) => {
-        console.error('Failed to generate PDF:', error);
-        // Ensure checkboxes are visible again in case of an error
-        checkboxes.forEach((checkbox) => {
-          checkbox.style.display = 'block';
-        });
+  if (exportOption === 2) {
+    grid.style.display = 'flex';
+  }
+
+  // Calculate the available width and height of the PDF page in pixels
+  const availableWidth = 700;
+  const availableHeight = 1000;
+
+  // Calculate the total width and height of the product grid in pixels
+  const gridWidth = grid.scrollWidth;
+  const gridHeight = grid.scrollHeight;
+
+  // Calculate the remaining horizontal and vertical space to center the grid
+  const remainingHorizontalSpace = availableWidth - gridWidth;
+  const remainingVerticalSpace = availableHeight - gridHeight;
+
+  // Calculate the horizontal and vertical margins to center the grid
+  const marginLeft = remainingHorizontalSpace > 0 ? remainingHorizontalSpace / 2 : 0;
+  const marginTop = remainingVerticalSpace > 0 ? remainingVerticalSpace / 2 : 0;
+
+  try {
+    // Generate the PDF
+    await html2pdf().set({
+      margin: exportOption === 2 ? [0, 0, 0, 0] : [marginTop, marginLeft, 0, 0],
+      filename: 'Catalog - Charlotte Imports.pdf',
+      image: { type: 'webp', quality: 0.98 },
+      html2canvas: { scale: 1, useCORS: false },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: 'avoid-all' },
+    }).from(grid).save();
+  } catch (error) {
+    console.error('Failed to generate PDF:', error);
+    // Ensure checkboxes are visible again in case of an error
+    const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+      checkbox.style.display = 'block';
+    });
+  } finally {
+    if (exportOption !== 2) {
+      // After generating the PDF, show the checkboxes again
+      const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
+      checkboxes.forEach((checkbox) => {
+        checkbox.style.display = 'block';
       });
-  };
-
-  // Function to export selected products as PDF
-  const exportSelectedAsPDF = async () => {
-    const grid = document.querySelector('.selected-product-grid');
-
-    // Create a clone of the grid element
-    const clonedGrid = grid.cloneNode(true);
-
-    // Adjust CSS properties of the cloned grid to make it visible
-    clonedGrid.style.display = 'flex';
-
-    try {
-      await html2pdf()
-        .set({
-          margin: [18, 20, 18, 0],
-          ...pdfOptions,
-        })
-        .from(clonedGrid)
-        .save();
-    } catch (error) {
-      // Handle error
-      console.error('Failed to export PDF:', error);
-    } finally {
-      // Remove the cloned grid from the document
-      document.body.removeChild(clonedGrid);
+    } else {
+      grid.style.display = 'none';
     }
-  };
+
+    setIsLoading(false);
+  }
+};
 
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
@@ -375,10 +349,13 @@ function Catalog({ products, images }) {
                   &#x25BE;
                 </button>
               )}
-              <button onClick={() => handleSelectAll(category.name)}>
+              <button
+                className="sidebar-category-select"
+                onClick={() => handleSelectAll(category.name)}
+              >
                 {areAllProductsSelected(category.name)
-                  ? `Deselect All`
-                  : `Select All`}
+                  ? `Deselect`
+                  : `Select`}
               </button>
             </>
           )}
@@ -387,7 +364,6 @@ function Catalog({ products, images }) {
       </React.Fragment>
     ));
   };
-
 
   const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
 
@@ -453,7 +429,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={exportAsPDF} className="icon-button">
+              <button onClick={() => exportAsPDF(0)} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
@@ -468,7 +444,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={exportAllAsPDF} className="icon-button">
+              <button onClick={() => exportAsPDF(1)} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
@@ -486,7 +462,7 @@ function Catalog({ products, images }) {
                 </button>
               </div>
               <div className="export-pdf">
-                <button onClick={exportSelectedAsPDF} className="icon-button">
+                <button onClick={() => exportAsPDF(2)} className="icon-button">
                   <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
                 </button>
               </div>
@@ -568,6 +544,11 @@ function Catalog({ products, images }) {
           ))}
         </div>
       </div>
+      {isLoading && (
+        <div className="loading-overlay">
+          <div className="loading-circle"></div>
+        </div>
+      )}
     </div>
   );
 }
