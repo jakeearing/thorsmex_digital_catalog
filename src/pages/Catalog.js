@@ -14,6 +14,7 @@ function Catalog({ products, images }) {
     const savedItemsPerPage = localStorage.getItem('itemsPerPage');
     return savedItemsPerPage ? JSON.parse(savedItemsPerPage) : 25;
   });
+  const [prevItemsPerPage, setPrevItemsPerPage] = useState(itemsPerPage);
   const [categoryState, setCategoryState] = useState({});
   const [selectedProducts, setSelectedProducts] = useState(() => {
     const savedSelectedProducts = localStorage.getItem('selectedProducts');
@@ -251,9 +252,15 @@ function Catalog({ products, images }) {
 
   // Function to export currently shown products as PDF
   const exportAsPDF = async (exportOption) => {
+
+    // Enable webpage "loading"
     setIsLoading(true);
 
-    if (exportOption === 1) {
+    // Disable scrolling while loading
+    document.body.classList.add('no-scroll');
+
+    if (exportOption === 1 && itemsPerPage !== highestValue) {
+      setPrevItemsPerPage(itemsPerPage);
       setItemsPerPage(highestValue);
     }
 
@@ -306,6 +313,9 @@ function Catalog({ products, images }) {
         checkbox.style.display = 'block';
       });
     } finally {
+      if (exportOption === 1) {
+        setItemsPerPage(prevItemsPerPage);
+      }
       if (exportOption !== 2) {
         // After generating the PDF, show the checkboxes again
         const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
@@ -316,6 +326,10 @@ function Catalog({ products, images }) {
         grid.style.display = 'none';
       }
 
+      // Enable scrolling after loading is complete
+      document.body.classList.remove('no-scroll');
+
+      // Disable webpage "loading"
       setIsLoading(false);
     }
   };
