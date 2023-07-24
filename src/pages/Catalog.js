@@ -250,6 +250,8 @@ function Catalog({ products, images }) {
   };
 
   // Function to be called after the export is complete to reset itemsPerPage to its previous value
+  // Currently not implemented in the exportAllAsPDF function due to a bug where the margins in
+  // the exported PDF were off
   const handleExportComplete = () => {
     setItemsPerPage(prevItemsPerPage);
   };
@@ -314,7 +316,6 @@ function Catalog({ products, images }) {
           checkbox.style.display = 'block';
         });
       });
-    handleExportComplete();
   };
 
   // Function to export selected products as PDF
