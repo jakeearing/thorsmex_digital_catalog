@@ -21,6 +21,7 @@ function Catalog({ products, images }) {
   });
   const [showSelected, setShowSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [allProductsSelected, setAllProductsSelected] = useState({});
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -136,20 +137,18 @@ function Catalog({ products, images }) {
   }, [selectedProducts]);
 
   // Handle Product Selection
-  const handleProductSelect = (product, isSelected) => {
-    if (isSelected) {
-      const isAlreadySelected = selectedProducts.some(
+  const handleProductSelect = (product) => {
+    setSelectedProducts((prevSelectedProducts) => {
+      const isAlreadySelected = prevSelectedProducts.some(
         (selectedProduct) => selectedProduct.modelNumber === product.modelNumber
       );
 
       if (!isAlreadySelected) {
-        setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, product]);
+        return [...prevSelectedProducts, product];
+      } else {
+        return prevSelectedProducts.filter((selectedProduct) => selectedProduct.modelNumber !== product.modelNumber);
       }
-    } else {
-      setSelectedProducts((prevSelectedProducts) =>
-        prevSelectedProducts.filter((selectedProduct) => selectedProduct.modelNumber !== product.modelNumber)
-      );
-    }
+    });
   };
 
   // Function to handle "Select All" and "Deselect All" for a category
@@ -164,8 +163,10 @@ function Catalog({ products, images }) {
           (selectedProduct) => !productsInCategory.some((product) => product.modelNumber === selectedProduct.modelNumber)
         )
       );
+      setAllProductsSelected((prev) => ({ ...prev, [categoryName]: false }));
     } else {
       setSelectedProducts((prevSelectedProducts) => [...prevSelectedProducts, ...productsInCategory]);
+      setAllProductsSelected((prev) => ({ ...prev, [categoryName]: true }));
     }
   };
 
@@ -248,76 +249,76 @@ function Catalog({ products, images }) {
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
 
-// Function to export currently shown products as PDF
-const exportAsPDF = async (exportOption) => {
-  setIsLoading(true);
+  // Function to export currently shown products as PDF
+  const exportAsPDF = async (exportOption) => {
+    setIsLoading(true);
 
-  if (exportOption === 1) {
-    setItemsPerPage(highestValue);
-  }
+    if (exportOption === 1) {
+      setItemsPerPage(highestValue);
+    }
 
-  if (exportOption !== 2) {
-    // Hide the checkboxes before generating the PDF
-    const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
-    checkboxes.forEach((checkbox) => {
-      checkbox.style.display = 'none';
-    });
-  }
-
-  // Get the appropriate grid element based on the exportOption
-  const grid = exportOption === 2 ? document.querySelector('.selected-product-grid') : document.querySelector('.product-grid');
-
-  if (exportOption === 2) {
-    grid.style.display = 'flex';
-  }
-
-  // Calculate the available width and height of the PDF page in pixels
-  const availableWidth = 700;
-  const availableHeight = 1000;
-
-  // Calculate the total width and height of the product grid in pixels
-  const gridWidth = grid.scrollWidth;
-  const gridHeight = grid.scrollHeight;
-
-  // Calculate the remaining horizontal and vertical space to center the grid
-  const remainingHorizontalSpace = availableWidth - gridWidth;
-  const remainingVerticalSpace = availableHeight - gridHeight;
-
-  // Calculate the horizontal and vertical margins to center the grid
-  const marginLeft = remainingHorizontalSpace > 0 ? remainingHorizontalSpace / 2 : 0;
-  const marginTop = remainingVerticalSpace > 0 ? remainingVerticalSpace / 2 : 0;
-
-  try {
-    // Generate the PDF
-    await html2pdf().set({
-      margin: exportOption === 2 ? [0, 0, 0, 0] : [marginTop, marginLeft, 0, 0],
-      filename: 'Catalog - Charlotte Imports.pdf',
-      image: { type: 'webp', quality: 0.98 },
-      html2canvas: { scale: 1, useCORS: false },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-      pagebreak: { mode: 'avoid-all' },
-    }).from(grid).save();
-  } catch (error) {
-    console.error('Failed to generate PDF:', error);
-    // Ensure checkboxes are visible again in case of an error
-    const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
-    checkboxes.forEach((checkbox) => {
-      checkbox.style.display = 'block';
-    });
-  } finally {
     if (exportOption !== 2) {
-      // After generating the PDF, show the checkboxes again
+      // Hide the checkboxes before generating the PDF
+      const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
+      checkboxes.forEach((checkbox) => {
+        checkbox.style.display = 'none';
+      });
+    }
+
+    // Get the appropriate grid element based on the exportOption
+    const grid = exportOption === 2 ? document.querySelector('.selected-product-grid') : document.querySelector('.product-grid');
+
+    if (exportOption === 2) {
+      grid.style.display = 'flex';
+    }
+
+    // Calculate the available width and height of the PDF page in pixels
+    const availableWidth = 700;
+    const availableHeight = 1000;
+
+    // Calculate the total width and height of the product grid in pixels
+    const gridWidth = grid.scrollWidth;
+    const gridHeight = grid.scrollHeight;
+
+    // Calculate the remaining horizontal and vertical space to center the grid
+    const remainingHorizontalSpace = availableWidth - gridWidth;
+    const remainingVerticalSpace = availableHeight - gridHeight;
+
+    // Calculate the horizontal and vertical margins to center the grid
+    const marginLeft = remainingHorizontalSpace > 0 ? remainingHorizontalSpace / 2 : 0;
+    const marginTop = remainingVerticalSpace > 0 ? remainingVerticalSpace / 2 : 0;
+
+    try {
+      // Generate the PDF
+      await html2pdf().set({
+        margin: exportOption === 2 ? [0, 0, 0, 0] : [marginTop, marginLeft, 0, 0],
+        filename: 'Catalog - Charlotte Imports.pdf',
+        image: { type: 'webp', quality: 0.98 },
+        html2canvas: { scale: 1, useCORS: false },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: 'avoid-all' },
+      }).from(grid).save();
+    } catch (error) {
+      console.error('Failed to generate PDF:', error);
+      // Ensure checkboxes are visible again in case of an error
       const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
       checkboxes.forEach((checkbox) => {
         checkbox.style.display = 'block';
       });
-    } else {
-      grid.style.display = 'none';
-    }
+    } finally {
+      if (exportOption !== 2) {
+        // After generating the PDF, show the checkboxes again
+        const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+          checkbox.style.display = 'block';
+        });
+      } else {
+        grid.style.display = 'none';
+      }
 
-    setIsLoading(false);
-  }
-};
+      setIsLoading(false);
+    }
+  };
 
   // Find all category and subcategories from the item list
   const categoryLinks = allCategories.map((category) => {
@@ -339,7 +340,7 @@ const exportAsPDF = async (exportOption) => {
       <React.Fragment key={category.link}>
         <div className={`category${depth === 0 ? ' main-category' : ' sub-category'}`}>
           <Link to={category.link}>{category.name}</Link>
-          {depth === 0 && ( // Only show the "Select All" button for main categories (depth === 0)
+          {depth === 0 && (
             <>
               {category.subcategories && (
                 <button
@@ -353,7 +354,7 @@ const exportAsPDF = async (exportOption) => {
                 className="sidebar-category-select"
                 onClick={() => handleSelectAll(category.name)}
               >
-                {areAllProductsSelected(category.name)
+                {allProductsSelected[category.name]
                   ? `Deselect`
                   : `Select`}
               </button>
@@ -364,6 +365,14 @@ const exportAsPDF = async (exportOption) => {
       </React.Fragment>
     ));
   };
+
+  // Reset the showSelected and allProductsSelected state whenever selectedProducts change
+  useEffect(() => {
+    if (selectedProducts.length === 0) {
+      setShowSelected(false);
+      setAllProductsSelected({});
+    }
+  }, [selectedProducts]);
 
   const renderedCategoryLinks = generateCategoryLinks(categoryLinks);
 
