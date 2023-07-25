@@ -23,6 +23,7 @@ function Catalog({ products, images }) {
   const [showSelected, setShowSelected] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [allProductsSelected, setAllProductsSelected] = useState({});
+  const [exportAll, setExportAll] = useState(false);
 
   // Function to toggle subcategories
   const toggleSubcategories = (categoryName) => {
@@ -193,9 +194,11 @@ function Catalog({ products, images }) {
   // Function to export filtered products as XLS
   const exportAsXLS = (exportOption) => {
 
-    // If this flag is '0', then only the shown items will be exported,
-    // If '1', then All of the items will be exported.
-    // If '2', then the selected items will be exported.
+    /* 
+      If this flag is '0', then only the shown items will be exported.
+      If '1', then All of the items will be exported.
+      If '2', then the selected items will be exported.
+    */
     let filteredData = sortedProducts.slice(startIndex, endIndex);
     if (exportOption == 1) {
       filteredData = sortedProducts.slice(startIndex, filteredProducts.length);
@@ -249,6 +252,30 @@ function Catalog({ products, images }) {
     // Save the Blob as a file
     saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
   };
+
+  /* 
+    Function that handles the items per page when it comes to exporting the entire catalog
+    This function changes the items per page and stores the previous items per page
+    before the exportAsPDF() function is ran 
+  */
+  const exportAllAsPDF = () => {
+    // Store the current itemsPerPage value in the prevItemsPerPage state variable
+    setPrevItemsPerPage(itemsPerPage);
+
+    // Set the items shown to the highest value
+    setItemsPerPage(highestValue);
+
+    // Set exportAll to true
+    setExportAll(true);
+  };
+
+  // useEffect hook to trigger the export once the itemsPerPage has been updated
+  useEffect(() => {
+    if (itemsPerPage === highestValue && exportAll) {
+      exportAsPDF(1);
+    }
+    setExportAll(false);
+  }, [itemsPerPage]);
 
   // Function to export currently shown products as PDF
   const exportAsPDF = async (exportOption) => {
@@ -467,7 +494,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
             <div className="export-pdf">
-              <button onClick={() => exportAsPDF(1)} className="icon-button">
+              <button onClick={() => exportAllAsPDF()} className="icon-button">
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
