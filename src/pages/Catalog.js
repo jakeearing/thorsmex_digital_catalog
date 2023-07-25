@@ -469,7 +469,7 @@ function Catalog({ products, images }) {
           <div className="category main-category">
             <Link to="/">All Products</Link>
           </div>
-          <div className="sidebar-heading">
+          <div className="sidebar-heading export-heading">
             <h3>Export Shown</h3>
           </div>
           <div className="export-container">
@@ -484,7 +484,7 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
-          <div className="sidebar-heading">
+          <div className="sidebar-heading export-heading">
             <h3>Export All</h3>
           </div>
           <div className="export-container">
@@ -500,7 +500,7 @@ function Catalog({ products, images }) {
             </div>
           </div>
           {selectedProducts.length > 0 && (
-            <div className="sidebar-heading">
+            <div className="sidebar-heading export-heading">
               <h3>Export Selected</h3>
             </div>
           )}

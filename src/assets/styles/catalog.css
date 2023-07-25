@@ -292,4 +292,20 @@
   .product-grid-item:nth-child(even) {
     margin: 10px 10px 0 0;
   }
+
+  .sidebar-category-select {
+    display: none;
+  }
+
+  .export-heading {
+    display: none;
+  }
+
+  .export-container {
+    display: none;
+  }
+
+  .product-grid input[type="checkbox"] {
+    display: none !important;
+  }
 }
