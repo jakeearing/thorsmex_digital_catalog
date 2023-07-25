@@ -283,7 +283,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
 
   .product-grid-item:nth-child(odd) {
     margin: 10px;
@@ -291,6 +291,10 @@
 
   .product-grid-item:nth-child(even) {
     margin: 10px 10px 0 0;
+  }
+
+  .items-per-page {
+    margin-left: 0;
   }
 
   .sidebar-category-select {
