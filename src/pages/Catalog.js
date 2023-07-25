@@ -183,6 +183,11 @@ function Catalog({ products, images }) {
     );
   };
 
+  // Function to deselect all selected items
+  const deselectAllItems = () => {
+    setSelectedProducts([]);
+  };
+
   // Function to format a number to a specified number of decimal places
   const formatNumber = (number, decimalPlaces) => {
     if (decimalPlaces === 0) {
@@ -392,7 +397,7 @@ function Catalog({ products, images }) {
                 </button>
               )}
               <button
-                className="sidebar-category-select"
+                className="select-deselect-items"
                 onClick={() => handleSelectAll(category.name)}
               >
                 {allProductsSelected[category.name]
@@ -515,6 +520,9 @@ function Catalog({ products, images }) {
                 <button onClick={() => exportAsPDF(2)} className="icon-button">
                   <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
                 </button>
+              </div>
+              <div className="select-deselect-items">
+                <button onClick={deselectAllItems}>Deselect</button>
               </div>
               <button
                 className={`sidebar-toggle-button ${showSelected ? 'open' : ''}`}
