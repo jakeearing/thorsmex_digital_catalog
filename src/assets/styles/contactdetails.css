@@ -3,16 +3,6 @@
   display: inline-block;
 }
 
-.product-contact a {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-weight: bold;
-}
-
 .product-contact a:hover {
   color: #007bff;
 }

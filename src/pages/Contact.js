@@ -5,7 +5,7 @@ import '../assets/styles/contact.css';
 export default function Contact() {
   return (
     <div className="contact-container">
-      <div className="contact-content-container">
+      <div className="contact-content-container contact-page-font-size">
         <h1>Contact Us</h1>
         <div className="contact-text">
           <h3>Questions about our products or anything else? Contact us by Email or

@@ -114,10 +114,11 @@
   color: #333;
   cursor: pointer;
   border-bottom: 3px solid transparent;
+  font-weight: bold;
 }
 
 .item-specs button.active {
-  border-bottom: 3px solid #333;
+  color: #0c4d94;
 }
 
 .tab-content {
