@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import '../../assets/styles/footer.css';
-import cimpoLogo from '../../assets/images/logos/cimpo-logo.jpg';
+import '../assets/styles/footer.css';
+import cimpoLogo from '../assets/images/logos/cimpo-logo.jpg';
 
 export default function Footer() {
     return (

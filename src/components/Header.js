@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/images/logos/thorsman-logo.jpg';
-import '../../assets/styles/header.css';
+import logo from '../assets/images/logos/thorsman-logo.jpg';
+import '../assets/styles/header.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

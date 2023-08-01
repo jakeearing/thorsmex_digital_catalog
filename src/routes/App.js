@@ -7,8 +7,8 @@ import TermsOfUse from '../pages/TermsOfUse';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import Product from '../pages/ProductPage';
 import ScrollToTop from '../components/ScrollToTop';
-import Header from '../components/nav/Header';
-import Footer from '../components/nav/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Error from '../pages/Error';
 
 function importAll(r) {
