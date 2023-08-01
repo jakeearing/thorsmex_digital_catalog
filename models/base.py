@@ -2,11 +2,19 @@ from flask import Flask
 from flask_cors import CORS
 from mongoengine import Document, StringField, IntField, ListField, DecimalField, connect
 import pandas as pd
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)
 
-connect('thorsmex_catalog', host='mongodb://localhost:27017/')
+# Retrieve the MongoDB URI from the environment variable
+mongodb_uri = os.getenv('MONGODB_URI')
+if mongodb_uri is None:
+    raise ValueError("MongoDB URI not found in .env file")
+
+# Connect to MongoDB using the retrieved URI
+connect('thorsmex_catalog', host=mongodb_uri)
 
 # MongoDB products model created
 class Products(Document):
