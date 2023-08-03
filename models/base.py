@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://www.thorsmexcatalog.com", "http://localhost:3000"])
 
 # Load environment variables from .env file
 load_dotenv()
@@ -125,4 +125,4 @@ def get_product(model_number):
 import_data()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
