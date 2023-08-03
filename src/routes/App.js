@@ -62,7 +62,7 @@ const App = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch("http://159.203.168.196:5000/api/products");
         const data = await response.json();
 
         const storedProducts = localStorage.getItem("products");
