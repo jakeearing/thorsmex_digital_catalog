@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-CORS(app, origins=["http://www.thorsmexcatalog.com", "http://localhost:3000"])
+CORS(app, origins=["https://www.thorsmexcatalog.com", "http://localhost:3000"])
 
 # Load environment variables from .env file
 load_dotenv()
