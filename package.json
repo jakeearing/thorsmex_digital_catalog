@@ -1,6 +1,5 @@
 {
   "name": "thorsmex_cimpo_digital_catalog",
-  "homepage": "",
   "version": "0.7.7",
   "private": true,
   "dependencies": {
