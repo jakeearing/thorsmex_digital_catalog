@@ -62,7 +62,7 @@ const App = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("https://thorsmexcatalog.com/api/products");
+        const response = await fetch("0.0.0.0:5000/api/products");
         const data = await response.json();
 
         const storedProducts = localStorage.getItem("products");
