@@ -126,7 +126,7 @@ import_data()
 
 if __name__ == '__main__':
     app.run(
-    ssl_context=('path/to/cert.pem', 'path/to/key.pem'),
-    host='thorsmexcatalog.com',
+    ssl_context=('cert.pem', 'key.pem'),
+    host='www.thorsmexcatalog.com',
     port=5000
 )
