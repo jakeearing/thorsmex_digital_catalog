@@ -128,5 +128,5 @@ if __name__ == '__main__':
     app.run(
     ssl_context=('cert.pem', 'key.pem'),
     host='www.thorsmexcatalog.com',
-    port=443
+    port=5000
 )
