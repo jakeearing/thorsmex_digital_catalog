@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
+from waitress import serve
 from mongoengine import Document, StringField, IntField, ListField, DecimalField, connect
 import pandas as pd
 import os
@@ -57,7 +58,7 @@ class Products(Document):
     stock_TX = IntField()
     stock_MX = IntField()
 
-@app.route('/api/import')
+@app.route('/import')
 def import_data():
     # Set XLSX file path and read XLSX file
     xlsx_file_path = 'products.xlsx'
@@ -109,12 +110,12 @@ def import_data():
     return 'Data imported successfully'
 
 # This route will convert the database to JSON, to be accessed by React.
-@app.route('/api/products')
+@app.route('/products')
 def get_products():
     products = Products.objects().to_json()
     return products
 
-@app.route('/api/products/<model_number>')
+@app.route('/products/<model_number>')
 def get_product(model_number):
     product = Products.objects(modelNumber=model_number).first()
     if not product:
@@ -125,4 +126,4 @@ def get_product(model_number):
 import_data()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    serve(app, host='0.0.0.0', port=5000, url_prefix="/api")
