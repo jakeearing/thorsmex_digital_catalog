@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const xlsxPopulate = require('xlsx-populate');
 
 dotenv.config();
 
@@ -16,6 +17,47 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
   });
+
+  const productSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    modelNumber: { type: String, required: true },
+    price_indv: { type: mongoose.Decimal128, required: true },
+    price_box: { type: mongoose.Decimal128, required: true },
+    price_pallet: { type: mongoose.Decimal128, required: true },
+    msrp: { type: mongoose.Decimal128, required: true },
+    unit_cost: { type: mongoose.Decimal128 },
+    count_indv: { type: Number },
+    count_box: { type: Number },
+    count_pallet: { type: Number },
+    height_indv: { type: mongoose.Decimal128 },
+    width_indv: { type: mongoose.Decimal128 },
+    length_indv: { type: mongoose.Decimal128 },
+    weight_indv: { type: mongoose.Decimal128 },
+    height_box: { type: mongoose.Decimal128 },
+    width_box: { type: mongoose.Decimal128 },
+    length_box: { type: mongoose.Decimal128 },
+    weight_box: { type: mongoose.Decimal128 },
+    height_pallet: { type: mongoose.Decimal128 },
+    width_pallet: { type: mongoose.Decimal128 },
+    length_pallet: { type: mongoose.Decimal128 },
+    weight_pallet: { type: mongoose.Decimal128 },
+    packaging_type: { type: String },
+    stock: [{ type: Number }],
+    gtin: { type: Number, required: true },
+    category: { type: String, required: true },
+    subCategory: { type: String, required: true },
+    description: { type: String },
+    details: { type: String },
+    specs: { type: String },
+    product_sheet: { type: String },
+    english_packaging: { type: String },
+    stock_NC: { type: Number },
+    stock_TX: { type: Number },
+    stock_MX: { type: Number }
+  });
+  
+  // Create the 'Product' model using the schema
+  const Product = mongoose.model('Product', productSchema, 'products');
 
 // Import data
 app.get('/api/import', async (req, res) => {
