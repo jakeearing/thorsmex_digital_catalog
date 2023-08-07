@@ -62,7 +62,7 @@ const App = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("https://68.183.150.115:5000/api/products");
+        const response = await fetch("https://www.thorsmexcatalog.com/api/products");
         const data = await response.json();
 
         const storedProducts = localStorage.getItem("products");
