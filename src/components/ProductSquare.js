@@ -20,10 +20,10 @@ export default function ProductSquare({ product, images, isChecked, handleChange
         <h2>{name}</h2>
         <h5>{modelNumber}</h5>
         <p>
-          <b>List Price:</b> {price_indv !== undefined ? `$${price_indv.toFixed(2)}` : '-'}
+          <b>List Price:</b> {price_indv.value}
         </p>
         <p>
-          <b>MSRP:</b> {msrp !== undefined ? `$${msrp.toFixed(2)}` : '-'}
+          <b>MSRP:</b> {msrp.value}
         </p>
       </Link>
       <input
