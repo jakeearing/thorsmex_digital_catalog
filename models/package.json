@@ -1,14 +1,14 @@
 {
   "name": "thorsmex_cimpo_digital_catalog_backend",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.4.2",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz",
-    "xlsx-populate": "^1.21.0"
+    "fs": "^0.0.1-security",
+    "mongoose": "^7.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
