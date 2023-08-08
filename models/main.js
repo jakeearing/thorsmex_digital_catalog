@@ -65,7 +65,7 @@ app.get('/api/import', async (req, res) => {
     // Set XLSX file path and read XLSX file
     const xlsxFilePath = 'products.xlsx';
     const workbook = await xlsxPopulate.fromFileAsync(xlsxFilePath);
-    const sheet = workbook.sheet('products'); // Replace 'Sheet1' with the actual sheet name containing your data.
+    const sheet = workbook.sheet('products');
 
     // Delete existing products
     await Product.deleteMany();
