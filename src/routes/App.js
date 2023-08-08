@@ -62,7 +62,11 @@ const App = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("/api/products");
+        const apiUrl = process.env.NODE_ENV === "development"
+          ? process.env.REACT_APP_API_URL_DEV
+          : process.env.REACT_APP_API_URL_PROD;
+
+        const response = await fetch(apiUrl);
         const data = await response.json();
 
         const storedProducts = localStorage.getItem("products");
