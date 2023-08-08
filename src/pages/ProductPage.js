@@ -173,16 +173,16 @@ export default function Product({ products, images }) {
           <div className="details-contact">
             <div className="product-details">
               <p>
-                <b>List Price:</b> {price_indv ? `$${price_indv.toFixed(2)}` : '-'}
+                <b>List Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               <p>
-                <b>MSRP:</b> {msrp ? `$${msrp.toFixed(2)}` : '-'}
+                <b>MSRP:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               <p>
                 <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
               <p>
-                <b>Unit Cost:</b> {unit_cost ? `$${unit_cost.toFixed(2)}` : '-'}
+                <b>Unit Cost:</b> {unit_cost ? `$${Number(unit_cost["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               {product_sheet && product_sheet.endsWith('.pdf') ? (
                 <p>
@@ -251,23 +251,21 @@ export default function Product({ products, images }) {
           {activeTab === 'more-information' && (
             <ul>
               <li>Packaging Type: {packaging_type}</li>
-              <li>Box Quantity: {count_box} pieces</li>
-              <li>Pallet Quantity: {count_pallet} pieces</li>
+              <li>Box Quantity: {count_box ? `${count_box} pieces` : '-'}</li>
+              <li>Pallet Quantity: {count_pallet ? `${count_pallet} pieces` : '-'}</li>
               <li>English Packaging: {english_packaging}</li>
               <li>
-                Individual Dimensions: {height_indv} x {width_indv} x{' '}
-                {length_indv} inches
+                Individual Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
-              <li>Individual Weight: {weight_indv} pounds</li>
+              <li>Individual Weight: {weight_indv ? `${Number(weight_indv["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
               <li>
-                Box Dimensions: {height_box} x {width_box} x {length_box} inches
+                Box Dimensions: {height_box ? `${Number(height_box["$numberDecimal"]).toFixed(2)} x ${Number(width_box["$numberDecimal"]).toFixed(2)} x ${Number(length_box["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
-              <li>Box Weight: {weight_box} pounds</li>
+              <li>Box Weight: {weight_box ? `${Number(weight_box["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
               <li>
-                Pallet Dimensions: {height_pallet} x {width_pallet} x{' '}
-                {length_pallet} inches
+                Pallet Dimensions: {height_pallet ? `${Number(height_pallet["$numberDecimal"]).toFixed(2)} x ${Number(width_pallet["$numberDecimal"]).toFixed(2)} x ${Number(length_pallet["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
-              <li>Pallet Weight: {weight_pallet} pounds</li>
+              <li>Pallet Weight: {weight_pallet ? `${Number(weight_pallet["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
               <li>Barcode Number: {gtin}</li>
             </ul>
           )}
