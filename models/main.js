@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const xlsxPopulate = require('xlsx-populate');
 
 dotenv.config();
 
@@ -17,59 +18,61 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
     console.error('Error connecting to MongoDB:', error);
   });
 
-  const productSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    modelNumber: { type: String, required: true },
-    price_indv: { type: mongoose.Decimal128, required: true },
-    price_box: { type: mongoose.Decimal128, required: true },
-    price_pallet: { type: mongoose.Decimal128, required: true },
-    msrp: { type: mongoose.Decimal128, required: true },
-    unit_cost: { type: mongoose.Decimal128 },
-    count_indv: { type: Number },
-    count_box: { type: Number },
-    count_pallet: { type: Number },
-    height_indv: { type: mongoose.Decimal128 },
-    width_indv: { type: mongoose.Decimal128 },
-    length_indv: { type: mongoose.Decimal128 },
-    weight_indv: { type: mongoose.Decimal128 },
-    height_box: { type: mongoose.Decimal128 },
-    width_box: { type: mongoose.Decimal128 },
-    length_box: { type: mongoose.Decimal128 },
-    weight_box: { type: mongoose.Decimal128 },
-    height_pallet: { type: mongoose.Decimal128 },
-    width_pallet: { type: mongoose.Decimal128 },
-    length_pallet: { type: mongoose.Decimal128 },
-    weight_pallet: { type: mongoose.Decimal128 },
-    packaging_type: { type: String },
-    stock: [{ type: Number }],
-    gtin: { type: Number, required: true },
-    category: { type: String, required: true },
-    subCategory: { type: String, required: true },
-    description: { type: String },
-    details: { type: String },
-    specs: { type: String },
-    product_sheet: { type: String },
-    english_packaging: { type: String },
-    stock_NC: { type: Number },
-    stock_TX: { type: Number },
-    stock_MX: { type: Number }
-  });
-  
-  // Create the 'Product' model using the schema
-  const Product = mongoose.model('Product', productSchema, 'products');
+const productSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  modelNumber: { type: String, required: true },
+  price_indv: { type: mongoose.Decimal128, required: true },
+  price_box: { type: mongoose.Decimal128, required: true },
+  price_pallet: { type: mongoose.Decimal128, required: true },
+  msrp: { type: mongoose.Decimal128, required: true },
+  unit_cost: { type: mongoose.Decimal128 },
+  count_indv: { type: Number },
+  count_box: { type: Number },
+  count_pallet: { type: Number },
+  height_indv: { type: mongoose.Decimal128 },
+  width_indv: { type: mongoose.Decimal128 },
+  length_indv: { type: mongoose.Decimal128 },
+  weight_indv: { type: mongoose.Decimal128 },
+  height_box: { type: mongoose.Decimal128 },
+  width_box: { type: mongoose.Decimal128 },
+  length_box: { type: mongoose.Decimal128 },
+  weight_box: { type: mongoose.Decimal128 },
+  height_pallet: { type: mongoose.Decimal128 },
+  width_pallet: { type: mongoose.Decimal128 },
+  length_pallet: { type: mongoose.Decimal128 },
+  weight_pallet: { type: mongoose.Decimal128 },
+  packaging_type: { type: String },
+  stock: [{ type: Number }],
+  gtin: { type: Number, required: true },
+  category: { type: String, required: true },
+  subCategory: { type: String, required: true },
+  description: { type: String },
+  details: { type: String },
+  specs: { type: String },
+  product_sheet: { type: String },
+  english_packaging: { type: String },
+  stock_NC: { type: Number },
+  stock_TX: { type: Number },
+  stock_MX: { type: Number }
+});
+
+// Create the 'Product' model using the schema
+const Product = mongoose.model('Product', productSchema, 'products');
 
 // Import data
 app.get('/api/import', async (req, res) => {
   try {
     // Set XLSX file path and read XLSX file
     const xlsxFilePath = 'products.xlsx';
-    const df = pd.read_excel(xlsxFilePath);
+    const workbook = await xlsxPopulate.fromFileAsync(xlsxFilePath);
+    const sheet = workbook.sheet('products'); // Replace 'Sheet1' with the actual sheet name containing your data.
 
     // Delete existing products
     await Product.deleteMany();
 
     // Insert data into MongoDB
-    for (const row of df) {
+    const rows = sheet.usedRange().value();
+    for (const row of rows.slice(1)) {
       const product = new Product({
         name: row.name.replace("_x000D_", ""),
         modelNumber: row.model_number,
