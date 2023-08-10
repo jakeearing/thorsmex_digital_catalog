@@ -1,6 +1,6 @@
 {
   "name": "thorsmex_cimpo_digital_catalog_backend",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
