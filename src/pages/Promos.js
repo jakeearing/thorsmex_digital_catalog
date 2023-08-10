@@ -8,6 +8,9 @@ import flyer4 from '../assets/images/promos/FLYER.pdf';
 export default function Promos() {
     return (
         <div className="promotions-container">
+            <div className="promotions-content">
+                <p>We currently have the following promotions for various Thorsmex products!</p>
+            </div>
             <div className="promotions-links">
                 <div>
                     <a href={flyer1} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 1">

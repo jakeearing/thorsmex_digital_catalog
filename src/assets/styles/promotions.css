@@ -1,23 +1,34 @@
 .promotions-container {
   padding-top: 55px;
   min-height: calc(100vh - 100px - 55px);
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
+.promotions-content {
+  margin-top: 50px;
+}
+
 .promotions-links {
-  margin-top: 100px;
+  margin-top: 30px;
+}
+
+.promotions-links a, .promotions-content p {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  justify-content: center;
+  color: #0c4d94;
 }
 
 .promotions-links a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  color: #0c4d94;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2.5vh;
+}
+
+.promotions-content p {
+  font-weight: 400;
+  font-size: 2.8vh;
 }
 
 .promotions-links a:hover {
