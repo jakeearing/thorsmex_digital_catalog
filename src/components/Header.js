@@ -49,6 +49,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/promotions">
+                    Promos
+                  </Link>
+                </li>
+                <li>
                   <Link to="/about-us">
                     About
                   </Link>
@@ -78,6 +83,11 @@ export default function Header() {
               <li>
                 <Link to="/">
                   Catalog
+                </Link>
+              </li>
+              <li>
+                <Link to="/promotions">
+                  Promos
                 </Link>
               </li>
               <li>

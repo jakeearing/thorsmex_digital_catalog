@@ -1,0 +1,25 @@
+.promotions-container {
+  padding-top: 55px;
+  min-height: calc(100vh - 100px - 55px);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.promotions-links {
+  margin-top: 100px;
+}
+
+.promotions-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: #0c4d94;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.promotions-links a:hover {
+  color: #ee3643;
+}
