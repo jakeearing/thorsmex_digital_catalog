@@ -13,7 +13,8 @@
   margin-top: 30px;
 }
 
-.promotions-links a, .promotions-content p {
+.promotions-links a,
+.promotions-content p {
   display: flex;
   flex-direction: column;
   margin: 20px 0 0 0;
@@ -33,4 +34,10 @@
 
 .promotions-links a:hover {
   color: #ee3643;
+}
+
+@media screen and (max-width: 768px) {
+  .promotions-container {
+    width: 80%;
+  }
 }
