@@ -92,30 +92,6 @@ const App = () => {
     fetchProducts();
   }, []);
 
-  // Make sure the model number is in the correct format
-  const validateModelNumber = (modelNumber) => {
-    const pattern = /^(\d{4}|\d{5})-\d{5}$/;
-    return pattern.test(modelNumber);
-  };
-
-  const ProductRoute = () => {
-    const { modelnumber } = useParams();
-
-    // Find the product with the matching model number
-    const product = products.find((p) => p.modelNumber === modelnumber);
-
-    // If product is not found, redirect to not found page
-    if (!validateModelNumber(modelnumber) || !product) {
-      return (
-        <Navigate
-          to="/product-not-found"
-        />
-      );
-    }
-
-    return <Product products={products} images={images} />;
-  };
-
   return (
     <BrowserRouter>
       <ScrollToTop>
@@ -131,7 +107,7 @@ const App = () => {
           />
           <Route path="/products/:category" element={<Catalog products={products} images={images} />} />
           <Route path="/products/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/products/:category/:subcategory/:modelnumber" element={<ProductRoute />} />
+          <Route path="/products/:category/:subcategory/:modelnumber" element={ <Product products={products} images={images} />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
