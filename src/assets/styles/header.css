@@ -109,11 +109,11 @@
       cursor: pointer;
       z-index: 101;
       position: absolute;
-      width: 20px;
+      width: fit-content;
       background-color: transparent;
       border: none;
       top: 18px;
-      right: 25px;
+      right: 20px;
     }
     
     .menu-icon-wrapper .menu-icon {
