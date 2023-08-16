@@ -285,7 +285,6 @@
 }
 
 @media screen and (max-width: 750px) {
-
   .product-grid-item:nth-child(odd) {
     margin: 10px;
   }
@@ -307,6 +306,10 @@
   }
 
   .export-container {
+    display: none;
+  }
+
+  .select-deselect-items { 
     display: none;
   }
 

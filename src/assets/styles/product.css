@@ -34,6 +34,7 @@
   height: 278px;
   width: auto;
   max-width: 400px;
+  border-radius: 5px;
 }
 
 .product-details-container {
@@ -232,6 +233,10 @@
     margin-right: 15px;
     flex-basis: 52%;
     position: relative;
+  }
+
+  .overlay-image {
+    max-width: 80vw;
   }
 }
 
