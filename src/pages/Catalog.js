@@ -400,9 +400,11 @@ function Catalog({ products, images }) {
                 className="select-deselect-items"
                 onClick={() => handleSelectAll(category.name)}
               >
-                {allProductsSelected[category.name]
-                  ? `Deselect`
-                  : `Select`}
+                {allProductsSelected[category.name] ? (
+                  <img src="/svg-icons/deselect.svg" alt="Deselect" />
+                ) : (
+                  <img src="/svg-icons/select.svg" alt="Select" />
+                )}
               </button>
             </>
           )}
@@ -522,7 +524,9 @@ function Catalog({ products, images }) {
                 </button>
               </div>
               <div className="select-deselect-items">
-                <button onClick={deselectAllItems}>Deselect</button>
+                <button onClick={deselectAllItems}>
+                  <img src="/svg-icons/deselect.svg" alt="Deselect" />
+                </button>
               </div>
               <button
                 className={`sidebar-toggle-button ${showSelected ? 'open' : ''}`}

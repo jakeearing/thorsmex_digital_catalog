@@ -93,11 +93,26 @@
   margin-left: 13px;
 }
 
-.select-deselect-items {
+.select-deselect-items{
   position: absolute;
-  margin-top: 2px;
+  margin-top: 1px;
   right: 40px;
-  font-size: 12px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.select-deselect-items button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.select-deselect-items img{
+  width: 24px;
+  height: auto;
 }
 
 .export-container {
