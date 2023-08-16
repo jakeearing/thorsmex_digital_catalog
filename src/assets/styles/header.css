@@ -78,6 +78,7 @@
 
     .logo img {
       padding-top: 5px;
+      padding-bottom: 0px;
     }
   
     nav {
@@ -113,7 +114,7 @@
       background-color: transparent;
       border: none;
       top: 18px;
-      right: 20px;
+      right: 18px;
     }
     
     .menu-icon-wrapper .menu-icon {
