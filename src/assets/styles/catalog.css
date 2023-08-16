@@ -184,6 +184,7 @@
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
+  border-radius: 5px;
 }
 
 .load-more-button {
