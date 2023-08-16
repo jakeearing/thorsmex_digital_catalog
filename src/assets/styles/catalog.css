@@ -293,6 +293,10 @@
     margin: 10px 10px 0 0;
   }
 
+  .product-grid-item {
+    max-width: 200px;
+  }
+
   .items-per-page {
     margin-left: 0;
   }
