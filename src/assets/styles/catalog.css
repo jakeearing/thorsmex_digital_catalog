@@ -96,7 +96,7 @@
 .select-deselect-items{
   position: absolute;
   margin-top: 1px;
-  right: 40px;
+  right: 38px;
   background: none;
   border: none;
   padding: 0;
@@ -111,7 +111,7 @@
 }
 
 .select-deselect-items img{
-  width: 24px;
+  width: 23px;
   height: auto;
 }
 
