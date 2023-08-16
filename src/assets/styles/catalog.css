@@ -74,6 +74,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .sort-options label {
@@ -87,10 +89,12 @@
 .search-bar #search {
   padding: 0;
   margin: 0;
+  width: 168px;
 }
 
 .items-per-page {
-  margin-left: 13px;
+  margin-left: 19px;
+  position: relative;
 }
 
 .select-deselect-items{
@@ -312,8 +316,9 @@
     max-width: 200px;
   }
 
-  .items-per-page {
-    margin-left: 0;
+  .search-bar #search {
+    padding: 0;
+    margin: 0;
   }
 
   .sidebar-category-select {
