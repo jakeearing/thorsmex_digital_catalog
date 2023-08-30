@@ -204,8 +204,8 @@
 }
 
 .product-square h2 {
-  height: 55px;
-  font-size: 19px;
+  height: 75px;
+  font-size: 2vh;
   overflow: hidden;
 }
 
@@ -266,7 +266,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .catalog-container {
     flex-direction: column;
     align-items: center;
