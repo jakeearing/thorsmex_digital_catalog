@@ -44,7 +44,7 @@ export default function Header() {
             <nav className={isMenuOpen ? 'open' : ''}>
               <ul>
                 <li>
-                  <Link to="/" className='active'>
+                  <Link to="/products" className='active'>
                     Catalog
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ export default function Header() {
           <nav>
             <ul>
               <li>
-                <Link to="/">
+                <Link to="/products">
                   Catalog
                 </Link>
               </li>
