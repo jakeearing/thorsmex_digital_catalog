@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation, useParams, Navigate } from 'react-router-dom';
+import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
 import Promos from '../pages/Promos';
 import About from '../pages/About';
@@ -98,17 +99,14 @@ const App = () => {
       <ScrollToTop>
         <Header />
         <Routes>
-          <Route
-            path="/"
-            element={<Navigate to="/products/all" replace />}
-          />
+          <Route path="/" element={<Home />} />
           <Route
             path="/products"
             element={<Navigate to="/products/all" replace />}
           />
           <Route path="/products/:category" element={<Catalog products={products} images={images} />} />
           <Route path="/products/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/products/:category/:subcategory/:modelnumber" element={ <Product products={products} images={images} />} />
+          <Route path="/products/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} />} />
           <Route path="/promotions" element={<Promos />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />

@@ -29,15 +29,18 @@
 
 .left-nav ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
 .left-nav li {
+  flex-basis: 40%;
   margin-bottom: 5px;
   font-size: 15px;
+  margin-right: 0px;
+  width: 50px;
 }
 
 .left-nav a {

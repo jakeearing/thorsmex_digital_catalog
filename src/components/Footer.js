@@ -10,8 +10,10 @@ export default function Footer() {
             <nav>
               <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/contact-us">Contact</Link></li>
                 <li><Link to="/about-us">About</Link></li>
+                <li><Link to="/products">Catalog</Link></li>
+                <li><Link to="/contact-us">Contact</Link></li>
+                <li><Link to="/promotions">Promos</Link></li>
               </ul>
             </nav>
           </div>
