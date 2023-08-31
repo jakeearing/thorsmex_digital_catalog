@@ -99,7 +99,13 @@ const App = () => {
       <ScrollToTop>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/*
+          <Route path="/" element={<Home />} /> 
+          */}
+          <Route
+            path="/"
+            element={<Navigate to="/products/all" replace />}
+          />
           <Route
             path="/products"
             element={<Navigate to="/products/all" replace />}

@@ -172,22 +172,22 @@ export default function Product({ products, images }) {
           </div>
           <div className="details-contact">
             <div className="product-details">
-              {/*
+              {
               <p>
                 <b>List Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
-              */}
+              }
               <p>
-                <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
+                <b>Wholesale:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               <p>
                 <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
-              {/*
+              {
               <p>
                 <b>Unit Cost:</b> {unit_cost ? `$${Number(unit_cost["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
-              */}
+              }
               {product_sheet && product_sheet.endsWith('.pdf') ? (
                 <p>
                   <a
