@@ -221,10 +221,10 @@
   justify-content: center;
   margin: auto;
   margin-top: 35px;
-  padding: 18px;
-  border-radius: 50px;
-  border: 0px;
-  font-size: 1.5vh;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 2vh;
   background-color: #0c4d94;
   color: white;
   cursor: pointer;

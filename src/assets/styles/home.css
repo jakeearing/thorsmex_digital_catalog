@@ -28,9 +28,9 @@
 .home-button {
   margin-top: 35px;
   padding: 18px;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 0px;
-  font-size: 2.5vh;
+  font-size: 2vh;
   font-weight: bold;
   background-color: #0c4d94;
   color: white;
@@ -86,5 +86,9 @@
   .conveyor-belt {
     padding-top: 100px;
     width: 100%;
+  }
+
+  .scrolling-images {
+    animation: scroll 10s linear infinite;
   }
 }

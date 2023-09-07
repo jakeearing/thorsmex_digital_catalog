@@ -8,7 +8,7 @@
 .about-container h2 {
   color: #0c4d94;
   font-weight: 700;
-  font-size: 2.8vh;
+  font-size: 3vh;
 }
 
 .about-content-container {
@@ -36,7 +36,7 @@
 .right-column-text,
 .left-column-text {
   flex: 1;
-  font-size: 1.1vw;
+  font-size: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,6 @@
   .right-column-text {
     flex: 1;
     height: auto;
-    font-size: 2vh;
     margin-bottom: 40px;
   }
 
