@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="left-nav">
             <nav>
               <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/home">Home</Link></li>
                 <li><Link to="/about-us">About</Link></li>
                 <li><Link to="/products">Catalog</Link></li>
                 <li><Link to="/contact-us">Contact</Link></li>
