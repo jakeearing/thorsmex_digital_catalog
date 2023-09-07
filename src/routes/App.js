@@ -100,12 +100,8 @@ const App = () => {
         <Header />
         <Routes>
           {
-          <Route path="/home" element={<Home />} /> 
+          <Route path="/" element={<Home />} /> 
           }
-          <Route
-            path="/"
-            element={<Navigate to="/products/all" replace />}
-          />
           <Route
             path="/products"
             element={<Navigate to="/products/all" replace />}

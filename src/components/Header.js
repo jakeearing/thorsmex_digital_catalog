@@ -44,6 +44,11 @@ export default function Header() {
             <nav className={isMenuOpen ? 'open' : ''}>
               <ul>
                 <li>
+                  <Link to="/" className='active'>
+                    Home
+                  </Link>
+                </li>
+                <li>
                   <Link to="/products" className='active'>
                     Catalog
                   </Link>
@@ -80,6 +85,11 @@ export default function Header() {
         {!isMobile && (
           <nav>
             <ul>
+              <li>
+                <Link to="/" className='active'>
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link to="/products">
                   Catalog
