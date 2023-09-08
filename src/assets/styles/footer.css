@@ -118,7 +118,8 @@
     display: none;
   }
 
-  .right-nav {
-    display: none;
+  .social-media {
+    position: relative;
+    left: 50px;
   }
 }
