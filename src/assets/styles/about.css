@@ -3,10 +3,10 @@
   padding-top: 55px;
   min-height: calc(100vh - 100px - 55px);
   margin: 0 auto;
+  color: #0c4d94;
 }
 
 .about-container h2 {
-  color: #0c4d94;
   font-weight: 700;
   font-size: 3vh;
 }

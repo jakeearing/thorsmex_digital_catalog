@@ -71,6 +71,10 @@
       align-items: center;
       width: 200px;
     }
+
+    .header-content nav a:hover {
+      color: #0c4d94;
+    }
   
     .logo {
       text-align: center;
