@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slider from 'react-slick'; // Import Slider from react-slick
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/home.css';
@@ -58,13 +58,13 @@ export default function Home() {
           autoplaySpeed={2000}
           arrows={false}
         >
-    {productImages.map((image, index) => (
-      <div key={index} className="carousel-image-container">
-        <img src={image} alt={`Product ${index}`} />
+          {productImages.map((image, index) => (
+            <div key={index} className="carousel-image-container">
+              <img src={image} alt={`Product ${index}`} />
+            </div>
+          ))}
+        </Slider>
       </div>
-    ))}
-  </Slider>
-</div>
     </div>
   );
 }
