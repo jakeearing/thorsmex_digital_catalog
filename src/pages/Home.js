@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -36,6 +36,47 @@ export default function Home() {
     image12
   ];
 
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    // Define the number of slidesToShow based on screen width
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 768) {
+      setSlidesToShow(2);
+    } else if (screenWidth <= 1100) {
+      setSlidesToShow(3);
+    } else {
+      // Default number of slides for larger screens
+      setSlidesToShow(4);
+    }
+
+    // Handle window resize to update the number of slidesToShow
+    const handleResize = () => {
+      const newScreenWidth = window.innerWidth;
+      if (newScreenWidth <= 768) {
+        setSlidesToShow(2);
+      } else if (newScreenWidth <= 1100) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(4);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const settings = {
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    slidesToShow: slidesToShow,
+  };
+
   return (
     <div className="home-container">
       <div className="home-content">
@@ -50,20 +91,15 @@ export default function Home() {
         </div>
       </div>
       <div className="carousel">
-        <Slider
-          infinite={true}
-          slidesToShow={4}
-          slidesToScroll={1}
-          autoplay={true}
-          autoplaySpeed={2000}
-          arrows={false}
-        >
+      <Link to="/products">
+        <Slider {...settings}>
           {productImages.map((image, index) => (
             <div key={index} className="carousel-image-container">
               <img src={image} alt={`Product ${index}`} />
             </div>
           ))}
         </Slider>
+        </Link>
       </div>
     </div>
   );
