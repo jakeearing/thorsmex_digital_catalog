@@ -1,5 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick'; // Import Slider from react-slick
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../assets/styles/home.css';
+import '../assets/styles/home.css';
+
 import image1 from '../assets/images/product-images/1101-01100/1101-01100 Thorquete tpo Bco main.jpg';
 import image2 from '../assets/images/product-images/1105-03000/1105-03000 main.jpg';
 import image3 from '../assets/images/product-images/1301-04000/1301-04000 BLISTER TPD BLANCO C.20 PZS main.jpg';
@@ -12,10 +18,8 @@ import image9 from '../assets/images/product-images/5020-02001/5020-02001 ESQ. I
 import image10 from '../assets/images/product-images/5301-01250/5301-01250 CANAL TMK 1735 BCO DE 2.50 MTS main.jpg';
 import image11 from '../assets/images/product-images/9300-01252/9300-01252 FLEXIDUCTHO CAFE ROLLO 2.5 MTS main.jpg';
 import image12 from '../assets/images/product-images/9480-02001/9480-02001 PZA. UNION MEDIA CAÑA BCO main.jpg';
-import '../assets/styles/home.css';
 
 export default function Home() {
-  const [currentProductIndex, setCurrentProductIndex] = useState(0);
 
   const productImages = [
     image1,
@@ -32,23 +36,6 @@ export default function Home() {
     image12
   ];
 
-  const animationDuration = 50;
-  const animationInterval = 1000 / 30;
-
-  useEffect(() => {
-    const frameCount = Math.ceil((animationDuration * 1000) / animationInterval);
-    let frame = 0;
-
-    const animate = () => {
-      setCurrentProductIndex(frame % productImages.length);
-      frame = (frame + 1) % frameCount;
-    };
-
-    const animationIntervalId = setInterval(animate, animationInterval);
-
-    return () => clearInterval(animationIntervalId);
-  }, [productImages]);
-
   return (
     <div className="home-container">
       <div className="home-content">
@@ -62,19 +49,22 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="conveyor-belt">
-        <div className="scrolling-images">
-          {productImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Product ${index}`}
-              className={`product-image-scroll ${index === currentProductIndex ? 'active' : ''
-                }`}
-            />
-          ))}
-        </div>
+      <div className="carousel">
+        <Slider
+          infinite={true}
+          slidesToShow={4}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={2000}
+          arrows={false}
+        >
+    {productImages.map((image, index) => (
+      <div key={index} className="carousel-image-container">
+        <img src={image} alt={`Product ${index}`} />
       </div>
+    ))}
+  </Slider>
+</div>
     </div>
   );
 }
