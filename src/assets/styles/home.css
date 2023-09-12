@@ -37,6 +37,7 @@
   border: 1px white solid;
   cursor: pointer;
   margin-right: 10px;
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .carousel {
