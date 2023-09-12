@@ -474,7 +474,7 @@ function Catalog({ products, images }) {
           </div>
           {renderedCategoryLinks}
           <div className="category main-category">
-            <Link to="/">All Products</Link>
+            <Link to="/products">All Products</Link>
           </div>
           <div className="sidebar-heading export-heading">
             <h3>Export Shown</h3>
