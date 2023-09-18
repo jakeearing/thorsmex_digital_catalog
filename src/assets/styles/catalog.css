@@ -173,7 +173,7 @@
 .product-grid-item {
   position: relative;
   margin: 10px;
-  flex: 1 0 calc(33.33% - 10px);
+  flex: 1 0 calc(33.33% - 20px);
   cursor: pointer;
   max-width: 300px;
 }
@@ -324,6 +324,7 @@
 
   .product-grid-item {
     max-width: 200px;
+    flex: 1 0 calc(33.33% - 10px);
   }
 
   .search-bar #search {
