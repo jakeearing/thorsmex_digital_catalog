@@ -351,6 +351,10 @@ function Catalog({ products, images }) {
         grid.style.display = 'none';
       }
 
+      // Hide the PDF footer after the export is complete
+      const footer = document.querySelector('.pdf-footer');
+      footer.style.visibility = 'hidden';
+
       // Enable scrolling after loading is complete
       document.body.classList.remove('no-scroll');
 
