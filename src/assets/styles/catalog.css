@@ -260,9 +260,30 @@
 }
 
 .pdf-footer,
-.pdf-header {
+.pdf-header-container {
   display: none;
   justify-content: center;
+  align-items: center;
+}
+
+.pdf-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-header a {
+  display: flex;
+  margin: 10px;
+}
+
+.contact-info {
+  flex-grow: 1;
+}
+
+.pdf-header img {
+  height: 160px;
+  width: auto;
 }
 
 /* Animation for the loading circle */

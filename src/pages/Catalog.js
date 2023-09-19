@@ -316,7 +316,7 @@ function Catalog({ products, images }) {
       const pdfContent = document.createElement('div');
 
       // Append the header to the new div
-      const header = document.querySelector('.pdf-header');
+      const header = document.querySelector('.pdf-header-container');
       header.style.display = 'flex';
       pdfContent.appendChild(header.cloneNode(true));
 
@@ -359,7 +359,7 @@ function Catalog({ products, images }) {
       }
 
       // Hide the PDF footer after the export is complete
-      const header = document.querySelector('.pdf-header');
+      const header = document.querySelector('.pdf-header-container');
       header.style.display = 'none';
 
       // Hide the PDF footer after the export is complete
@@ -603,11 +603,17 @@ function Catalog({ products, images }) {
             Load More
           </button>
         )}
-        <div className="pdf-header">
-          <p><b>Email:</b> sales@charlotte-imports.com - <b>Phone:</b> 1-800-950-0860</p>
+        <div className="pdf-header-container">
+          <div className="pdf-header">
+            <img src={process.env.PUBLIC_URL + `/content-images/cimpo_logo_pdf.jpg`} alt="PDF Logo" />
+            <div className="contact-info">
+              <b><a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a></b>
+              <b><a href="tel:1-800-950-0860">1-800-950-0860</a></b>
+            </div>
+          </div>
         </div>
         <div className="pdf-footer">
-          <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final</p>
+          <p>{new Date().toLocaleDateString()} - Prices are subject to change; final prices may vary</p>
         </div>
         <div className="selected-product-grid">
           {selectedProducts.map((product) => (
