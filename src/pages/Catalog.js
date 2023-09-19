@@ -318,6 +318,7 @@ function Catalog({ products, images }) {
 
       // Append the footer to the new div
       const footer = document.querySelector('.pdf-footer');
+      footer.style.visibility = 'visible';
       pdfContent.appendChild(footer.cloneNode(true));
 
       // Generate the PDF
@@ -598,14 +599,14 @@ function Catalog({ products, images }) {
           ))}
         </div>
       </div>
+      <div className="pdf-footer">
+        <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final.</p>
+      </div>
       {isLoading && (
         <div className="loading-overlay">
           <div className="loading-circle"></div>
         </div>
       )}
-      <div className="pdf-footer">
-        <p>whats popping</p>
-      </div>
     </div>
   );
 }
