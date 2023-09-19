@@ -307,7 +307,7 @@ function Catalog({ products, images }) {
     }
 
     try {
-
+      
       // Create a new div to hold the grid, header, and footer
       const pdfContent = document.createElement('div');
 
