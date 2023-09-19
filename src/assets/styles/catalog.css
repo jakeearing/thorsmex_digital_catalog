@@ -68,6 +68,7 @@
 .current-category {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .sort-options {
@@ -92,7 +93,7 @@
   width: 171px;
   border-radius: 5px;
   border-width: 1px;
-  height: 17px;
+  height: 16.5px;
 }
 
 #sort-select {
@@ -165,6 +166,7 @@
 
 .product-grid {
   display: flex;
+  margin-top: -10px;
 }
 
 .selected-product-grid {

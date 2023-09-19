@@ -270,6 +270,11 @@ function Catalog({ products, images }) {
     // Set the items shown to the highest value
     setItemsPerPage(highestValue);
 
+    // Add a delay before setting exportAll to true (e.g., 2000 milliseconds or 2 seconds)
+    setTimeout(() => {
+      setExportAll(true);
+    }, 4000);
+
     // Set exportAll to true
     setExportAll(true);
   };
@@ -291,11 +296,6 @@ function Catalog({ products, images }) {
     // Disable scrolling while loading
     document.body.classList.add('no-scroll');
 
-    if (exportOption === 1 && itemsPerPage !== highestValue) {
-      setPrevItemsPerPage(itemsPerPage);
-      setItemsPerPage(highestValue);
-    }
-
     if (exportOption !== 2) {
       // Hide the checkboxes before generating the PDF
       const checkboxes = document.querySelectorAll('.product-grid input[type="checkbox"]');
@@ -311,32 +311,24 @@ function Catalog({ products, images }) {
       grid.style.display = 'flex';
     }
 
-    // Calculate the available width and height of the PDF page in pixels
-    const availableWidth = 700;
-    const availableHeight = 1000;
-
-    // Calculate the total width and height of the product grid in pixels
-    const gridWidth = grid.scrollWidth;
-    const gridHeight = grid.scrollHeight;
-
-    // Calculate the remaining horizontal and vertical space to center the grid
-    const remainingHorizontalSpace = availableWidth - gridWidth;
-    const remainingVerticalSpace = availableHeight - gridHeight;
-
-    // Calculate the horizontal and vertical margins to center the grid
-    const marginLeft = remainingHorizontalSpace > 0 ? remainingHorizontalSpace / 2 : 0;
-    const marginTop = remainingVerticalSpace > 0 ? remainingVerticalSpace / 2 : 0;
-
     try {
+      // Create a new div to hold the grid and footer
+      const pdfContent = document.createElement('div');
+      pdfContent.appendChild(grid.cloneNode(true));
+
+      // Append the footer to the new div
+      const footer = document.querySelector('.pdf-footer');
+      pdfContent.appendChild(footer.cloneNode(true));
+
       // Generate the PDF
       await html2pdf().set({
-        margin: exportOption === 2 ? [0, 0, 0, 0] : [marginTop, marginLeft, 0, 0],
+        margin: [0, 0, 0, 0],
         filename: 'Catalog - Charlotte Imports.pdf',
         image: { type: 'webp', quality: 0.98 },
         html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
         pagebreak: { mode: ['avoid-all', 'css'] },
-      }).from(grid).save();
+      }).from(pdfContent).save();
     } catch (error) {
       console.error('Failed to generate PDF:', error);
       // Ensure checkboxes are visible again in case of an error
@@ -611,6 +603,9 @@ function Catalog({ products, images }) {
           <div className="loading-circle"></div>
         </div>
       )}
+      <div className="pdf-footer">
+        <p>whats popping</p>
+      </div>
     </div>
   );
 }
