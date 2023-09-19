@@ -175,7 +175,7 @@
 
 .product-grid-item {
   position: relative;
-  margin: 10px;
+  margin: 0 5px 10px 5px;
   flex: 1 0 calc(33.33% - 20px);
   cursor: pointer;
   max-width: 292.33px;
@@ -189,7 +189,7 @@
 
 .product-square {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   position: relative;
 }
@@ -211,14 +211,20 @@
 }
 
 .product-square h2 {
-  height: 75px;
-  font-size: 2vh;
+  margin-top: 0px;
+  height: 50px;
+  font-size: 1.6vh;
   overflow: hidden;
+  padding: 10px 10px 0 10px;
+}
+
+.product-square p {
+  margin: 15px;
 }
 
 .product-square img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 66%;
+  max-height: 66%;
   object-fit: contain;
   border-radius: 5px;
 }

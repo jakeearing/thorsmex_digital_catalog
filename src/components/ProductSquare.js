@@ -18,11 +18,11 @@ export default function ProductSquare({ product, images, isChecked, handleChange
       <Link to={{ pathname: `/products/${category}/${subCategory}/${modelNumber}`, state: { modelNumber } }}>
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
-        <h5>{modelNumber}</h5>
+        <p>{modelNumber}</p>
         {
-        <p>
-          <b>List Price:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
-        </p>
+          <p>
+            <b>List Price:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
+          </p>
         }
         <p>
           <b>Wholesale:</b> ${Number(msrp["$numberDecimal"]).toFixed(2)}
