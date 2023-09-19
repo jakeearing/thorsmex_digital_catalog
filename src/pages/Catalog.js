@@ -312,13 +312,20 @@ function Catalog({ products, images }) {
     }
 
     try {
-      // Create a new div to hold the grid and footer
+      // Create a new div to hold the grid, header, and footer
       const pdfContent = document.createElement('div');
+
+      // Append the header to the new div
+      const header = document.querySelector('.pdf-header');
+      header.style.display = 'flex';
+      pdfContent.appendChild(header.cloneNode(true));
+
+      // Append the grid to the new div
       pdfContent.appendChild(grid.cloneNode(true));
 
       // Append the footer to the new div
       const footer = document.querySelector('.pdf-footer');
-      footer.style.visibility = 'visible';
+      footer.style.display = 'flex';
       pdfContent.appendChild(footer.cloneNode(true));
 
       // Generate the PDF
@@ -352,8 +359,12 @@ function Catalog({ products, images }) {
       }
 
       // Hide the PDF footer after the export is complete
+      const header = document.querySelector('.pdf-header');
+      header.style.display = 'none';
+
+      // Hide the PDF footer after the export is complete
       const footer = document.querySelector('.pdf-footer');
-      footer.style.visibility = 'hidden';
+      footer.style.display = 'none';
 
       // Enable scrolling after loading is complete
       document.body.classList.remove('no-scroll');
@@ -603,8 +614,11 @@ function Catalog({ products, images }) {
           ))}
         </div>
       </div>
+      <div className="pdf-header">
+        <p><b>Email:</b> sales@charlotte-imports.com - <b>Phone:</b> 1-800-950-0860</p>
+      </div>
       <div className="pdf-footer">
-        <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final.</p>
+        <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final</p>
       </div>
       {isLoading && (
         <div className="loading-overlay">
