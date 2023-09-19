@@ -603,6 +603,12 @@ function Catalog({ products, images }) {
             Load More
           </button>
         )}
+        <div className="pdf-header">
+          <p><b>Email:</b> sales@charlotte-imports.com - <b>Phone:</b> 1-800-950-0860</p>
+        </div>
+        <div className="pdf-footer">
+          <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final</p>
+        </div>
         <div className="selected-product-grid">
           {selectedProducts.map((product) => (
             <div key={product.modelNumber} className="product-grid-item">
@@ -613,12 +619,6 @@ function Catalog({ products, images }) {
             </div>
           ))}
         </div>
-      </div>
-      <div className="pdf-header">
-        <p><b>Email:</b> sales@charlotte-imports.com - <b>Phone:</b> 1-800-950-0860</p>
-      </div>
-      <div className="pdf-footer">
-        <p>{new Date().toLocaleDateString()} - Prices are subject to change and may not be final</p>
       </div>
       {isLoading && (
         <div className="loading-overlay">
