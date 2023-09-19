@@ -335,7 +335,7 @@ function Catalog({ products, images }) {
         image: { type: 'webp', quality: 0.98 },
         html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: 'avoid-all' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
       }).from(grid).save();
     } catch (error) {
       console.error('Failed to generate PDF:', error);
