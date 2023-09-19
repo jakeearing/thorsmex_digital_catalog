@@ -494,9 +494,9 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
-          
+
           <div>
-          {/* 
+            {/* 
           
           **The <div> above is only needed to hide this feature**
 
@@ -611,7 +611,9 @@ function Catalog({ products, images }) {
         )}
         <div className="pdf-header-container">
           <div className="pdf-header">
-            <img src={process.env.PUBLIC_URL + `/content-images/cimpo_logo_pdf.jpg`} alt="PDF Logo" />
+            <Link to={`/`}>
+              <img src={process.env.PUBLIC_URL + `/content-images/cimpo_logo_pdf.jpg`} alt="PDF Logo" />
+            </Link>
             <div className="contact-info">
               <b><a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a></b>
               <b><a href="tel:1-800-950-0860">1-800-950-0860</a></b>
