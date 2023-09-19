@@ -215,12 +215,12 @@ function Catalog({ products, images }) {
     const xlsData = filteredData.map((product) => ({
       Name: product.name,
       'Model Number': product.modelNumber,
-      'Unit Cost': product.unit_cost.toFixed(2),
-      'Individual Price': product.price_indv.toFixed(2),
+      'MSRP': product.msrp,
+      'Individual Price': product.price_indv,
       'Individual Count': formatNumber(product.count_indv, 0),
-      'Box Price': product.price_box.toFixed(2),
+      'Box Price': product.price_box,
       'Box Count': formatNumber(product.count_box, 0),
-      'Pallet Price': product.price_pallet.toFixed(2),
+      'Pallet Price': product.price_pallet,
       'Pallet Count': formatNumber(product.count_pallet, 0),
       'Packaging Type': product.packaging_type,
       Category: product.category,
@@ -335,7 +335,7 @@ function Catalog({ products, images }) {
         image: { type: 'webp', quality: 0.98 },
         html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+        pagebreak: { mode: ['avoid-all', 'css'] },
       }).from(grid).save();
     } catch (error) {
       console.error('Failed to generate PDF:', error);
