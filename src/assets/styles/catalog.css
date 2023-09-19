@@ -194,6 +194,10 @@
   position: relative;
 }
 
+.product-square a {
+  display: block;
+}
+
 .selected-product-grid input[type="checkbox"] {
   display: none;
 }
