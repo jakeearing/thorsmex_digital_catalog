@@ -270,11 +270,6 @@ function Catalog({ products, images }) {
     // Set the items shown to the highest value
     setItemsPerPage(highestValue);
 
-    // Add a delay before setting exportAll to true (e.g., 2000 milliseconds or 2 seconds)
-    setTimeout(() => {
-      setExportAll(true);
-    }, 4000);
-
     // Set exportAll to true
     setExportAll(true);
   };
@@ -499,6 +494,12 @@ function Catalog({ products, images }) {
               </button>
             </div>
           </div>
+          
+          <div>
+          {/* 
+          
+          **The <div> above is only needed to hide this feature**
+
           <div className="sidebar-heading export-heading">
             <h3>Export All</h3>
           </div>
@@ -513,6 +514,11 @@ function Catalog({ products, images }) {
                 <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
               </button>
             </div>
+          </div>
+
+          **The <div> below is only needed to hide this feature**
+
+          */}
           </div>
           {selectedProducts.length > 0 && (
             <div className="sidebar-heading export-heading">
