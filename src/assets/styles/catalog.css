@@ -215,11 +215,12 @@
   height: 50px;
   font-size: 1.6vh;
   overflow: hidden;
-  padding: 10px 10px 0 10px;
+  padding: 10px 4px 0 4px;
 }
 
 .product-square p {
   margin: 15px;
+  font-size: 1.4vh;
 }
 
 .product-square img {
@@ -237,7 +238,7 @@
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  font-size: 2vh;
+  font-size: 1.6vh;
   background-color: #0c4d94;
   color: white;
   cursor: pointer;
@@ -366,6 +367,11 @@
   .product-grid-item {
     max-width: 200px;
     flex: 1 0 calc(33.33% - 10px);
+  }
+
+  .product-square img {
+    max-width: 75%;
+    max-height: 75%;
   }
 
   .search-bar #search {
