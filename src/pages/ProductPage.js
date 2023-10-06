@@ -174,11 +174,11 @@ export default function Product({ products, images }) {
             <div className="product-details">
               {
               <p>
-                <b>List Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
+                <b>Wholesale Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               }
               <p>
-                <b>Wholesale:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
+                <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               <p>
                 <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
