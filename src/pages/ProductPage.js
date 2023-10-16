@@ -182,6 +182,9 @@ export default function Product({ products, images }) {
                 <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
               <p>
+                <b>Price $1-$49:</b> {price_1_49 ? `$${Number(price_1_49["$numberDecimal"]).toFixed(2)}` : '-'}
+              </p>
+              <p>
                 <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
               {/*
