@@ -2,3 +2,4 @@ node_modules
 *.xlsx
 models/.env
 models/.~lock.products.csv\#
+models/old products.csv
