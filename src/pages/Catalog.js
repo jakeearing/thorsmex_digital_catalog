@@ -61,7 +61,6 @@ function Catalog({ products, images }) {
   const sortOptions = [
     { value: 'name', label: 'Name' },
     { value: 'modelNumber', label: 'Model Number' },
-    { value: 'unit_cost', label: 'Unit Cost' },
   ];
 
   // Calculate the highest value for itemsPerPage based on the total number of items
@@ -119,8 +118,6 @@ function Catalog({ products, images }) {
       return a.name.localeCompare(b.name);
     } else if (sortOption === 'modelNumber') {
       return a.modelNumber.localeCompare(b.modelNumber);
-    } else if (sortOption === 'unit_cost') {
-      return a.unit_cost - b.unit_cost;
     } else {
       return 0;
     }
@@ -231,7 +228,7 @@ function Catalog({ products, images }) {
     const workbook = XLSX.utils.book_new();
     const worksheet = XLSX.utils.json_to_sheet(xlsData);
 
-    // Configure cell number format for Unit Cost, Individual Price, Box Price, Pallet Price
+    // Configure cell number format for Individual Price, Box Price, Pallet Price
     const cellNumberFormat = { numFmt: '0.00' };
     const range = XLSX.utils.decode_range(worksheet['!ref']);
     for (let R = range.s.r; R <= range.e.r; ++R) {
