@@ -64,6 +64,10 @@
   margin: 10px 0;
 }
 
+.link-container {
+  cursor: pointer;
+}
+
 .product-details {
   float: left;
   margin: 10px 0;
