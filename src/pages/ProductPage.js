@@ -291,8 +291,8 @@ export default function Product({ products, images }) {
           {activeTab === 'more-information' && (
             <ul>
               <li>Packaging Type: {packaging_type}</li>
-              <li>Box Quantity: {count_box ? `${count_box} pieces` : '-'}</li>
-              <li>Pallet Quantity: {count_pallet ? `${count_pallet} pieces` : '-'}</li>
+              <li>Box Quantity: {count_box ? `${count_box * count_indv} pieces` : '-'}</li>
+              <li>Pallet Quantity: {count_pallet ? `${count_pallet * count_box * count_indv} pieces` : '-'}</li>
               <li>English Packaging: {english_packaging}</li>
               <li>
                 Individual Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
