@@ -94,17 +94,18 @@ export default function Product({ products, images }) {
 
   // Define the price data for different ranges
   const priceData = [
-    { range: 'Price $1-$49', price: price_1_49 },
-    { range: 'Price $50-$499', price: price_50_499 },
-    { range: 'Price $500-$999', price: price_500_999 },
-    { range: 'Price $1000-$3000', price: price_1000_3000 },
-    { range: 'Price $3000-$5000', price: price_3000_5000 },
-    { range: 'Price $5000-$7000', price: price_5000_7000 },
-    { range: 'Price $7000-$9000', price: price_7000_9000 },
+    { range: '$1-$49', price: price_1_49 },
+    { range: '$50-$499', price: price_50_499 },
+    { range: '$500-$999', price: price_500_999 },
+    { range: '$1000-$3000', price: price_1000_3000 },
+    { range: '$3000-$5000', price: price_3000_5000 },
+    { range: '$5000-$7000', price: price_5000_7000 },
+    { range: '$7000-$9000', price: price_7000_9000 },
   ];
 
-  // Create a state variable to track which price range is clicked
+  // Create a state variable to track when the price range is clicked
   const [selectedRange, setSelectedRange] = useState(null);
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
 
   // Function to handle the click and toggle the selected price range
   const togglePriceRange = (range) => {
@@ -113,6 +114,10 @@ export default function Product({ products, images }) {
     } else {
       setSelectedRange(range);
     }
+  };
+
+  const toggleDropDown = () => {
+    setIsDropDownOpen(!isDropDownOpen);
   };
 
   const folderName = modelnumber.toString();
@@ -204,18 +209,7 @@ export default function Product({ products, images }) {
               <p>
                 <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
-              <p className="link-container">
-                <b onClick={() => togglePriceRange('Price Discounts by Volume')}>Click to view price discounts by volume</b>
-              </p>
-              {selectedRange === 'Price Discounts by Volume' && (
-                <div>
-                  {priceData.map((priceItem) => (
-                    <p key={priceItem.range}>
-                      <b>{priceItem.range}:</b> {priceItem.price ? `$${Number(priceItem.price["$numberDecimal"]).toFixed(2)}` : '-'}
-                    </p>
-                  ))}
-                </div>
-              )}
+
               <p>
                 <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
@@ -236,6 +230,23 @@ export default function Product({ products, images }) {
                 </p>
               ) : (
                 <p>No Product Sheet Available</p>
+              )}
+              <p className="link-container">
+                <b onClick={() => {
+                  togglePriceRange('Price Discounts by Volume');
+                  toggleDropDown();
+                }}>
+                  {isDropDownOpen ? 'Discounts based on amount purchased' : 'Click to view discounts by volume'}
+                </b>
+              </p>
+              {selectedRange === 'Price Discounts by Volume' && (
+                <div className="indent">
+                  {priceData.map((priceItem) => (
+                    <p key={priceItem.range}>
+                      <b>{priceItem.range}:</b> {priceItem.price ? `$${Number(priceItem.price["$numberDecimal"]).toFixed(2)}` : '-'}
+                    </p>
+                  ))}
+                </div>
               )}
             </div>
             <div className="contact-details">

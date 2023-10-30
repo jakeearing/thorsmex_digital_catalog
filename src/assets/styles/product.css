@@ -78,6 +78,10 @@
   margin: 5px 0;
 }
 
+.indent {
+  margin: 10px 0 10px 10px;
+}
+
 .product-description {
   margin-top: 20px;
 }
