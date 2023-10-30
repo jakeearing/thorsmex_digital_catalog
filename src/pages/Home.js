@@ -81,6 +81,9 @@ export default function Home() {
           <Link to="/products">
             <button className="home-button">Browse Catalog</button>
           </Link>
+          <Link to="/promotions">
+            <button className="home-button discount-button">Volume Discounts</button>
+          </Link>
           <Link to="/contact-us">
             <button className="home-button">Contact Us</button>
           </Link>
