@@ -609,7 +609,7 @@ function Catalog({ products, images }) {
         </div>
         {filteredProducts.length > itemsPerPage && (
           <button className="load-more-button" onClick={handleLoadMore}>
-            Load More
+            <h3>Load More</h3>
           </button>
         )}
         <div className="pdf-header-container">
