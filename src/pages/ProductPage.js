@@ -94,13 +94,13 @@ export default function Product({ products, images }) {
 
   // Define the price data for different ranges
   const priceData = [
-    { range: '$1-$49', price: price_1_49 },
-    { range: '$50-$499', price: price_50_499 },
-    { range: '$500-$999', price: price_500_999 },
-    { range: '$1000-$3000', price: price_1000_3000 },
-    { range: '$3000-$5000', price: price_3000_5000 },
-    { range: '$5000-$7000', price: price_5000_7000 },
-    { range: '$7000-$9000', price: price_7000_9000 },
+    { range: '$1-$49', Discount: '10% Off'},
+    { range: '$50-$499', Discount: '12% Off'},
+    { range: '$500-$999', Discount: '14% Off'},
+    { range: '$1000-$3000', Discount: '16% Off'},
+    { range: '$3000-$5000', Discount: '18% Off'},
+    { range: '$5000-$7000', Discount: '20% Off'},
+    { range: '$7000-$9000', Discount: '23% Off'},
   ];
 
   // Create a state variable to track when the price range is clicked
@@ -211,7 +211,7 @@ export default function Product({ products, images }) {
               </p>
 
               <p>
-                <b>Quantity:</b> {count_indv ? `${count_indv}` : '-'}
+                <b>Units:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
               {/*
               <p>
@@ -243,7 +243,7 @@ export default function Product({ products, images }) {
                 <div className="indent">
                   {priceData.map((priceItem) => (
                     <p key={priceItem.range}>
-                      <b>{priceItem.range}:</b> {priceItem.price ? `$${Number(priceItem.price["$numberDecimal"]).toFixed(2)}` : '-'}
+                      <b>{priceItem.range}:</b> {priceItem.Discount}
                     </p>
                   ))}
                 </div>
@@ -302,8 +302,10 @@ export default function Product({ products, images }) {
           {activeTab === 'more-information' && (
             <ul>
               <li>Packaging Type: {packaging_type}</li>
-              <li>Box Quantity: {count_box ? `${count_box * count_indv} pieces` : '-'}</li>
-              <li>Pallet Quantity: {count_pallet ? `${count_pallet * count_box * count_indv} pieces` : '-'}</li>
+              <li>Box Unit Count: {count_box ? `${count_box * count_indv} pieces` : '-'}</li>    
+              <li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li>
+              <li>Pallet Unit Count: {count_pallet ? `${count_pallet * count_box * count_indv} pieces` : '-'}</li>
+              <li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li>
               <li>English Packaging: {english_packaging}</li>
               <li>
                 Individual Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
