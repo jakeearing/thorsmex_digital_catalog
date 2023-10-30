@@ -25,8 +25,12 @@
   text-align: left;
 }
 
+.home-buttons {
+  margin-top: 25px;
+}
+
 .home-button {
-  margin-top: 35px;
+  margin-top: 10px;
   padding: 18px;
   border-radius: 20px;
   border: 0px;
