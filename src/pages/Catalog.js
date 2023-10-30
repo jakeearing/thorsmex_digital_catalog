@@ -304,7 +304,7 @@ function Catalog({ products, images }) {
     }
 
     try {
-      
+
       // Create a new div to hold the grid, header, and footer
       const pdfContent = document.createElement('div');
 
@@ -572,6 +572,11 @@ function Catalog({ products, images }) {
             </div>
           )}
         </div>
+        <Link to={`/promotions`}>
+        <div className="sidebar second-sidebar sidebar-heading-discounts">
+              <h3 className="sidebar-heading-discounts">Available Discounts</h3>
+        </div>
+        </Link>
       </div>
       <div className="products-wrapper">
         <div className="current-category">
