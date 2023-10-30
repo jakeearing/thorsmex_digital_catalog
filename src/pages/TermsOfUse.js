@@ -16,7 +16,7 @@ export default function TermsOfUse() {
             <p>
               <b>Agreement. </b>
               This Terms and Conditions agreement ("Agreement") specifies the Terms and Conditions
-              for access to and use of charlotte-imports.com ("Site") and describe the terms and conditions
+              for access to and use of thorsmexcatalog.com ("Site") and describe the terms and conditions
               applicable to your access of and use of the Site. This Agreement may be modified at any time by
               Charlotte Imports, LLC, upon posting of the modified Agreement. Any such modifications shall be
               effective immediately. Each use by you shall constitute and be deemed your unconditional acceptance
