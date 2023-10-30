@@ -1,22 +1,27 @@
 .promotions-container {
-  padding-top: 55px;
+  padding: 55px 0 110px 0;
   min-height: calc(100vh - 100px - 55px);
   margin: 0 auto;
   align-items: center;
 }
 
-.promotions-content {
-  margin-top: 100px;
-}
-
-.promotions-text {
+.promotions-text, .promotions-text-main {
   font-size: 3.5vh;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.promotions-links {
-  margin-top: 80px;
+.promotions-text-main {
+  padding: 60px 0 60px 0;
+}
+
+.promotions-text {
+  padding: 40px 0 20px 0;
+}
+
+.promotions-text-main p:nth-child(2) {
+  margin-top: 40px;
+  font-size: 1.8vh;
 }
 
 .promotions-links a,
@@ -29,14 +34,18 @@
 }
 
 .promotions-links a {
-  font-weight: 700;
-  font-size: 3vh;
+  font-weight: 300;
+  font-size: 2vh;
 }
 
 @media screen and (max-width: 768px) {
   .promotions-text {
     font-size: 3vh;
     width: 100%;
+  }
+
+  .promotions-text p:nth-child(2) {
+    font-size: 1.5vh;
   }
 
   .promotions-links a {
