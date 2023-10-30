@@ -11,7 +11,10 @@ export default function Contact() {
           <h3>Questions about our products or anything else? Contact us by Email or
             Phone to get in touch today!</h3>
         </div>
-        <ContactDetails />
+        <div className="product-contact">
+          <a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a>
+          <a href="tel:1-800-950-0860">1-800-950-0860</a>
+        </div>
         <h2>Hours</h2>
         <ul>
           <li>Monday: 9:00 am - 5:00 pm</li>
