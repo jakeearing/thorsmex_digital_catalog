@@ -8,8 +8,13 @@
 }
 
 .sidebar-wrapper {
-  display: flex;
+  display: column;
+  flex-direction: column;
   justify-content: center;
+}
+
+.sidebar-wrapper > * {
+  display: block;
 }
 
 .sidebar {
@@ -19,7 +24,7 @@
   height: fit-content;
   padding: 15px;
   border: 1px solid #ccc;
-  margin: 72px 5px 0px 10px;
+  margin: 69px 5px 0px 10px;
   position: relative;
 }
 
@@ -34,6 +39,20 @@
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 4px 0 5px 0;
+}
+
+.second-sidebar {
+  margin-top: 15px;
+  background-color: #0c4d94;
+  border: none;
+  left: 1px;
+  border-radius: 10px;
+}
+
+.sidebar-heading-discounts h3 {
+  border: none;
+  color: white;
+  text-align: center;
 }
 
 .sidebar .category {
@@ -317,6 +336,7 @@
   .sidebar-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     width: 100%;
   }
@@ -329,6 +349,12 @@
     max-width: 100%;
     margin: 0;
     position: relative;
+  }
+
+  .second-sidebar {
+    width: fit-content;
+    margin-top: 30px;
+    left: 0px;
   }
 
   .sort-catalog {
