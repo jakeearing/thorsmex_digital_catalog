@@ -10,7 +10,7 @@ export default function Promos() {
         <div className="promotions-container">
             <div className="promotions-content">
                 <div className="promotions-text">
-                    <p>We currently have the following promotions for various Thorsmex products!</p>
+                    <p>We have promotions running for the following Thorsmex products!</p>
                 </div>
                 <div className="promotions-links">
                     <div>
