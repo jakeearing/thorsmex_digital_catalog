@@ -236,7 +236,7 @@ export default function Product({ products, images }) {
                   togglePriceRange('Price Discounts by Volume');
                   toggleDropDown();
                 }}>
-                  {isDropDownOpen ? 'Discounts based on amount purchased' : 'Click to view discounts by volume'}
+                  {isDropDownOpen ? 'Discounts based on purchase volume' : 'Click to view discounts by volume'}
                 </b>
               </p>
               {selectedRange === 'Price Discounts by Volume' && (
