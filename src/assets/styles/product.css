@@ -179,6 +179,11 @@
   text-align: center;
 }
 
+.product-square-small img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .product-grid-small-item.highlighted .product-square {
   border: 2px solid #000;
 }
