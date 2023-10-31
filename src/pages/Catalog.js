@@ -212,14 +212,12 @@ function Catalog({ products, images }) {
     const xlsData = filteredData.map((product) => ({
       Name: product.name,
       'Model Number': product.modelNumber,
-      'MSRP': product.msrp,
-      'Individual Price': product.price_indv,
-      'Individual Count': formatNumber(product.count_indv, 0),
-      'Box Price': product.price_box,
+      'List Price': parseFloat(product.msrp["$numberDecimal"]),
+      'Unit Count': formatNumber(product.count_indv, 0),
+      'Box Price': parseFloat(product.msrp["$numberDecimal"]) * product.count_box,
       'Box Count': formatNumber(product.count_box, 0),
-      'Pallet Price': product.price_pallet,
+      'Pallet Price': parseFloat(product.msrp["$numberDecimal"]) * product.count_box *product.count_pallet,
       'Pallet Count': formatNumber(product.count_pallet, 0),
-      'Packaging Type': product.packaging_type,
       Category: product.category,
       Subcategory: product.subCategory,
     }));
@@ -573,9 +571,9 @@ function Catalog({ products, images }) {
           )}
         </div>
         <Link to={`/promotions`}>
-        <div className="sidebar second-sidebar sidebar-heading-discounts">
-              <h3 className="sidebar-heading-discounts">Available Discounts</h3>
-        </div>
+          <div className="sidebar second-sidebar sidebar-heading-discounts">
+            <h3 className="sidebar-heading-discounts">Available Discounts</h3>
+          </div>
         </Link>
       </div>
       <div className="products-wrapper">
