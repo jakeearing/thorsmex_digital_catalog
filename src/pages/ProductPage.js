@@ -300,16 +300,16 @@ export default function Product({ products, images }) {
 
           {activeTab === 'more-information' && (
             <ul>
-              <li>Packaging Type: {packaging_type}</li>
-              <li>Box Unit Count: {count_box ? `${count_box * count_indv} pieces` : '-'}</li>    
               <li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li>
-              <li>Pallet Unit Count: {count_pallet ? `${count_pallet * count_box * count_indv} pieces` : '-'}</li>
+              <li>Box Unit Count: {`${count_box * count_indv} pieces`}</li>    
               <li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li>
+              <li>Pallet Unit Count: {`${count_pallet * count_box * count_indv} pieces`}</li>
+              <li>Packaging Type: {packaging_type}</li>
               <li>English Packaging: {english_packaging}</li>
               <li>
-                Individual Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
+                Product Packaging Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
-              <li>Individual Weight: {weight_indv ? `${Number(weight_indv["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
+              <li>Product Weight: {weight_indv ? `${Number(weight_indv["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
               <li>
                 Box Dimensions: {height_box ? `${Number(height_box["$numberDecimal"]).toFixed(2)} x ${Number(width_box["$numberDecimal"]).toFixed(2)} x ${Number(length_box["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
