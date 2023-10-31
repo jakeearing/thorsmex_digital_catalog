@@ -12,6 +12,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Error from '../pages/Error';
+import discounts from '../assets/promos/discounts.json';
 
 function importAll(r) {
   let images = {};
@@ -108,8 +109,8 @@ const App = () => {
           />
           <Route path="/products/:category" element={<Catalog products={products} images={images} />} />
           <Route path="/products/:category/:subcategory" element={<Catalog products={products} images={images} />} />
-          <Route path="/products/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} />} />
-          <Route path="/promotions" element={<Promos />} />
+          <Route path="/products/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} discounts={discounts} />} />
+          <Route path="/promotions" element={<Promos discounts={discounts} />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />

@@ -5,7 +5,7 @@ import ProductOptions from '../components/ProductOptions';
 import Contact from '../components/ContactDetails';
 import '../assets/styles/product.css';
 
-export default function Product({ products, images }) {
+export default function Product({ products, images, discounts }) {
   const { category, subCategory, modelnumber } = useParams();
   const [product, setProduct] = useState(null);
   const [activeTab, setActiveTab] = useState('details');
@@ -90,17 +90,6 @@ export default function Product({ products, images }) {
     length_indv, weight_indv, height_box, width_box, length_box, weight_box, 
     height_pallet, width_pallet, length_pallet, weight_pallet, packaging_type, 
     english_packaging } = product || {};
-
-  // Define the price data for different ranges
-  const priceData = [
-    { range: '$1-$49', Discount: '10% Off'},
-    { range: '$50-$499', Discount: '12% Off'},
-    { range: '$500-$999', Discount: '14% Off'},
-    { range: '$1000-$3000', Discount: '16% Off'},
-    { range: '$3000-$5000', Discount: '18% Off'},
-    { range: '$5000-$7000', Discount: '20% Off'},
-    { range: '$7000-$9000', Discount: '23% Off'},
-  ];
 
   // Create a state variable to track when the price range is clicked
   const [selectedRange, setSelectedRange] = useState(null);
@@ -240,7 +229,7 @@ export default function Product({ products, images }) {
               </p>
               {selectedRange === 'Price Discounts by Volume' && (
                 <div className="indent">
-                  {priceData.map((priceItem) => (
+                  {discounts.map((priceItem) => (
                     <p key={priceItem.range}>
                       <b>{priceItem.range}:</b> {priceItem.Discount}
                     </p>
