@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/volume-discounts.css';
 
-export default function VolumeDiscounts() {
+export default function VolumeDiscounts({ discounts }) {
   return (
     <div className="volume-discount-container">
       <div className="volume-discount-table">
@@ -14,32 +14,32 @@ export default function VolumeDiscounts() {
           </thead>
           <tbody>
             <tr>
-              <td>$1 - $50</td>
-              <td>10%</td>
+              <td>{discounts[0].range}</td>
+              <td>{discounts[0].Discount}</td>
             </tr>
             <tr>
-              <td>$50 - $500</td>
-              <td>12%</td>
+              <td>{discounts[1].range}</td>
+              <td>{discounts[1].Discount}</td>
             </tr>
             <tr>
-              <td>$500 - $1,000</td>
-              <td>14%</td>
+              <td>{discounts[2].range}</td>
+              <td>{discounts[2].Discount}</td>
             </tr>
             <tr>
-              <td>$1,000 - $3,000</td>
-              <td>16%</td>
+              <td>{discounts[3].range}</td>
+              <td>{discounts[3].Discount}</td>
             </tr>
             <tr>
-              <td>$3,000 - $5,000</td>
-              <td>18%</td>
+              <td>{discounts[4].range}</td>
+              <td>{discounts[4].Discount}</td>
             </tr>
             <tr>
-              <td>$5,000 - $7,000</td>
-              <td>20%</td>
+              <td>{discounts[5].range}</td>
+              <td>{discounts[5].Discount}</td>
             </tr>
             <tr>
-              <td>$7,000 - $9,000</td>
-              <td>23%</td>
+              <td>{discounts[6].range}</td>
+              <td>{discounts[6].Discount}</td>
             </tr>
           </tbody>
         </table>

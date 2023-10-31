@@ -1,0 +1,9 @@
+[
+    { "range": "$1-$49", "Discount": "10% Off" },
+    { "range": "$50-$499", "Discount": "12% Off" },
+    { "range": "$500-$999", "Discount": "14% Off" },
+    { "range": "$1000-$2,999", "Discount": "16% Off" },
+    { "range": "$3000-$4,999", "Discount": "18% Off" },
+    { "range": "$5000-$6,999", "Discount": "20% Off" },
+    { "range": "$7000-$9000", "Discount": "23% Off" }
+]
