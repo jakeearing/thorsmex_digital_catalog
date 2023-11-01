@@ -18,7 +18,7 @@
   font-weight: thin;
   color: white;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   z-index: 1;
 }
 
@@ -83,6 +83,12 @@
   border-radius: 50px;
 }
 
+.copyright-right-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .right-nav {
   display: flex;
   align-items: center;
@@ -113,6 +119,17 @@
   font-size: 14px;
 }
 
+.copyright {
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+.copyright p {
+  font-size: 10px;
+  margin: 10px 0 0 0;
+}
+
 @media screen and (max-width: 768px) {
   .terms {
     display: none;
@@ -121,5 +138,9 @@
   .social-media {
     position: relative;
     left: 30px;
+  }
+
+  .copyright {
+    display: none;
   }
 }

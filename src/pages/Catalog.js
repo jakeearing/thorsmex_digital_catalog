@@ -579,7 +579,7 @@ function Catalog({ products, images }) {
       <div className="products-wrapper">
         <div className="current-category">
           <h3>
-            <Link to="/">Products</Link>
+            <Link to="/products/all">Products</Link>
             {category && <span> / </span>}
             {category && subcategory && (
               <span>

@@ -78,6 +78,7 @@ export default function Header() {
                     Privacy Policy
                   </Link>
                 </li>
+                <p>Copyright &copy; 2023 Charlotte Imports - All Rights Reserved</p>
               </ul>
             </nav>
           </>
