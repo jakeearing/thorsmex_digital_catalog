@@ -8,23 +8,12 @@ export default function Contact() {
       <div className="contact-content-container contact-page-font-size">
         <h1>Contact Us</h1>
         <div className="contact-text">
-          <h3>Questions about our products or anything else? Contact us by Email or
-            Phone to get in touch today!</h3>
+          <h3>Questions about our products?</h3>
         </div>
         <div className="product-contact">
           <a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a>
           <a href="tel:1-800-950-0860">1-800-950-0860</a>
         </div>
-        <h2>Hours</h2>
-        <ul>
-          <li>Monday: 9:00 am - 5:00 pm</li>
-          <li>Tuesday: 9:00 am - 5:00 pm</li>
-          <li>Wednesday: 9:00 am - 5:00 pm</li>
-          <li>Thursday: 9:00 am - 5:00 pm</li>
-          <li>Friday: 9:00 am - 5:00 pm</li>
-          <li>Saturday: Closed</li>
-          <li>Sunday: Closed</li>
-        </ul>
       </div>
     </div>
   );
