@@ -50,10 +50,14 @@ function Catalog({ products, images }) {
     } else if (subcategory) {
       return (
         product.category.toLowerCase() === category.toLowerCase() &&
-        product.subCategory.toLowerCase() === subcategory.toLowerCase()
+        product.subCategory.toLowerCase() === subcategory.toLowerCase() &&
+        (nameMatch || modelMatch)
       );
     } else {
-      return product.category.toLowerCase() === category.toLowerCase();
+      return (
+        product.category.toLowerCase() === category.toLowerCase() &&
+        (nameMatch || modelMatch)
+      );
     }
   });
 
@@ -93,6 +97,8 @@ function Catalog({ products, images }) {
   // Handle search form submission
   const handleSearch = (event) => {
     event.preventDefault();
+    // Update the searchTerm state, which will automatically re-render with updated filteredProducts
+    setSearchTerm(event.target.value);
   };
 
   // Handle search term change
@@ -215,9 +221,9 @@ function Catalog({ products, images }) {
       'List Price': parseFloat(product.msrp["$numberDecimal"]),
       'Unit Count': formatNumber(product.count_indv, 0),
       'Box Price': parseFloat(product.msrp["$numberDecimal"]) * product.count_box,
-      'Box Count': formatNumber((product.count_box*product.count_indv), 0),
-      'Pallet Price': parseFloat(product.msrp["$numberDecimal"]) * product.count_box *product.count_pallet,
-      'Pallet Count': formatNumber((product.count_indv*product.count_box*product.count_pallet), 0),
+      'Box Count': formatNumber((product.count_box * product.count_indv), 0),
+      'Pallet Price': parseFloat(product.msrp["$numberDecimal"]) * product.count_box * product.count_pallet,
+      'Pallet Count': formatNumber((product.count_indv * product.count_box * product.count_pallet), 0),
       Category: product.category,
       Subcategory: product.subCategory,
     }));
