@@ -54,7 +54,7 @@ export default function ClaimForm() {
         })
             .then((response) => {
                 if (response.ok) {
-                    alert('Thank you for contact Charlotte Imports. We\'ll get back to you within 24 hours!');
+                    alert('Thank you for contacting Charlotte Imports. We\'ll get back to you within 24 hours!');
                     console.log('Email sent!');
                 } else {
                     console.log('Error sending email');
