@@ -4,11 +4,15 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const fs = require('fs');
 const csv = require('csv-parser');
+const nodemailer = require('nodemailer');
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
+
+// Middleware to parse JSON request bodies
+app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -142,6 +146,56 @@ app.get('/api/products/:model_number', async (req, res) => {
     console.error('Error getting product:', error);
     res.status(500).send('Error getting product');
   }
+});
+
+// Endpoint to handle form submission
+app.post('/api/send-email', (req, res) => {
+  const formData = req.body;
+
+  // Create a Nodemailer transporter with SMTP configuration
+  const transporter = nodemailer.createTransport({
+    host: 'smtpout.secureserver.net',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  });
+
+  // Construct the email message based on the form type and set the email subject
+  let emailMessage;
+  let emailSubject;
+  emailSubject = 'Thorsmex Catalog Contact Form';
+  emailMessage = `
+    Full Name: ${formData.fullName}
+    Email Address: ${formData.email}
+    Phone Number: ${formData.phone}
+    Company: ${formData.company}
+    City: ${formData.city}
+    State: ${formData.state}
+    Country: ${formData.country}
+  `;
+
+  // Define the email options
+  const mailOptions = {
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
+    // Set the email subject based on the form type
+    subject: emailSubject,
+    text: emailMessage,
+  };
+
+  // Send the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({ error: 'Failed to send email' });
+    } else {
+      console.log('Email sent:', info.response);
+      res.json({ message: 'Email sent successfully' });
+    }
+  });
 });
 
 // Start the server
