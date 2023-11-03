@@ -618,7 +618,7 @@ function Catalog({ products, images }) {
         <div className="pdf-header-container">
           <div className="pdf-header">
             <Link to={`/`}>
-              <img src={process.env.PUBLIC_URL + `/content-images/cimpo-logo-pdf.jpg`} alt="PDF Logo" />
+              <img src={process.env.PUBLIC_URL + `/content-images/logos/cimpo-logo-pdf.jpg`} alt="PDF Logo" />
             </Link>
             <div className="contact-info">
               <b><a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a></b>
