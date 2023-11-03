@@ -9,9 +9,14 @@ export default function Contact() {
       <div className="contact-content-container contact-page-font-size">
         <h1>Contact Us</h1>
         <div className="contact-text">
-          <h3>Questions about our products?</h3>
+          <h3>For any inquiries about our products in English or Spanish, let us know by
+            submitting your information! Our committed team will reach out to you
+            within 24 hours!</h3>
         </div>
         <div className="product-contact">
+          <h3>
+            Or reach us directly at:
+          </h3>
           <a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a>
           <a href="tel:1-800-950-0860">1-800-950-0860</a>
         </div>

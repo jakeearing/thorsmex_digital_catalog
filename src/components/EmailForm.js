@@ -36,7 +36,7 @@ export default function ClaimForm() {
         })
             .then((response) => {
                 if (response.ok) {
-                    alert('Thank you for reaching out. We\'ll get back to you in 24-48 hours.');
+                    alert('Thank you for reaching out. We\'ll get back to you in 24 hours.');
                     console.log('Email sent!');
                 } else {
                     console.log('Error sending email');
