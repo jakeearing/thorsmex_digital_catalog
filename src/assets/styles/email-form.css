@@ -39,6 +39,7 @@
 .form-container .form-button {
   width: 100%;
   padding: 10px;
+  margin-top: 10px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
