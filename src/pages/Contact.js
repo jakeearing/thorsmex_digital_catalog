@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ContactDetails from '../components/ContactDetails';
 import EmailForm from '../components/EmailForm';
 import '../assets/styles/contact.css';

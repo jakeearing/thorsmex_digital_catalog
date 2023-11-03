@@ -1,11 +1,13 @@
 .contact-container {
   position: relative;
-  margin-top: 55px;
+  padding-top: 55px;
   min-height: calc(100vh - 100px - 55px);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .contact-container h3 {
@@ -13,15 +15,20 @@
 }
 
 .contact-content-container {
-  height: fit-content;
+  flex: 1;
+  text-align: left;
+  width: fit-content;
+  text-align: center;
 }
 
-.contact-text {
-  width: 100%;
+.contact-content-container h1,
+.contact-content-container .contact-text {
+  width: fit-content;
   margin: 0 auto;
 }
 
 .product-contact {
+  flex: 1;
   margin: 20px;
 }
 
@@ -52,8 +59,25 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1100px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content-container {
+    flex: none;
+  }
+
+  .product-contact {
+    flex: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .contact-text {
-    width: 100%;
+  .contact-container {
+    padding-top: 110px;
+    padding-bottom: 55px;
+    width: 80%
   }
 }

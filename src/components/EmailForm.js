@@ -58,7 +58,6 @@ export default function ClaimForm() {
                         </div>
                     </div>
                 </div>
-
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
@@ -67,8 +66,6 @@ export default function ClaimForm() {
                         </div>
                     </div>
                 </div>
-
-
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
@@ -76,6 +73,8 @@ export default function ClaimForm() {
                             <input type="tel" id="phone" required />
                         </div>
                     </div>
+                </div>
+                <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
                             <label htmlFor="company">Company:</label>
@@ -83,7 +82,6 @@ export default function ClaimForm() {
                         </div>
                     </div>
                 </div>
-
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
