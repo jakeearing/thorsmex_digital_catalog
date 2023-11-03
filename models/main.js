@@ -168,6 +168,9 @@ app.post('/api/send-email', (req, res) => {
   let emailSubject;
   emailSubject = 'Thorsmex Catalog Contact Form';
   emailMessage = `
+    Nature of Inquiry: ${formData.inquiryType}
+    Subject: ${formData.subject}
+    Message: ${formData.message}
     Full Name: ${formData.fullName}
     Email Address: ${formData.email}
     Phone Number: ${formData.phone}
