@@ -1,6 +1,7 @@
 .contact-container {
   position: relative;
-  padding-top: 55px;
+  padding-top: 110px;
+  padding-bottom: 55px;
   min-height: calc(100vh - 100px - 55px);
   display: flex;
   justify-content: center;
@@ -91,6 +92,6 @@
 
 @media screen and (max-width: 768px) {
   .contact-container {
-    width: 80%
+    width: 100%
   }
 }
