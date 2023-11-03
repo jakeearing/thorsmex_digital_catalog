@@ -55,8 +55,8 @@
     flex-direction: column;
   }
 
-  .about-container-h2 {
-    margin-top: 10px;
+  .about-container h2 {
+    margin-top: 24px;
   }
 
   .left-column-image,
