@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ContactDetails from '../components/ContactDetails';
+import EmailForm from '../components/EmailForm';
 import '../assets/styles/contact.css';
 
 export default function Contact() {
@@ -15,6 +16,7 @@ export default function Contact() {
           <a href="tel:1-800-950-0860">1-800-950-0860</a>
         </div>
       </div>
+      <EmailForm />
     </div>
   );
 }
