@@ -35,7 +35,7 @@ export default function About() {
           <div className="left-column-content">
             <h2>Certifications</h2>
             <ul>
-              <li>THORSMAN, Sweden ISO 9001:2015 No. IQS/1311/2013, accrediting all product design.</li>
+              <li>THORSMAN, Sweden ISO 9001:2015 No. IQS/1311/2013, accrediting all product design</li>
               <li>THORSMEX, S.A. DE C.V. ISO 9001:2015</li>
               <li>SEMKO & NEMKO, Norway and Sweden, for all conduit accessories</li>
               <li>Product certification by the Canadian Standards Association. No 1162395, year 2009</li>
