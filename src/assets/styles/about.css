@@ -8,6 +8,7 @@
 .about-container h2 {
   font-weight: 700;
   font-size: 3vh;
+  margin-top: 0px;
 }
 
 .about-content-container {
@@ -52,6 +53,10 @@
 @media (max-width: 1000px) {
   .about-content-container {
     flex-direction: column;
+  }
+
+  .about-container-h2 {
+    margin-top: 10px;
   }
 
   .left-column-image,
