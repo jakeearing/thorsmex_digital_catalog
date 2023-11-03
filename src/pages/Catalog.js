@@ -94,11 +94,10 @@ function Catalog({ products, images }) {
     setSortOption(event.target.value);
   };
 
-  // Handle search form submission
   const handleSearch = (event) => {
     event.preventDefault();
-    // Update the searchTerm state, which will automatically re-render with updated filteredProducts
-    setSearchTerm(event.target.value);
+    // Update the searchTerm state with the value in the search input
+    setSearchTerm(searchTerm);
   };
 
   // Handle search term change
