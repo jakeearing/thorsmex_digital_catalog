@@ -8,11 +8,10 @@ export default function About() {
         <div className="left-column-text">
           <div className="left-column-content">
             <h2>About Us</h2>
-            <p><b>THORSMEX, S.A de C.V.</b> is a Mexican company founded in 1996. At THORSMEX, our main purpose is to develop, manufacture, represent and commercialize fixing
-              systems, raceway systems and Telecom in the American Continent with presence in Guatemala, Colombia,
-              Chile, El Salvador, Bolivia, Panama, Nicaragua, Canada, the United States, among others.</p>
-            <p><b>The 5 basic characteristics of Thorsmex products are: </b>
-              functionality, aesthetics, safety, durability and quality.</p>
+            <p>Welcome to <b>THORSMEX, S.A. de C.V.</b>, an industry trailblazer since our establishment in 1996. At THORSMEX, our dedication is clear: to craft, represent, and deliver exceptional fastening systems, raceway solutions, and cutting-edge Telecom products across the Americas.</p>
+            <p>From Guatemala to the United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua, and Canada.</p>
+            <p>Our range of products is more than just an assemblage; it's a testament of our commitment to excellence. Every THORSMEX product encapsulates the essence of five core values: <b>functionality, aesthetics, safety, durability, and unparalleled quality.</b></p>
+            <p>Discover how our innovative solutions redefine standards and empower businesses across the Americas. Join us in elevating your projects with our trusted and high-performance product line!</p>
           </div>
         </div>
         <div className="right-column-image">
@@ -26,27 +25,21 @@ export default function About() {
         <div className="right-column-text">
           <div className="right-column-content">
             <h2>Processes</h2>
-            <p>We have the experience to develop the following private label
-              services: extrusion, injection moulding, blow moulding and packaging
-              processes.</p>
-            <p>We are endorsed by national and international organisms,
-              confirming excellence through strict testing implemented
-              to every product, complying with high performance normativity
-              and standards, in order to provide the best solutions in the
-              market.</p>
+            <p>Leveraging our expertise in precision and innovation, we specialize in providing distinguished private label services, that encompass a range of exceptional manufacturing processes. With expertise in extrusion, injection molding, blow molding, and meticulous packaging methods.  </p>
+            <p>Endorsed by national and international certifying bodies, we guarantee excellence by subjecting each product to rigorous testing. Our commitment to meeting high-performance standards ensures the delivery of top-notch solutions in the market.</p>
           </div>
         </div>
       </div>
       <div className="about-content-container">
         <div className="left-column-text">
           <div className="left-column-content">
-          <h2>Certifications</h2>
+            <h2>Certifications</h2>
             <ul>
-              <li>THORSMAN, Sweden ISO 9001:2015 No. IQS/1311/2013, accrediting all products design.</li>
+              <li>THORSMAN, Sweden ISO 9001:2015 No. IQS/1311/2013, accrediting all product design.</li>
               <li>THORSMEX, S.A. DE C.V. ISO 9001:2015</li>
               <li>SEMKO & NEMKO, Norway and Sweden, for all conduit accessories</li>
               <li>Product certification by the Canadian Standards Association. No 1162395, year 2009</li>
-              <li>The conduit systems exceeded the accredited tests with CSA International certification, which regulates products for the Electric Sector and Construction Industry</li>
+              <li>The conduit systems have surpassed accredited tests with CSA international certification ensuring compliance with regulation for the Electrical Sector and Construction Industry</li>
             </ul>
           </div>
         </div>
