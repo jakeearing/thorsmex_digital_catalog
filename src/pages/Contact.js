@@ -10,7 +10,7 @@ export default function Contact() {
         <h1>Contact Us</h1>
         <div className="contact-text">
           <h3>For any inquiries about our products in English or Spanish, let us know by
-            submitting your information! Our committed team will reach out to you
+            submitting your information below! Our committed team will reach out to you
             within 24 hours!</h3>
         </div>
         <div className="product-contact">
