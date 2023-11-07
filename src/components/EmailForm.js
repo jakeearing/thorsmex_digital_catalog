@@ -3,7 +3,7 @@ import '../assets/styles/email-form.css';
 
 export default function ClaimForm() {
     const [zipCode, setZipCode] = useState('');
-    const [inquiryType, setInquiryType] = useState('Other');
+    const [inquiryType, setInquiryType] = useState('Purchase');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 

@@ -11,6 +11,10 @@
   margin-top: 0px;
 }
 
+.about-container p {
+  margin-bottom: 10px;
+}
+
 .about-content-container {
   height: auto;
   display: flex;
@@ -53,22 +57,22 @@
 @media (max-width: 1000px) {
   .about-content-container {
     flex-direction: column;
+    height: fit-content;
   }
 
   .about-container h2 {
-    margin-top: 24px;
+    margin: 10px 0;
   }
 
-  .left-column-image,
-  .right-column-image {
-    flex: 1;
+  .about-container p {
+    margin-bottom: 10px;
   }
 
   .left-column-text,
   .right-column-text {
-    flex: 1;
-    height: auto;
+    flex: none;
     margin-bottom: 40px;
+    min-height: 50vh;
   }
 
   .about-content-container:nth-child(even) .left-column-text,
