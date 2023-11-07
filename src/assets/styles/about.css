@@ -7,12 +7,16 @@
 
 .about-container h2 {
   font-weight: 700;
-  font-size: 3vh;
-  margin-top: 0px;
+  font-size: 4vh;
+  margin: 0;
 }
 
 .about-container p {
   margin-bottom: 10px;
+}
+
+.about-container ul {
+  padding-left: 15px;
 }
 
 .about-content-container {
@@ -61,11 +65,15 @@
   }
 
   .about-container h2 {
-    margin: 10px 0;
+    margin: 40px 0 20px 0;
   }
 
   .about-container p {
     margin-bottom: 10px;
+  }
+
+  .about-container ul {
+    padding-left: 40px;
   }
 
   .left-column-text,
@@ -90,6 +98,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
 }

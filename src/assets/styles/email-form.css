@@ -50,6 +50,10 @@
     width: 100%;
   }
 
+  .form-container .form-row {
+    margin-bottom: 10px;
+  }
+
   .form-container .form-container label {
     font-size: 1.6vh;
   }
