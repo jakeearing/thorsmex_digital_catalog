@@ -3,6 +3,10 @@
   display: inline-block;
 }
 
+.product-contact p {
+  margin: 8px 0;
+}
+
 .product-contact a:hover {
   color: #0c4d94;
 }
