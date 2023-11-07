@@ -16,15 +16,8 @@
   font-weight: 400;
 }
 
-.contact-content-container {
-  text-align: left;
-  width: fit-content;
-  text-align: center;
-}
-
 .contact-content-container h1,
 .contact-content-container .contact-text {
-  width: fit-content;
   margin: 0 auto;
 }
 
@@ -52,20 +45,6 @@
 
 .contact-page-font-size {
   font-size: 2vh;
-}
-
-.contact-content-container ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.contact-content-container ul li {
-  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
