@@ -244,7 +244,7 @@
 
 .product-square img {
   max-width: 66%;
-  max-height: 66%;
+  max-height: 178px;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -397,7 +397,7 @@
 
   .product-square img {
     max-width: 75%;
-    max-height: 75%;
+    max-height: 115px;
   }
 
   .search-bar #search {
