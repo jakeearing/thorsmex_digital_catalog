@@ -154,8 +154,8 @@ app.post('/api/send-email', (req, res) => {
 
   // Create a Nodemailer transporter with SMTP configuration
   const transporter = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
-    port: 465,
+    host: process.env.EMAIL_SERVER_HOST,
+    port: process.env.EMAIL_SERVER_PORT,
     secure: true,
     auth: {
       user: process.env.EMAIL_USER,
