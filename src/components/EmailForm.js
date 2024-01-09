@@ -54,6 +54,7 @@ export default function ClaimForm() {
         })
             .then((response) => {
                 if (response.ok) {
+                    alert(content.formStatus.success);
                     console.log('Email sent!');
                     // Clear the form after successful submission
                     setClaimType('');
@@ -61,10 +62,9 @@ export default function ClaimForm() {
                     setZipCode('');
                     // Reset the form fields
                     event.target.reset();
-                    alert(content.formStatus.success);
                 } else {
-                    console.log('Error sending email', error);
                     alert(content.formStatus.fail);
+                    console.log('Error sending email', error);
                 }
             })
             .catch((error) => {
