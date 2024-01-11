@@ -307,7 +307,7 @@ export default function Product({ products, images, discounts }) {
                 Pallet Dimensions: {height_pallet ? `${Number(height_pallet["$numberDecimal"]).toFixed(2)} x ${Number(width_pallet["$numberDecimal"]).toFixed(2)} x ${Number(length_pallet["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
               <li>Pallet Weight: {weight_pallet ? `${Number(weight_pallet["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
-              <li>Barcode Number: {gtin}</li>
+              {/*<li>Barcode Number: {gtin}</li>*/}
             </ul>
           )}
         </div>
