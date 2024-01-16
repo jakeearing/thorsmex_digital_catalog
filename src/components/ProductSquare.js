@@ -21,12 +21,14 @@ export default function ProductSquare({ product, images, isChecked, handleChange
         <p>{modelNumber}</p>
         {
           <p>
-            <b>Wholesale:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
+            <b>List Price:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
           </p>
         }
+        {/*
         <p>
           <b>List Price:</b> ${Number(msrp["$numberDecimal"]).toFixed(2)}
         </p>
+        */}
       </Link>
       <input
         type="checkbox"

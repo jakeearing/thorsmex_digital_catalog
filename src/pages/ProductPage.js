@@ -86,9 +86,9 @@ export default function Product({ products, images, discounts }) {
   };
 
   const { name, gtin, description, details, specs, product_sheet, price_indv,
-    msrp, count_indv, count_box, count_pallet, height_indv, width_indv, 
-    length_indv, weight_indv, height_box, width_box, length_box, weight_box, 
-    height_pallet, width_pallet, length_pallet, weight_pallet, packaging_type, 
+    msrp, count_indv, count_box, count_pallet, height_indv, width_indv,
+    length_indv, weight_indv, height_box, width_box, length_box, weight_box,
+    height_pallet, width_pallet, length_pallet, weight_pallet, packaging_type,
     english_packaging } = product || {};
 
   // Create a state variable to track when the price range is clicked
@@ -191,13 +191,14 @@ export default function Product({ products, images, discounts }) {
             <div className="product-details">
               {
                 <p>
-                  <b>Wholesale Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
+                  <b>List Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
                 </p>
               }
+              {/*
               <p>
                 <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
-
+              */}
               <p>
                 <b>Units:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
@@ -290,7 +291,7 @@ export default function Product({ products, images, discounts }) {
           {activeTab === 'more-information' && (
             <ul>
               <li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li>
-              <li>Box Unit Count: {`${count_box * count_indv} pieces`}</li>    
+              <li>Box Unit Count: {`${count_box * count_indv} pieces`}</li>
               <li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li>
               <li>Pallet Unit Count: {`${count_pallet * count_box * count_indv} pieces`}</li>
               <li>Packaging Type: {packaging_type}</li>
