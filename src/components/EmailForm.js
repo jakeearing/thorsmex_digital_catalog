@@ -54,21 +54,22 @@ export default function ClaimForm() {
         })
             .then((response) => {
                 if (response.ok) {
-                    alert(content.formStatus.success);
+                    alert("Form submitted successfully! We will reach out to you within 24 hours!");
                     console.log('Email sent!');
                     // Clear the form after successful submission
-                    setClaimType('');
-                    setClaimStatus('');
                     setZipCode('');
+                    setInquiryType('');
+                    setSubject('');
+                    setMessage('');
                     // Reset the form fields
                     event.target.reset();
                 } else {
-                    alert(content.formStatus.fail);
+                    alert("Error submitting form.");
                     console.log('Error sending email', error);
                 }
             })
             .catch((error) => {
-                console.log('Server responded with an error:', response.status);
+                console.log('Server responded with an error:', error);
             });
     };
 
