@@ -19,13 +19,16 @@ export default function ProductSquare({ product, images, isChecked, handleChange
         <img src={productImage} alt={name} />
         <h2>{name}</h2>
         <p>{modelNumber}</p>
-        {
+        {/* {
           <p>
             <b>Wholesale:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
           </p>
         }
         <p>
           <b>List Price:</b> ${Number(msrp["$numberDecimal"]).toFixed(2)}
+        </p> */}
+        <p>
+          <b>Price available upon request</b>
         </p>
       </Link>
       <input
