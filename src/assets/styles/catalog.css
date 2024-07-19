@@ -66,7 +66,6 @@
 
 .sidebar .sidebar-toggle-button {
   position: absolute;
-  margin-top: 2px;
   right: 7px;
   border: none;
   background-color: transparent;
@@ -244,7 +243,7 @@
 
 .product-square img {
   max-width: 66%;
-  max-height: 66%;
+  max-height: 178px;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -397,7 +396,7 @@
 
   .product-square img {
     max-width: 75%;
-    max-height: 75%;
+    max-height: 115px;
   }
 
   .search-bar #search {

@@ -54,14 +54,22 @@ export default function ClaimForm() {
         })
             .then((response) => {
                 if (response.ok) {
-                    alert('Thank you for contacting Charlotte Imports. We\'ll get back to you within 24 hours!');
+                    alert("Form submitted successfully! We will reach out to you within 24 hours!");
                     console.log('Email sent!');
+                    // Clear the form after successful submission
+                    setZipCode('');
+                    setInquiryType('');
+                    setSubject('');
+                    setMessage('');
+                    // Reset the form fields
+                    event.target.reset();
                 } else {
-                    console.log('Error sending email');
+                    alert("Error submitting form.");
+                    console.log('Error sending email', error);
                 }
             })
             .catch((error) => {
-                console.log('Error sending email', error);
+                console.log('Server responded with an error:', error);
             });
     };
 

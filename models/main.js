@@ -154,13 +154,16 @@ app.post('/api/send-email', (req, res) => {
 
   // Create a Nodemailer transporter with SMTP configuration
   const transporter = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
-    port: 465,
-    secure: true,
+    host: process.env.EMAIL_SERVER_HOST,
+    port: process.env.EMAIL_SERVER_PORT,
+    secure: false,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASSWORD,
     },
+    tls: {
+      rejectUnauthorized: false,
+    }
   });
 
   // Construct the email message based on the form type and set the email subject
