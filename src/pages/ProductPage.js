@@ -219,14 +219,14 @@ export default function Product({ products, images, discounts }) {
               ) : (
                 <p>No Product Sheet Available</p>
               )}
-              <p className="link-container">
+              {/* <p className="link-container">
                 <b onClick={() => {
                   togglePriceRange('Price Discounts by Volume');
                   toggleDropDown();
                 }}>
                   {isDropDownOpen ? 'Discounts based on purchase volume' : 'Click to view discounts by volume'}
                 </b>
-              </p>
+              </p> */}
               {selectedRange === 'Price Discounts by Volume' && (
                 <div className="indent">
                   {discounts.map((priceItem) => (
