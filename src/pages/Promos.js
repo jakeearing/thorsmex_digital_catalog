@@ -15,9 +15,9 @@ export default function Promos({ discounts }) {
                     <p>Note: One discount per order, discounts can not be stacked with per-item volume based discounts or any other discounts</p>
                 </div>
                 {/* <VolumeDiscounts discounts={discounts} /> */}
-                <div className="promotions-text">
+                {/* <div className="promotions-text">
                     <p>More Promotions</p>
-                </div>
+                </div> */}
                 <div className="promotions-links">
                     <div>
                         <a href={flyer1} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 1">
