@@ -14,7 +14,7 @@ export default function Promos({ discounts }) {
                     <p>We offer discounts based on total amount spent for every order!</p>
                     <p>Note: One discount per order, discounts can not be stacked with per-item volume based discounts or any other discounts</p>
                 </div>
-                <VolumeDiscounts discounts={discounts} />
+                {/* <VolumeDiscounts discounts={discounts} /> */}
                 <div className="promotions-text">
                     <p>More Promotions</p>
                 </div>

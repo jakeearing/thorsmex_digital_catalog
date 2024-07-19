@@ -31,7 +31,6 @@ export default function ProductSquare({ product, images, isChecked, handleChange
         <p>
           <b>Price available upon request</b>
         </p>
-        */}
       </Link>
       <input
         type="checkbox"
