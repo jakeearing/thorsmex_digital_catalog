@@ -24,13 +24,11 @@ export default function ProductSquare({ product, images, isChecked, handleChange
             <b>List Price:</b> ${Number(price_indv["$numberDecimal"]).toFixed(2)}
           </p>
         }
-        {/*
-        <p>
-          <b>List Price:</b> ${Number(msrp["$numberDecimal"]).toFixed(2)}
-        </p> */}
-        <p>
-          <b>Price available upon request</b>
-        </p>
+          */}
+        {
+          <p>
+            <b>List Price:</b> ${Number(msrp["$numberDecimal"]).toFixed(2)}
+          </p>}
       </Link>
       <input
         type="checkbox"
