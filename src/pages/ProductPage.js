@@ -192,12 +192,10 @@ export default function Product({ products, images, discounts }) {
               {/* <p>
                 <b>Wholesale Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
               </p>
-              <p>
-                <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
-              </p> */}
-              <p>
-                <b>Price available upon request</b>
-              </p>
+               */
+                <p>
+                  <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
+                </p>}
               <p>
                 <b>Units:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
@@ -289,9 +287,9 @@ export default function Product({ products, images, discounts }) {
 
           {activeTab === 'more-information' && (
             <ul>
-              {/* <li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li> */}
+              {<li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li>}
               <li>Box Unit Count: {`${count_box * count_indv} pieces`}</li>
-              {/* <li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li> */}
+              {<li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li>}
               <li>Pallet Unit Count: {`${count_pallet * count_box * count_indv} pieces`}</li>
               <li>Packaging Type: {packaging_type}</li>
               <li>English Packaging: {english_packaging}</li>
@@ -307,7 +305,7 @@ export default function Product({ products, images, discounts }) {
                 Pallet Dimensions: {height_pallet ? `${Number(height_pallet["$numberDecimal"]).toFixed(2)} x ${Number(width_pallet["$numberDecimal"]).toFixed(2)} x ${Number(length_pallet["$numberDecimal"]).toFixed(2)} inches` : '-'}
               </li>
               <li>Pallet Weight: {weight_pallet ? `${Number(weight_pallet["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
-              {/*<li>Barcode Number: {gtin}</li>*/}
+              {<li>Barcode Number: {gtin}</li>}
             </ul>
           )}
         </div>
