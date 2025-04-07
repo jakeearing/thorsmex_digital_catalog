@@ -270,7 +270,7 @@ export default function Product({ products, images, discounts }) {
           {activeTab === 'details' && (
             <ul>
               {details &&
-                details.split(';').map((item, index) => (
+                details.split('|').map((item, index) => (
                   <li key={index}>{item.trim()}</li>
                 ))}
             </ul>
@@ -279,7 +279,7 @@ export default function Product({ products, images, discounts }) {
           {activeTab === 'item-specifications' && (
             <ul>
               {specs &&
-                specs.split(';').map((item, index) => (
+                specs.split('|').map((item, index) => (
                   <li key={index}>{item.trim()}</li>
                 ))}
             </ul>
