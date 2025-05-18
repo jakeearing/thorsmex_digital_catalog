@@ -190,18 +190,18 @@ export default function Product({ products, images, discounts }) {
           <div className="details-contact">
             <div className="product-details">
               {/* <p>
-                <b>Wholesale Price:</b> {price_indv ? `$${Number(price_indv["$numberDecimal"]).toFixed(2)}` : '-'}
+                <b>Wholesale Price:</b> {price_indv ? `$${price_indv}` : '-'}
               </p>
                */
                 <p>
-                  <b>List Price:</b> {msrp ? `$${Number(msrp["$numberDecimal"]).toFixed(2)}` : '-'}
+                  <b>List Price:</b> {msrp ? `$${msrp}` : '-'}
                 </p>}
               <p>
                 <b>Units:</b> {count_indv ? `${count_indv}` : '-'}
               </p>
               {/*
               <p>
-                <b>Unit Cost:</b> {unit_cost ? `$${Number(unit_cost["$numberDecimal"]).toFixed(2)}` : '-'}
+                <b>Unit Cost:</b> {unit_cost ? `$${unit_cost}` : '-'}
               </p>
               */}
               {product_sheet && product_sheet.endsWith('.pdf') ? (
@@ -287,24 +287,24 @@ export default function Product({ products, images, discounts }) {
 
           {activeTab === 'more-information' && (
             <ul>
-              {<li>Box List Price: ${(Number(msrp["$numberDecimal"]) * count_box).toFixed(2)}</li>}
+              {<li>Box List Price: ${(msrp * count_box).toFixed(2)}</li>}
               <li>Box Unit Count: {`${count_box * count_indv} pieces`}</li>
-              {<li>Pallet List Price: ${(Number(msrp["$numberDecimal"]) * count_box * count_pallet).toFixed(2)}</li>}
+              {<li>Pallet List Price: ${(msrp * count_box * count_pallet).toFixed(2)}</li>}
               <li>Pallet Unit Count: {`${count_pallet * count_box * count_indv} pieces`}</li>
               <li>Packaging Type: {packaging_type}</li>
               <li>English Packaging: {english_packaging}</li>
               <li>
-                Product Packaging Dimensions: {height_indv ? `${Number(height_indv["$numberDecimal"]).toFixed(2)} x ${Number(width_indv["$numberDecimal"]).toFixed(2)} x ${Number(length_indv["$numberDecimal"]).toFixed(2)} inches` : '-'}
+                Product Packaging Dimensions: {height_indv ? `${height_indv} x ${width_indv} x ${length_indv} inches` : '-'}
               </li>
-              <li>Product Weight: {weight_indv ? `${Number(weight_indv["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
+              <li>Product Weight: {weight_indv ? `${weight_indv} pounds` : '-'}</li>
               <li>
-                Box Dimensions: {height_box ? `${Number(height_box["$numberDecimal"]).toFixed(2)} x ${Number(width_box["$numberDecimal"]).toFixed(2)} x ${Number(length_box["$numberDecimal"]).toFixed(2)} inches` : '-'}
+                Box Dimensions: {height_box ? `${height_box} x ${width_box} x ${length_box} inches` : '-'}
               </li>
-              <li>Box Weight: {weight_box ? `${Number(weight_box["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
+              <li>Box Weight: {weight_box ? `${weight_box} pounds` : '-'}</li>
               <li>
-                Pallet Dimensions: {height_pallet ? `${Number(height_pallet["$numberDecimal"]).toFixed(2)} x ${Number(width_pallet["$numberDecimal"]).toFixed(2)} x ${Number(length_pallet["$numberDecimal"]).toFixed(2)} inches` : '-'}
+                Pallet Dimensions: {height_pallet ? `${height_pallet} x ${width_pallet} x ${length_pallet} inches` : '-'}
               </li>
-              <li>Pallet Weight: {weight_pallet ? `${Number(weight_pallet["$numberDecimal"]).toFixed(2)} pounds` : '-'}</li>
+              <li>Pallet Weight: {weight_pallet ? `${weight_pallet} pounds` : '-'}</li>
               {<li>Barcode Number: {gtin}</li>}
             </ul>
           )}

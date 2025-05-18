@@ -1,77 +1,27 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const fs = require('fs');
 const csv = require('csv-parser');
+const iconv = require('iconv-lite');
 const nodemailer = require('nodemailer');
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
-
-// Middleware to parse JSON request bodies
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch((error) => {
-    console.error('Error connecting to MongoDB:', error);
-  });
+let products = [];
 
-const productSchema = new mongoose.Schema({
-  modelNumber: { type: String, required: true },
-  name: { type: String, required: true },
-  category: { type: String, required: true },
-  subCategory: { type: String, required: true },
-  description: { type: String },
-  details: { type: String },
-  specs: { type: String },
-  product_sheet: { type: String },
-  msrp: { type: mongoose.Decimal128, required: true },
-  price_indv: { type: mongoose.Decimal128, required: true },
-  count_indv: { type: Number },
-  price_box: { type: mongoose.Decimal128, required: true },
-  count_box: { type: Number },
-  price_pallet: { type: mongoose.Decimal128, required: true },
-  count_pallet: { type: Number },
-  unit_cost: { type: mongoose.Decimal128 },
-  height_indv: { type: mongoose.Decimal128 },
-  width_indv: { type: mongoose.Decimal128 },
-  length_indv: { type: mongoose.Decimal128 },
-  weight_indv: { type: mongoose.Decimal128 },
-  height_box: { type: mongoose.Decimal128 },
-  width_box: { type: mongoose.Decimal128 },
-  length_box: { type: mongoose.Decimal128 },
-  weight_box: { type: mongoose.Decimal128 },
-  height_pallet: { type: mongoose.Decimal128 },
-  width_pallet: { type: mongoose.Decimal128 },
-  length_pallet: { type: mongoose.Decimal128 },
-  weight_pallet: { type: mongoose.Decimal128 },
-  packaging_type: { type: String },
-  english_packaging: { type: String },
-  gtin: { type: Number, required: true },
-});
-
-// Create the 'Product' model using the schema
-const Product = mongoose.model('Product', productSchema, 'products');
-
-// Import data from CSV
-app.get('/api/import', async (req, res) => {
-  try {
-    // Set CSV file path and read CSV file
-    const csvFilePath = './products.csv';
-    const products = [];
-
+function loadProductsFromCSV(csvFilePath) {
+  return new Promise((resolve, reject) => {
+    const results = [];
     fs.createReadStream(csvFilePath)
+      .pipe(iconv.decodeStream('utf8'))
       .pipe(csv())
       .on('data', (row) => {
-        // Convert values to appropriate types
-        const product = new Product({
+        results.push({
           modelNumber: row.model_number,
           name: row.name,
           category: row.category,
@@ -80,72 +30,58 @@ app.get('/api/import', async (req, res) => {
           details: row.details,
           specs: row.specs,
           product_sheet: row.product_sheet,
-          msrp: mongoose.Types.Decimal128.fromString(row.msrp),
-          price_indv: mongoose.Types.Decimal128.fromString(row.price_indv),
+          msrp: parseFloat(row.msrp).toFixed(2),
+          price_indv: parseFloat(row.price_indv).toFixed(2),
           count_indv: Number(row.count_indv),
-          price_box: mongoose.Types.Decimal128.fromString(row.price_box),
+          price_box: parseFloat(row.price_box).toFixed(2),
           count_box: Number(row.count_box),
-          price_pallet: mongoose.Types.Decimal128.fromString(row.price_pallet),
+          price_pallet: parseFloat(row.price_pallet).toFixed(2),
           count_pallet: Number(row.count_pallet),
-          unit_cost: mongoose.Types.Decimal128.fromString(row.unit_cost),
-          height_indv: mongoose.Types.Decimal128.fromString(row.height_indv),
-          width_indv: mongoose.Types.Decimal128.fromString(row.width_indv),
-          length_indv: mongoose.Types.Decimal128.fromString(row.length_indv),
-          weight_indv: mongoose.Types.Decimal128.fromString(row.weight_indv),
-          height_box: mongoose.Types.Decimal128.fromString(row.height_box),
-          width_box: mongoose.Types.Decimal128.fromString(row.width_box),
-          length_box: mongoose.Types.Decimal128.fromString(row.length_box),
-          weight_box: mongoose.Types.Decimal128.fromString(row.weight_box),
-          height_pallet: mongoose.Types.Decimal128.fromString(row.height_pallet),
-          width_pallet: mongoose.Types.Decimal128.fromString(row.width_pallet),
-          length_pallet: mongoose.Types.Decimal128.fromString(row.length_pallet),
-          weight_pallet: mongoose.Types.Decimal128.fromString(row.weight_pallet),
+          unit_cost: parseFloat(row.unit_cost).toFixed(2),
+          height_indv: parseFloat(row.height_indv).toFixed(2),
+          width_indv: parseFloat(row.width_indv).toFixed(2),
+          length_indv: parseFloat(row.length_indv).toFixed(2),
+          weight_indv: parseFloat(row.weight_indv).toFixed(2),
+          height_box: parseFloat(row.height_box).toFixed(2),
+          width_box: parseFloat(row.width_box).toFixed(2),
+          length_box: parseFloat(row.length_box).toFixed(2),
+          weight_box: parseFloat(row.weight_box).toFixed(2),
+          height_pallet: parseFloat(row.height_pallet).toFixed(2),
+          width_pallet: parseFloat(row.width_pallet).toFixed(2),
+          length_pallet: parseFloat(row.length_pallet).toFixed(2),
+          weight_pallet: parseFloat(row.weight_pallet).toFixed(2),
           packaging_type: row.packaging_type,
           english_packaging: row.english_packaging,
-          gtin: Number(row.gtin),
+          gtin: Number(row.gtin).toFixed(0),
         });
-
-        products.push(product);
       })
-      .on('end', async () => {
-        // Delete existing products
-        await Product.deleteMany();
+      .on('end', () => resolve(results))
+      .on('error', reject);
+  });
+}
 
-        // Insert data into MongoDB
-        await Product.insertMany(products);
+// Load CSV at startup
+const csvPath = './products.csv';
+loadProductsFromCSV(csvPath)
+  .then((data) => {
+    products = data;
+    console.log(`Loaded ${products.length} products from CSV.`);
+  })
+  .catch((err) => {
+    console.error('Failed to load products:', err);
+  });
 
-        res.send('Data imported successfully');
-      });
-  } catch (error) {
-    console.error('Error importing data:', error);
-    res.status(500).send('Error importing data');
-  }
+app.get('/api/products', (req, res) => {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.json(products);
 });
 
-// Get all products
-app.get('/api/products', async (req, res) => {
-  try {
-    const products = await Product.find();
-    res.json(products);
-  } catch (error) {
-    console.error('Error getting products:', error);
-    res.status(500).send('Error getting products');
+app.get('/api/products/:model_number', (req, res) => {
+  const product = products.find(p => p.modelNumber === req.params.model_number);
+  if (!product) {
+    return res.status(404).json({ error: 'Product not found' });
   }
-});
-
-// Get a product by model number
-app.get('/api/products/:model_number', async (req, res) => {
-  try {
-    const product = await Product.findOne({ modelNumber: req.params.model_number });
-    if (!product) {
-      res.status(404).json({ error: 'Product not found' });
-    } else {
-      res.json(product);
-    }
-  } catch (error) {
-    console.error('Error getting product:', error);
-    res.status(500).send('Error getting product');
-  }
+  res.json(product);
 });
 
 // Endpoint to handle form submission

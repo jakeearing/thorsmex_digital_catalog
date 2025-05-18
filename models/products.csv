@@ -1,9 +1,9 @@
-model_number,name,category,sub_category,description,details,specs,product_sheet,msrp,price_indv,price_box,price_pallet,unit_cost,count_indv,height_indv,width_indv,length_indv,weight_indv,count_box,height_box,width_box,length_box,weight_box,count_pallet,height_pallet,width_pallet,length_pallet,weight_pallet,packaging_type,english_packaging,gtin
+﻿model_number,name,category,sub_category,description,details,specs,product_sheet,msrp,price_indv,price_box,price_pallet,unit_cost,count_indv,height_indv,width_indv,length_indv,weight_indv,count_box,height_box,width_box,length_box,weight_box,count_pallet,height_pallet,width_pallet,length_pallet,weight_pallet,packaging_type,english_packaging,gtin
 1101-01100,"Concrete Anchor 7/32"" (100 Pack)",Hardware,"Anchors, Screws & Kits",Thorsmex anchors to fix objects with screws on concrete walls and ceilings or solid surfaces.,"It performs a double expansion, that is, it opens towards the four cardinal points|
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted|
 It has a neck that prevents the plug from sinking, even when the perforation is deeper|
 Has a guide that allows the screw to be inserted correctly|
-Free of burrs that prevent double expansion, test with 8 x 3/4"" (19.1mm) screw|
+Free of burrs that prevent double expansion, test with 8 x ¾"" (19.1mm) screw|
 Operating temperatures -50°C to +80°C|
 Recommended load: 40 kg in concrete 30 kg in partition|
 Resistance to extraction: 15 Kg in concrete","Measures 3/16""|
@@ -15,7 +15,7 @@ Resistant to impact and extraction",Thorquetes_EN.pdf,7.13,1.29,47.5,3797.4,0.01
 It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted|
 It has a neck that prevents the plug from sinking, even when the perforation is deeper|
 Has a guide that allows the screw to be inserted correctly|
-Free of burrs that prevent double expansion, test with screw No. 8 x 3/4"" (19.1mm)|
+Free of burrs that prevent double expansion, test with screw No. 8 x ¾"" (19.1mm)|
 Operating temperatures -50°C to +80°C|
 Recommended load: 40 kg in concrete / 30 kg in partition|
 Resistance to extraction: 15 Kg in concrete","White thorn color, natural thorn|
@@ -87,7 +87,7 @@ Resistant to impact and extraction",Thorquetes_EN.pdf,5.17,1.12,71.9,5752.9,0.08
  It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted|
  It has a neck that prevents the plug from sinking, even when the perforation is deeper|
 Has a guide that allows the screw to be inserted correctly|
-Free of burrs that prevent double expansion, test with a 10 x 1 3/4"" (44.5mm) screw|
+Free of burrs that prevent double expansion, test with a 10 x 1 ¾"" (44.5mm) screw|
 Operating temperatures -50°C to +80°C|
 Recommended load: 176.24 kg in concrete 80 kg in partition|
 Resistance to extraction: 80 Kg in concrete 40 Kg in partition","Brown color| Made with high density PE|
@@ -99,7 +99,7 @@ Box with 100 pieces, Pouch with 20 pieces, bag with 1000 pieces",Thorquetes_EN.p
  It consists of 2 wings that do not allow the plug to rotate inside the hole when the screw is inserted|
  It has a neck that prevents the plug from sinking, even when the perforation is deeper|
 Has a guide that allows the screw to be inserted correctly|
-Free of burrs that prevent double expansion, test with a 10 x 1 3/4"" (44.5mm) screw|
+Free of burrs that prevent double expansion, test with a 10 x 1 ¾"" (44.5mm) screw|
 Operating temperatures -50°C to +80°C|
 Recommended load: 176.24 kg in concrete 80 kg in partition|
 Resistance to extraction: 80 Kg in concrete 40 Kg in partition","Brown color| Made with high density PE|
@@ -127,7 +127,7 @@ Made with high density PE|
 Flexible|
 Impact and pull resistant|
 nylon dowels",Thorquetes_EN.pdf,7.17,2.25,68.4,1641.8,0.02,100,1.97,2.95,10.43,0.61,45,15.35,11.42,18.9,27.65,24,46.06,59.06,39.37,678.5,Box,Yes,17501509901909
-1206-01100,Dry Wall Plug With Nail 10x20 (100 Pack),Hardware,"Anchors, Screws & Kits","Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: 3/4"" (20mm)|
+1206-01100,Dry Wall Plug With Nail 10x20 (100 Pack),Hardware,"Anchors, Screws & Kits","Thorsman anchors for nailing into plaster, lightweight concrete and brick surfaces.","Recommended drilling: ¾"" (20mm)|
 Recommended nail: (1.9 x 19.1mm )| Operating temperatures -10°C to +70°C","High impact polystyrene|
 Color clavithor TCP0- white|
 Nail made of galvanized steel, resistant to oxidation|
@@ -180,9 +180,9 @@ Made with fiber-free Nylon 6 with UV protection|
 High impact resistance|
 Box with 100 pieces|
 Pouch with 6 pieces",Fijathodo_EN.pdf,4.38,0.74,78.7,6294.1,0.1,6,4.37,1.02,1.81,0.04,138,9.84,8.27,11.42,5.92,80,39.37,59.06,39.37,488.51,Pouch,Available by request with purchase,17501509906010
-2101-04100,Cable Clip with Screw 9mm (100 Pack),Electrical,Cable Clips & Staples,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP0 plug and No. 8 x 3/4"" screw","For proper fixation, use a Thorsmex screw and bolt|
+2101-04100,Cable Clip with Screw 9mm (100 Pack),Electrical,Cable Clips & Staples,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP0 plug and No. 8 x ¾"" screw","For proper fixation, use a Thorsmex screw and bolt|
 Resistance to corrosion, humidity and extreme climates|
-Make fixing with TP0 plug, screw No. 8 x 3/4""|
+Make fixing with TP0 plug, screw No. 8 x ¾""|
 Operating temperatures: -10°C to +120°C","Gray|
 Made with Polypropylene
 Flexible|
@@ -209,7 +209,7 @@ Box with 100 pieces|
 Pouch with 20 pieces",Sujethor TK_EN.pdf,4.14,1.16,16.4,981.4,0.01,60,4.13,0.79,5.71,0.16,20,8.27,14.57,5.12,3.11,60,33.07,59.06,39.37,201.51,Bag,Available by request with purchase,17501509907765
 2103-04100,Cable Clip with Screw 12.8mm (100 Pack),Electrical,Cable Clips & Staples,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and No. 8 x 1"" screw","For proper fixation, use a Thorsmex screw and bolt|
 Resistance to corrosion, humidity and extreme climates|
-Carry out fixing with plug TP1X, screw No. 8Ã—1"" (25.4mm)|
+Carry out fixing with plug TP1X, screw No. 8Ãƒ€”1"" (25.4mm)|
 Operating temperatures: -10°C to +120°C","Gray|
 Made with Polypropylene|
 Flexible|
@@ -217,7 +217,7 @@ Burr-free hole|
 Box with 100 pieces",Sujethor TK_EN.pdf,6.73,1.34,70.4,4222,0.01,100,4.33,1.97,2.76,0.22,60,13.78,8.27,16.54,13.47,60,55.12,59.06,39.37,823.21,Box,Yes,17501509902081
 2103-07240,Cable Clip with Screw 12.8mm (36 Pack),Hardware,"Anchors, Screws & Kits","Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP1X anchor and No. 8 x 1"" screw","For proper fixation, use a Thorsmex screw and bolt|
 Resistance to corrosion, humidity and extreme climates|
-Carry out fixing with plug TP1X, screw No. 8Ã—1"" (25.4mm)|
+Carry out fixing with plug TP1X, screw No. 8Ãƒ€”1"" (25.4mm)|
 Operating temperatures: -10°C to +120°C","Gray|
 Made with Polypropylene|
 Flexible|
@@ -231,16 +231,16 @@ Made with Polypropylene|
 Flexible|
 Burr-free hole|
 Box with 100 pieces",Sujethor TK_EN.pdf,5.98,1.28,66.9,1604.8,0.01,100,5.12,2.76,3.54,0.36,60,15.35,11.42,18.9,21.72,24,46.06,59.06,39.37,536.17,Box,Yes,17501509902098
-2104-07240,Cable Clip with Screw 13.3mm Kit (24 Pack),Hardware,"Anchors, Screws & Kits","Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and No. 10 Ã— 1 1/2"" (38mm) screw","For proper fixation, use a Thorsmex screw and bolt|
+2104-07240,Cable Clip with Screw 13.3mm Kit (24 Pack),Hardware,"Anchors, Screws & Kits","Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and No. 10 Ãƒ€” 1 1/2"" (38mm) screw","For proper fixation, use a Thorsmex screw and bolt|
 Resistance to corrosion, humidity and extreme climates|
-Carry out fixing with TP2X plug, screw No. 10Ã—1 1/2"" (38mm)|
+Carry out fixing with TP2X plug, screw No. 10Ãƒ€”1 1/2"" (38mm)|
 Operating temperatures: -10°C to +120°C","
 Gray| Made with Polypropylene|
 Flexible|
 Burr-free hole|
 Box with 100 pieces|
 Pouch with 8 pieces",Sujethor TK_EN.pdf,2.27,0.86,9.1,548.7,0.03,24,4.13,0.79,5.71,0.15,15,8.27,14.57,5.12,2.18,60,33.07,59.06,39.37,145.95,Bag,Available by request with purchase,17501509907789
-2105-04100,Cable Clip with Screw 15.2mm (50 Pack),Electrical,Cable Clips & Staples,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and No. 10 Ã— 1 1/2"" (38mm) screw","For proper fixation, use a Thorsmex screw and bolt|
+2105-04100,Cable Clip with Screw 15.2mm (50 Pack),Electrical,Cable Clips & Staples,"Clamp to hold round conductors or pipes in solid concrete walls or ceilings, ideal for interiors and exteriors. Gray. Made with polypropylene, it is flexible, burr-free, resistant to impact, corrosion, humidity and temperatures from -10°C to 120°C. Requires TP2X anchor and No. 10 Ãƒ€” 1 1/2"" (38mm) screw","For proper fixation, use a Thorsmex screw and bolt|
 Resistance to corrosion, humidity and extreme climates|
 Carry out fixing with TP2X plug, screw No. 10 x 1 1/2"" (38mm)|
 Operating temperatures: -10°C to +120°C","Gray|
@@ -308,7 +308,7 @@ Pouch with 20 pieces",Sujethor TC redondos TH _EN.pdf,4.38,0.67,19.9,2144.8,0.03
 3102-00100,Cable Clip with Nail 20mm (100 Pack),Electrical,Cable Clips & Staples,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors and prevent them from coming loose. It is installed to the wall by means of a 1.2mm x 20mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","
 Resistance to corrosion, humidity and extreme climates|
 Operating temperatures: -10°C to +120°C|
-It is installed directly to the wall by means of a 3/64"" (1.2mm) x 3/4"" (20mm) nail.","Transparent color|
+It is installed directly to the wall by means of a 3/64"" (1.2mm) x ¾"" (20mm) nail.","Transparent color|
 Made with Polypropylene| flexible|
 The nail is made of galvanized steel, resistant to oxidation|
 Nail hardness 48 HRc Tol. -1 HRc|
@@ -317,7 +317,7 @@ Pouch with 20 pieces",Sujethor TC redondos TH _EN.pdf,6.39,1.73,125.2,10015.4,0.
 3102-04000,Cable Clip with Nail 10mm (20 Pack),Electrical,Cable Clips & Staples,"Thorsmex brand staple with integrated nail to fix round conductors to walls or ceilings indoors and outdoors and prevent them from coming loose. It is installed to the wall by means of a 1.2mm x 20mm galvanized steel nail. Transparent color staple. Resistance to impact, corrosion, humidity and temperatures from -10°C to 120°C.","
 Resistance to corrosion, humidity and extreme climates|
 Operating temperatures: -10°C to +120°C|
-It is installed directly to the wall by means of a 3/64"" (1.2mm) x 3/4"" (20mm) nail.","Transparent color|
+It is installed directly to the wall by means of a 3/64"" (1.2mm) x ¾"" (20mm) nail.","Transparent color|
 Made with Polypropylene| flexible|
 The nail is made of galvanized steel, resistant to oxidation|
 Nail hardness 48 HRc Tol. -1 HRc|
@@ -406,54 +406,54 @@ The nail is made of galvanized steel, resistant to oxidation|
 Nail hardness 48 HRc Tol. -1 HRc|
 Box with 100 pieces:
 Pouch with 20 pieces",Sujethor TC redondos TH _EN.pdf,3.33,1.58,21.2,2293.6,0.05,20,4.69,1.34,2.91,0.14,20,5.12,13.78,5.91,2.71,108,30.71,59.06,39.37,307.86,Pouch,Yes,17501509900124
-3207-00100,Cable Clip with Nail 15mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. 3/4"" (20mm) x 3/64"" (1.2mm) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates|
+3207-00100,Cable Clip with Nail 15mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. ¾"" (20mm) x 3/64"" (1.2mm) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates|
 Operating temperatures: -10°C to +120°C|
-It is installed directly to the wall by means of a 3/4"" (20mm) x 3/64"" (1.2mm) nail.","Transparent color|
+It is installed directly to the wall by means of a ¾"" (20mm) x 3/64"" (1.2mm) nail.","Transparent color|
 Made with Polypropylene|
 flexible|
 The nail is made of galvanized steel, resistant to oxidation|
 Nail hardness 48 HRc Tol. -1 HRc|
 Box with 100 pieces|
 Pouch with 20 pieces",CABLE CLIP NAIL IN TC3X5-6X10.pdf,4.62,1.63,148.4,11874.4,0.01,100,2.91,1.02,1.85,0.09,136,9.84,8.27,11.42,12.13,80,39.37,59.06,39.37,985.03,Box,Yes,17501509902029
-3207-04000,Cable Clip with Nail 15mm (20 Pack),Electrical,Cable Clips & Staples,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. 3/4"" (20mm) x 3/64"" (1.2mm) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates|
+3207-04000,Cable Clip with Nail 15mm (20 Pack),Electrical,Cable Clips & Staples,"Cable clip with integrated nail Thorsmex brand, ideal for holding conductors to interior and exterior walls or ceilings to organize them. Flexible polypropylene bra, transparent color. ¾"" (20mm) x 3/64"" (1.2mm) nail. Resistant to corrosion, humidity and temperature variation from -10°C to 120°C.","Resistance to corrosion, humidity and extreme climates|
 Operating temperatures: -10°C to +120°C|
-It is installed directly to the wall by means of a 3/4"" (20mm) x 3/64"" (1.2mm) nail.","Transparent color|
+It is installed directly to the wall by means of a ¾"" (20mm) x 3/64"" (1.2mm) nail.","Transparent color|
 Made with Polypropylene|
 flexible|
 The nail is made of galvanized steel, resistant to oxidation|
 Nail hardness 48 HRc Tol. -1 HRc|
 Box with 100 pieces|
 Pouch with 20 pieces",CABLE CLIP NAIL IN TC3X5-6X10.pdf,2.91,0.69,19.7,2132.6,0.03,20,4.37,1.02,1.81,0.04,39,5.12,13.78,5.91,1.41,108,30.71,59.06,39.37,167.38,Pouch,Yes,17501509900858
-3208-00100,Cable Clip with Nail 20mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+3208-00100,Cable Clip with Nail 20mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
 to walls or ceilings|
 It is installed directly to the wall by means of a nail:
-""“ Sujethor TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm)|
+""€œ Sujethor TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm)|
 Flexible|
 Color Transparent|
-electrolytic galvanized","Resistencia a la corrosiÃ³n, humedad y climas extremos|
-Temperatura de operaciÃ³n: -50°C a +80°C|
+electrolytic galvanized","Resistencia a la corrosiÃƒ³n, humedad y climas extremos|
+Temperatura de operaciÃƒ³n: -50°C a +80°C|
 Dureza del clavo 48 HRc Tol. -1 Hrc|
-Galvanizado ElectrolÃ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,5.05,1.59,97.2,7774.5,0.01,100,3.11,1.38,2.13,0.09,90,9.84,8.27,11.42,8.11,80,39.37,59.06,39.37,664.04,Box,Yes,17501509902036
-3208-00300,Cable Clip with Nail 19mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+Galvanizado ElectrolÃƒ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,5.05,1.59,97.2,7774.5,0.01,100,3.11,1.38,2.13,0.09,90,9.84,8.27,11.42,8.11,80,39.37,59.06,39.37,664.04,Box,Yes,17501509902036
+3208-00300,Cable Clip with Nail 19mm (100 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
 to walls or ceilings|
 It is installed directly to the wall by means of a nail:
-""“ Sujethor TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm)|
+""€œ Sujethor TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm)|
 Flexible|
 Color Black|
-electrolytic galvanized","Resistencia a la corrosiÃ³n, humedad y climas extremos|
-Temperatura de operaciÃ³n: -50°C a +80°C|
+electrolytic galvanized","Resistencia a la corrosiÃƒ³n, humedad y climas extremos|
+Temperatura de operaciÃƒ³n: -50°C a +80°C|
 Dureza del clavo 48 HRc Tol. -1 Hrc|
-Galvanizado ElectrolÃ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,5.05,1.94,157.2,12579.3,0.01,100,5.2,0.67,4.02,0.13,120,9.84,8.27,11.42,15.82,80,39.37,59.06,39.37,1280.98,Box,Yes,17501509900308
-3208-04000, Cable Clip TC with Nail 20mm (20 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
+Galvanizado ElectrolÃƒ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,5.05,1.94,157.2,12579.3,0.01,100,5.2,0.67,4.02,0.13,120,9.84,8.27,11.42,15.82,80,39.37,59.06,39.37,1280.98,Box,Yes,17501509900308
+3208-04000, Cable Clip TC with Nail 20mm (20 Pack),Electrical,Cable Clips & Staples,"Cable clamp with integrated nail Thorsmex brand to fasten flat conductors to walls or ceilings. Flexible polypropylene bra, black color, measures TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm). Electrolytic galvanized nail. Resistant to corrosion, humidity and temperatures from -10°C to 120°C.","Staples/Clips with integrated nail to hold flat conductors
 to walls or ceilings|
 It is installed directly to the wall by means of a nail:
-""“ Sujethor TC 4Ã—6 Rc: 3/4"" (19mm) x 5/64"" (2mm)|
+""€œ Sujethor TC 4Ãƒ€”6 Rc: ¾"" (19mm) x 5/64"" (2mm)|
 Flexible|
 Color Transparent|
-electrolytic galvanized","Resistencia a la corrosiÃ³n, humedad y climas extremos|
-Temperatura de operaciÃ³n: -50°C a +80°C|
+electrolytic galvanized","Resistencia a la corrosiÃƒ³n, humedad y climas extremos|
+Temperatura de operaciÃƒ³n: -50°C a +80°C|
 Dureza del clavo 48 HRc Tol. -1 Hrc|
-Galvanizado ElectrolÃ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,2.61,0.68,19.6,2118.4,0.03,20,4.37,1.02,1.81,0.04,39,5.12,13.78,5.91,1.39,108,30.71,59.06,39.37,165,Pouch,Yes,17501509900865
+Galvanizado ElectrolÃƒ­tico ASTM-B-633|",CABLE CLIP NAIL IN TC3X5-6X10.pdf,2.61,0.68,19.6,2118.4,0.03,20,4.37,1.02,1.81,0.04,39,5.12,13.78,5.91,1.39,108,30.71,59.06,39.37,165,Pouch,Yes,17501509900865
 3209-00100,Cable Clip TC with Nail 25.4mm (100 Pack),Electrical,Cable Clips & Staples,"Thorsmex brand staples with integrated nail to fasten flat conductors to walls or ceilings indoors and outdoors. It is installed in the wall by means of the 1"" (25.4mm) x 5/64"" (2mm) nail.","
 Resistance to corrosion, humidity and extreme climates|
 Operating temperatures: -10°C to +120°C|
@@ -560,7 +560,7 @@ Operation temperature:
  PE: -50°C to +80°C (-58°F to 176°F)|
  Galvanized Steel: -20°C to + 80 °C (-4°F to 176°F)|  Color: Anchors: red, yellow, white, brown and blue|
  Nail: natural and drill bit| Body: C45 and the tip is an alloy|
- YG8",Kit Taquetes Muro Sólido_EN.pdf,18.97,13.56,177.4,5321.7,0.09,104,7.17,1.69,5.43,1.04,20,8.39,17.91,12.99,20.75,30,41.93,59.06,39.37,637.36,Box,Yes,17506218113032
+ YG8",Kit Taquetes Muro SÃ³lido_EN.pdf,18.97,13.56,177.4,5321.7,0.09,104,7.17,1.69,5.43,1.04,20,8.39,17.91,12.99,20.75,30,41.93,59.06,39.37,637.36,Box,Yes,17506218113032
 5110-02001,Cord Management Accessory Cable Raceway 1020 (10 Pack) White Outside Elbow,Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Resistance to humidity and corrosive atmosphere|High dielectric strength|High dielectric strength|Complies with the requirements of the NOM-001-SEDE-2005 standard,White|Accessory weight: 0.0105 kg|Working temperature -40°C to +85°C,Canal TMK 1020 EN.pdf,5.29,0.56,0,0,0,10,5.51,8.6,3.94,0.03,10,5.91,4.72,4.72,0.27,40,29.53,59.06,39.37,25.82,Bag,No,17501509900971
 5210-02001,Cord Management Accessory Cable Raceway 1720 (10 Pack) Outside Elbow,Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Resistance to humidity and corrosive atmosphere|High dielectric strength|High dielectric strength|Complies with the requirements of the NOM-001-SEDE-2005 standard,Accessory weight: 0.014 kg|CSA Certified|Working temperature -40°C to +85°C,Canal TMK 1720 EN.pdf,7.15,0.72,0,0,0,10,5.51,8.98,3.94,0.03,10,5.91,4.72,4.72,0.34,40,29.53,59.06,39.37,28.53,Bag,No,17501509901022
 5310-02001,Cord Management Accessory Cable Raceway 1735 (6 Pack) White Outside Elbow,Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Resistance to humidity and corrosive atmosphere|High dielectric strength|High dielectric strength|Complies with the requirements of the NOM-001-SEDE-2005 standard,White|Accessory weight:  0.018 kg|Working temperature -40°C to +85°C,Canal TMK 1735 EN.pdf,4.17,0.86,0,0,0,6,5.51,15.2,3.94,0.05,6,5.91,4.72,4.72,0.31,40,29.53,59.06,39.37,27.55,Bag,No,17501509901077
@@ -572,14 +572,14 @@ Operation temperature:
 9300-01252,Wiremold Soft Floor Cord Cover Cable Brown 8.2ft,Electrical,Raceway & Raceway Accessories,"Base floor conduit made of PVC , ideal for areas of continuous passage on the floor and/or wall application, excellent for guiding cables without breaking walls. For electrical installations and structured cabling, the soft half moon overfloor cord protector is considered one of the most aesthetic and safe solutions from Thorsmex.",Resistance up to 100 kg continuous passage|High dielectric strength,"Brown, gray and black color| Channel weight: 2.5 m = 1.12 kg / 25.0 m =10.50 kg|Total internal area of 305 mm²|Working temperature -20°C to +80°C|Resistance up to 100 kg continuous passage",SOFT OVERFLOOR CORD PROTECTOR.pdf,26.54,14.53,0,0,0,1,3.15,10.24,10.63,2.38,1,3.15,10.24,10.63,2.38,160,31.5,59.06,39.37,395.96,Box,No,17501509903231
 TMK1720,Black Raceway Assortment Kit,Electrical,Raceway & Raceway Accessories,Solution to electrical installations and structured cabling,High dielectric strength|For use indoors|Installation with tape for smooth surfaces and anchor for other types of surfaces,ABS SELF EXTINGUISHING MATERIAL|BLACK COLOR WITH UV PROTECTION|BLACK MINIMALIST AND ELEGANCE RACEWAY CORD MANAGEMENT,Canal TMK 1720 EN.pdf,29.93,21.06,0,0,0,1,20,4.7,0.14,0,1,0,0,0,0,0,0,0,0,0,Bag,Yes,00000000000000
 TMK1020,White Raceway Assortment Kit,Electrical,Raceway & Raceway Accessories,Solution to electrical installations and structured cabling,High dielectric strength|For use indoors|Installation with tape for smooth surfaces and anchor for other types of surfaces,Self-extinguishing material ASTM D-635-98|Resistant to UV rays ASTM D-635-98|,Canal TMK 1020 EN.pdf,23.78,18.77,0,0,0,1,49,4.7,0.27,0,1,0,0,0,0,0,0,0,0,0,Bag,Yes,00000000000000
-3501-01001,Core Holder Management Cable Clip w/Tape (6 pack),Hardware,Cable Clips & Staples,Cable Clip with Tape for holding conductors to interior walls or ceilings to organize them,Self-adhesive clip organizes and secures cables without drilling into walls|For indoor use|Moisture resistant|Ideal for organizing cables on a desk|Holds cables up to 8.0 mm in diameter (6 AWG),"High dielectric strength|Adheres firmly to smooth surfaces with 1/2"" double-sided adhesive tape|Load capacity: 250 g (0.551 lb)|Operating temperatures: -5�C to 65�C (23�F to 149�F)|Recommended load: 0.250 kg",No Product Sheet Available,5.67,4,0,0,0,6,5.98,0.43,4.13,0.04,6,5.9,4.72,4.72,0.39,0,0,0,0,0,Bag,Yes,17503045697424
-5091-00001,Cord Management Fittings for TMK 0812 (12 pack),Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Resistance to humidity and corrosive atmosphere|High dielectric strength|High dielectric strength|Complies with the requirements of the NOM-001-SEDE-2005 standard,White|For indoor use|Working temperature -40�C to +85�C,No Product Sheet Available,8.6,1.39,0,0,0,10,5.03,4.13,0.62,0.04,10,5.9,4.72,4.72,0.39,0,0,0,0,0,Bag,Yes,17506218111519
+3501-01001,Core Holder Management Cable Clip w/Tape (6 pack),Hardware,Cable Clips & Staples,Cable Clip with Tape for holding conductors to interior walls or ceilings to organize them,Self-adhesive clip organizes and secures cables without drilling into walls|For indoor use|Moisture resistant|Ideal for organizing cables on a desk|Holds cables up to 8.0 mm in diameter (6 AWG),"High dielectric strength|Adheres firmly to smooth surfaces with 1/2"" double-sided adhesive tape|Load capacity: 250 g (0.551 lb)|Operating temperatures: -5°C to 65°C (23°F to 149°F)|Recommended load: 0.250 kg",No Product Sheet Available,5.67,4,0,0,0,6,5.98,0.43,4.13,0.04,6,5.9,4.72,4.72,0.39,0,0,0,0,0,Bag,Yes,17503045697424
+5091-00001,Cord Management Fittings for TMK 0812 (12 pack),Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Resistance to humidity and corrosive atmosphere|High dielectric strength|High dielectric strength|Complies with the requirements of the NOM-001-SEDE-2005 standard,White|For indoor use|Working temperature -40°C to +85°C,No Product Sheet Available,8.6,1.39,0,0,0,10,5.03,4.13,0.62,0.04,10,5.9,4.72,4.72,0.39,0,0,0,0,0,Bag,Yes,17506218111519
 4700-01271,Wire Management Spiral Cable Wrap Natural Low Density Polyethylene 19MM of 32.8 ft,Electrical,Raceway & Raceway Accessories,"It offers significant advantages in flexibility, handling and functionality, and is decorative by eliminating loose cables that can cause accidents.","Colors: Natural, Black|
 Weight per package: 2 m = 0.1500 kg / 10 m = 0.750 kg
-50 m = 2.860 kg|High flexibility and versatility|For indoor use|Packaging: 2, 10, and 50-meter bags",Operating temperature: -50�C to +75�C|Low Density Polyethylene,No Product Sheet Available,28.48,8.78,0,0,0,10,4.33,18.9,7.87,1.23,10,14.96,18.89,11.41,12.43,0,0,0,0,0,Bag,Yes,17501509908632
+50 m = 2.860 kg|High flexibility and versatility|For indoor use|Packaging: 2, 10, and 50-meter bags",Operating temperature: -50°C to +75°C|Low Density Polyethylene,No Product Sheet Available,28.48,8.78,0,0,0,10,4.33,18.9,7.87,1.23,10,14.96,18.89,11.41,12.43,0,0,0,0,0,Bag,Yes,17501509908632
 4700-06271,Wire Management Spiral Cable Wrap Black Low Density Polyethylene 19MM of 32.8 ft,Electrical,Raceway & Raceway Accessories,"It offers significant advantages in flexibility, handling and functionality, and is decorative by eliminating loose cables that can cause accidents.","Colors: Natural, Black|
 Weight per package: 2 m = 0.1500 kg / 10 m = 0.750 kg
-50 m = 2.860 kg|High flexibility and versatility|For indoor use|Packaging: 2, 10, and 50-meter bags",Operating temperature: -50�C to +75�C|Low Density Polyethylene,No Product Sheet Available,52.72,8.9,0,0,0,10,4.33,18.9,7.87,1.23,10,14.96,18.89,11.41,12.43,0,0,0,0,0,Bag,Yes,17501509908649
+50 m = 2.860 kg|High flexibility and versatility|For indoor use|Packaging: 2, 10, and 50-meter bags",Operating temperature: -50°C to +75°C|Low Density Polyethylene,No Product Sheet Available,52.72,8.9,0,0,0,10,4.33,18.9,7.87,1.23,10,14.96,18.89,11.41,12.43,0,0,0,0,0,Bag,Yes,17501509908649
 5601-01250,Cord Management Corner Cable Raceway w/ Division Rails 4ft (pack with accesories),Electrical,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Solution for concealing and organizing cables in corners or at 90° angles|Easy and simple snap-on installation with adhesive tape|For use in electrical and structured cabling installations|Indoor use|For use on smooth surfaces|Paintable raceway,"Working temperature: -20°C to +75°C|
 It has a total internal surface area of 3,344 mm²",No Product Sheet Available,37.48,15.51,0,0,0,1,0.59,1.57,48,0.82,1,0.59,1.57,48,0.82,0,0,0,0,0,Box,Yes,17503045697479
 5601-01260,Cord Management Corner Cable Raceway wo/ Division Rails 4ft (pack with accesories),Electrical ,Raceway & Raceway Accessories,"ABS self-extinguishing accessories for a fast and efficient installation of a cord management raceway for indoor use, distributing the wiring for a correct optimization giving an incredible appearance to create an ecosystem of harmony in the environment.",Solution for concealing and organizing cables in corners or at 90° angles|Easy and simple snap-on installation with adhesive tape|For use in electrical and structured cabling installations|Indoor use|For use on smooth surfaces|Paintable raceway,"Working temperature: -20°C to +75°C|
