@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/home.css';
@@ -9,73 +8,74 @@ export default function Home() {
   return (
     <div className="home-wrapper">
       <section className="home-section video-hero">
-        <video autoPlay muted loop className="background-video">
+        <video autoPlay muted loop playsInline className="background-video">
           <source src="/content-images/home/background_video.mov" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
-        <div className="overlay-content">
-          <h1>Built for Performance.<br />Trusted for Generations.</h1>
+        <div className="video-overlay-filter" />
+        <div className="video-overlay-content">
+          <h1>Built for Performance.<br />Trusted for Generations</h1>
           <p>
-            Welcome to THORSMEX, S.A. DE.C.V., an industry traiblazer since or
-            establishment in 1996. At THORSMEX, our dedication is clear: to craft,
-            represent, and deliver exceptionall fastening systems, raceeway
-            solutions, and cutting-edge Telecom products a cross the Americas.
+            Welcome to <strong>THORSMEX, S.A. DE C.V.</strong>, an industry trailblazer since our establishment in 1996. At THORSMEX, our dedication is clear: to craft, represent, and deliver exceptional fastening systems, raceway solutions, and cutting-edge Telecom products across the Americas.
           </p>
           <p>
-            From Guatemaa to United States and beyond, our presence spans a
-            myriad of countries, empowering industries throughout Colombia,
-            Chile, el Salvador, bolivia, Panama, Nicaragua and Canada.
+            From Guatemala to United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua and Canada.
           </p>
-          <a href="/catalog" className="catalog-button">View Catalog</a>
+          <a href="/catalog" className="catalog-button catalog-button-mockup">CATALOG</a>
         </div>
       </section>
 
       <section className="home-section products-section">
-        <h2>Products</h2>
+        <h2>PRODUCTS</h2>
         <div className="product-grid">
           <div className="product-card">
-            <img src="electrical.png" alt="Electrical Hardware" />
-            <p>Electrical Hardware</p>
+            <img src="/content-images/icons/electrical.jpg" alt="Electrical" />
+            <p>ELECTRICAL</p>
           </div>
           <div className="product-card">
-            <img src="telecom.png" alt="Telecom" />
-            <p>Telecom</p>
+            <img src="/content-images/icons/electrical.jpg" alt="Hardware" />
+            <p>HARDWARE</p>
           </div>
           <div className="product-card">
-            <img src="discounts.png" alt="Volume Discounts" />
-            <p>Volume Discounts</p>
+            <img src="/content-images/icons/electrical.jpg" alt="Telecom" />
+            <p>TELECOM</p>
           </div>
           <div className="product-card">
-            <img src="retail.png" alt="Retail & Online" />
-            <p>Retail & Online Stores</p>
+            <img src="/content-images/icons/electrical.jpg" alt="Volume Discounts" />
+            <p>VOLUME DISCOUNTS</p>
+          </div>
+          <div className="product-card">
+            <img src="/content-images/icons/electrical.jpg" alt="Retail & Online" />
+            <p>RETAIL & ONLINE STORES</p>
           </div>
         </div>
       </section>
 
       <section className="home-section business-section">
         <div className="logo-overlay">
-          <img src="thorsmexusa_logo.png" alt="Thorsmex USA Logo" />
+          <img src="/content-images/logos/thorsman-logo.png" alt="Thorsmex USA Logo" />
         </div>
         <div className="overlay-content light-text">
-          <h2>Built for Performance. Trusted for Generations.</h2>
           <p>
-            Our presence spans countries from Guatemala to Canada, empowering industries across the continent.
+            Our range of products is more than just an assemblage; it’s a testament to our commitment to excellence. Every THORSMEX product encapsulates the essence of five core values: <strong>functionality, aesthetics, safety, durability</strong> and <strong>unparalleled quality</strong>.
+          </p>
+          <p>
+            Discover how our innovative solutions redefine standards and empower businesses across the Americas. Join us in elevating your projects with our trusted and high-performance product line!
           </p>
         </div>
       </section>
 
       <section className="home-section testimonial-section">
         <div className="testimonial-image">
-          <img src="movers.jpg" alt="Movers" />
+          <img src="/content-images/home/movers.jpg" alt="Movers" />
         </div>
         <div className="testimonial-content">
-          <h2>Client Testimonials</h2>
+          <h2>CLIENT TESTIMONIALS</h2>
           <div className="quote">
             <p>“Thorsmex products have consistently exceeded our expectations. Their quality and durability are unmatched in the industry.”</p>
             <span>– Carlos M., Electrical Engineer</span>
           </div>
           <div className="quote">
-            <p>“We’ve relied on Thorsmex for over a decade. Their commitment to innovation and compliance makes them our top choice.”</p>
+            <p>“We’ve relied on Thorsmex for over a decade. Their commitment to innovation and compliance makes them our top choice for raceway and fixing solutions.”</p>
             <span>– Lucía R., Infrastructure Project Manager</span>
           </div>
           <div className="quote">
