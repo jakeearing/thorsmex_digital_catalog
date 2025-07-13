@@ -1,87 +1,71 @@
 .footer-container {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-weight: 400;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  font-size: 2.5vw;
-  font-weight: thin;
+  background-color: #002d73;
+  padding: 40px 20px;
+  text-align: center;
   color: white;
-  margin: 0 auto;
-  width: 70%;
-  z-index: 1;
+  font-family: sans-serif;
+  position: relative;
 }
 
-.left-nav {
-  display: flex;
-  align-items: center;
+.footer-container h2 {
+  color: #ffd200;
+  margin-bottom: 20px;
 }
 
-.left-nav ul {
+.footer-info {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
-.left-nav li {
-  flex-basis: 40%;
+.footer-info div {
+  margin: 10px;
+}
+
+.footer-info h4 {
   margin-bottom: 5px;
-  font-size: 15px;
-  margin-right: 0px;
-  width: 42px;
 }
 
-.left-nav a {
-  color: black;
-  text-decoration: none;
-  padding: 10px;
+.footer-social {
+  margin-top: 20px;
 }
 
-.terms {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  margin-right: -5px;
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.inquiry-text {
+  margin: 20px 0;
+}
+
+.inquiry-box {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto 20px;
+  background: white;
+}
+
+.footer-bottom {
+  background-color: #ffd200;
+  color: #002d73;
+  padding: 10px 0;
+  font-weight: bold;
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  margin-top: auto;
-  margin-bottom: auto;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 25;
-}
-
-.footer-logo a {
-  display: flex;
-  align-items: center;
+  right: 20px;
+  bottom: 60px;
 }
 
 .footer-logo img {
   width: 80px;
-  height: auto;
-  border-radius: 50px;
+  border-radius: 50%;
 }
+
 
 .copyright-right-nav {
   display: flex;
