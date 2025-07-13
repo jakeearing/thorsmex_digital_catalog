@@ -45,27 +45,27 @@ export default function Header() {
               <ul>
                 <li>
                   <Link to="/" className='active'>
-                    Home
+                    HOME
                   </Link>
                 </li>
                 <li>
                   <Link to="/products" className='active'>
-                    Catalog
+                    CATALOG
                   </Link>
                 </li>
                 <li>
                   <Link to="/promotions">
-                    Promos
+                    PROMOS
                   </Link>
                 </li>
                 <li>
                   <Link to="/about-us">
-                    About
+                    ABOUT
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact-us">
-                    Contact
+                    CONTACT
                   </Link>
                 </li>
                 <li>
@@ -88,27 +88,27 @@ export default function Header() {
             <ul>
               <li>
                 <Link to="/" className='active'>
-                  Home
+                  HOME
                 </Link>
               </li>
               <li>
                 <Link to="/products">
-                  Catalog
+                  CATALOG
                 </Link>
               </li>
               <li>
                 <Link to="/promotions">
-                  Promos
+                  PROMOS
                 </Link>
               </li>
               <li>
                 <Link to="/about-us">
-                  About
+                  ABOUT
                 </Link>
               </li>
               <li>
                 <Link to="/contact-us">
-                  Contact
+                  CONTACT
                 </Link>
               </li>
             </ul>
