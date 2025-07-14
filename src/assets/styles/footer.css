@@ -1,4 +1,4 @@
-.footer-container {
+.footer-content {
   background-color: #002d73;
   padding-bottom: 20px;
   text-align: center;
@@ -9,7 +9,7 @@
   align-items: center; 
 }
 
-.footer-container h2 {
+.footer-content h2 {
   color: #ffd200;
   font-weight: bold;
   margin: 0;

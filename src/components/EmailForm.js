@@ -1,46 +1,23 @@
 import React, { useState } from 'react';
 import '../assets/styles/email-form.css';
 
-export default function ClaimForm() {
-    const [zipCode, setZipCode] = useState('');
-    const [inquiryType, setInquiryType] = useState('Purchase');
+export default function ContactForm() {
+    const [fullName, setFullName] = useState('');
+    const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-
-    const handleZipCodeChange = (event) => {
-        setZipCode(event.target.value);
-    };
-
-    const handleInquiryTypeChange = (event) => {
-        setInquiryType(event.target.value);
-    };
-
-    const handleSubjectChange = (event) => {
-        setSubject(event.target.value);
-    };
-
-    const handleMessageChange = (event) => {
-        setMessage(event.target.value);
-    };
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
         const formData = {
             formType: 'default',
-            inquiryType,
+            fullName,
+            email,
             subject,
             message,
-            fullName: event.target.elements['full-name'].value,
-            email: event.target.elements.email.value,
-            phone: event.target.elements.phone.value,
-            company: event.target.elements.company.value,
-            city: event.target.elements.city.value,
-            state: event.target.elements.state.value,
-            country: event.target.elements.country.value,
         };
 
-        // Determine the API URL based on the environment
         const apiUrl = process.env.NODE_ENV === 'development'
             ? process.env.REACT_APP_API_URL_DEV_EMAIL
             : process.env.REACT_APP_API_URL_PROD_EMAIL;
@@ -55,17 +32,12 @@ export default function ClaimForm() {
             .then((response) => {
                 if (response.ok) {
                     alert("Form submitted successfully! We will reach out to you within 24 hours!");
-                    console.log('Email sent!');
-                    // Clear the form after successful submission
-                    setZipCode('');
-                    setInquiryType('');
+                    setFullName('');
+                    setEmail('');
                     setSubject('');
                     setMessage('');
-                    // Reset the form fields
-                    event.target.reset();
                 } else {
                     alert("Error submitting form.");
-                    console.log('Error sending email', error);
                 }
             })
             .catch((error) => {
@@ -79,95 +51,65 @@ export default function ClaimForm() {
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
-                            <label htmlFor="inquiry-type">Nature of Inquiry:</label>
-                            <select id="inquiry-type" onChange={handleInquiryTypeChange} value={inquiryType}>
-                                <option value="Purchase">Purchase</option>
-                                <option value="Product Availability">Product Availability</option>
-                                <option value="Other">Other</option>
-                            </select>
+                            <input
+                                type="text"
+                                id="full-name"
+                                value={fullName}
+                                onChange={e => setFullName(e.target.value)}
+                                placeholder="Name"
+                                required
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
-                            <label htmlFor="subject">Subject:</label>
-                            <input type="text" id="subject" onChange={handleSubjectChange} value={subject} required />
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                placeholder="Email"
+                                required
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
-                            <label htmlFor="message">Message:</label>
-                            <textarea id="message" onChange={handleMessageChange} value={message} required />
+                            <input
+                                type="text"
+                                id="subject"
+                                value={subject}
+                                onChange={e => setSubject(e.target.value)}
+                                placeholder="Subject"
+                                required
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
-                            <label htmlFor="full-name">Full Name:</label>
-                            <input type="text" id="full-name" required />
+                            <textarea
+                                id="message"
+                                value={message}
+                                onChange={e => setMessage(e.target.value)}
+                                placeholder="Message"
+                                required
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-column">
                         <div className="form-group">
-                            <label htmlFor="email">Email Address:</label>
-                            <input type="email" id="email" required />
+                            <button className="default-button form-button" type="submit">Submit</button>
                         </div>
                     </div>
                 </div>
-                <div className="form-row">
-                    <div className="form-column">
-                        <div className="form-group">
-                            <label htmlFor="phone">Phone Number:</label>
-                            <input type="tel" id="phone" required />
-                        </div>
-                    </div>
-                </div>
-                <div className="form-row">
-                    <div className="form-column">
-                        <div className="form-group">
-                            <label htmlFor="company">Company:</label>
-                            <input type="text" id="company" required />
-                        </div>
-                    </div>
-                </div>
-                <div className="form-row">
-                    <div className="form-column">
-                        <div className="form-group">
-                            <label htmlFor="city">City:</label>
-                            <input type="text" id="city" required />
-                        </div>
-                    </div>
-                    <div className="form-column">
-                        <div className="form-group">
-                            <label htmlFor="state">State:</label>
-                            <input type="text" id="state" required />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="form-row">
-                    <div className="form-column">
-                        <div className="form-group">
-                            <label htmlFor="country">Country:</label>
-                            <input type="text" id="country" required />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="form-row">
-                    <div className="form-column">
-                        <div className="form-group">
-                            <button className="form-button" type="submit">Submit</button>
-                        </div>
-                    </div>
-                </div>
-
             </form>
         </div>
     );

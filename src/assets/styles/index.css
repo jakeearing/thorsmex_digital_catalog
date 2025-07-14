@@ -18,6 +18,24 @@ code {
     monospace;
 }
 
+.default-button {
+  background: #073377;
+  color: #ffd200;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.default-button:hover {
+  background-color: #093b73;
+  color: #ffd200;
+}
+
 .scroll-to-top-button {
   position: fixed;
   bottom: 50px;

@@ -102,28 +102,19 @@ app.post('/api/send-email', (req, res) => {
     }
   });
 
-  // Construct the email message based on the form type and set the email subject
-  let emailMessage;
-  let emailSubject;
-  emailSubject = 'Thorsmex Catalog Contact Form';
-  emailMessage = `
-    Nature of Inquiry: ${formData.inquiryType}
-    Subject: ${formData.subject}
-    Message: ${formData.message}
-    Full Name: ${formData.fullName}
-    Email Address: ${formData.email}
-    Phone Number: ${formData.phone}
-    Company: ${formData.company}
-    City: ${formData.city}
-    State: ${formData.state}
-    Country: ${formData.country}
+  // Construct the email message and subject for the new form version
+  let emailSubject = 'Thorsmex Catalog Contact Form';
+  let emailMessage = `
+  Subject: ${formData.subject}
+  Message: ${formData.message}
+  Name: ${formData.fullName}
+  Email: ${formData.email}
   `;
 
   // Define the email options
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
-    // Set the email subject based on the form type
     subject: emailSubject,
     text: emailMessage,
   };

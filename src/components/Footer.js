@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../assets/styles/footer.css';
+import EmailForm from '../components/EmailForm';
 import cimpoLogo from '../assets/images/logos/cimpo-logo.jpg';
 import facebookIcon from '../assets/images/logos/facebook.png';
 import twitterIcon from '../assets/images/logos/twitter.png';
@@ -7,8 +8,8 @@ import instagramIcon from '../assets/images/logos/instagram.png';
 
 export default function Footer() {
   return (
-    <div>
-      <div className="footer-container">
+    <div className="footer-container">
+      <div className="footer-content">
         <h2>CONTACT 24/7</h2>
         <div className="footer-info">
           <div>
@@ -43,8 +44,7 @@ export default function Footer() {
           <p className="inquiry-text">
             For any inquiries about our products in English or Spanish, let us know by submitting your information below!
           </p>
-          <div className="inquiry-box">
-          </div>
+          <EmailForm/>
         </div>
 
         <div className="footer-logo">

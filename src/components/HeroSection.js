@@ -40,7 +40,7 @@ export default function HeroSection({
           paragraphs.map((p, idx) => <p key={idx}>{p}</p>)
         }
         {buttonText && buttonLink && (
-          <Link to={buttonLink} className="hero-catalog-button">
+          <Link to={buttonLink} className="default-button hero-catalog-button">
             {buttonText}
           </Link>
         )}
