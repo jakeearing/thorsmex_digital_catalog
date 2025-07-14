@@ -28,7 +28,6 @@
   padding: 0;
   object-fit: contain;
   max-width: 100%;
-  height: auto;
 }
 
 .nav-wrapper {
@@ -49,7 +48,7 @@ nav li {
   margin-right: 25px;
   color: #0c4d94;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   font-weight: 600;
 }
 

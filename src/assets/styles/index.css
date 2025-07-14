@@ -15,7 +15,7 @@ code {
 
 .scroll-to-top-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   cursor: pointer;
   visibility: hidden;

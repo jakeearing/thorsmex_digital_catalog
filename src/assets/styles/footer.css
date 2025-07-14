@@ -9,7 +9,7 @@
 
 .footer-container h2 {
   color: #ffd200;
-  margin-bottom: 20px;
+  font-weight: 900;
 }
 
 .footer-info {
@@ -42,8 +42,8 @@
 }
 
 .inquiry-box {
-  width: 80%;
-  height: 150px;
+  width: 40%;
+  height: 200px;
   margin: 0 auto 20px;
   background: white;
 }
@@ -53,6 +53,8 @@
   color: #002d73;
   padding: 10px 0;
   font-weight: bold;
+  width: 100vw;
+  text-align: center;  
 }
 
 .footer-logo {

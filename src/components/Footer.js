@@ -5,7 +5,7 @@ import facebookIcon from '../assets/images/logos/facebook.png';
 import twitterIcon from '../assets/images/logos/twitter.png';
 import instagramIcon from '../assets/images/logos/instagram.png';
 
-export default function Footer () {
+export default function Footer() {
   return (
     <div>
       <div className="footer-container">
@@ -26,9 +26,15 @@ export default function Footer () {
           <div>
             <h4>FOLLOW US</h4>
             <div className="footer-social">
-              <img src={facebookIcon} alt="Facebook" />
-              <img src={twitterIcon} alt="Twitter" />
-              <img src={instagramIcon} alt="Instagram" />
+              <a href="https://www.facebook.com/profile.php?id=61565951870311" target="_blank" rel="noopener noreferrer">
+                <img src={facebookIcon} alt="Facebook" />
+              </a>
+              <a href="https://x.com/ThorsmanM" target="_blank" rel="noopener noreferrer">
+                <img src={twitterIcon} alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com/thorsman.mx/" target="_blank" rel="noopener noreferrer">
+                <img src={instagramIcon} alt="Instagram" />
+              </a>
             </div>
           </div>
         </div>

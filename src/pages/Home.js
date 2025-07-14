@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/home.css';
+import ProductOverview from '../components/ProductOverview';
 
 export default function Home() {
   return (
@@ -20,37 +21,15 @@ export default function Home() {
           <p>
             From Guatemala to United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua and Canada.
           </p>
-          <a href="/catalog" className="catalog-button catalog-button-mockup">CATALOG</a>
+          <Link to="/products" className="catalog-button catalog-button-mockup">
+            CATALOG
+          </Link>
         </div>
       </section>
 
-      <section className="home-section products-section">
-        <h2>PRODUCTS</h2>
-        <div className="product-grid">
-          <div className="product-card">
-            <img src="/content-images/icons/electrical.jpg" alt="Electrical" />
-            <p>ELECTRICAL</p>
-          </div>
-          <div className="product-card">
-            <img src="/content-images/icons/electrical.jpg" alt="Hardware" />
-            <p>HARDWARE</p>
-          </div>
-          <div className="product-card">
-            <img src="/content-images/icons/electrical.jpg" alt="Telecom" />
-            <p>TELECOM</p>
-          </div>
-          <div className="product-card">
-            <img src="/content-images/icons/electrical.jpg" alt="Volume Discounts" />
-            <p>VOLUME DISCOUNTS</p>
-          </div>
-          <div className="product-card">
-            <img src="/content-images/icons/electrical.jpg" alt="Retail & Online" />
-            <p>RETAIL & ONLINE STORES</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-section business-section">
+      <ProductOverview/>
+      
+      <section className="home-section about-hero">
         <div className="logo-overlay">
           <img src="/content-images/logos/thorsman-logo.png" alt="Thorsmex USA Logo" />
         </div>
@@ -64,23 +43,48 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-section testimonial-section">
-        <div className="testimonial-image">
-          <img src="/content-images/home/movers.jpg" alt="Movers" />
+      <section className="testimonial-section">
+        <div className="testimonial-header">
+          CLIENT TESTIMONIALS
         </div>
-        <div className="testimonial-content">
-          <h2>CLIENT TESTIMONIALS</h2>
-          <div className="quote">
-            <p>“Thorsmex products have consistently exceeded our expectations. Their quality and durability are unmatched in the industry.”</p>
-            <span>– Carlos M., Electrical Engineer</span>
+        <div className="testimonial-flex-row">
+          <div className="testimonial-image">
+            <img src="/content-images/home/movers.jpg" alt="Client Testimonials" />
           </div>
-          <div className="quote">
-            <p>“We’ve relied on Thorsmex for over a decade. Their commitment to innovation and compliance makes them our top choice for raceway and fixing solutions.”</p>
-            <span>– Lucía R., Infrastructure Project Manager</span>
-          </div>
-          <div className="quote">
-            <p>“Working with Thorsmex has always been smooth and efficient. Their customer service and technical support are outstanding.”</p>
-            <span>– José L., Telecom Systems Integrator</span>
+          <div className="testimonial-content">
+            <div className="quote">
+              <img
+                src="/content-images/icons/testimonial_quotation.png"
+                alt="Quotation mark"
+                className="testimonial-quote-icon"
+              />
+              <p>
+                Thorsmex products have consistently exceeded our expectations. Their quality and durability are unmatched in the industry.
+              </p>
+              <span>Carlos M., Electrical Engineer</span>
+            </div>
+            <div className="quote">
+              <img
+                src="/content-images/icons/testimonial_quotation.png"
+                alt="Quotation mark"
+                className="testimonial-quote-icon"
+              />
+              <p>
+                We’ve relied on Thorsmex for over a decade. Their commitment to innovation and compliance makes them our top choice for fasteners and fitting solutions.
+              </p>
+              <span>Luis R., Infrastructure Project Manager</span>
+            </div>
+            <div className="quote">
+              <img
+                src="/content-images/icons/testimonial_quotation.png"
+                alt="Quotation mark"
+                className="testimonial-quote-icon"
+              />
+              <p>
+                Working with Thorsmex has always been smooth and efficient. Their customer service and technical support are outstanding.
+              </p>
+              <span>Jose L., Telecom Systems Integrator</span>
+            </div>
           </div>
         </div>
       </section>
