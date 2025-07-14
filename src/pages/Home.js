@@ -1,34 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/home.css';
+import HeroSection from '../components/HeroSection';
 import ProductOverview from '../components/ProductOverview';
 
 export default function Home() {
   return (
     <div className="home-wrapper">
-      <section className="home-section video-hero">
-        <video autoPlay muted loop playsInline className="background-video">
-          <source src="/content-images/home/background_video.mov" type="video/mp4" />
-        </video>
-        <div className="video-overlay-filter" />
-        <div className="video-overlay-content">
-          <h1>Built for Performance.<br />Trusted for Generations</h1>
-          <p>
-            Welcome to <strong>THORSMEX, S.A. DE C.V.</strong>, an industry trailblazer since our establishment in 1996. At THORSMEX, our dedication is clear: to craft, represent, and deliver exceptional fastening systems, raceway solutions, and cutting-edge Telecom products across the Americas.
-          </p>
-          <p>
-            From Guatemala to United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua and Canada.
-          </p>
-          <Link to="/products" className="catalog-button catalog-button-mockup">
-            CATALOG
-          </Link>
-        </div>
-      </section>
+      <HeroSection
+        title={<>Built for Performance.<br />Trusted for Generations</>}
+        paragraphs={[
+          <>Welcome to <strong>THORSMEX, S.A. DE C.V.</strong>, an industry trailblazer since our establishment in 1996. At THORSMEX, our dedication is clear: to craft, represent, and deliver exceptional fastening systems, raceway solutions, and cutting-edge Telecom products across the Americas.</>,
+          <>From Guatemala to United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua and Canada.</>
+        ]}
+        buttonText="CATALOG"
+        buttonLink="/products"
+        backgroundType="video"
+        backgroundSrc="/content-images/home/background_video.mov"
+      />
 
-      <ProductOverview/>
-      
+      <ProductOverview />
+
       <section className="home-section about-hero">
         <div className="logo-overlay">
           <img src="/content-images/logos/thorsman-logo.png" alt="Thorsmex USA Logo" />

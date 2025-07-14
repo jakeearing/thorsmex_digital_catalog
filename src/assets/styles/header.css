@@ -2,14 +2,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 214px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .logo img {
-  height: 214px;
+  height: 150px;
   padding: 0;
   object-fit: contain;
   max-width: 100%;

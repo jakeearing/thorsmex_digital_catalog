@@ -1,15 +1,20 @@
 .footer-container {
   background-color: #002d73;
-  padding: 40px 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: white;
-  font-family: sans-serif;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .footer-container h2 {
   color: #ffd200;
-  font-weight: 900;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 2.5rem;
 }
 
 .footer-info {
@@ -37,24 +42,18 @@
   margin: 0 10px;
 }
 
+.inquiry-container {
+  width: 40%;
+}
+
 .inquiry-text {
   margin: 20px 0;
 }
 
 .inquiry-box {
-  width: 40%;
   height: 200px;
   margin: 0 auto 20px;
   background: white;
-}
-
-.footer-bottom {
-  background-color: #ffd200;
-  color: #002d73;
-  padding: 10px 0;
-  font-weight: bold;
-  width: 100vw;
-  text-align: center;  
 }
 
 .footer-logo {
@@ -68,65 +67,14 @@
   border-radius: 50%;
 }
 
-
-.copyright-right-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.right-nav {
-  display: flex;
-  align-items: center;
-}
-
-.right-nav p {
-  margin-right: 10px;
-  font-size: 15px;
-}
-
-.right-nav .social-media {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
-}
-
-.right-nav .social-media img {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  height: 20px;
-}
-
-.right-nav .terms a {
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 14px;
-}
-
-.copyright {
-  margin: 0;
-  text-align: center;
-  color: black;
-}
-
-.copyright p {
-  font-size: 10px;
-  margin: 10px 0 0 0;
+.footer-bottom {
+  background-color: #ffd200;
+  color: #002d73;
+  padding: 10px 0;
+  font-weight: bold;
+  width: 100vw;
+  text-align: center;  
 }
 
 @media screen and (max-width: 768px) {
-  .terms {
-    display: none;
-  }
-
-  .social-media {
-    position: relative;
-    left: 10px;
-  }
-
-  .copyright {
-    display: none;
-  }
 }

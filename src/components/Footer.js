@@ -39,11 +39,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="inquiry-text">
-          For any inquiries about our products in English or Spanish, let us know by submitting your information below!
-        </p>
-        <div className="inquiry-box">
-
+        <div className="inquiry-container">
+          <p className="inquiry-text">
+            For any inquiries about our products in English or Spanish, let us know by submitting your information below!
+          </p>
+          <div className="inquiry-box">
+          </div>
         </div>
 
         <div className="footer-logo">
