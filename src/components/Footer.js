@@ -39,19 +39,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <div className="inquiry-container">
           <p className="inquiry-text">
             For any inquiries about our products in English or Spanish, let us know by submitting your information below!
           </p>
-          <EmailForm/>
-        </div>
-
-        <div className="footer-logo">
-          <img src={cimpoLogo} alt="Charlotte Imports" />
+          <EmailForm />
         </div>
       </div>
-
       <div className="footer-bottom">
         © 2025 THORSMANMX &nbsp;&nbsp; DESIGN BY KLIP.MX
       </div>
