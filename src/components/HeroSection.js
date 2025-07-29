@@ -6,8 +6,7 @@ import "../assets/styles/hero-section.css";
 export default function HeroSection({
   title,
   paragraphs,
-  buttonText,
-  buttonLink,
+  buttons,
   backgroundType,
   backgroundSrc,
   backgroundAlt,
@@ -36,13 +35,23 @@ export default function HeroSection({
       {overlay && <div className="hero-overlay-filter" />}
       <div className="hero-overlay-content">
         {title && <h1>{title}</h1>}
-        {paragraphs &&
-          paragraphs.map((p, idx) => <p key={idx}>{p}</p>)
-        }
-        {buttonText && buttonLink && (
-          <Link to={buttonLink} className="default-button hero-catalog-button">
-            {buttonText}
-          </Link>
+        {paragraphs && paragraphs.map((p, idx) => <p key={idx}>{p}</p>)}
+
+        {/* Render multiple buttons if provided */}
+        {Array.isArray(buttons) && buttons.length > 0 && (
+          <div className="hero-buttons">
+            {buttons.map((btn, i) =>
+              btn.text && btn.link ? (
+                <Link
+                  key={i}
+                  to={btn.link}
+                  className="default-button hero-catalog-button"
+                >
+                  {btn.text}
+                </Link>
+              ) : null
+            )}
+          </div>
         )}
       </div>
     </section>
@@ -52,8 +61,12 @@ export default function HeroSection({
 HeroSection.propTypes = {
   title: PropTypes.node,
   paragraphs: PropTypes.arrayOf(PropTypes.node),
-  buttonText: PropTypes.string,
-  buttonLink: PropTypes.string,
+  buttons: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      link: PropTypes.string,
+    })
+  ),
   backgroundType: PropTypes.oneOf(["video", "image"]).isRequired,
   backgroundSrc: PropTypes.string.isRequired,
   backgroundAlt: PropTypes.string,

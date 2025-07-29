@@ -2,7 +2,7 @@ export default function ProductOverview() {
     return (
         <section className="product-overview">
             <h2>PRODUCTS</h2>
-            <div className="product-grid">
+            <div className="product-icons">
                 <div className="product-card">
                     <img src="/content-images/icons/electrical.png" alt="Electrical" />
                     <p>ELECTRICAL</p>

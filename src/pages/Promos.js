@@ -1,46 +1,28 @@
 import React from 'react';
 import '../assets/styles/promotions.css';
-import VolumeDiscounts from '../components/VolumeDiscounts';
-import flyer1 from '../assets/promos/FLYER GRAPAS CABLE PLANO.pdf';
-import flyer2 from '../assets/promos/FLYER GRAPAS CABLE REDONDO.pdf';
-import flyer3 from '../assets/promos/FLYER GRAPAS.pdf';
-import flyer4 from '../assets/promos/FLYER.pdf';
+import HeroSection from "../components/HeroSection";
 
 export default function Promos({ discounts }) {
     return (
         <div className="promotions-container">
-            <div className="promotions-content">
-                <div className="promotions-text-main">
-                    <p>We offer discounts based on total amount spent for every order!</p>
-                    <p>Note: One discount per order, discounts can not be stacked with per-item volume based discounts or any other discounts</p>
-                </div>
-                {/* <VolumeDiscounts discounts={discounts} /> */}
-                {/* <div className="promotions-text">
-                    <p>More Promotions</p>
-                </div> */}
-                <div className="promotions-links">
-                    <div>
-                        <a href={flyer1} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 1">
-                            Flat Cable Cable Staples Promotion
-                        </a>
-                    </div>
-                    <div>
-                        <a href={flyer2} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 2">
-                            Round Cable Cable Staples Promotion
-                        </a>
-                    </div>
-                    <div>
-                        <a href={flyer3} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 3">
-                            Cable Clips Promotion
-                        </a>
-                    </div>
-                    <div>
-                        <a href={flyer4} target="_blank" rel="noopener noreferrer" className="pdf-link" title="Promo Flyer 4">
-                            Fixing Kit Dry Wall Anchor Promotion
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <HeroSection
+                title={
+                    <span>
+                        RETAIL
+                    </span>
+                }
+                paragraphs={[
+                    <>Our products can be found at the following retailers. If interested in samples of any of our products, please fill out the form below and our team will get back to you!</>
+                ]}
+                buttons={[
+                    { text: "AMAZON", link: "https://a.co/d/3f9qvc3" },
+                    { text: "WALMART", link: "https://www.walmart.com/ip/3583563687" },
+                ]}
+                backgroundType="image"
+                backgroundSrc="/content-images/retail/retail-hero-background.jpg"
+                backgroundAlt="Thorsmex Factory"
+                overlay={true}
+            />
         </div>
     );
 }

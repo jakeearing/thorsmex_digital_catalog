@@ -29,6 +29,22 @@ const facilityImages = [
   {
     src: "/content-images/about-us/slider/facility6.jpg",
     alt: "Facility 6"
+  },
+  {
+    src: "/content-images/about-us/slider/facility7.jpg",
+    alt: "Facility 7"
+  },
+  {
+    src: "/content-images/about-us/slider/facility8.jpg",
+    alt: "Facility 8"
+  },
+  {
+    src: "/content-images/about-us/slider/facility9.jpg",
+    alt: "Facility 9"
+  },
+  {
+    src: "/content-images/about-us/slider/facility10.jpg",
+    alt: "Facility 10"
   }
 ];
 
@@ -58,8 +74,9 @@ export default function About() {
           <>Leveraging our expertise in precision and innovation, we specialize in providing distinguished private label services, that encompass a range of exceptional manufacturing processes. With expertise in extrusion, injection molding, blow molding, and meticulous packaging methods.</>,
           <>Endorsed by national and international certifying bodies, we guarantee excellence by subjecting each product to rigorous testing. Our commitment to meeting high-performance standards ensures the delivery of top-notch solutions in the market.</>
         ]}
-        buttonText="CATALOG"
-        buttonLink="/catalog"
+        buttons={[
+          { text: "CATALOG", link: "/products" }
+        ]}
         backgroundType="image"
         backgroundSrc="/content-images/about-us/about-us-hero-background.jpg"
         backgroundAlt="Thorsmex Factory"

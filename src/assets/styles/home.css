@@ -31,11 +31,11 @@
   text-transform: uppercase;
 }
 
-.product-grid {
+.product-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .product-card {
@@ -56,7 +56,7 @@
 
 .about-hero {
   position: relative;
-  background: url('../../../public/content-images/home/business_people.jpg') center/cover no-repeat;
+  background: url('../../../public/content-images/home/about_image.jpg') center/cover no-repeat;
   flex-direction: column;
   color: white;
   text-align: center;
@@ -85,6 +85,7 @@
   width: 40vw;
   max-width: 80%;
   height: auto;
+  padding-bottom: 20px;
 }
 
 .about-hero .overlay-content {
@@ -137,6 +138,7 @@
   flex: 1;
   background-color: white;
   color: #002d73;
+  box-sizing: border-box;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -211,7 +213,7 @@
     margin-bottom: 14px;
   }
 
-  .product-grid {
+  .product-icons {
     display: flex;
     flex-wrap: wrap;
     gap: 18px 10px;
@@ -253,7 +255,6 @@
   .testimonial-image,
   .testimonial-content {
     flex: unset;
-    width: 100%;
     min-height: unset;
     padding: 0;
   }
@@ -262,8 +263,14 @@
     object-fit: cover;
     width: 100%;
   }
-  .testimonial-content {
+   .testimonial-content {
     padding: 24px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .testimonial-quote-icon {
     width: 28px;

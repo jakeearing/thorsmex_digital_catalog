@@ -13,8 +13,9 @@ export default function Home() {
           <>Welcome to <strong>THORSMEX, S.A. DE C.V.</strong>, an industry trailblazer since our establishment in 1996. At THORSMEX, our dedication is clear: to craft, represent, and deliver exceptional fastening systems, raceway solutions, and cutting-edge Telecom products across the Americas.</>,
           <>From Guatemala to United States and beyond, our presence spans a myriad of countries, empowering industries throughout Colombia, Chile, El Salvador, Bolivia, Panama, Nicaragua and Canada.</>
         ]}
-        buttonText="CATALOG"
-        buttonLink="/products"
+        buttons={[
+          { text: "CATALOG", link: "/products" }
+        ]}
         backgroundType="video"
         backgroundSrc="/content-images/home/background_video.mov"
       />
@@ -41,7 +42,7 @@ export default function Home() {
         </div>
         <div className="testimonial-flex-row">
           <div className="testimonial-image">
-            <img src="/content-images/home/movers.jpg" alt="Client Testimonials" />
+            <img src="/content-images/home/testimonials_image.jpg" alt="Client Testimonials" />
           </div>
           <div className="testimonial-content">
             <div className="quote">

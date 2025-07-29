@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .footer-content h2 {
@@ -67,14 +67,127 @@
   border-radius: 50%;
 }
 
-.footer-bottom {
+.footer-bottom,
+.footer-bottom .footer-link {
   background-color: #ffd200;
   color: #002d73;
   padding: 10px 0;
   font-weight: bold;
   width: 100vw;
-  text-align: center;  
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
+  .footer-content {
+    padding-bottom: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content h2 {
+    font-size: 1.3rem;
+    padding-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  .footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 8px;
+    width: 100%;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .footer-info>div {
+    width: 95%;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-info>div:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .footer-info>.footer-social {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+
+  .footer-social {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ffd200;
+    letter-spacing: 0.05em;
+  }
+
+  .footer-social-icons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+  }
+
+  .footer-social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .inquiry-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .inquiry-text {
+    margin: 12px 0;
+    font-size: 1rem;
+  }
+
+  .inquiry-box {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin: 16px auto 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 55px;
+  }
+
+  .footer-bottom,
+  .footer-bottom .footer-link {
+    padding: 7px 0;
+    font-size: 0.95rem;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .footer-link {
+    display: none !important;
+  }
 }

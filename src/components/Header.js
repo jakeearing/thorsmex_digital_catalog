@@ -54,8 +54,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/promotions">
-                    PROMOS
+                  <Link to="/retail">
+                    RETAIL
                   </Link>
                 </li>
                 <li>
@@ -70,15 +70,14 @@ export default function Header() {
                 </li>
                 <li>
                   <Link to="/terms-of-use">
-                    Terms of Use
+                    TERMS
                   </Link>
                 </li>
                 <li>
                   <Link to="/privacy-policy">
-                    Privacy Policy
+                    PRIVACY POLICY
                   </Link>
                 </li>
-                <p>Copyright &copy; 2023 Charlotte Imports - All Rights Reserved</p>
               </ul>
             </nav>
           </>
@@ -97,8 +96,8 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/promotions">
-                  PROMOS
+                <Link to="/retail">
+                  RETAIL
                 </Link>
               </li>
               <li>
