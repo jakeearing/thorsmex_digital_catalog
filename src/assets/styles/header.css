@@ -25,7 +25,7 @@
   height: 60px;
   padding: 0;
   object-fit: contain;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .nav-wrapper {
@@ -55,7 +55,7 @@ nav li:last-child {
 }
 
 .header-content nav a {
-  font-size: 1.6vw;
+  font-size: 1.9vw;
   padding: 10px 0;
   color: #0c4d94;
   text-decoration: none;
@@ -65,7 +65,13 @@ nav li:last-child {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
+  nav li {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
   .header {
     position: relative;
   }
