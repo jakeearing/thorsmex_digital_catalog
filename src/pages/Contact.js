@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/styles/contact.css';
 import buildingImg1 from "../assets/images/contact/contact_building_1.jpg";
 import buildingImg2 from "../assets/images/contact/contact_building_2.jpg";

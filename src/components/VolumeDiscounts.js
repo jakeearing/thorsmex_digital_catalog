@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/styles/volume-discounts.css';
 
 export default function VolumeDiscounts({ discounts }) {

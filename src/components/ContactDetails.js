@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/styles/contactdetails.css';
 
 export default function ContactDetails() {

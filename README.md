@@ -1,4 +1,5 @@
 # thorsmex_digital_catalog
-Digital Catalog Web Application for Thorsmex Manufacturing Plant Products for use by Charlotte Imports <br />
+Digital Catalog Web Application for Thorsmex USA<br />
 Created by Jake Earing <br />
-https://github.com/jakeearing <br />
+Design by Klip.MX <br />
+Live version of application can be found at: https://www.thorsmexusa.com/ <br />

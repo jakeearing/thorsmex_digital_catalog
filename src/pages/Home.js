@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../assets/styles/home.css';
 import HeroSection from '../components/HeroSection';
 import ProductOverview from '../components/ProductOverview';

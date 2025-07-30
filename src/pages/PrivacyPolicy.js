@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import '../assets/styles/terms-privacy.css';
 
 export default function PrivacyPolicy() {

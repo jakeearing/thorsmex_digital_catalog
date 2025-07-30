@@ -1,4 +1,3 @@
-import React from "react";
 import 'slick-carousel/slick/slick.css';
 import Slider from "react-slick";
 import HeroSection from "../components/HeroSection";

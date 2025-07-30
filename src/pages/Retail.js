@@ -1,8 +1,7 @@
-import React from 'react';
-import '../assets/styles/promotions.css';
+import '../assets/styles/retail.css';
 import HeroSection from "../components/HeroSection";
 
-export default function Promos({ discounts }) {
+export default function Retail() {
     return (
         <div className="promotions-container">
             <HeroSection
