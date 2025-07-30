@@ -88,6 +88,10 @@
     margin-bottom: 12px;
   }
 
+  .hero-buttons a {
+    margin: 0 auto;
+  }
+
   .hero-catalog-button {
     padding: 10px 18px;
     font-size: 1rem;

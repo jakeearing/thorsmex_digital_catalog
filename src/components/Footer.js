@@ -11,15 +11,15 @@ export default function Footer() {
       <div className="footer-content">
         <h2>CONTACT 24/7</h2>
         <div className="footer-info">
-          <div>
+          <div className="footer-text">
             <h4>PHONE</h4>
             <p>1-800-950-0860</p>
           </div>
-          <div>
+          <div className="footer-text">
             <h4>EMAIL</h4>
             <p>info@thorsmanmx.com</p>
           </div>
-          <div>
+          <div className="footer-text">
             <h4>SERVICE AREAS</h4>
             <p>U.S.A., Mexico and all the world</p>
           </div>

@@ -24,7 +24,7 @@
   margin-bottom: 20px;
 }
 
-.footer-info div {
+.footer-info .footer-text {
   margin: 10px;
 }
 
@@ -33,13 +33,13 @@
 }
 
 .footer-social {
-  margin-top: 20px;
+  margin: 10px 10px 10px 4px;
 }
 
 .footer-social img {
   width: 24px;
   height: 24px;
-  margin: 0 10px;
+  margin: 8px 10px;
 }
 
 .inquiry-container {
