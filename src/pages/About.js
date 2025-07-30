@@ -57,7 +57,7 @@ export default function About() {
     slidesToScroll: 1,
     responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1300,
       settings: {
         slidesToShow: 2
       }
