@@ -255,7 +255,7 @@ function Catalog({ products, images }) {
     const blob = new Blob([xlsBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
 
     // Save the Blob as a file
-    saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
+    saveAs(blob, 'Catalog - Thorsmex USA.xlsx');
   };
 
   /* 
@@ -327,7 +327,7 @@ function Catalog({ products, images }) {
       // Generate the PDF
       await html2pdf().set({
         margin: [0, 0, 0, 0],
-        filename: 'Catalog - Charlotte Imports.pdf',
+        filename: 'Catalog - Thorsmex USA.pdf',
         image: { type: 'webp', quality: 0.98 },
         html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
