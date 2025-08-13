@@ -1,81 +1,291 @@
-.home-container {
+.home-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 8%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.product-overview {
+  flex-direction: column;
+  align-items: center;
+  background-color: #002d73;
+  color: white;
+  text-align: center;
+  padding: 40px 5%;
+  min-height: auto;
+}
+
+.product-overview h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.product-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  width: 160px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.product-card p {
+  font-weight: bold;
+  color: white;
+}
+
+.about-hero {
+  position: relative;
+  background: url('../../../public/content-images/home/about_image.jpg') center/cover no-repeat;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 60px 5%;
+  min-height: 60vh;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 23, 45, 0.6);
+  z-index: 0;
+}
+
+.about-hero .overlay-content,
+.about-hero .logo-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero .logo-overlay img {
+  width: 40vw;
+  max-width: 80%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.about-hero .overlay-content {
+  max-width: 900px;
+}
+
+.about-hero .overlay-content p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.testimonial-header {
+  width: 100%;
+  background: #002d73;
+  color: #ffd200;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0 30px 0;
+  letter-spacing: 1.5px;
+}
+
+.testimonial-flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 330px;
+}
+
+.testimonial-image {
+  flex: 1;
+  min-height: 100%;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-content {
+  flex: 1;
+  background-color: white;
+  color: #002d73;
+  box-sizing: border-box;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
-  min-height: calc(100vh - 100px - 55px);
-  background: linear-gradient(to bottom, #0c4d94, #164f8e);
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  color: white;
 }
 
-.home-content {
-  width: 60%;
-  margin: 0 auto;
+.testimonial-quote-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-content h2 {
-  font-size: 5vh;
-  font-weight: 400;
-  margin: 0 auto;
-  width: 100%;
-  text-align: left;
+.quote {
+  margin-bottom: 30px;
+  max-width: 600px;
+  text-align: center;
 }
 
-.home-buttons {
-  margin-top: 25px;
+.quote p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: normal;
+  margin-bottom: 10px;
 }
 
-.home-button {
-  margin-top: 10px;
-  padding: 18px;
-  border-radius: 20px;
-  border: 0px;
-  font-size: 2vh;
+.quote span {
+  display: block;
   font-weight: bold;
-  background-color: #0c4d94;
-  color: white;
-  border: 1px white solid;
-  cursor: pointer;
-  margin-right: 10px;
-  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.carousel {
-  padding-top: 40px;
-  width: 100%;
-  max-height: 400px;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.carousel .carousel-image-container {
-  max-height: 400px;
-}
-
-.carousel img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 20px;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #0c4d94;
 }
 
 @media screen and (max-width: 768px) {
-  .home-content {
-    width: 90%;
+  .home-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 5%;
   }
 
-  .carousel {
-    width: 95%;
+  .video-hero,
+  .about-hero {
+    padding: 30px 5%;
+    min-height: 40vh;
+  }
+  .video-hero h1,
+  .about-hero h1 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+  .video-hero p,
+  .about-hero p {
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
-  .carousel .carousel-image-container {
-    margin-left: 10px;
+  .catalog-button {
+    font-size: 0.95rem;
+    padding: 10px 22px;
+    border-radius: 3px;
   }
 
-  .home-content h2 {
-    font-size: 4vh;
+  .product-overview {
+    padding: 30px 5%;
+  }
+  .product-overview h2 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  .product-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 10px;
+    justify-content: center;
+  }
+  .product-card {
+    width: calc(50% - 10px);
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .product-card img {
+    width: 54px;
+    height: 54px;
+  }
+  .product-card p {
+    font-size: 0.95rem;
+  }
+
+  .about-hero .logo-overlay img {
+    width: 70vw;
+    max-width: 95%;
+  }
+  .about-hero .overlay-content p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .testimonial-section {
+    padding: 0;
+  }
+  .testimonial-header {
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+  .testimonial-flex-row {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .testimonial-image,
+  .testimonial-content {
+    flex: unset;
+    min-height: unset;
+    padding: 0;
+  }
+  .testimonial-image img {
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+  }
+   .testimonial-content {
+    padding: 24px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .testimonial-quote-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 6px;
+  }
+  .quote {
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+  .quote p {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .quote span {
+    font-size: 0.93rem;
   }
 }

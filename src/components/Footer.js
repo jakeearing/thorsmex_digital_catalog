@@ -1,43 +1,57 @@
 import { Link } from 'react-router-dom';
 import '../assets/styles/footer.css';
-import cimpoLogo from '../assets/images/logos/cimpo-logo.jpg';
+import EmailForm from '../components/EmailForm';
+import facebookIcon from '../assets/images/logos/facebook.png';
+import twitterIcon from '../assets/images/logos/twitter.png';
+import instagramIcon from '../assets/images/logos/instagram.png';
 
 export default function Footer() {
   return (
     <div className="footer-container">
-      <div className="footer">
-        <div className="left-nav">
-          <nav>
-            <ul>
-              <li><Link to="/home">Home</Link></li>
-              <li><Link to="/about-us">About</Link></li>
-              <li><Link to="/products">Catalog</Link></li>
-              <li><Link to="/contact-us">Contact</Link></li>
-              <li><Link to="/promotions">Promos</Link></li>
-            </ul>
-          </nav>
+      <div className="footer-content">
+        <h2>CONTACT 24/7</h2>
+        <div className="footer-info">
+          <div className="footer-text">
+            <h4>PHONE</h4>
+            <p>1-317-956-4305</p>
+          </div>
+          <div className="footer-text">
+            <h4>EMAIL</h4>
+            <p>info@thorsmanmx.com</p>
+          </div>
+          <div className="footer-text">
+            <h4>SERVICE AREAS</h4>
+            <p>U.S.A., Mexico and all the world</p>
+          </div>
+          <div className="footer-social">
+            <h4>FOLLOW US</h4>
+            <div className="footer-social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61565951870311" target="_blank" rel="noopener noreferrer">
+                <img src={facebookIcon} alt="Facebook" />
+              </a>
+              <a href="https://x.com/ThorsmanM" target="_blank" rel="noopener noreferrer">
+                <img src={twitterIcon} alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com/thorsman.mx/" target="_blank" rel="noopener noreferrer">
+                <img src={instagramIcon} alt="Instagram" />
+              </a>
+            </div>
+          </div>
+          <div>
+          </div>
         </div>
-        <div className="footer-logo">
-          <Link to="/">
-            <img src={cimpoLogo} alt="Charlotte Imports Logo" />
-          </Link>
+        <div className="inquiry-container">
+          <p className="inquiry-text">
+            Have a question or want to request product samples? Submit your information below in English or Spanish, we’re happy to help!
+          </p>
+          <EmailForm />
         </div>
-        <div className="copyright-right-nav">
-          <div className="right-nav">
-            <div className="social-media">
-              <a href="https://www.youtube.com/channel/UCKvQ-LQyrH94RGB0VAoSY0Q"><img src={process.env.PUBLIC_URL + "/svg-icons/social-media/youtube-logo.svg"} alt="Youtube Icon" /></a>
-              <a href="https://www.instagram.com/clt.imp/"><img src={process.env.PUBLIC_URL + "/svg-icons/social-media/instagram-logo.svg"} alt="Instagram Icon" /></a>
-            </div>
-            <div className="terms">
-              <Link to="/terms-of-use">Terms of Use</Link>
-              <Link to="/privacy-policy">Privacy Policy</Link>
-            </div>
-            </div>
-            <div className="copyright">
-              <p>Copyright &copy; 2023 Charlotte Imports - All Rights Reserved</p>
-            </div>
-        </div>
+      </div>
+      <div className="footer-bottom">
+        © 2025 THORSMANMX &nbsp;&nbsp;|&nbsp;&nbsp; DESIGN BY KLIP.MX
+        <Link to="/terms-of-use" className="footer-link"> &nbsp;&nbsp;|&nbsp;&nbsp; TERMS</Link>
+        <Link to="/privacy-policy" className="footer-link"> &nbsp;&nbsp;|&nbsp;&nbsp; PRIVACY POLICY</Link>
       </div>
     </div>
   );
-}
+};

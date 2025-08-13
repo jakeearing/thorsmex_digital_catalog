@@ -255,7 +255,7 @@ function Catalog({ products, images }) {
     const blob = new Blob([xlsBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
 
     // Save the Blob as a file
-    saveAs(blob, 'Catalog - Charlotte Imports.xlsx');
+    saveAs(blob, 'Catalog - Thorsmex USA.xlsx');
   };
 
   /* 
@@ -327,7 +327,7 @@ function Catalog({ products, images }) {
       // Generate the PDF
       await html2pdf().set({
         margin: [0, 0, 0, 0],
-        filename: 'Catalog - Charlotte Imports.pdf',
+        filename: 'Catalog - Thorsmex USA.pdf',
         image: { type: 'webp', quality: 0.98 },
         html2canvas: { scale: 1, useCORS: false },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
@@ -432,72 +432,80 @@ function Catalog({ products, images }) {
   const endIndex = itemsPerPage === 'All' ? sortedProducts.length : startIndex + parseInt(itemsPerPage, 10);
 
   return (
-    <div className="catalog-container">
-      <div className="sidebar-wrapper">
-        <div className="sidebar">
-          <div className="sort-options">
-            <div className="search-bar">
-              <form onSubmit={handleSearch}>
-                <label htmlFor="search">Search: </label>
-                <input
-                  type="text"
-                  id="search"
-                  name="search"
-                  value={searchTerm}
-                  onChange={handleSearchChange}
-                />
-              </form>
+    <div>
+      <div className="catalog-hero">
+        <h1>OUR PRODUCTS</h1>
+        <p>
+          We offer a wide range of high-quality electrical solutions, designed to meet the highest standards of safety, durability, and performance.
+          From innovative cable management systems to specialized fastening products, each item in our catalog reflects our commitment to excellence and customer satisfaction.
+        </p>
+      </div>
+      <div className="catalog-container">
+        <div className="sidebar-wrapper">
+          <div className="sidebar">
+            <div className="sort-options">
+              <div className="search-bar">
+                <form onSubmit={handleSearch}>
+                  <label htmlFor="search">Search: </label>
+                  <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                  />
+                </form>
+              </div>
+              <div className="sort-catalog">
+                <label htmlFor="sort-select">Sort: </label>
+                <select id="sort-select" value={sortOption} onChange={handleSortChange}>
+                  {sortOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="items-per-page">
+                <label htmlFor="items-per-page-select">Show: </label>
+                <select
+                  id="items-per-page-select"
+                  value={itemsPerPage}
+                  onChange={handleChangeItemsPerPage}
+                >
+                  {itemsPerPageOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
-            <div className="sort-catalog">
-              <label htmlFor="sort-select">Sort: </label>
-              <select id="sort-select" value={sortOption} onChange={handleSortChange}>
-                {sortOptions.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+            <div className="sidebar-heading">
+              <h3>Product Categories</h3>
             </div>
-            <div className="items-per-page">
-              <label htmlFor="items-per-page-select">Show: </label>
-              <select
-                id="items-per-page-select"
-                value={itemsPerPage}
-                onChange={handleChangeItemsPerPage}
-              >
-                {itemsPerPageOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+            {renderedCategoryLinks}
+            <div className="category main-category">
+              <Link to="/products">All Products</Link>
             </div>
-          </div>
-          <div className="sidebar-heading">
-            <h3>Product Categories</h3>
-          </div>
-          {renderedCategoryLinks}
-          <div className="category main-category">
-            <Link to="/products">All Products</Link>
-          </div>
-          <div className="sidebar-heading export-heading">
-            <h3>Export Shown</h3>
-          </div>
-          <div className="export-container">
-            <div className="export-XLS">
-              <button onClick={() => exportAsXLS(0)} className="icon-button">
-                <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
-              </button>
+            <div className="sidebar-heading export-heading">
+              <h3>Export Shown</h3>
             </div>
-            <div className="export-pdf">
-              <button onClick={() => exportAsPDF(0)} className="icon-button">
-                <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
-              </button>
+            <div className="export-container">
+              <div className="export-XLS">
+                <button onClick={() => exportAsXLS(0)} className="icon-button">
+                  <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+                </button>
+              </div>
+              <div className="export-pdf">
+                <button onClick={() => exportAsPDF(0)} className="icon-button">
+                  <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div>
-            {/* 
+            <div>
+              {/* 
           
           **The <div> above is only needed to hide this feature**
 
@@ -520,131 +528,114 @@ function Catalog({ products, images }) {
           **The <div> below is only needed to hide this feature**
 
           */}
-          </div>
-          {selectedProducts.length > 0 && (
-            <div className="sidebar-heading export-heading">
-              <h3>Export Selected</h3>
             </div>
-          )}
-          {selectedProducts.length > 0 && (
-            <div className="export-container">
-              <div className="export-XLS">
-                <button onClick={() => exportAsXLS(2)} className="icon-button">
-                  <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
-                </button>
+            {selectedProducts.length > 0 && (
+              <div className="sidebar-heading export-heading">
+                <h3>Export Selected</h3>
               </div>
-              <div className="export-pdf">
-                <button onClick={() => exportAsPDF(2)} className="icon-button">
-                  <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
-                </button>
-              </div>
-              <div className="select-deselect-items">
-                <button onClick={deselectAllItems}>
-                  <img src="/svg-icons/deselect.svg" alt="Deselect" />
-                </button>
-              </div>
-              <button
-                className={`sidebar-toggle-button ${showSelected ? 'open' : ''}`}
-                onClick={() => setShowSelected(!showSelected)}
-              >
-                {showSelected ? '' : ''}
-                &#x25BE;
-              </button>
-            </div>
-          )}
-          {showSelected && selectedProducts.length > 0 && (
-            <div className="selected-products">
-              {selectedProducts.map((product) => (
-                <div key={product.modelNumber} className="selected-product">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={true}
-                      onChange={() => handleProductSelect(product, false)}
-                    />
-                    {product === 'checkbox' ? (
-                      product.name
-                    ) : (
-                      <Link to={`/products/${product.category}/${product.subCategory}/${product.modelNumber}`}>
-                        {product.name}
-                      </Link>
-                    )}
-                  </label>
+            )}
+            {selectedProducts.length > 0 && (
+              <div className="export-container">
+                <div className="export-XLS">
+                  <button onClick={() => exportAsXLS(2)} className="icon-button">
+                    <img src="/svg-icons/export-icons/xls.svg" alt="XLS Icon" />
+                  </button>
                 </div>
-              ))}
-            </div>
+                <div className="export-pdf">
+                  <button onClick={() => exportAsPDF(2)} className="icon-button">
+                    <img src="/svg-icons/export-icons/pdf.svg" alt="PDF Icon" />
+                  </button>
+                </div>
+                <div className="select-deselect-items">
+                  <button onClick={deselectAllItems}>
+                    <img src="/svg-icons/deselect.svg" alt="Deselect" />
+                  </button>
+                </div>
+                <button
+                  className={`sidebar-toggle-button ${showSelected ? 'open' : ''}`}
+                  onClick={() => setShowSelected(!showSelected)}
+                >
+                  {showSelected ? '' : ''}
+                  &#x25BE;
+                </button>
+              </div>
+            )}
+            {showSelected && selectedProducts.length > 0 && (
+              <div className="selected-products">
+                {selectedProducts.map((product) => (
+                  <div key={product.modelNumber} className="selected-product">
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={true}
+                        onChange={() => handleProductSelect(product, false)}
+                      />
+                      {product === 'checkbox' ? (
+                        product.name
+                      ) : (
+                        <Link to={`/products/${product.category}/${product.subCategory}/${product.modelNumber}`}>
+                          {product.name}
+                        </Link>
+                      )}
+                    </label>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+          <Link to={`/promotions`} className="sidebar second-sidebar default-button catalog-button">
+            Available Discounts
+          </Link>
+        </div>
+        <div className="products-wrapper">
+          <div className="product-grid">
+            {sortedProducts.slice(startIndex, endIndex).map((product) => (
+              <div key={product.modelNumber} className="product-grid-item">
+                <ProductSquare
+                  product={product}
+                  images={images}
+                  isChecked={selectedProducts.some((p) => p.modelNumber === product.modelNumber)}
+                  handleChange={handleProductSelect}
+                />
+              </div>
+            ))}
+          </div>
+          {filteredProducts.length > itemsPerPage && (
+            <button className="default-button load-more-button" onClick={handleLoadMore}>
+              <h3>Load More</h3>
+            </button>
           )}
-        </div>
-        <Link to={`/promotions`}>
-          <div className="sidebar second-sidebar sidebar-heading-discounts">
-            <h3 className="sidebar-heading-discounts">Available Discounts</h3>
-          </div>
-        </Link>
-      </div>
-      <div className="products-wrapper">
-        <div className="current-category">
-          <h3>
-            <Link to="/products/all">Products</Link>
-            {category && <span> / </span>}
-            {category && subcategory && (
-              <span>
-                <Link to={`/products/${category}`}>{category}</Link> / {subcategory}
-              </span>
-            )}
-            {category && !subcategory && (
-              <span>
-                <Link to={`/products/${category}`}>{category}</Link>
-              </span>
-            )}
-          </h3>
-        </div>
-        <div className="product-grid">
-          {sortedProducts.slice(startIndex, endIndex).map((product) => (
-            <div key={product.modelNumber} className="product-grid-item">
-              <ProductSquare
-                product={product}
-                images={images}
-                isChecked={selectedProducts.some((p) => p.modelNumber === product.modelNumber)}
-                handleChange={handleProductSelect}
-              />
+          <div className="pdf-header-container">
+            <div className="pdf-header">
+              <Link to={`/`}>
+                <img src={process.env.PUBLIC_URL + `/content-images/logos/cimpo-logo-pdf.jpg`} alt="PDF Logo" />
+              </Link>
+              <div className="contact-info">
+                <b><a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a></b>
+                <b><a href="tel:1-800-950-0860">1-800-950-0860</a></b>
+              </div>
             </div>
-          ))}
+          </div>
+          <div className="pdf-footer">
+            <p>{new Date().toLocaleDateString()} - Prices are subject to change; final prices may vary</p>
+          </div>
+          <div className="selected-product-grid">
+            {selectedProducts.map((product) => (
+              <div key={product.modelNumber} className="product-grid-item">
+                <ProductSquare
+                  product={product}
+                  images={images}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        {filteredProducts.length > itemsPerPage && (
-          <button className="load-more-button" onClick={handleLoadMore}>
-            <h3>Load More</h3>
-          </button>
+        {isLoading && (
+          <div className="loading-overlay">
+            <div className="loading-circle"></div>
+          </div>
         )}
-        <div className="pdf-header-container">
-          <div className="pdf-header">
-            <Link to={`/`}>
-              <img src={process.env.PUBLIC_URL + `/content-images/logos/cimpo-logo-pdf.jpg`} alt="PDF Logo" />
-            </Link>
-            <div className="contact-info">
-              <b><a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a></b>
-              <b><a href="tel:1-800-950-0860">1-800-950-0860</a></b>
-            </div>
-          </div>
-        </div>
-        <div className="pdf-footer">
-          <p>{new Date().toLocaleDateString()} - Prices are subject to change; final prices may vary</p>
-        </div>
-        <div className="selected-product-grid">
-          {selectedProducts.map((product) => (
-            <div key={product.modelNumber} className="product-grid-item">
-              <ProductSquare
-                product={product}
-                images={images}
-              />
-            </div>
-          ))}
-        </div>
       </div>
-      {isLoading && (
-        <div className="loading-overlay">
-          <div className="loading-circle"></div>
-        </div>
-      )}
     </div>
   );
 }

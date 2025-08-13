@@ -1,14 +1,12 @@
 {
   "name": "thorsmex_cimpo_digital_catalog_backend",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "mongoose": "^7.4.2",
     "nodemailer": "^6.9.7"
   },
   "scripts": {

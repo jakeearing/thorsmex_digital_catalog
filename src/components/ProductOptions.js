@@ -1,4 +1,3 @@
-import React from 'react';
 import Products from './ProductSquareSmall';
 
 function ProductOptions({ products, images, currentModelNumber }) {

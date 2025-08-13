@@ -1,64 +1,73 @@
-.contact-container {
-  position: relative;
-  padding-top: 55px;
-  padding-bottom: 80px;
-  min-height: calc(100vh - 100px - 55px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
+.contact-locations-section {
+    padding: 20px 0 0 0;
+    background-color: #002d73;
+    width: 100%;
 }
 
-.contact-content-container {
-  margin-top: 40px;
-  margin-bottom: 60px;
+.contact-locations-title {
+    text-align: center;
+    color: #ffd200;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
-.contact-container h3 {
-  font-weight: 400;
+
+.contact-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 48px 16px;
+    flex-wrap: wrap;
 }
 
-.contact-content-container h1,
-.contact-content-container .contact-text {
-  margin: 0 auto;
+.contact-location-card {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 14px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    padding: 32px 18px 32px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact-text {
-  padding: 20px;
+.contact-location-card img {
+    width: 100%;
+    height: 400px;
+    max-width: 380px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.contact-text h3 {
-  margin: 0 auto;
-  width: 80%;
-}
-
-.product-contact h3 {
-  font-weight: 300;
-}
-
-.product-contact a {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-weight: bold;
-}
-
-.contact-page-font-size {
-  font-size: 2vh;
+.contact-location-card p {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #002d73;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    margin: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
+    .contact-grid-container {
+        align-items: center;
+    }
 
-  .contact-container {
-    width: 100%
-  }
+    .contact-location-card {
+        max-width: 95vw;
+        width: 100%;
+    }
 
-  .contact-text h3 {
-    width: 100%
-  }
+    .contact-location-card img {
+        max-width: 100%;
+    }
 }

@@ -1,27 +1,33 @@
-import React from 'react';
-import ContactDetails from '../components/ContactDetails';
-import EmailForm from '../components/EmailForm';
 import '../assets/styles/contact.css';
+import buildingImg1 from "../assets/images/contact/contact_building_1.jpg";
+import buildingImg2 from "../assets/images/contact/contact_building_2.jpg";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
-    <div className="contact-container">
-      <div className="contact-content-container contact-page-font-size">
-        <h1>Contact Us</h1>
-        <div className="contact-text">
-          <h3>For any inquiries about our products in English or Spanish, let us know by
-            submitting your information below! Our committed team will reach out to you
-            within 24 hours!</h3>
+    <div className="contact-locations-section">
+      <h2 className="contact-locations-title">THORSMEX LOCATIONS</h2>
+      <div className="contact-grid-container">
+        <div className="contact-location-card">
+          <img src={buildingImg1} alt="Thorsmex Building 1" />
+          <p>
+            PERIFERICO BLVD.<br />
+            MANUEL ÁVILA CAMACHO 2900-701,<br />
+            HAB. LOS PIRULES, C.P.<br />
+            54040, TLALNEPANTLA,<br />
+            MEXICO
+          </p>
         </div>
-        <div className="product-contact">
-          <h3>
-            Or reach us directly at:
-          </h3>
-          <a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a>
-          <a href="tel:1-800-950-0860">1-800-950-0860</a>
+        <div className="contact-location-card">
+          <img src={buildingImg2} alt="Thorsmex Building 2" />
+          <p>
+            MANZANA 24 LOTE 9B,<br />
+            PARQUE INDUSTRIAL<br />
+            ATLACOMULCO, C.P.<br />
+            50450 ATLACOMULCO,<br />
+            MEXICO
+          </p>
         </div>
       </div>
-      <EmailForm />
     </div>
   );
 }

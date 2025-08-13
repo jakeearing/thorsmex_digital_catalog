@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logos/thorsman-logo.png';
 import '../assets/styles/header.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
   const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 1100);
     };
 
     window.addEventListener('resize', handleResize);
@@ -45,40 +45,39 @@ export default function Header() {
               <ul>
                 <li>
                   <Link to="/" className='active'>
-                    Home
+                    HOME
                   </Link>
                 </li>
                 <li>
                   <Link to="/products" className='active'>
-                    Catalog
+                    CATALOG
                   </Link>
                 </li>
                 <li>
-                  <Link to="/promotions">
-                    Promos
+                  <Link to="/retail">
+                    RETAIL
                   </Link>
                 </li>
                 <li>
                   <Link to="/about-us">
-                    About
+                    ABOUT
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact-us">
-                    Contact
+                    CONTACT
                   </Link>
                 </li>
                 <li>
                   <Link to="/terms-of-use">
-                    Terms of Use
+                    TERMS
                   </Link>
                 </li>
                 <li>
                   <Link to="/privacy-policy">
-                    Privacy Policy
+                    PRIVACY POLICY
                   </Link>
                 </li>
-                <p>Copyright &copy; 2023 Charlotte Imports - All Rights Reserved</p>
               </ul>
             </nav>
           </>
@@ -88,27 +87,27 @@ export default function Header() {
             <ul>
               <li>
                 <Link to="/" className='active'>
-                  Home
+                  HOME
                 </Link>
               </li>
               <li>
                 <Link to="/products">
-                  Catalog
+                  CATALOG
                 </Link>
               </li>
               <li>
-                <Link to="/promotions">
-                  Promos
+                <Link to="/retail">
+                  RETAIL
                 </Link>
               </li>
               <li>
                 <Link to="/about-us">
-                  About
+                  ABOUT
                 </Link>
               </li>
               <li>
                 <Link to="/contact-us">
-                  Contact
+                  CONTACT
                 </Link>
               </li>
             </ul>

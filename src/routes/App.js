@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation, useParams, Navigate } from 'react-router-dom';
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
-import Promos from '../pages/Promos';
+import Retail from '../pages/Retail';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import TermsOfUse from '../pages/TermsOfUse';
@@ -110,7 +110,7 @@ const App = () => {
           <Route path="/products/:category" element={<Catalog products={products} images={images} />} />
           <Route path="/products/:category/:subcategory" element={<Catalog products={products} images={images} />} />
           <Route path="/products/:category/:subcategory/:modelnumber" element={<Product products={products} images={images} discounts={discounts} />} />
-          <Route path="/promotions" element={<Promos discounts={discounts} />} />
+          <Route path="/retail" element={<Retail/>} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />

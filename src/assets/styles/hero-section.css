@@ -1,0 +1,100 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 60px 8%;
+  box-sizing: border-box;
+  text-align: left;
+  height: calc(100vh - 150px);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 23, 45, 0.6);
+  z-index: 1;
+}
+
+.hero-overlay-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  color: white;
+}
+
+.hero-overlay-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 25px 0 0 0;
+  line-height: 1.2;
+}
+
+.hero-overlay-content p {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-catalog-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 50px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    position: relative;
+    padding: 36px 4%;
+    min-height: 240px;
+    height: unset;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .hero-overlay-content {
+    max-width: 100%;
+    padding: 0 2vw;
+  }
+
+  .hero-overlay-content h1 {
+    font-size: 1.4rem;
+    margin: 18px 0 0 0;
+    line-height: 1.2;
+  }
+
+  .hero-overlay-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .hero-buttons a {
+    margin: 0 auto;
+  }
+
+  .hero-catalog-button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+}
