@@ -583,9 +583,9 @@ function Catalog({ products, images }) {
               </div>
             )}
           </div>
-          <Link to={`/promotions`} className="sidebar second-sidebar default-button catalog-button">
+          {/* <Link to={`/promotions`} className="sidebar second-sidebar default-button catalog-button">
             Available Discounts
-          </Link>
+          </Link> */}
         </div>
         <div className="products-wrapper">
           <div className="product-grid">

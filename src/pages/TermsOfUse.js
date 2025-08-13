@@ -17,7 +17,7 @@ export default function TermsOfUse() {
               This Terms and Conditions agreement ("Agreement") specifies the Terms and Conditions
               for access to and use of thorsmexcatalog.com ("Site") and describe the terms and conditions
               applicable to your access of and use of the Site. This Agreement may be modified at any time by
-              Charlotte Imports, LLC, upon posting of the modified Agreement. Any such modifications shall be
+              Thorsmex USA, INC, upon posting of the modified Agreement. Any such modifications shall be
               effective immediately. Each use by you shall constitute and be deemed your unconditional acceptance
               of this Agreement.
             </p>
@@ -75,7 +75,7 @@ export default function TermsOfUse() {
             <p><b> Representations & Warranties (R&Ws); Disclaimers; Limitations on Liability.</b></p>
             <p>
               <b>(a) Buyer’s R&Ws. </b>
-              You represent and warrant to Charlotte Imports, LLC as follows: (i) that you
+              You represent and warrant to Thorsmex USA, INC as follows: (i) that you
               have the right to enter any transaction contemplated for hereby without violating these Terms,
               any applicable law, rule, or regulation, and/or any agreement with, or rights of, any third party;
               (ii) that you will use the goods and services provided hereunder exactly as authorized and never
@@ -85,11 +85,11 @@ export default function TermsOfUse() {
             </p>
             <p>
               <b>(b) Manufacturer’s Warranty and Company’s Disclaimers. </b>
-              Charlotte Imports, LLC does not
+              Thorsmex USA, INC does not
               manufacture (or direct the manufacture of) any of the goods or services offered on the Site in
               any way. The availability on the Site of goods and services does not constitute an affiliation with
               or endorsement of any of the goods or services or their manufacturer. As such, subject to
-              applicable law, Charlotte Imports, LLC is providing the goods and services to you “as is”
+              applicable law, Thorsmex USA, INC is providing the goods and services to you “as is”
               without express or implied warranties of any kind (including without limitation any: (i) warranty
               of merchantability; (ii) warranty of fitness for a particular purpose; (iii) warranty of title; or (iv)
               warranty against infringement of intellectual property rights of a third party, whether express or
@@ -164,11 +164,11 @@ export default function TermsOfUse() {
           <li>
             <p>
               <b>Site Use. </b>
-              Charlotte Imports, LLC grants you a limited, revocable, nonexclusive license to use this site
+              Thorsmex USA, INC grants you a limited, revocable, nonexclusive license to use this site
               solely for your own personal use and not for republication, distribution, assignment, sublicense, sale,
               preparation of derivative works, or other use. You agree not to copy materials on the site, reverse
               engineer or break into the site, or use materials, products or services in violation of any law. The use
-              of this website is at the discretion of Charlotte Imports, LLC and Charlotte Imports, LLC may
+              of this website is at the discretion of Thorsmex USA, INC and Thorsmex USA, INC may
               terminate your use of this website at any time.
             </p>
           </li>
@@ -185,7 +185,7 @@ export default function TermsOfUse() {
           <li>
             <p>
               <b>Indemnification. </b>
-              You agree to indemnify, defend and hold Charlotte Imports, LLC and our partners,
+              You agree to indemnify, defend and hold Thorsmex USA, INC and our partners,
               employees, and affiliates, harmless from any liability, loss, claim and expense, including reasonable
               attorney's fees, related to your violation of this Agreement or use of the Site.
             </p>
@@ -194,7 +194,7 @@ export default function TermsOfUse() {
           <li>
             <p>
               <b>Use of Information. </b>
-              Charlotte Imports, LLC reserves the right, and you authorize us, to use and
+              Thorsmex USA, INC reserves the right, and you authorize us, to use and
               assign all information regarding site uses by you and all information provided by you in any manner
               consistent with our Privacy Policy.
             </p>
@@ -212,9 +212,9 @@ export default function TermsOfUse() {
           <li>
             <p>
               <b>Waiver. </b>
-              The failure of Charlotte Imports, LLC to exercise or enforce any right or provision of this
+              The failure of Thorsmex USA, INC to exercise or enforce any right or provision of this
               Agreement shall not operate as a waiver of such right or provision. Any waiver of this Agreement by
-              Charlotte Imports, LLC must be in writing and signed by an authorized representative of Charlotte
+              Thorsmex USA, INC must be in writing and signed by an authorized representative of Charlotte
               Imports, LLC.
             </p>
           </li>
@@ -222,7 +222,7 @@ export default function TermsOfUse() {
           <li>
             <p>
               <b>Termination. </b>
-              Charlotte Imports, LLC may terminate this Agreement at any time, with or without
+              Thorsmex USA, INC may terminate this Agreement at any time, with or without
               notice, for any reason.
             </p>
           </li>
@@ -246,7 +246,7 @@ export default function TermsOfUse() {
               Imports, LLC and governs the terms and conditions of your use of the Site, and supersedes all prior or
               contemporaneous communications and proposals, whether electronic, oral or written, between you and
               Charlotte-Imports, LLC. Notwithstanding the foregoing, you may also be subject to additional terms
-              and conditions and posted policies (e.g., Privacy Policy). Charlotte Imports, LLC may revise this
+              and conditions and posted policies (e.g., Privacy Policy). Thorsmex USA, INC may revise this
               Terms of Use at any time by updating this Agreement and posting it on the Site.
             </p>
           </li>
@@ -256,10 +256,10 @@ export default function TermsOfUse() {
               <b>Contact Information. </b>
             </p>
             <p>
-              Charlotte Imports, LLC
+              Thorsmex USA, INC
             </p>
             <p>
-              <a href="tel:1-800-950-0860">1-800-950-0860</a>
+              <a href="tel:1-800-950-0860">1-317-956-4305</a>
             </p>
             <p>
               <a href="mailto:sales@charlotte-imports.com">sales@charlotte-imports.com</a>
