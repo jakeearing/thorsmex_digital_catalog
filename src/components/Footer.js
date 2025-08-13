@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer-info">
           <div className="footer-text">
             <h4>PHONE</h4>
-            <p>1-800-950-0860</p>
+            <p>1-317-956-4305</p>
           </div>
           <div className="footer-text">
             <h4>EMAIL</h4>
